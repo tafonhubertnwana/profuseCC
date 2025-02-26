@@ -1,5 +1,8 @@
 "use client";
+import ExperienceSection from '@/components/experienceSection';
 import HeroSection from '@/components/herosection/hero'
+import LogoCarousel from '@/components/LogoCarousel';
+import MissionSection from '@/components/mission';
 import Navbar from '@/components/navbar'
 import React from 'react'
 
@@ -8,11 +11,16 @@ const MissionPage = () => {
     <div>
       <Navbar />
       <HeroSection
-    title="Our Mission"
+    title="Our Mission Vision & Goal"
     description="Driving innovation and delivering excellence."
     backgroundImage="/assets/breadcrumb-bg.png"
     breadcrumb="Mission"
-  /></div>
+  />
+  <MissionSection />
+  <ExperienceSection />
+  <LogoCarousel />
+  
+  </div>
   )
 }
 

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { FaLocationDot, FaPhone, FaXTwitter , FaEnvelope } from "react-icons/fa6";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -16,7 +17,7 @@ const Footer = () => {
                 alt="Company Logo" 
                 className="h-12 w-12 mr-2"
               />
-              <h2 className="text-xl font-semibold">Company Name</h2>
+              <h2 className="text-xl font-semibold">ProfuseCC</h2>
             </div>
             <p className="text-gray-400">
               Your tagline goes here. A short description of your company.
@@ -39,59 +40,115 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="text-gray-400">
-              <li className="mb-2">
-                <Link href="/service-1" className="hover:text-white">Service 1</Link>
-              </li>
-              <li className="mb-2">
-                <Link href="/service-2" className="hover:text-white">Service 2</Link>
-              </li>
-              <li className="mb-2">
-                <Link href="/service-3" className="hover:text-white">Service 3</Link>
-              </li>
-              <li className="mb-2">
-                <Link href="/service-4" className="hover:text-white">Service 4</Link>
-              </li>
-            </ul>
-          </div>
-          {/* Quick Links Section */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="text-gray-400">
-              <li className="mb-2">
-                <Link href="/about" className="hover:text-white">About Us</Link>
-              </li>
-              <li className="mb-2">
-                <Link href="/services" className="hover:text-white">Services</Link>
-              </li>
-              <li className="mb-2">
-                <Link href="/project" className="hover:text-white">Project</Link>
-              </li>
-              <li className="mb-2">
-                <Link href="/contact" className="hover:text-white">Contact</Link>
-              </li>
-              <li className="mb-2">
-                <Link href="/privacy-policy" className="hover:text-white">Privacy Policy</Link>
-              </li>
-            </ul>
-          </div>
+  <h3 className="text-lg font-semibold mb-4">Services</h3>
+  <ul className="text-gray-400">
+    <li className="mb-2 group">
+      <Link href="/service-1" className="hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2">
+
+        <span className="mr-2 ">
+          <FaRegArrowAltCircleRight className='text-orange-300' />
+        </span>
+        AWS Cloud Service
+      </Link>
+    </li>
+    <li className="mb-2 group">
+      <Link href="/service-2" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
+        <span className="mr-2">
+          <FaRegArrowAltCircleRight className='text-orange-300' />
+        </span>
+        Web Development
+      </Link>
+    </li>
+    <li className="mb-2 group">
+      <Link href="/service-3" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
+        <span className="mr-2">
+          <FaRegArrowAltCircleRight className='text-orange-300' />
+        </span>
+        Data & AI
+      </Link>
+    </li>
+    <li className="mb-2 group">
+      <Link href="/service-4" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
+        <span className="mr-2">
+          <FaRegArrowAltCircleRight className='text-orange-300' />
+        </span>
+        SEO & Security
+      </Link>
+    </li>
+  </ul>
+</div>
+
+{/* Quick Links Section */}
+<div>
+  <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+  <ul className="text-gray-400">
+    <li className="mb-2 group">
+      <Link href="/about" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
+        <span className="mr-2">
+          <FaRegArrowAltCircleRight className='text-orange-300' />
+        </span>
+        About Us
+      </Link>
+    </li>
+    <li className="mb-2 group">
+      <Link href="/services" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
+        <span className="mr-2">
+          <FaRegArrowAltCircleRight className='text-orange-300' />
+        </span>
+        Services
+      </Link>
+    </li>
+    <li className="mb-2 group">
+      <Link href="/project" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
+        <span className="mr-2">
+          <FaRegArrowAltCircleRight className='text-orange-300' />
+        </span>
+        Project
+      </Link>
+    </li>
+    <li className="mb-2 group">
+      <Link href="/contact" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
+        <span className="mr-2">
+          <FaRegArrowAltCircleRight className='text-orange-300' />
+        </span>
+        Contact
+      </Link>
+    </li>
+    <li className="mb-2 group">
+      <Link href="/privacy-policy" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
+        <span className="mr-2">
+          <FaRegArrowAltCircleRight className='text-orange-300' />
+        </span>
+        Privacy Policy
+      </Link>
+    </li>
+  </ul>
+</div>
 
           {/* Contact Section */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <ul className="text-gray-400">
-              <li className="mb-2 flex items-center">
-                <FaLocationDot className="mr-2" />
+            <ul className="text-gray-400 ">
+              <li className="mb-2 group  ">
+                <div className="hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2">
+
+                <FaLocationDot className="mr-2 text-orange-300" />
                 <span>123 Houston, Texas, State 12345, USA</span>
+                </div>
               </li>
-              <li className="mb-2 flex items-center">
-                <FaPhone className="mr-2" />
+              <li className="mb-2 group ">
+              <div className="hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2">
+                  
+                <FaPhone className="mr-2 text-orange-300" />
                 <span>+281-942-0577</span>
+                  </div>
               </li>
-              <li className="mb-2 flex items-center">
-                <FaEnvelope className="mr-2" />
+              <li className="mb-2 group ">
+              <div className="hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2">
+                  
+                <FaEnvelope className="mr-2 text-orange-300" />
                 <span>info@profusecc.com</span>
+                  </div>
               </li>
             </ul>
           </div>
