@@ -69,7 +69,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative h-[350px] sm:h-[350px] md:h-[350px] lg:h-[550px] xl:h-[700px] overflow-hidden">
       <AnimatePresence>
         <motion.div
           key={slides[currentSlide].id}

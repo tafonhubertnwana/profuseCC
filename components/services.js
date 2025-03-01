@@ -1,45 +1,66 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaLaptopCode, FaPencilRuler, FaBullhorn, FaCode, FaRobot, FaLightbulb } from 'react-icons/fa';
+import Image from 'next/image';
 
 const services = [
-  { title: 'Web Design', icon: <FaLaptopCode />, delay: 0.2 },
-  { title: 'Motion Design', icon: <FaPencilRuler />, delay: 0.4 },
-  { title: 'Digital Marketing', icon: <FaBullhorn />, delay: 0.6 },
-  { title: 'Web Development', icon: <FaCode />, delay: 0.8 },
-  { title: 'App Development', icon: <FaRobot />, delay: 1.0 },
-  { title: 'Creative Solution', icon: <FaLightbulb />, delay: 1.2 }
+  { title: 'AWS Cloud Service', icon: '/assets/service-1.png', delay: 0.2 },
+  { title: 'Web Development', icon: '/assets/service-2.png', delay: 0.4 },
+  { title: 'Data & AI', icon: '/assets/service-4.png', delay: 0.6 },
+  { title: 'SEO & Security', icon: '/assets/service-3.png', delay: 0.8 },
 ];
 
 export default function Services() {
   return (
     <div className="bg-gray-900 text-white py-16 px-4 my-10">
       <div className="max-w-6xl mx-auto text-center">
-        <motion.h2 
+        <motion.div 
           initial={{ opacity: 0, y: -20 }} 
           animate={{ opacity: 1, y: 0 }} 
           transition={{ duration: 0.8 }}
-          className="text-3xl font-bold mb-4 uppercase"
+          className="justify-center w-1/2 mx-auto"
         >
-          All Professional We’re Offering Best & IT Solutions & <span className="text-blue-500">Services</span>
-        </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+          <p>SERVICE WE PROVIDE</p>
+          <h2 className='text-3xl font-bold mb-4'>
+            All Professional We’re Offering Best & IT Solutions & <span className="text-blue-500">Services</span>
+          </h2>
+        </motion.div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
           {services.map((service, index) => (
-            <motion.div 
-              key={index} 
-              initial={{ opacity: 0, y: 20 }} 
-              animate={{ opacity: 1, y: 0 }} 
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: service.delay }}
               whileHover={{ scale: 1.05 }}
-              className="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-start hover:bg-gray-700 cursor-pointer"
+              className="bg-gray-800 p-6 rounded-lg shadow-lg flex items-center space-x-6 hover:bg-gray-700 transition-colors duration-300 cursor-pointer"
             >
-              <div className="text-4xl mb-4 text-blue-500">{service.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-              <p className="text-gray-400">Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.</p>
-              <button className="mt-4 text-blue-500 font-semibold flex items-center gap-2">
-                READ MORE <span>&#187;</span>
-              </button>
+              {/* Icon Section - Left Side */}
+              <div className="flex-shrink-0">
+               <Image 
+  src={service.icon} 
+  alt={service.title} 
+  width={75} 
+  height={75}
+  className={service.title === 'Data & AI' ? 'filter-gray' : ''}
+/>
+
+              </div>
+              
+              {/* Content Section - Right Side */}
+              <div className="flex flex-col space-y-2 text-left">
+                <h3 className="text-xl font-semibold text-white">
+                  {service.title}
+                </h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.
+                </p>
+                
+                {/* Call-to-Action Button */}
+                <button className="mt-2 text-blue-500 font-semibold flex items-center gap-2 hover:text-blue-400 transition-colors duration-300">
+                  READ MORE <span className="text-xl">&#187;</span>
+                </button>
+              </div>
             </motion.div>
           ))}
         </div>

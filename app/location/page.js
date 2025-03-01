@@ -1,4 +1,7 @@
 "use client";
+import AustinMap from '@/components/AustinMap';
+import ContactInfo from '@/components/contactinfo';
+import CountryCards from '@/components/countryCard';
 import HeroSection from '@/components/herosection/hero'
 import Navbar from '@/components/navbar'
 import React from 'react'
@@ -13,6 +16,9 @@ const LocationPage = () => {
   backgroundImage="/assets/breadcrumb-bg.png"
   breadcrumb="Location"
 />
+<CountryCards />
+<AustinMap />
+<ContactInfo />
     </div>
   )
 }

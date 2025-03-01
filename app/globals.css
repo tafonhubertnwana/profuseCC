@@ -19,3 +19,42 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes spin-slow {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
+
+@keyframes drawLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 45%;
+  }
+}
+
+.left-line {
+  animation: drawLine 1s ease-in-out forwards;
+}
+
+.right-line {
+  animation: drawLine 1s ease-in-out forwards;
+}
+
+
+.filter-gray {
+  filter: grayscale(100%);
+}
+
+.filter-orange {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(94%) saturate(545%) hue-rotate(4deg) brightness(103%) contrast(101%);
+}

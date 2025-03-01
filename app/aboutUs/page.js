@@ -1,6 +1,9 @@
 "use client";
 import Navbar from "@/components/navbar";
 import HeroSection from "@/components/herosection/hero";
+import ItSupportSection from "@/components/support";
+import ExperienceSection from '@/components/experienceSection';
+import TeamSection from "@/components/DedicatedTeam";
 
 
 const AboutPage = () => {
@@ -13,7 +16,9 @@ const AboutPage = () => {
   backgroundImage="/assets/breadcrumb-bg.png"
   breadcrumb="About" />
       {/* Add the rest of your contact page content here */}
-      
+      <ExperienceSection />
+      <ItSupportSection />
+      <TeamSection />
     </div>
   );
 };
