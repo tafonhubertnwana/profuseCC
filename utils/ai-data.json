@@ -1,0 +1,23 @@
+{
+  "header": {
+    "title": "Expert Data Analytics Services for Your Scenario",
+    "description": "At ProfuseCC, we help turn data into industry success by leveraging the power of predictive and prescriptive analytics to uncover hidden patterns, mitigate risks, and seize new opportunities."
+  },
+  "industries": [
+    "Healthcare",
+    "Financial and banking services",
+    "Retail and ecommerce",
+    "Education and elearning",
+    "Marketing and AdTech",
+    "Transportation and logistics",
+    "Real Estate and PropTech",
+    "Travel and Hospitality"
+  ],
+  "healthcareServices": [
+    "Integrating data from EHRs/EMRs, ERP systems, lab results, medical databases, etc. to support clinical decision-making",
+    "Population-level data analysis to identify trends, patterns, and risk factors",
+    "Personalized care plans and treatments",
+    "Healthcare insurance fraud detection",
+    "Healthcare supply chain optimization"
+  ]
+}

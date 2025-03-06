@@ -70,7 +70,7 @@ export default function TeamSection() {
             >
               {teamMembers.map((member) => (
                 <SwiperSlide key={member.id}>
-                  <Link href='/detail/' passHref>
+                  <Link href='/team/team-detail' >
                     <div className="bg-white shadow-lg overflow-hidden cursor-pointer">
                       <div className="relative h-[450px]">
                         <Image
@@ -113,7 +113,7 @@ export default function TeamSection() {
         {showAllMembers && (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
             {teamMembers.map((member) => (
-              <Link href='/detail/' key={member.id} passHref>
+              <Link href='/team/team-detail' key={member.id} >
                 <div className="bg-white shadow-lg overflow-hidden cursor-pointer">
                   <div className="relative h-[450px]">
                     <Image

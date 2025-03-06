@@ -14,7 +14,7 @@ const HeroSection = ({ title, description, backgroundImage, breadcrumb }) => {
         className="absolute inset-0 w-full h-full bg-cover bg-center"
         style={{ backgroundImage: `url('${backgroundImage}')` }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center pl-8 sm:pl-12 md:pl-16 lg:pl-20 xl:pl-24">
+        <div className="absolute inset-0  flex flex-col justify-center pl-8 sm:pl-12 md:pl-16 lg:pl-20 xl:pl-24">
           <motion.div
             initial="hidden"
             animate="visible"

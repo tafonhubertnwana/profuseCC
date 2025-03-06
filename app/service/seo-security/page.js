@@ -1,0 +1,22 @@
+"use client";
+import HeroSection from '@/components/herosection/hero'
+import Navbar from '@/components/navbar'
+import SEOServices from '@/components/seo/seoService';
+import React from 'react'
+
+const SeoPage = () => {
+  return (
+    <div>
+      <Navbar />
+      <HeroSection
+  title="SEO & Security"
+  description="Optimizing your online presence while ensuring top-notch security."
+  backgroundImage="/assets/breadcrumb-bg.png"
+  breadcrumb="SEO & Security"
+/>
+<SEOServices />
+    </div>
+  )
+}
+
+export default SeoPage

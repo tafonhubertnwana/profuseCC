@@ -16,12 +16,12 @@ export default function TopTechSection() {
         className="relative w-full md:w-1/2 flex justify-center"
       >
         <div className="relative w-[90%] md:w-[80%] rounded-full overflow-hidden">
-          <Image src="/assets/about3-.png" width={500} height={500} alt="Teamwork" className="rounded-full" />
+          <Image src="/assets/about3-.png" width={500} height={500} alt="Teamwork" className="" />
         </div>
-        <div className="absolute top-5 right-5 bg-white p-3 shadow-md rounded-md">
+        {/* <div className="absolute top-5 right-5 bg-white p-3 shadow-md rounded-md">
           <p className="text-lg font-bold">98%</p>
           <p className="text-sm text-gray-500">Business Goal</p>
-        </div>
+        </div> */}
       </motion.div>
       
       {/* Right Side - Content */}
@@ -32,12 +32,13 @@ export default function TopTechSection() {
         className="w-full md:w-1/2 mt-8 md:mt-0"
       >
         <p className="text-orange-600 font-semibold uppercase">Who We Are</p>
-        <h2 className="text-3xl md:text-4xl font-bold leading-tight mt-2">
+        <h2 className="text-2xl md:text-4xl font-bold leading-tight mt-2">
           Get Exclusive IT Solutions & Services With <span className="text-orange-600">ProfuseCC</span>
         </h2>
         <p className="text-gray-600 mt-4">
-          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
-        </p>
+        At ProfuseCC we use our passion for technology and understanding of business, to create unique and customized solutions. We help our partners navigate the ever-evolving landscape of digital tech innovation and offer solutions that align with their business. </p>
+        <p className="text-gray-600 mt-4">
+        We thrive on top-notch UI/UX designs and software development standards to create meaningful web products, mobile apps and custom software solutions. Each of these is crafted with love and passion.</p>
 
         <div className="mt-6 space-y-4">
           <div className="flex items-start space-x-4">
@@ -72,7 +73,7 @@ export default function TopTechSection() {
         <div className="mt-6 flex items-center space-x-4">
           <Image src="/assets/person-3.jpg" width={40} height={40} className=" w-12 h-12 object-cover rounded-full" alt="Kevin Martin" />
           <div>
-            <p className="font-bold">Kevin Martin</p>
+            <p className="font-bold">Isaac Tabeh</p>
             <p className="text-gray-500 text-sm">CEO & Founder</p>
           </div>
         </div>

@@ -5,6 +5,11 @@ import Services from "@/components/services";
 import WorkProcess from "@/components/workprocess";
 import ServiceCard from "@/components/serviceCard";
 import TopTechSection from "@/components/topTechSection";
+import TeamSection from "@/components/DedicatedTeam";
+import LogoCarousel from "@/components/LogoCarousel";
+import Testimonials from "@/components/testimonial";
+import BusinessDomains from "@/components/businessDomain";
+
 
 export default function Home() {
   return (
@@ -15,6 +20,11 @@ export default function Home() {
       <TopTechSection />
       <Services />
       <WorkProcess />
+      <BusinessDomains />
+      <TeamSection />
+   
+      <Testimonials />
+      <LogoCarousel />
     </div>
   );
 }

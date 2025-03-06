@@ -12,9 +12,9 @@ const steps = [
 export default function WorkProcess() {
   return (
     <div className="flex flex-col items-center text-center p-10">
-      <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="text-blue-600 font-semibold">WORK PROCESS</motion.p>
+      <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="text-orange-600 font-semibold">WORK PROCESS</motion.p>
       <motion.h2 initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} className="text-3xl font-bold mt-2">
-        Working Process For <span className="text-blue-600">Technology</span>
+        Working Process For <span className="text-orange-600">Technology</span>
       </motion.h2>
       
       <div className="flex flex-wrap justify-center items-center mt-10 gap-10">
@@ -41,7 +41,7 @@ export default function WorkProcess() {
                 height={75}
                 className="rounded-full"
               />
-              <span className="absolute -top-2 -right-2 bg-blue-600 text-white w-8 h-8 flex items-center justify-center rounded-full text-sm font-bold">{step.id}</span>
+              <span className="absolute -top-2 -right-2 bg-orange-600 text-white w-8 h-8 flex items-center justify-center rounded-full text-sm font-bold">{step.id}</span>
             </motion.div>
             <h3 className="font-bold text-lg mt-4">{step.title}</h3>
             <p className="text-gray-500 text-sm mt-2">We have the technology and IT expertise to develop.</p>

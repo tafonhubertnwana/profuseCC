@@ -30,9 +30,6 @@ const Footer = () => {
                 <FaInstagram size={24} />
               </Link>
               
-              <Link href="https://twitter.com" className="text-white hover:text-white">
-                <FaXTwitter  size={24} />
-              </Link>
               <Link href="https://linkedin.com" className="text-blue-300 hover:text-white">
                 <FaLinkedin size={24} />
               </Link>

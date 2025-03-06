@@ -4,6 +4,8 @@ import HeroSection from "@/components/herosection/hero";
 import ItSupportSection from "@/components/support";
 import ExperienceSection from '@/components/experienceSection';
 import TeamSection from "@/components/DedicatedTeam";
+import StatsSection from "@/components/statSection";
+import Testimonials from "@/components/testimonial";
 
 
 const AboutPage = () => {
@@ -19,6 +21,8 @@ const AboutPage = () => {
       <ExperienceSection />
       <ItSupportSection />
       <TeamSection />
+      <StatsSection />
+      <Testimonials />
     </div>
   );
 };
