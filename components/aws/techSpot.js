@@ -1,5 +1,6 @@
 // components/TechSpotlight.js
 import { motion } from 'framer-motion';
+import { MdArrowRight } from 'react-icons/md'; // Import the MdArrowRight icon
 
 const techData = [
   {
@@ -38,9 +39,12 @@ const TechSpotlight = () => {
             className="bg-blue-100 border border-blue-300 rounded-lg p-4"
           >
             <h3 className="text-xl font-semibold">{tech.category}</h3>
-            <ul className="list-disc pl-5">
+            <ul className="list-none pl-5">
               {tech.items.map((item) => (
-                <li key={item} className="text-gray-700">{item}</li>
+                <li key={item} className="text-gray-700 flex items-center">
+                  <MdArrowRight className="text-orange-500 mr-2" /> {/* Use MdArrowRight icon with orange color */}
+                  {item}
+                </li>
               ))}
             </ul>
           </motion.div>

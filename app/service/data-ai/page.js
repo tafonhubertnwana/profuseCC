@@ -20,6 +20,9 @@ const DataPage = () => {
         backgroundImage="/assets/ai-solutions-bg.webp"
         breadcrumb="Data & AI"
       />
+      <div className=''  style={{ backgroundImage: "url('/assets/service-bg.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
+
+      </div>
       <AIServiceSection />
       <FeatureCards />
       <AIExpertise />
