@@ -58,10 +58,10 @@ export default function CloudAgilitySection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
-              <span className="absolute top-[-25px] sm:top-[-20px] left-1/2 transform -translate-x-1/2 bg-white   p-3 rounded-full">
+              <span className="absolute top-[-30px] sm:top-[-35px] left-1/2 transform -translate-x-1/2 bg-white   p-3 rounded-full">
                 <Image src={feature.icon} alt="icon" width={60} height={60} />
               </span>
-              <h4 className="text-lg font-semibold mt-6">{feature.title}</h4>
+              <h4 className="text-lg font-semibold mt-10">{feature.title}</h4>
               <p className="text-gray-600 mt-2">{feature.description}</p>
             </motion.div>
           ))}
@@ -78,7 +78,7 @@ export default function CloudAgilitySection() {
       transition={{ duration: 0.5, delay: (index + 3) * 0.2 }}
     >
       {/* Image Wrapper with Background */}
-      <div className="absolute top-[-25px] sm:top-[-20px] left-1/2 transform -translate-x-1/2 bg-white p-3 rounded-full opacity-100">
+      <div className="absolute top-[-25px] sm:top-[-30px] left-1/2 transform -translate-x-1/2 bg-white p-3 rounded-full opacity-100">
         <Image src={feature.icon} alt="icon" width={60} height={60} />
       </div>
 
@@ -89,12 +89,15 @@ export default function CloudAgilitySection() {
 </div>
 
 
-        <motion.button
-          className="mt-8 bg-orange-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-orange-700 transition flex items-center justify-center mx-auto"
-          whileHover={{ scale: 1.05 }}
-        >
-          Talk to an Expert →
-        </motion.button>
+<motion.button
+  className="mt-8 bg-orange-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-orange-700 transition flex items-center justify-center mx-auto"
+  whileHover={{ scale: 1.05 }}
+  onClick={() => {
+    window.location.href = '/contact'; // Replace with your desired link
+  }}
+>
+  Talk to an Expert →
+</motion.button>
       </div>
     </section>
   );

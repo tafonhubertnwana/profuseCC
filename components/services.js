@@ -4,10 +4,34 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const services = [
-  { title: 'AWS Cloud Service', icon: '/assets/service-1.png', delay: 0.2, detail: 'Empower your business with our cutting-edge Cloud and DevOps solutions, driving efficiency & innovation for sustainable growth.' },
-  { title: 'Software Development', icon: '/assets/service-2.png', delay: 0.4, detail: 'We help our clients solve overarching business problems & elevate their operations through spot-on Web & App solutions.' },
-  { title: 'Data & AI', icon: '/assets/service-4.png', delay: 0.6, detail: 'Empower your business with our cutting-edge Cloud and DevOps solutions, driving efficiency & innovation for sustainable growth.' },
-  { title: 'SEO & Security', icon: '/assets/service-3.png', delay: 0.8, detail: 'Empower your business with our cutting-edge Cloud and DevOps solutions, driving efficiency & innovation for sustainable growth.'},
+  { 
+    title: 'AWS Cloud Service', 
+    icon: '/assets/service-1.png', 
+    delay: 0.2, 
+    detail: 'Empower your business with our cutting-edge Cloud and DevOps solutions, driving efficiency & innovation for sustainable growth.', 
+    link: '/service/aws-cloud' 
+  },
+  { 
+    title: 'Software Development', 
+    icon: '/assets/service-2.png', 
+    delay: 0.4, 
+    detail: 'We help our clients solve overarching business problems & elevate their operations through spot-on Web & App solutions.', 
+    link: '/service/software-development' 
+  },
+  { 
+    title: 'Generative AI', 
+    icon: '/assets/service-4.png', 
+    delay: 0.6, 
+    detail: 'Empower your business with our cutting-edge Cloud and DevOps solutions, driving efficiency & innovation for sustainable growth.', 
+    link: '/service/generative-ai' 
+  },
+  { 
+    title: 'Data & Analysis', 
+    icon: '/assets/service-3.png', 
+    delay: 0.8, 
+    detail: 'Empower your business with our cutting-edge Cloud and DevOps solutions, driving efficiency & innovation for sustainable growth.', 
+    link: '/service/data-analysis' 
+  },
 ];
 
 export default function Services() {
@@ -23,17 +47,19 @@ export default function Services() {
       ></div>
 
       <div className="max-w-6xl mx-auto text-center relative z-10">
-        <motion.div 
-          initial={{ opacity: 0, y: -20 }} 
-          animate={{ opacity: 1, y: 0 }} 
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="justify-center w-1/2 mx-auto"
+          className="justify-center w-full md:w-3/4 lg:w-1/2 mx-auto px-4 sm:px-6 lg:px-8 text-center"
         >
-          <p>SERVICE WE PROVIDE</p>
-          <h2 className='text-3xl font-bold mb-4'>
-            All Professional We’re Offering Best & IT Solutions & <span className="text-orange-500">Services</span>
+          <p className="text-sm sm:text-base mb-2">SERVICE WE PROVIDE</p>
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
+            All Professional We’re Offering Best  IT Solutions &{" "}
+            <span className="text-orange-500">Services</span>
           </h2>
         </motion.div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
           {services.map((service, index) => (
             <motion.div
@@ -43,6 +69,7 @@ export default function Services() {
               transition={{ duration: 0.8, delay: service.delay }}
               whileHover={{ scale: 1.05 }}
               className="bg-gray-800 p-6 rounded-lg shadow-lg flex items-center space-x-6 hover:bg-gray-700 transition-colors duration-300 cursor-pointer"
+              onClick={() => window.location.href = service.link} // Navigate to the link on click
             >
               {/* Icon Section - Left Side */}
               <div className="flex-shrink-0">
@@ -51,7 +78,7 @@ export default function Services() {
                   alt={service.title} 
                   width={75} 
                   height={75}
-                  className={service.title === 'Data & AI' ? 'filter-gray' : ''}
+                  className={service.title === 'Generative AI' ? 'filter-gray' : ''}
                 />
               </div>
               
@@ -61,11 +88,17 @@ export default function Services() {
                   {service.title}
                 </h3>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                 {service.detail}
+                  {service.detail}
                 </p>
                 
                 {/* Call-to-Action Button */}
-                <button className="mt-2 text-orange-500 font-semibold flex items-center gap-2 hover:text-orange-400 transition-colors duration-300">
+                <button 
+                  className="mt-2 text-orange-500 font-semibold flex items-center gap-2 hover:text-orange-400 transition-colors duration-300"
+                  onClick={(e) => {
+                    e.stopPropagation(); // Prevent the parent div's onClick from firing
+                    window.location.href = service.link;
+                  }}
+                >
                   READ MORE <span className="text-xl">&#187;</span>
                 </button>
               </div>

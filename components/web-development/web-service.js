@@ -68,31 +68,20 @@ const Services = () => {
     },
   ];
 
-  const settings = {
-    dots: true,
+  const sliderSettings
+  = {
+    dots: false,
     infinite: true,
-    speed: 500,
-    slidesToShow: 3,
+    speed: 600,
+    slidesToShow: 4,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-        },
-      },
-    ],
+      { breakpoint: 1024, settings: { slidesToShow: 2 } },
+      { breakpoint: 768, settings: { slidesToShow: 1 } },
+      { breakpoint: 640, settings: { slidesToShow: 1 } }
+    ]
   };
 
   return (
@@ -104,16 +93,18 @@ const Services = () => {
       </h2>
     </div>
     <div className="mt-10">
-      <Slider {...settings} className="gap-6"> {/* Add gap between slides */}
-        {services.map((service, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
-            className="relative border-2 gap-4 h-[500px] bg-white overflow-visible" // Increased height to ensure image visibility
-          >
-            <div className="p-10">
+        <motion.div
+          
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay:  0.2 }}
+          className="" // Increased height to ensure image visibility
+        >
+      <Slider {...sliderSettings} className=""> {/* Add gap between slides */}
+        {services.map((service) => (
+            <div key={service.id} className="px-3">
+              <div className='relative w-full border-2 gap-4 h-[450px] bg-white overflow-visible'>
+
               <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                 <Image
                   src={service.icon}
@@ -125,10 +116,11 @@ const Services = () => {
               </div>
               <h3 className="text-lg leading-6 font-medium text-gray-900 mt-12">{service.title}</h3>
               <p className="mt-2 text-base text-gray-500">{service.description}</p>
+              </div>
             </div>
-          </motion.div>
         ))}
       </Slider>
+        </motion.div>
     </div>
   </div>
 </div>

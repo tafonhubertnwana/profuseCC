@@ -18,12 +18,14 @@ const industries = [
 export default function BusinessDomains() {
   return (
     <div className="bg-orange-700 text-white py-16 px-6 text-center">
-      <h2 className="text-3xl font-bold mb-4">WE SUPPORT YOUR BUSINESS DOMAIN</h2>
-      <p className="max-w-2xl mx-auto mb-8 text-lg">
-        With more than 8 years of collaboration with different industries, we possess deep
-        expertise in the challenges each industry faces and know how to cope with them using innovations.
-        Here are the industries we serve:
-      </p>
+     <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
+  WE SUPPORT YOUR BUSINESS DOMAIN
+</h2>
+<p className="max-w-full sm:max-w-xl lg:max-w-2xl mx-auto mb-8 text-base sm:text-lg">
+  With more than 8 years of collaboration with different industries, we possess deep
+  expertise in the challenges each industry faces and know how to cope with them using innovations.
+  Here are the industries we serve:
+</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
         {industries.map((industry, index) => (
           <motion.div

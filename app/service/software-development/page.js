@@ -21,9 +21,7 @@ const WebDevelopment = () => {
           backgroundImage="/assets/web-dev-bg.webp"
           breadcrumb="Web Development"
         />
-        <div className='absolute top-1'>
-          <p>Lorem</p>
-        </div>
+        
         </div>
   <CustomSoftwareDevelopment />
   <Services />

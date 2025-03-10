@@ -4,6 +4,7 @@ import Navbar from '@/components/navbar'
 import DataServices from '@/components/seo/dataService';
 import SEOServices from '@/components/seo/seoService';
 import React from 'react'
+import DataAnalysis from '@/components/seo/dataAnalysis'
 
 const SeoPage = () => {
   return (
@@ -17,6 +18,7 @@ const SeoPage = () => {
 />
 <SEOServices />
 <DataServices />
+<DataAnalysis />
     </div>
   )
 }

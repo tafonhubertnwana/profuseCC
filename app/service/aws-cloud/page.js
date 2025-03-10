@@ -6,7 +6,7 @@ import AwsServices from '@/components/aws/aws-service';
 import TechnicalExpertise from '@/components/aws/awsExpertise';
 import HeroSection from '@/components/herosection/hero'
 import Navbar from '@/components/navbar'
-import TechStack from '@/components/techStack';
+
 import React from 'react'
 
 const CloudPage = () => {
@@ -25,7 +25,7 @@ AWS Cloud"
 <CloudAgilitySection />
 <AWSDevelopmentServices />
 <TechnicalExpertise />
-<TechStack />
+
     </div>
   )
 }

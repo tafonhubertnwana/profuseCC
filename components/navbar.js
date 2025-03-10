@@ -43,7 +43,7 @@ const Navbar = () => {
             <Link href="/">
               <Image src={logo} alt="logo" width={40} height={40} className="cursor-pointer" />
             </Link>
-            <div className="hidden md:flex space-x-6 ml-6">
+            <div className="hidden lg:flex space-x-6 ml-6">
               <Link
                 href="/"
                 className={`${
@@ -76,9 +76,9 @@ const Navbar = () => {
                   <div className="absolute mt-2 w-72 bg-white shadow-lg rounded-lg py-2">
                     {[
                       { name: "AWS Cloud Service", href: "/service/aws-cloud" },
-                      { name: "Web Development", href: "/service/web-development" },
-                      { name: "Data & AI", href: "/service/data-ai" },
-                      { name: "SEO & Security", href: "/service/seo-security" },
+                      { name: "Software Development", href: "/service/software-development" },
+                      { name: "Generative AI", href: "/service/generative-ai" },
+                      { name: "Data & Analysis", href: "/service/data-analysis" },
                     ].map((service, index) => (
                       <Link
                         key={index}
@@ -164,7 +164,7 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden lg:flex items-center space-x-6">
             <div className="flex space-x-4">
               <Link href="https://facebook.com" className={`${isScrolled ? "text-black" : "text-white"} hover:text-orange-500`}>
                 <FaFacebook size={24} />
@@ -187,7 +187,7 @@ const Navbar = () => {
           </div>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`${isScrolled ? "text-black" : "text-white"} md:hidden focus:outline-none`}
+            className={`${isScrolled ? "text-black" : "text-white"} lg:hidden focus:outline-none`}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -196,7 +196,7 @@ const Navbar = () => {
         </div>
         {/* Mobile Menu */}
         <div
-          className={`md:hidden fixed inset-y-0 left-0 w-80 bg-white transform ${
+          className={`lg:hidden fixed inset-y-0 left-0 w-80 bg-white transform ${
             isOpen ? "translate-x-0 " : "-translate-x-full"
           } transition-transform duration-300 ease-in-out z-50`}
         >
@@ -239,9 +239,9 @@ const Navbar = () => {
                 <div className="pl-4">
                   {[
                     { name: "AWS Cloud Service", href: "/service/aws-cloud" },
-                    { name: "Web Development", href: "/service/web-development" },
-                    { name: "Data & AI", href: "/service/data-ai" },
-                    { name: "SEO & Security", href: "/service/seo-security" },
+                    { name: "Software Development", href: "/service/software-development" },
+                    { name: "Generative AI", href: "/service/generative-ai" },
+                    { name: "Data & Analysis", href: "/service/data-science" },
                   ].map((service, index) => (
                     <Link
                       key={index}
@@ -326,7 +326,7 @@ const Navbar = () => {
               className={`w-full mt-4 bg-transparent border-2 border-orange-500 text-orange-500 px-4 py-2 overflow-hidden group transition-colors duration-300`}
             >
               <span className="relative z-10">WORK WITH US</span>
-              <span className="absolute inset-y-0 left-0 w-0 bg-orange-500 transition-all duration-500 group-hover:w-full"></span>
+              {/* <span className="absolute inset-y-0 left-0 w-0 bg-orange-500 transition-all duration-500 group-hover:w-full"></span> */}
             </button>
             {/* Add Social Links in Mobile Menu */}
             <div className="flex space-x-4 mt-4">
@@ -346,7 +346,7 @@ const Navbar = () => {
         {isOpen && (
           <div
             onClick={() => setIsOpen(false)}
-            className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
+            className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
           />
         )}
       </nav>
