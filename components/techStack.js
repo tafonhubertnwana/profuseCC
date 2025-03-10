@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { MdArrowRight } from 'react-icons/md';
+import Image from 'next/image';
 
 const TechStack = () => {
   const fadeIn = {
@@ -8,9 +9,9 @@ const TechStack = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-8">
+    <div className="max-w-6xl mx-auto p-6 md:p-8 lg:p-12">
       <motion.h1 
-        className="text-4xl font-bold mb-8"
+        className="text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-center"
         initial="hidden"
         animate="visible"
         variants={fadeIn}
@@ -19,13 +20,17 @@ const TechStack = () => {
       </motion.h1>
       <div>
         <motion.div 
-          className="grid grid-cols-3 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
           initial="hidden"
           animate="visible"
           variants={fadeIn}
         >
-          <div>
-            <h2 className="text-2xl font-semibold mb-4">AI tools</h2>
+          <div className='bg-white border-2 rounded-md p-6'>
+          <div className=' w-10 h-10 p-2 bg-orange-400/50' >
+
+<Image src='/assets/capsules.png' width={40} height={40} />
+</div>
+            <h2 className="text-xl md:text-2xl font-semibold mb-4">AI Tools</h2>
             <ul>
               <li className="flex items-center gap-2"><MdArrowRight className="text-orange-500" />SAP Business AI 4 SAP AI Core</li>
               <li className="flex items-center gap-2"><MdArrowRight className="text-orange-500" />LlamaIndex 4 LangChain</li>
@@ -34,8 +39,12 @@ const TechStack = () => {
             </ul>
           </div>
 
-          <div>
-            <h2 className="text-2xl font-semibold mb-4">Data Tools</h2>
+          <div className='bg-white border-2 rounded-md p-6'>
+            <div className=' w-10 h-10 p-2 bg-orange-400/50' >
+
+            <Image src='/assets/capsules.png' width={40} height={40} />
+            </div>
+            <h2 className="text-xl md:text-2xl font-semibold mb-4">Data Tools</h2>
             <ul>
               <li className="flex items-center gap-2"><MdArrowRight className="text-orange-500" />Databricks 4 Snowflake</li>
               <li className="flex items-center gap-2"><MdArrowRight className="text-orange-500" />Click House 4 Apache Airflow</li>
@@ -43,8 +52,12 @@ const TechStack = () => {
             </ul>
           </div>
 
-          <div>
-            <h2 className="text-2xl font-semibold mb-4">Cloud providers</h2>
+          <div className='bg-white border-2 rounded-md p-6'>
+          <div className=' w-10 h-10 p-2 bg-orange-400/50' >
+
+<Image src='/assets/app.png' width={40} height={40} />
+</div>
+            <h2 className="text-xl md:text-2xl font-semibold mb-4">Cloud Providers</h2>
             <ul>
               <li className="flex items-center gap-2"><MdArrowRight className="text-orange-500" />Microsoft Azure 4 AWS</li>
               <li className="flex items-center gap-2"><MdArrowRight className="text-orange-500" />Google Cloud Platform</li>

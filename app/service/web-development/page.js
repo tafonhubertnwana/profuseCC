@@ -6,22 +6,32 @@ import React from 'react'
 import ServicesSlider from '@/components/web-development/serviceSlide'
 import Services from '@/components/web-development/web-service';
 import TechStack from '@/components/techStack';
+import Solutions from '@/components/web-development/serviceSlide';
 
 const WebDevelopment = () => {
   return (
-    <div>
-      <Navbar />
-      <HeroSection
-  title="Web Development"
-  description="Building modern, responsive, and scalable web applications."
-  backgroundImage="/assets/web-dev-bg.webp"
-  breadcrumb="Web Development"
-/>
-<CustomSoftwareDevelopment />
-<Services />
-<ServicesSlider />
-<TechStack />
-    </div>
+    <>
+      <div>
+        <Navbar />
+        <div className=' relative'>
+
+        <HeroSection
+          title="Web Development"
+          description="Building modern, responsive, and scalable web applications."
+          backgroundImage="/assets/web-dev-bg.webp"
+          breadcrumb="Web Development"
+        />
+        <div className='absolute top-1'>
+          <p>Lorem</p>
+        </div>
+        </div>
+  <CustomSoftwareDevelopment />
+  <Services />
+  <ServicesSlider />
+ 
+
+      </div>
+    </>
   )
 }
 

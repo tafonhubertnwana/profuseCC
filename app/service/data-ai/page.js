@@ -26,7 +26,7 @@ const DataPage = () => {
       <AIServiceSection />
       <FeatureCards />
       <AIExpertise />
-      <Expertise />
+      
       <TechStack />
       <ServiceSection />
       

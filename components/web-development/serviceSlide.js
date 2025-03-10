@@ -1,108 +1,75 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { useState } from 'react';
-import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
-import Image from 'next/image';
+import { motion } from "framer-motion";
+import Image from "next/image";
 
-const services = [
+const solutions = [
   {
-    title: 'Cloud-based development',
+    title: "WEB PORTALS",
     description:
-      'This is a popular service methodology with our hybrid and remote workforce-based clients. All of the development capabilities are hosted in the cloud with supportive software for coding, design integration, and more.',
-    icon: '/assets/web-dev-1.png',
+      "Our experts create custom web portals that cater to your unique business requirements. With an engaging and user-friendly interface, our portals offer seamless navigation and intuitive user experiences. Whether you need an E-commerce platform, customer portal, or any other web-based solution, we have the expertise to deliver exceptional results that align with your specific needs and drive your business forward.",
+    image: "/assets/web-portals.webp",
   },
   {
-    title: 'Agile development',
+    title: "PWA",
     description:
-      'We break down your project into smaller digestible pieces that ensure rapid development. This clean feedback loop helps identify any defects or questions that need addressing before going to market.',
-    icon: '/assets/web-dev-1.png',
+      "LeverX specializes in cutting-edge Progressive Web App (PWA) development, seamlessly blending web and mobile capabilities. Our experience empowers businesses to enhance user engagement, increase conversions, and provide offline capabilities through the power of PWAs.",
+    image: "/assets/pwa.webp",
   },
   {
-    title: 'DevOps',
+    title: "SAAS PLATFORMS",
     description:
-      'Many of our business clients require custom website development services that meet the demands of both their IT and development teams. This approach allows us to bridge these teams and ensures a smooth deployment with the support already in place.',
-    icon: '/assets/web-dev-1.png',
+      "We create scalable Software as a Service (SaaS) platforms, enabling businesses to deliver powerful and flexible cloud-based solutions that can be accessed anytime, anywhere. From concept to deployment, we work closely with our clients to tailor SaaS platforms that meet their unique requirements and drive business growth.",
+    image: "/assets/saas-platform.webp",
   },
   {
-    title: 'DevOps',
+    title: "ENTERPRISE-LEVEL SOLUTIONS",
     description:
-      'Many of our business clients require custom website development services that meet the demands of both their IT and development teams. This approach allows us to bridge these teams and ensures a smooth deployment with the support already in place.',
-    icon: '/assets/web-dev-1.png',
-  },
-  {
-    title: 'DevOps',
-    description:
-      'Many of our business clients require custom website development services that meet the demands of both their IT and development teams. This approach allows us to bridge these teams and ensures a smooth deployment with the support already in place.',
-    icon: '/assets/web-dev-1.png',
-  },
-
-  {
-    title: 'DevOps',
-    description:
-      'Many of our business clients require custom website development services that meet the demands of both their IT and development teams. This approach allows us to bridge these teams and ensures a smooth deployment with the support already in place.',
-    icon: '/assets/web-dev-1.png',
+      "With a proven track record of serving enterprises, we possess a deep understanding of the challenges they encounter, particularly in managing and leveraging data effectively. By partnering with us, enterprises gain access to our expertise and benefit from tailored solutions that propel their data-driven initiatives forward.",
+    image: "/assets/enterprise-level-solutions.webp",
   },
 ];
 
-export default function ServicesSlider() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+export default function Solutions() {
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % services.length);
+  const fadeIn = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.5 } },
   };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + services.length) % services.length);
-  };
-
   return (
-    <section className='mx-auto max-w-6xl '>
-
-      <div className="  ">
-        <div className="text-center mb-6 ">
-          <h2 className="text-2xl font-bold">Proven to Work Product Development Methods</h2>
-          <p className="text-gray-600 mt-2">We are a versatile custom software development firm willing to adopt any methodology used in the industry. In those rare cases where one of these systems does not rise to the occasion of your project, we will communicate a new process aligned with your brand and project goals.</p>
-        </div>
-        <div className="relative grid grid-cols-3 gap-6 w-full px-20 my-10 ">
-          {services.map((service, index) => (
-            <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: service.delay }}
-            whileHover={{ scale: 1.05 }}
-              className='p-6 rounded-lg shadow-lg bg-white border '
-            >
-              <div className="flex items-center space-x-4">
-                <Image 
-                                  src={service.icon} 
-                                  alt={service.title} 
-                                  width={75} 
-                                  height={75}
-                                
-                                />
-              </div>
-                <h3 className="text-xl font-semibold">{service.title}</h3>
-              <p className="mt-2 text-gray-600">{service.description}</p>
-            </motion.div>
-          ))}
-        </div>
-        {/* <div className="flex space-x-4 mt-6">
-          <button
-            onClick={prevSlide}
-            className="p-3 bg-gradient-to-r from-pink-500 to-orange-400 text-white rounded-full shadow-md"
-          >
-            <FiArrowLeft size={20} />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="p-3 bg-gradient-to-r from-pink-500 to-orange-400 text-white rounded-full shadow-md"
-          >
-            <FiArrowRight size={20} />
-          </button>
-        </div> */}
-      </div>
-    </section>
+    <>
+    
+      <section className="py-16 px-6 max-w-6xl mx-auto">
+    <h2 className="text-3xl font-bold text-center mb-10">
+      SOLUTIONS WE DELIVER
+    </h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {solutions.map((solution, index) => (
+        <motion.div
+          key={index}
+          className="relative rounded-lg overflow-hidden shadow-lg flex justify-between cursor-pointer"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)" }}
+          transition={{ duration: 0.5, delay: index * 0.2 }}
+          viewport={{ once: true }}
+        >
+          <Image
+            src={solution.image}
+            alt={solution.title}
+            width={500}
+            height={100}
+            className="object-cover"
+          />
+          <div className="relative bg-black bg-opacity-60 p-6 text-white flex flex-col">
+            <h3 className="text-lg font-bold">{solution.title}</h3>
+            <p className="text-sm mt-2">{solution.description}</p>
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  </section>
+  
+    </>
   );
 }

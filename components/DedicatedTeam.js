@@ -70,39 +70,40 @@ export default function TeamSection() {
             >
               {teamMembers.map((member) => (
                 <SwiperSlide key={member.id}>
-                  <Link href='/team/team-detail' >
-                    <div className="bg-white shadow-lg overflow-hidden cursor-pointer">
-                      <div className="relative h-[450px]">
+                  <div className="bg-white shadow-lg overflow-hidden cursor-pointer">
+                    <div className="relative h-[450px]">
+                      <Link href="/">
                         <Image
-                          src={member.image}
+                          src="/assets/person-3.jpg"
                           alt={member.name}
-                          layout="fill"
-                          objectFit="cover"
+                          width={0} 
+  height={0} 
+  sizes="100vw"
                           className="transition-transform duration-300"
                         />
-                        <div className="absolute group transform hover:shadow-xl group-hover:scale-110 bottom-0 w-full bg-orange-400/60 p-4 text-center transition-all duration-300 hover:bg-black/40">
-                          <h5 className="text-lg font-semibold text-white">{member.name}</h5>
-                          <p className="text-gray-300">{member.role}</p>
-                          <div className="mt-2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-                            <div className="flex space-x-4 justify-center">
-                              <Link href="#" className="text-gray-300 hover:text-blue-500 transition-colors" aria-label="Facebook">
-                                <FaFacebookF size={20} />
-                              </Link>
-                              <Link href="#" className="text-gray-300 hover:text-blue-400 transition-colors" aria-label="Twitter">
-                                <FaTwitter size={20} />
-                              </Link>
-                              <Link href="#" className="text-gray-300 hover:text-blue-600 transition-colors" aria-label="LinkedIn">
-                                <FaLinkedinIn size={20} />
-                              </Link>
-                              <Link href="#" className="text-gray-300 hover:text-orange-500 transition-colors" aria-label="RSS Feed">
-                                <FaRss size={20} />
-                              </Link>
-                            </div>
+                      </Link>
+                      <div className="absolute group transform hover:shadow-xl group-hover:scale-110 bottom-0 w-full bg-orange-400/60 p-4 text-center transition-all duration-300 hover:bg-black/40">
+                        <h5 className="text-lg font-semibold text-white">{member.name}</h5>
+                        <p className="text-gray-300">{member.role}</p>
+                        <div className="mt-2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                          <div className="flex space-x-4 justify-center">
+                            <Link href="#" className="text-gray-300 hover:text-blue-500 transition-colors" aria-label="Facebook">
+                              <FaFacebookF size={20} />
+                            </Link>
+                            <Link href="#" className="text-gray-300 hover:text-blue-400 transition-colors" aria-label="Twitter">
+                              <FaTwitter size={20} />
+                            </Link>
+                            <Link href="#" className="text-gray-300 hover:text-blue-600 transition-colors" aria-label="LinkedIn">
+                              <FaLinkedinIn size={20} />
+                            </Link>
+                            <Link href="#" className="text-gray-300 hover:text-orange-500 transition-colors" aria-label="RSS Feed">
+                              <FaRss size={20} />
+                            </Link>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -113,39 +114,40 @@ export default function TeamSection() {
         {showAllMembers && (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
             {teamMembers.map((member) => (
-              <Link href='/team/team-detail' key={member.id} >
-                <div className="bg-white shadow-lg overflow-hidden cursor-pointer">
-                  <div className="relative h-[450px]">
+              <div className="bg-white shadow-lg overflow-hidden cursor-pointer" key={member.id}>
+                <div className="relative h-[450px]">
+                  <Link href="/">
                     <Image
-                      src={member.image}
+                      src="/assets/person-3.jpg"
                       alt={member.name}
-                      layout="fill"
-                      objectFit="cover"
+                      width={0} 
+  height={0} 
+  sizes="100vw"
                       className="transition-transform duration-300"
                     />
-                    <div className="absolute group transform hover:shadow-xl group-hover:scale-110 bottom-0 w-full bg-orange-400/60 p-4 text-center transition-all duration-300 hover:bg-black/40">
-                      <h5 className="text-lg font-semibold text-white">{member.name}</h5>
-                      <p className="text-gray-300">{member.role}</p>
-                      <div className="mt-2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-                        <div className="flex space-x-4 justify-center">
-                          <Link href="#" className="text-gray-300 hover:text-blue-500 transition-colors" aria-label="Facebook">
-                            <FaFacebookF size={20} />
-                          </Link>
-                          <Link href="#" className="text-gray-300 hover:text-blue-400 transition-colors" aria-label="Twitter">
-                            <FaTwitter size={20} />
-                          </Link>
-                          <Link href="#" className="text-gray-300 hover:text-blue-600 transition-colors" aria-label="LinkedIn">
-                            <FaLinkedinIn size={20} />
-                          </Link>
-                          <Link href="#" className="text-gray-300 hover:text-orange-500 transition-colors" aria-label="RSS Feed">
-                            <FaRss size={20} />
-                          </Link>
-                        </div>
+                  </Link>
+                  <div className="absolute group transform hover:shadow-xl group-hover:scale-110 bottom-0 w-full bg-orange-400/60 p-4 text-center transition-all duration-300 hover:bg-black/40">
+                    <h5 className="text-lg font-semibold text-white">{member.name}</h5>
+                    <p className="text-gray-300">{member.role}</p>
+                    <div className="mt-2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                      <div className="flex space-x-4 justify-center">
+                        <Link href="#" className="text-gray-300 hover:text-blue-500 transition-colors" aria-label="Facebook">
+                          <FaFacebookF size={20} />
+                        </Link>
+                        <Link href="#" className="text-gray-300 hover:text-blue-400 transition-colors" aria-label="Twitter">
+                          <FaTwitter size={20} />
+                        </Link>
+                        <Link href="#" className="text-gray-300 hover:text-blue-600 transition-colors" aria-label="LinkedIn">
+                          <FaLinkedinIn size={20} />
+                        </Link>
+                        <Link href="#" className="text-gray-300 hover:text-orange-500 transition-colors" aria-label="RSS Feed">
+                          <FaRss size={20} />
+                        </Link>
                       </div>
                     </div>
                   </div>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         )}
