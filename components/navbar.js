@@ -354,7 +354,7 @@ const Navbar = () => {
       </nav>
       <div>
 
-      <ChatAndScrollButton>
+      <ChatAndScrollButton />
       </div>
     </>
   );

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { FaFacebook, FaXTwitter, FaLinkedin, FaArrowUp } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
-const ChatAndScrollButton = ({ logo }) => {
+const ChatAndScrollButton = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
 
   const scrollToTop = () => {
@@ -28,7 +28,7 @@ const ChatAndScrollButton = ({ logo }) => {
       {isChatOpen && (
         <div className="fixed bottom-20 left-4 bg-white p-4 rounded-lg shadow-lg w-64 z-50">
           <div className="text-center">
-            <Image src={logo} alt="logo" width={40} height={40} className="cursor-pointer items-center" />
+            <Image src='assets/logo.png' alt="logo" width={40} height={40} className="cursor-pointer items-center" />
             <h3 className="font-semibold text-lg">Customer Service</h3>
             <p className="text-sm text-gray-600">Contact us via:</p>
             <div className="flex justify-center space-x-4 mt-2">
