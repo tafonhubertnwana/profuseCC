@@ -16,10 +16,10 @@ const DataPage = () => {
     <div>
       <Navbar />
       <HeroSection
-        title="AI Solutions Implementation"
-        description="Future-proof your business with AI-driven digital transformation."
+        title="GENERATIVE AI"
+        description="We know how generative AI can help your business succeed."
         backgroundImage="/assets/ai-solutions-bg.webp"
-        breadcrumb="Data & AI"
+        breadcrumb="Generative AI"
       />
       <div className=''  style={{ backgroundImage: "url('/assets/service-bg.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
 

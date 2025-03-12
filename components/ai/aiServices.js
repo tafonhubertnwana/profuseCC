@@ -14,9 +14,9 @@ const AIServiceSection = () => {
     <section className='bg-gradient-to-r from-gray-900 to-gray-800 text-white py-10'>
 
       <div className=" max-w-6xl mx-auto  p-10">
-        <h2 className="text-3xl font-bold mb-4">AI and Machine Learning Services</h2>
+        <h2 className="text-3xl font-bold mb-4">Generative AI Services</h2>
         <p className="mb-8">
-          Tap into our proven track record of incorporating AI and Machine Learning technologies to deliver tangible business value – creating a competitive advantage, growing revenues, and increasing operational efficiency.
+          Tap into our proven track record of incorporating Generative AI technologies to deliver tangible business value – creating a competitive advantage, growing revenues, and increasing operational efficiency.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (

@@ -55,7 +55,7 @@ const Footer = () => {
         <span className="mr-2">
           <FaRegArrowAltCircleRight className='text-orange-300' />
         </span>
-        Web Development
+        Software Development
       </Link>
     </li>
     <li className="mb-2 group">
@@ -63,7 +63,7 @@ const Footer = () => {
         <span className="mr-2">
           <FaRegArrowAltCircleRight className='text-orange-300' />
         </span>
-        Data & AI
+        Generative AI
       </Link>
     </li>
     <li className="mb-2 group">
@@ -71,7 +71,7 @@ const Footer = () => {
         <span className="mr-2">
           <FaRegArrowAltCircleRight className='text-orange-300' />
         </span>
-        SEO & Security
+        Data Analysis
       </Link>
     </li>
   </ul>

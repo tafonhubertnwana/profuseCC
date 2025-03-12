@@ -2,9 +2,9 @@
 import HeroSection from '@/components/herosection/hero'
 import Navbar from '@/components/navbar'
 import DataServices from '@/components/seo/dataService';
-import SEOServices from '@/components/seo/seoService';
 import React from 'react'
 import DataAnalysis from '@/components/seo/dataAnalysis'
+import DataAndAnalyticsServices from '@/components/seo/datasection';
 
 const SeoPage = () => {
   return (
@@ -16,7 +16,7 @@ const SeoPage = () => {
   backgroundImage="/assets/breadcrumb-bg.png"
   breadcrumb="SEO & Security"
 />
-<SEOServices />
+<DataAndAnalyticsServices/>
 <DataServices />
 <DataAnalysis />
     </div>

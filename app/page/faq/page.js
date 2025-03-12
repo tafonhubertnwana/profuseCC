@@ -4,6 +4,7 @@ import ITServices from "@/components/faqsection";
 import LogoCarousel from "@/components/LogoCarousel";
 import HeroSection from "@/components/herosection/hero";
 import ConsultationForm from "@/components/consultingForm";
+import AustinMap from "@/components/AustinMap";
 
 const FAQPage = () => {
   return (
@@ -18,7 +19,7 @@ const FAQPage = () => {
       <ITServices />
       <LogoCarousel />
       <ConsultationForm />
-      
+      <AustinMap />
     </div>
   );
 };

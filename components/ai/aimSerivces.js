@@ -1,7 +1,9 @@
 // components/FeatureCards.js
 
 import { motion } from 'framer-motion';
-import { VscGraphLine } from "react-icons/vsc";
+import { VscGraphLine, VscPersonAdd } from "react-icons/vsc";
+import { TbAutomaticGearboxFilled } from "react-icons/tb";
+import { GrOptimize } from "react-icons/gr";
 
 const features = [
   {
@@ -11,15 +13,15 @@ const features = [
   },
   {
     title: "Automate",
-    description: "Streamline processes to increase productivity with intelligent automation.", icon: <VscGraphLine size={40}/>
+    description: "Streamline processes to increase productivity with intelligent automation.", icon: <TbAutomaticGearboxFilled size={40}/>
   },
   {
     title: "Optimize",
-    description: "Leverage data insights to enhance decision-making and maximize business outcomes.", icon: <VscGraphLine size={40}/>
+    description: "Leverage data insights to enhance decision-making and maximize business outcomes.", icon: <GrOptimize size={40}/>
   },
   {
     title: "Personalize",
-    description: "Deliver tailored experiences that meet individual customer needs and preferences.", icon: <VscGraphLine size={40}/>
+    description: "Deliver tailored experiences that meet individual customer needs and preferences.", icon: <VscPersonAdd size={40}/>
   },
 ];
 

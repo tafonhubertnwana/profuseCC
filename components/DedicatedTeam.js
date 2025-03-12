@@ -67,7 +67,7 @@ export default function TeamSection() {
                 <div key={member.id} className="px-3">
                   <div className="bg-white shadow-lg overflow-hidden cursor-pointer">
                     <div className="relative h-[450px]">
-                      <Link href="/page/team">
+                      <Link href={`/team/team-detail/${member.id}`}>
                         <Image src={member.image} alt={member.name} width={300} height={450} className="w-full h-full object-cover" />
                       </Link>
                       <div className="absolute group transform hover:shadow-xl group-hover:scale-110 bottom-0 w-full bg-orange-400/60 p-4 text-center transition-all duration-300 hover:bg-black/40">
@@ -98,7 +98,7 @@ export default function TeamSection() {
             {teamMembers.map((member) => (
               <div className="bg-white shadow-lg overflow-hidden cursor-pointer" key={member.id}>
                 <div className="relative h-[450px]">
-                  <Link href="/page/team">
+                  <Link href={`/team/${member.id}`}>
                     <Image src={member.image} alt={member.name} width={300} height={450} className="w-full h-full object-cover" />
                   </Link>
                   <div className="absolute group transform hover:shadow-xl group-hover:scale-110 bottom-0 w-full bg-orange-400/60 p-4 text-center transition-all duration-300 hover:bg-black/40">
