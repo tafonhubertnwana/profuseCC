@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const slides = [
   {
     id: 1,
-    image: "/assets/slide1.png",
+    image: "/assets/home-2025-bg.webp",
     h2: "Helping you Build inner Resilience.",
     p: "Pellentesque odio aliquam vitae amet, elementum at urna facilisis purus, integer nam libero pharetra viverra et dolor tellus, eget commodo tellus tempus vitae.",
     button: "Let's work together",

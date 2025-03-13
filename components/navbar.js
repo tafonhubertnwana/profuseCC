@@ -8,6 +8,7 @@ import { FaFacebook, FaLinkedin, FaArrowUp, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import ChatAndScrollButton from "@/components/ChatAndScrollButton";
+import ConsultationFormModal from "./consultingForm";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +17,11 @@ const Navbar = () => {
   const [pageOpen, setPageOpen] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
   const pathname = usePathname(); // Get the current route
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   
 
   useEffect(() => {
@@ -178,14 +184,19 @@ const Navbar = () => {
                 <FaLinkedin size={24} />
               </Link>
             </div>
-            <button
-              className={`relative bg-transparent border-2 ${
-                isScrolled ? "border-black text-black" : "border-white text-white"
-              } px-4 py-2 overflow-hidden group transition-colors duration-300`}
-            >
-              <span className="relative z-10">WORK WITH US</span>
-              <span className="absolute inset-y-0 left-0 w-0 bg-orange-500 transition-all duration-500 group-hover:w-full"></span>
-            </button>
+            <div>
+              <button
+                className={`relative bg-transparent border-2 ${
+                  isScrolled ? "border-black text-black" : "border-white text-white"
+                } px-4 py-2 overflow-hidden group transition-colors duration-300`}
+                onClick={openModal}
+              >
+                <span className="relative z-10">WORK WITH US</span>
+                <span className="absolute inset-y-0 left-0 w-0 bg-orange-500 transition-all duration-500 group-hover:w-full"></span>
+              </button>
+
+              <ConsultationFormModal isOpen={isModalOpen} onClose={closeModal} />
+            </div>
           </div>
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -243,7 +254,7 @@ const Navbar = () => {
                     { name: "AWS Cloud Service", href: "/service/aws-cloud" },
                     { name: "Software Development", href: "/service/software-development" },
                     { name: "Generative AI", href: "/service/generative-ai" },
-                    { name: "Data & Analysis", href: "/service/data-science" },
+                    { name: "Data & Analysis", href: "/service/data-analysis" },
                   ].map((service, index) => (
                     <Link
                       key={index}
@@ -324,12 +335,19 @@ const Navbar = () => {
               Contact
             </Link>
             {/* Add "WORK WITH US" Button in Mobile Menu */}
-            <button
-              className={`w-full mt-4 bg-transparent border-2 border-orange-500 text-orange-500 px-4 py-2 overflow-hidden group transition-colors duration-300`}
-            >
-              <span className="relative z-10">WORK WITH US</span>
-              {/* <span className="absolute inset-y-0 left-0 w-0 bg-orange-500 transition-all duration-500 group-hover:w-full"></span> */}
-            </button>
+            <div>
+      <button
+        className={`relative bg-transparent border-2 ${
+          isScrolled ? "border-black text-black" : "border-white text-white"
+        } px-4 py-2 overflow-hidden group transition-colors duration-300`}
+        onClick={openModal}
+      >
+        <span className="relative z-10">WORK WITH US</span>
+        <span className="absolute inset-y-0 left-0 w-0 bg-orange-500 transition-all duration-500 group-hover:w-full"></span>
+      </button>
+
+      <ConsultationFormModal isOpen={isModalOpen} onClose={closeModal} />
+    </div>
             {/* Add Social Links in Mobile Menu */}
             <div className="flex space-x-4 mt-4">
               <Link href="https://facebook.com" className="text-gray-800 hover:text-orange-500">

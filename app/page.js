@@ -9,6 +9,8 @@ import TeamSection from "@/components/DedicatedTeam";
 import LogoCarousel from "@/components/LogoCarousel";
 import Testimonials from "@/components/testimonial";
 import BusinessDomains from "@/components/businessDomain";
+import FeaturesSection from "@/components/featureChoose";
+import StatsSection from "@/components/statSection";
 
 
 export default function Home() {
@@ -16,13 +18,13 @@ export default function Home() {
     <div>
       <Navbar />
       <HeroSection />
-      <ServiceCard /> 
+      <FeaturesSection />
+   <StatsSection />
       <TopTechSection />
       <Services />
       <WorkProcess />
       <BusinessDomains />
       <TeamSection />
-   
       <Testimonials />
       <LogoCarousel />
     </div>

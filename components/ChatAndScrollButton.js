@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaFacebook, FaXTwitter, FaLinkedin, FaArrowUp } from 'react-icons/fa';
+import { FaFacebook, FaXTwitter, FaLinkedin, FaArrowUp, FaInstagramSquare } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const ChatAndScrollButton = () => {
@@ -36,7 +36,7 @@ const ChatAndScrollButton = () => {
                 <FaFacebook size={24} />
               </Link>
               <Link href="https://twitter.com" className="text-black hover:text-gray-800">
-                <FaXTwitter size={24} />
+                <FaInstagramSquare size={24} />
               </Link>
               <Link href="https://linkedin.com" className="text-blue-500 hover:text-blue-700">
                 <FaLinkedin size={24} />

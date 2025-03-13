@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 export default function DataAnalysis() {
   const industries = [
@@ -84,6 +85,8 @@ export default function DataAnalysis() {
     },
   ];
 
+  const [selectedIndustry, setSelectedIndustry] = useState(industries[0]);
+
   return (
     <div className="max-w-6xl bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <motion.div
@@ -100,22 +103,63 @@ export default function DataAnalysis() {
         </p>
       </motion.div>
 
+      {/* Desktop Layout */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        className="hidden md:flex"
       >
-        {industries.map((industry, index) => (
-          <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">{industry.name}</h2>
-            <ul className="list-disc list-inside text-gray-600">
-              {industry.services.map((service, idx) => (
-                <li key={idx}>{service}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        <div className="w-1/4 bg-white rounded-lg shadow-lg p-6">
+          <ul className="space-y-4">
+            {industries.map((industry, index) => (
+              <li
+                key={index}
+                className={`cursor-pointer text-lg font-semibold ${
+                  selectedIndustry.name === industry.name ? 'text-blue-600' : 'text-gray-800'
+                }`}
+                onClick={() => setSelectedIndustry(industry)}
+              >
+                {industry.name}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="w-3/4 bg-white rounded-lg shadow-lg p-6 ml-8">
+          <h2 className="text-xl font-semibold text-gray-800 mb-4">{selectedIndustry.name}</h2>
+          <ul className="list-disc list-inside text-gray-600">
+            {selectedIndustry.services.map((service, idx) => (
+              <li key={idx}>{service}</li>
+            ))}
+          </ul>
+        </div>
+      </motion.div>
+
+      {/* Mobile Layout */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="md:hidden"
+      >
+        <select
+          className="w-full p-3 bg-white rounded-lg shadow-lg mb-6"
+          onChange={(e) => setSelectedIndustry(industries[e.target.value])}
+        >
+          {industries.map((industry, index) => (
+            <option key={index} value={index}>
+              {industry.name}
+            </option>
+          ))}
+        </select>
+        <div className="bg-white rounded-lg shadow-lg p-6">
+          <h2 className="text-xl font-semibold text-gray-800 mb-4">{selectedIndustry.name}</h2>
+          <ul className="list-disc list-inside text-gray-600">
+            {selectedIndustry.services.map((service, idx) => (
+              <li key={idx}>{service}</li>
+            ))}
+          </ul>
+        </div>
       </motion.div>
     </div>
   );

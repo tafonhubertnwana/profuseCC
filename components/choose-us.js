@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function ITServicesSection() {
   return (
@@ -39,10 +40,12 @@ export default function ITServicesSection() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <img
-            src="assets/choose-us-thumb.png"
-            alt="IT Services Team"
+          <Image
+            src="/assets/choose-us-thumb.png"
+            alt="choose us thumb"
             className="shadow-lg"
+            width={500}
+            height={400}
           />
         </motion.div>
       </div>
