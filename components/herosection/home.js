@@ -29,7 +29,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="relative h-[400px] sm:h-[350px] md:h-[400px] lg:h-[550px] xl:h-[700px] overflow-hidden">
+    <div className="relative h-[400px] sm:h-[400px] md:h-[450px] lg:h-[550px] xl:h-[700px] overflow-hidden">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
