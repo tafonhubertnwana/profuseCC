@@ -19,7 +19,7 @@ export default function BusinessDomains() {
   return (
 
     <div className="bg-orange-700 text-white py-16 px-6 ">
-      <div className='max-w-6xl w-full mx-auto'>
+      <div className='container xl:max-w-6xl w-full mx-auto'>
         <div className='text-left'>
 
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4">

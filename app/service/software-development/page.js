@@ -7,6 +7,7 @@ import ServicesSlider from '@/components/web-development/serviceSlide'
 import Services from '@/components/web-development/web-service';
 import TechStack from '@/components/techStack';
 import Solutions from '@/components/web-development/serviceSlide';
+import TechnologyStack from '@/components/web-development/web-tech';
 
 const WebDevelopment = () => {
   return (
@@ -26,6 +27,7 @@ const WebDevelopment = () => {
   <CustomSoftwareDevelopment />
   <Services />
   <ServicesSlider />
+  <TechnologyStack />
  
 
       </div>

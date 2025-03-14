@@ -27,11 +27,11 @@ const features = [
 
 const FeatureCards = () => {
   return (
-    <section className='max-w-6xl mx-auto'>
+    <section className='container xl:max-w-6xl mx-auto'>
        
       <div className="flex flex-col items-center justify-center p-6 space-y-4">
-        <h2 className="text-2xl font-bold text-center">Don’t Get Left Behind</h2>
-        <p className="text-center text-gray-600">
+        <h2 className="text-2xl font-bold text-center text-white">Don’t Get Left Behind</h2>
+        <p className="text-center text-gray-100">
           AI is rapidly transforming every industry, creating opportunities for businesses that stay at the forefront of technology to leap ahead of the competition.
         </p>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
@@ -43,10 +43,10 @@ const FeatureCards = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
             >
-              <span className='py-5'>
+              <span className='py-5 text-orange-400'>
                   {feature.icon}
               </span>
-              <h3 className="text-xl font-semibold">{feature.title}</h3>
+              <h3 className="text-xl font-semibold text-orange-400">{feature.title}</h3>
               <p className="mt-2 text-gray-500">{feature.description}</p>
             </motion.div>
           ))}

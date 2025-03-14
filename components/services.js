@@ -46,7 +46,7 @@ export default function Services() {
         aria-hidden="true"
       ></div>
 
-      <div className="max-w-6xl mx-auto text-center relative z-10">
+      <div className="container xl:max-w-6xl mx-auto text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}

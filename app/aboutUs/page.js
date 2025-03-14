@@ -6,6 +6,7 @@ import ExperienceSection from '@/components/experienceSection';
 import TeamSection from "@/components/DedicatedTeam";
 import StatsSection from "@/components/statSection";
 import Testimonials from "@/components/testimonial";
+import AustinMap from "@/components/AustinMap";
 
 
 const AboutPage = () => {
@@ -19,10 +20,12 @@ const AboutPage = () => {
   breadcrumb="About" />
       {/* Add the rest of your contact page content here */}
       <ExperienceSection />
+      
       <ItSupportSection />
-      <TeamSection />
       <StatsSection />
+      <TeamSection />
       <Testimonials />
+      <AustinMap />
     </div>
   );
 };

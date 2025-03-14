@@ -3,37 +3,38 @@
 import { motion } from 'framer-motion';
 import { FaDatabase, FaHeadset, FaUserFriends, FaBookOpen } from 'react-icons/fa';
 
-const features = [
+const features =[
   {
     id: 1,
     icon: <FaDatabase size={40} className="text-black" />, 
     title: "Data Security",
-    description: "Monotonectally synergize granular to front markets task state data security semper maecenas ferform."
+    description: "Protect sensitive information with robust encryption, secure access controls, and proactive threat detection."
   },
   {
     id: 2,
     icon: <FaBookOpen size={40} className="text-black" />, 
     title: "IT Services",
-    description: "Monotonectally synergize granular to front markets task state data security semper maecenas ferform."
+    description: "Empowering businesses with cutting-edge IT solutions, from cloud computing to network infrastructure management."
   },
   {
     id: 3,
     icon: <FaHeadset size={40} className="text-black" />, 
-    title: "Supports",
-    description: "Monotonectally synergize granular to front markets task state data security semper maecenas ferform."
+    title: "Support",
+    description: "Round-the-clock technical assistance to ensure seamless operations and quick resolution of IT challenges."
   },
   {
     id: 4,
     icon: <FaUserFriends size={40} className="text-black" />, 
-    title: "Peoples",
-    description: "Monotonectally synergize granular to front markets task state data security semper maecenas ferform."
+    title: "People",
+    description: "Building strong collaborations and fostering innovation through a team of skilled professionals."
   }
-];
+]
+
 
 export default function FeaturesSection() {
   return (
     <div className="bg-gray-100 py-16 px-8">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="container xl:max-w-6xl mx-auto text-center">
         <motion.div
           initial={{ width: 0 }}
           animate={{ width: '100%' }}

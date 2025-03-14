@@ -1,12 +1,14 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+
+
 const features = [
   {
     icon: '/assets/thunderstorm.png',
     title: "Supercharge Your Innovation",
     description:
-      "Get your new features and app updates to market faster. The Kanda team will also improve your service level agreements (SLAs) and minimize downtime with reduced Recovery Time Objectives (RTOs) and Recovery Point Objectives (RPOs).",
+      "Get your new features and app updates to market faster. The ProfuseCC team will also improve your service level agreements (SLAs) and minimize downtime with reduced Recovery Time Objectives (RTOs) and Recovery Point Objectives (RPOs).",
   },
   {
     icon: "/assets/balance-scale-left.png",
@@ -18,7 +20,7 @@ const features = [
     icon: "/assets/screen-shield.png",
     title: "Uncompromising Security",
     description:
-      "Rest assured your data is always protected with our end-to-end privacy and security solutions. Kanda adheres to the strictest industry standards and ensures IP protection, the integrity and confidentiality of your information.",
+      "Rest assured your data is always protected with our end-to-end privacy and security solutions. ProfuseCC adheres to the strictest industry standards and ensures IP protection, the integrity and confidentiality of your information.",
   },
   {
     icon: "/assets/trust-alt.png",
@@ -38,8 +40,10 @@ export default function CloudAgilitySection() {
   const firstThreeFeatures = features.slice(0, 3);
   const lastTwoFeatures = features.slice(3);
 
+    
+
   return (
-    <section className="mx-auto max-w-6xl">
+    <section className="mx-auto container xl:max-w-6xl">
       <div className="py-12 px-6 text-center">
         <h2 className="text-3xl font-bold text-orange-600">
           Unlock Cloud Agility and Security
@@ -53,7 +57,7 @@ export default function CloudAgilitySection() {
           {firstThreeFeatures.map((feature, index) => (
             <motion.div
               key={index}
-              className="relative bg-white shadow-md rounded-lg p-6 border flex flex-col items-center"
+              className="relative bg-white shadow-md rounded-lg p-6 border flex flex-col "
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
@@ -89,15 +93,19 @@ export default function CloudAgilitySection() {
 </div>
 
 
+
 <motion.button
   className="mt-8 bg-orange-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-orange-700 transition flex items-center justify-center mx-auto"
   whileHover={{ scale: 1.05 }}
+  
   onClick={() => {
     window.location.href = '/contact'; // Replace with your desired link
   }}
 >
   Talk to an Expert →
 </motion.button>
+
+
       </div>
     </section>
   );

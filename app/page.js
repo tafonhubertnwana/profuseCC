@@ -11,6 +11,7 @@ import Testimonials from "@/components/testimonial";
 import BusinessDomains from "@/components/businessDomain";
 import FeaturesSection from "@/components/featureChoose";
 import StatsSection from "@/components/statSection";
+import AustinMap from "@/components/AustinMap";
 
 
 export default function Home() {
@@ -22,11 +23,12 @@ export default function Home() {
    <StatsSection />
       <TopTechSection />
       <Services />
-      <WorkProcess />
+      {/* <WorkProcess /> */}
       <BusinessDomains />
       <TeamSection />
       <Testimonials />
       <LogoCarousel />
+      <AustinMap/>
     </div>
   );
 }

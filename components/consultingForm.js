@@ -8,6 +8,9 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState(null);
 
+  // const openModal = () => setIsModalOpen(true);
+  // const closeModal = () => setIsModalOpen(false)
+
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
@@ -57,24 +60,24 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
       aria-modal="true"
       aria-labelledby="modal-title"
     >
-      <div className="bg-white p-6 md:p-8 shadow-lg rounded-lg max-w-2xl w-full relative mx-auto">
-        <div className="flex items-center mb-6">
+      <div className="bg-white p-4 sm:p-6 md:p-8 shadow-lg rounded-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl w-full relative mx-auto max-h-[90vh] overflow-y-auto">
+        <div className="flex flex-col sm:flex-row justify-between items-center mb-4 sm:mb-6">
           <Image
             src="/assets/logo.png"
             alt="Company Logo"
             width={50}
             height={50}
-            className="mr-4"
+            className="mb-4 sm:mb-0 sm:mr-4"
             priority
           />
-          <h2 id="modal-title" className="text-2xl font-bold text-gray-800">
+          <h2 id="modal-title" className="text-xl sm:text-2xl uppercase font-bold text-gray-800 text-center sm:text-left">
             Client Consultation Form
           </h2>
         </div>
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="firstName" className="block text-sm sm:text-base font-medium text-gray-900">
                 First Name
               </label>
               <input
@@ -82,12 +85,12 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
                 id="firstName"
                 name="firstName"
                 placeholder="First Name"
-                className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mt-1 block w-full p-2 border border-orange-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
                 required
               />
             </div>
             <div>
-              <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="lastName" className="block text-sm sm:text-base font-medium text-gray-900">
                 Last Name
               </label>
               <input
@@ -95,14 +98,14 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
                 id="lastName"
                 name="lastName"
                 placeholder="Last Name"
-                className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mt-1 block w-full p-2 border border-orange-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
                 required
               />
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="phoneNumber" className="block text-sm sm:text-base font-medium text-gray-900">
                 Phone Number
               </label>
               <input
@@ -110,12 +113,12 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
                 id="phoneNumber"
                 name="phoneNumber"
                 placeholder="Phone Number"
-                className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mt-1 block w-full p-2 border border-orange-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
                 required
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="email" className="block text-sm sm:text-base font-medium text-gray-900">
                 Email
               </label>
               <input
@@ -123,13 +126,13 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
                 id="email"
                 name="email"
                 placeholder="Email"
-                className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mt-1 block w-full p-2 border border-orange-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
                 required
               />
             </div>
           </div>
           <div>
-            <label htmlFor="company" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="company" className="block text-sm sm:text-base font-medium text-gray-900">
               Company or Organization Name
             </label>
             <input
@@ -137,59 +140,59 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
               id="company"
               name="company"
               placeholder="Company or Organization Name"
-              className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="mt-1 block w-full p-2 border border-orange-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
             />
           </div>
           <div>
-            <label htmlFor="interest" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="interest" className="block text-sm sm:text-base font-medium text-gray-900">
               Area of Interest
             </label>
             <select
               id="interest"
               name="interest"
-              className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="mt-1 block w-full p-2 border border-orange-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
             >
               <option>AWS cloud Service</option>
               <option>Software Development</option>
-              <option>generative AI</option>
+              <option>Generative AI</option>
               <option>Data and Analysis</option>
             </select>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="date" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="date" className="block text-sm sm:text-base font-medium text-gray-900">
                 Date
               </label>
               <input
                 type="date"
                 id="date"
                 name="date"
-                className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mt-1 block w-full p-2 border border-orange-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
                 required
               />
             </div>
             <div>
-              <label htmlFor="time" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="time" className="block text-sm sm:text-base font-medium text-gray-900">
                 Time
               </label>
               <input
                 type="time"
                 id="time"
                 name="time"
-                className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mt-1 block w-full p-2 border border-orange-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
                 required
               />
             </div>
           </div>
           <div>
-            <label htmlFor="comments" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="comments" className="block text-sm sm:text-base font-medium text-gray-900">
               Additional Information/Comments
             </label>
             <textarea
               id="comments"
               name="comments"
               placeholder="Additional Information/Comments"
-              className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="mt-1 block w-full p-2 border border-orange-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
               rows="4"
             ></textarea>
           </div>
@@ -198,22 +201,22 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
               {error}
             </div>
           )}
-          <div className="flex justify-end space-x-4">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              type="button"
-              onClick={onClose}
-              className="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
-            >
-              Close
-            </motion.button>
+          <div className="flex flex-col sm:flex-row justify-end space-y-4 sm:space-y-0 sm:space-x-4">
+          <motion.button
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  type="button"
+  onClick={onClose} // This should close the modal
+  className="px-4 py-2 bg-gray-300 text-gray-900 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
+>
+  Close
+</motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               type="submit"
               disabled={isSubmitting}
-              className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="px-4 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
             >
               {isSubmitting ? 'Submitting...' : 'Submit'}
             </motion.button>

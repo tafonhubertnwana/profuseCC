@@ -13,7 +13,7 @@ export default function ITServices() {
   };
 
   return (
-    <div className="max-w-6xl my-10 mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="container xl:max-w-6xl my-10 mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div>
           <h4 className="text-orange-600 text-sm font-semibold">IT Support For Business</h4>

@@ -68,62 +68,59 @@ const Services = () => {
     },
   ];
 
-  const sliderSettings
-  = {
-    dots: false,
+  const sliderSettings = {
+    dots: true,
     infinite: true,
     speed: 600,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
+    arrows: true,
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 768, settings: { slidesToShow: 1 } },
-      { breakpoint: 640, settings: { slidesToShow: 1 } }
+      { breakpoint: 1024, settings: { slidesToShow: 2, arrows: false } },
+      { breakpoint: 768, settings: { slidesToShow: 2, arrows: false } },
+      { breakpoint: 640, settings: { slidesToShow: 1, arrows: false } }
     ]
   };
 
   return (
     <div className="py-12 bg-white">
-  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="">
-      <h2 className="text-3xl text-orange-600 font-semibold tracking-wide uppercase">
-        WEB DEVELOPMENT SERVICES ON OFFER
-      </h2>
+      <div className="container xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="">
+          <h2 className="text-3xl text-orange-600 font-semibold tracking-wide uppercase">
+            WEB DEVELOPMENT SERVICES ON OFFER
+          </h2>
+        </div>
+        <div className="mt-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <Slider {...sliderSettings} className="slick-slider">
+              {services.map((service, index) => (
+                <div key={index} className="px-2 pt-10">
+                  <div className="relative w-full border-2 gap-4 h-[450px] bg-white overflow-visible p-6 shadow-lg">
+                    <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
+                      <Image
+                        src={service.icon}
+                        alt="Service Icon"
+                        width={80}
+                        height={80}
+                        className="bg-orange-400 p-4 object-contain "
+                      />
+                    </div>
+                    <h3 className="text-lg leading-6 font-medium text-gray-900 mt-12">{service.title}</h3>
+                    <p className="mt-2 text-base text-gray-500">{service.description}</p>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </motion.div>
+        </div>
+      </div>
     </div>
-    <div className="mt-10">
-        <motion.div
-          
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay:  0.2 }}
-          className="" // Increased height to ensure image visibility
-        >
-      <Slider {...sliderSettings} className=""> {/* Add gap between slides */}
-        {services.map((service) => (
-            <div key={service.id} className="px-3">
-              <div className='relative w-full border-2 gap-4 h-[450px] bg-white overflow-visible'>
-
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
-                <Image
-                  src={service.icon}
-                  alt="Service Icon"
-                  width={80} // Increased width for better visibility
-                  height={80} // Increased height for better visibility
-                  className="bg-orange-300/50 p-4 object-contain" // Added rounded-full for a circular look
-                />
-              </div>
-              <h3 className="text-lg leading-6 font-medium text-gray-900 mt-12">{service.title}</h3>
-              <p className="mt-2 text-base text-gray-500">{service.description}</p>
-              </div>
-            </div>
-        ))}
-      </Slider>
-        </motion.div>
-    </div>
-  </div>
-</div>
   );
 };
 

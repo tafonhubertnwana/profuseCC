@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function TopTechSection() {
   return (
-    <section className='mx-auto container'>
+    <section className='mx-auto container xl:container '>
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-4 md:px-20 py-12">
     {/* Left Side - Image and Overlay */}
     <motion.div 

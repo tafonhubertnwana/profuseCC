@@ -17,7 +17,7 @@ const HeroSection = ({ title, description, backgroundImage, breadcrumb }) => {
         style={{ backgroundImage: `url('${backgroundImage}')` }}
       >
         {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        {/* <div className="absolute inset-0 "></div> */}
 
         {/* Content Container */}
         <div className="absolute inset-0 flex flex-col justify-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 pt-10 md:pt-20">
@@ -54,6 +54,8 @@ const HeroSection = ({ title, description, backgroundImage, breadcrumb }) => {
             <Image src="/assets/badge-1.png" alt="badge" width={60} height={60} className="sm:w-[80px] sm:h-[80px] md:w-[100px] md:h-[100px]" />
             <Image src="/assets/badge-2.png" alt="badge" width={60} height={60} className="sm:w-[80px] sm:h-[80px] md:w-[100px] md:h-[100px]" />
             <Image src="/assets/badge-3.png" alt="badge" width={60} height={60} className="sm:w-[80px] sm:h-[80px] md:w-[100px] md:h-[100px]" />
+            <Image src="/assets/aws-solution.jpg" alt="badge" width={60} height={60} className="sm:w-[80px] sm:h-[80px] md:w-[100px] md:h-[100px]" />
+
           </motion.div>
 
           {/* Breadcrumb */}

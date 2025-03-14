@@ -81,6 +81,8 @@ export default function Testimonials() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    centerMode: true,
+  centerPadding: '0',
     autoplaySpeed: 3000,
     pauseOnHover: true,
     responsive: [
@@ -101,7 +103,7 @@ export default function Testimonials() {
 
   return (
     <div className="bg-gray-100 py-10">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="container xl:max-w-6xl mx-auto px-4">
         <div className="flex justify-between">
           <h1 className="text-4xl font-bold text-center mb-10">Client Testimonials</h1>
 
@@ -109,57 +111,56 @@ export default function Testimonials() {
           <div className="text-center mb-10">
             <button
               onClick={() => setShowModal(true)}
-              className="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition duration-300"
+              className="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition duration-300"
             >
               Add Testimonial
             </button>
           </div>
         </div>
 
-        {/* Testimonials Carousel */}
         <Slider {...carouselSettings}>
-          {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="px-2 max-w-3xl mx-auto">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                className="h-56 p-8 rounded-xl shadow-xl relative overflow-hidden bg-white"
-              >
-                <FaQuoteLeft className="text-4xl opacity-30 absolute top-4 left-4" />
-                <div className="flex items-center mb-6">
-                  <div className="w-14 h-14 rounded-full border-4 shadow-md overflow-hidden">
-                    <Image
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      width={56}
-                      height={56}
-                      className="object-cover"
-                      onError={() => setImageError(true)}
-                    />
-                  </div>
-                  <div className="ml-4">
-                    <h2 className="text-xl font-semibold">{testimonial.name}</h2>
-                    <div className="flex mt-1 space-x-1">
-                      {[...Array(5)].map((_, i) => (
-                        <span
-                          key={i}
-                          className={`text-xl ${
-                            i < testimonial.rating ? "text-yellow-300" : "text-gray-400"
-                          }`}
-                        >
-                          ★
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <p className="text-lg italic">{testimonial.review}</p>
-                <FaQuoteRight className="text-4xl opacity-30 absolute bottom-4 right-4" />
-              </motion.div>
+  {testimonials.map((testimonial) => (
+    <div key={testimonial.id} className="px-2 max-w-3xl mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        className="h-56 p-8 rounded-xl shadow-xl relative overflow-hidden bg-white"
+      >
+        <FaQuoteLeft className="text-4xl opacity-30 absolute top-4 left-4" />
+        <div className="flex items-center mb-6">
+          <div className="w-14 h-14 rounded-full border-4 shadow-md overflow-hidden relative" style={{ top: '-50%' }}>
+            <Image
+              src={testimonial.image}
+              alt={testimonial.name}
+              width={56}
+              height={56}
+              className="object-cover"
+              onError={() => setImageError(true)}
+            />
+          </div>
+          <div className="ml-4">
+            <h2 className="text-xl font-semibold">{testimonial.name}</h2>
+            <div className="flex mt-1 space-x-1">
+              {[...Array(5)].map((_, i) => (
+                <span
+                  key={i}
+                  className={`text-xl ${
+                    i < testimonial.rating ? "text-yellow-300" : "text-gray-400"
+                  }`}
+                >
+                  ★
+                </span>
+              ))}
             </div>
-          ))}
-        </Slider>
+          </div>
+        </div>
+        <p className="text-lg italic">{testimonial.review}</p>
+        <FaQuoteRight className="text-4xl opacity-30 absolute bottom-4 right-4" />
+      </motion.div>
+    </div>
+  ))}
+</Slider>
 
         {/* Modal for Adding Testimonial */}
         <AnimatePresence>
@@ -236,7 +237,7 @@ export default function Testimonials() {
           </div>
           <button
             type="submit"
-            className="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition duration-300"
+            className="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition duration-300"
           >
             Submit
           </button>

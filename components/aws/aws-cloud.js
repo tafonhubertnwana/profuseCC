@@ -46,7 +46,7 @@ const CloudServices = () => {
   return (
     <>
      <div className="bg-blue-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+      <div className="container xl:max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Image Section */}
           <motion.div

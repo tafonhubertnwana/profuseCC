@@ -12,8 +12,8 @@ const StatsSection = () => {
   return (
     <section className="bg-gray-100 py-12 px-6">
       {/* Heading and Description */}
-      <div className="max-w-6xl mx-auto text-center">
-        <div className="grid grid-cols-2 gap-10">
+      <div className="container xl:max-w-6xl mx-auto text-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
           <motion.div>
 

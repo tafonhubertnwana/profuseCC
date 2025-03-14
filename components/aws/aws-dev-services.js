@@ -17,7 +17,7 @@ const AWSDevelopmentServices = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mx-auto max-w-6xl p-6 md:p-10"
+          className="mx-auto container xl:max-w-6xl p-6 md:p-10"
         >
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-center text-orange-400 mb-6 sm:mb-8">
             AWS Development Services

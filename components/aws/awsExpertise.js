@@ -74,11 +74,11 @@ const TechnicalExpertise = () => {
 
   return (
     <section className="bg-gray-800 py-10 px-5">
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="container xl:max-w-6xl mx-auto text-center">
         <motion.h2 className="text-3xl font-bold text-orange-500 inline-block px-5 py-2 rounded" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>Technical Expertise</motion.h2>
         <motion.p className="mt-4 text-white text-lg" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3, duration: 0.5 }}>We offer expertise across AWS technologies.</motion.p>
       </div>
-      <div className="max-w-5xl mx-auto pt-10">
+      <div className="container xl:max-w-6xl mx-auto pt-10">
         <div className="md:grid md:grid-cols-2 gap-8 flex flex-col">
           <div className="space-y-3 text-left hidden md:block">
             {ITEMS.map((item, index) => (

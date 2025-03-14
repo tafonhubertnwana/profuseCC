@@ -1,12 +1,19 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import ConsultationFormModal from "../consultingForm";
+import { useState } from "react";
 
 export default function AwsServices() {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+    
+      const openModal = () => setIsModalOpen(true);
+      const closeModal = () => setIsModalOpen(false);
   return (
     <>
       
       <div className="bg-gradient-to-b from-[#0F1C2E] to-[#1B2C44] text-white p-4 sm:p-8">
-        <div className="max-w-5xl mx-auto">
+        <div className="container xl:max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div>
               <motion.h1 
@@ -44,14 +51,18 @@ export default function AwsServices() {
                 With over eight years as an AWS trusted services provider, ProfuseCC reduces time to market and
                 ensures that client cloud initiatives adhere to the best practices set by AWS.
               </motion.p>
+              <div onClick={openModal}>
 
-              <motion.button 
-                className="mt-6 bg-orange-400 text-black px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-semibold flex items-center space-x-2 hover:bg-orange-500 transition"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Talk to AWS Experts →
-              </motion.button>
+
+                <motion.button 
+                  className="mt-6 bg-orange-400 text-black px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-semibold flex items-center space-x-2 hover:bg-orange-500 transition"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Talk to AWS Experts →
+                </motion.button>
+                <ConsultationFormModal isOpen={isModalOpen} onClose={closeModal} />
+              </div>
             </motion.div>
             <div className="flex justify-center items-center">
               <motion.div 

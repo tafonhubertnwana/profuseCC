@@ -5,7 +5,7 @@ export default function MissionSection() {
   return (
     <section className="bg-orange-200/25 py-10">
       {/* Mission Section */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2  items-center">
           {/* Image Section (Background Image) */}
           <motion.div

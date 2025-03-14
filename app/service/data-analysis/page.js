@@ -13,12 +13,13 @@ const SeoPage = () => {
       <HeroSection
   title="SEO & Security"
   description="Optimizing your online presence while ensuring top-notch security."
-  backgroundImage="/assets/breadcrumb-bg.png"
+  backgroundImage="/assets/SAP-Build-Code-bg.webp"
   breadcrumb="SEO & Security"
 />
 <DataAndAnalyticsServices/>
 <DataServices />
 <DataAnalysis />
+
     </div>
   )
 }

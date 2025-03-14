@@ -19,7 +19,7 @@ const locations = [
 
 export default function CountryCards() {
   return (
-    <div className="container mx-auto py-10 mt-10 flex justify-center">
+    <div className="container xl:max-w-6xl mx-auto py-10 mt-10 flex justify-center">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full px-4">
         {locations.map((location, index) => (
           <motion.div

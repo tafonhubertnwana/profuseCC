@@ -27,7 +27,7 @@ const services = [
 export default function ServiceCard() {
   return (
     <div className="relative bg-orange-100 py-12">
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="container xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {services.map((service, index) => (
           <motion.div

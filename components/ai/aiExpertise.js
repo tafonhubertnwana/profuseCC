@@ -9,21 +9,21 @@ import { RiSettings3Line } from 'react-icons/ri';
 export default function AIExpertise() {
   return (
     <section className="px-6 py-16 bg-gray-50">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="container xl:max-w-4xl mx-auto text-center">
         <h1 className="text-4xl font-bold text-gray-800 leading-tight">
           <span className="relative">
-            <span className="bg-blue-600 text-white px-2 py-1 rounded-md">
-              AI and Machine
+            <span className="bg-orange-400 text-white px-2 py-1 rounded-md">
+              Generative AI
             </span>
           </span>{" "}
           Learning Expertise:
         </h1>
-        <h2 className="text-3xl text-teal-600 font-semibold mt-2">
+        <h2 className="text-3xl text-orange-400 font-semibold mt-2">
           From Generative to Predictive and Everything in Between
         </h2>
         <p className="text-gray-600 mt-4">
           With a deep pool of resources around the globe, we are ready to
-          provide the skills, scale, and speed to deliver your AI and Machine
+          provide the skills, scale, and speed to deliver your Generative AI
           Learning project on time and on budget.
         </p>
       </div>
@@ -38,7 +38,7 @@ export default function AIExpertise() {
             transition={{ duration: 0.5, delay: index * 0.2 }}
             viewport={{ once: true }}
           >
-            <feature.icon className="w-10 h-10 text-teal-600" />
+            <feature.icon className="w-24 h-24 text-orange-400" />
             <div>
               <h3 className="text-lg font-semibold text-gray-800">
                 {feature.title}

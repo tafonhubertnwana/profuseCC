@@ -10,7 +10,7 @@ const fadeIn = {
 const techCategories = [
   {
     title: 'AI Tools',
-    image: '/assets/capsules.png',
+    image: '/assets/lightbulb-setting.png',
     items: [
       'SAP Business AI → SAP AI Core',
       'LlamaIndex → LangChain',
@@ -20,7 +20,7 @@ const techCategories = [
   },
   {
     title: 'Data Tools',
-    image: '/assets/capsules.png',
+    image: '/assets/api.png',
     items: [
       'Databricks → Snowflake',
       'ClickHouse → Apache Airflow',
@@ -29,7 +29,7 @@ const techCategories = [
   },
   {
     title: 'Cloud Providers',
-    image: '/assets/app.png',
+    image: '/assets/system-cloud.png',
     items: [
       'Microsoft Azure → AWS',
       'Google Cloud Platform',
@@ -38,8 +38,8 @@ const techCategories = [
 ];
 
 const TechCard = ({ title, image, items }) => (
-  <div className='bg-white border-1 rounded-md shadow-lg p-6'>
-    <div className='w-24 h-24 bg-orange-200/25 rounded-md flex items-center mb-4 justify-center'>
+  <div className='bg-white border-2 rounded-md shadow-lg p-6'>
+    <div className='w-24 h-24 bg-orange-200 rounded-md flex items-center mb-4 justify-center'>
       <Image src={image} width={50} height={50} alt={title} />
     </div>
     <h2 className='text-xl md:text-2xl font-semibold mb-4'>{title}</h2>

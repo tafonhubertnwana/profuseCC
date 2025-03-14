@@ -72,7 +72,7 @@ export default function GenerativeAISlider() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="max-w-6xl mx-auto"
+      className="container xl:max-w-6xl mx-auto"
     >
       <h1 className="text-4xl font-bold text-left text-gray-900 mb-8">
         OUR GENERATIVE AI SERVICES
@@ -88,7 +88,7 @@ export default function GenerativeAISlider() {
           >
         <Slider {...settings} className=""> {/* Add gap between slides */}
           {services.map((service) => (
-            <div  key={service.id} className="relative w-full border-2 gap-10 h-[550px] bg-white">
+            <div  key={service.id} className="relative container xl:max-w-6xl border-2 gap-10 h-[550px] bg-white">
 
               <Image
                 src={service.image}
