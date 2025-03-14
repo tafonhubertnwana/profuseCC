@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import Image from "next/image";
 
 const LogoCarousel = () => {
   const logos = [
@@ -43,10 +44,12 @@ const LogoCarousel = () => {
           {logos.map((logo, index) => (
             <SwiperSlide key={index}>
               <div className="flex items-center justify-center group">
-                <img
+                <Image
                   src={logo}
                   alt={`Logo ${index + 1}`}
-                  className="w-32 h-32 object-contain filter grayscale transition-all duration-300 group-hover:grayscale-0"
+                  width={50}
+                  height={50}
+                  className="w-20 h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 object-contain filter grayscale transition-all duration-300 group-hover:grayscale-0"
                 />
               </div>
             </SwiperSlide>

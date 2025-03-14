@@ -336,17 +336,17 @@ const Navbar = () => {
             </Link>
             {/* Add "WORK WITH US" Button in Mobile Menu */}
             <div>
-      <button
+            <button
         className={`relative bg-transparent border-2 ${
           isScrolled ? "border-black text-black" : "border-white text-white"
         } px-4 py-2 overflow-hidden group transition-colors duration-300`}
-        onClick={openModal}
+      
       >
         <span className="relative z-10">WORK WITH US</span>
         <span className="absolute inset-y-0 left-0 w-0 bg-orange-500 transition-all duration-500 group-hover:w-full"></span>
       </button>
 
-      <ConsultationFormModal isOpen={isModalOpen} onClose={closeModal} />
+     
     </div>
             {/* Add Social Links in Mobile Menu */}
             <div className="flex space-x-4 mt-4">
