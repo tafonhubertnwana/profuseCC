@@ -22,8 +22,8 @@ const Footer = () => {
               <h2 className="text-xl font-semibold">ProfuseCC</h2>
             </div>
             <p className="text-gray-400">
-              Your tagline goes here. A short description of your company.
-            </p>
+  ProfuseCC is a leading provider of innovative solutions designed to streamline your business operations. With a focus on efficiency and customer satisfaction, we deliver cutting-edge tools and services to help your business thrive in a competitive market.
+</p>
             <div className="flex space-x-4 mt-4">
               <Link href="https://facebook.com" className="text-blue-500 hover:text-white">
                 <FaFacebook size={24} />

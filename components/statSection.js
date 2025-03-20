@@ -34,7 +34,7 @@ const StatsSection = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.6 }}
             >
-              ProfuseCC is a global system integrator and a top-tier SAP consultancy
+              ProfuseCC is a global system integrator and a top-tier TECH consultancy
               dedicated to delivering professional, customer-centric solutions and
               services. Founded in 2003 on the principles of technological
               excellence and personalized service, ProfuseCC has established itself as

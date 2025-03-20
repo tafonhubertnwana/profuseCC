@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ItSupportSection() {
   return (
-    <section className="max-w-6xl mx-auto py-10">
+    <section className="max-w-6xl mx-auto py-10 px-4">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
     {/* Left Section */}
     <div className="w-full flex flex-col space-y-6">

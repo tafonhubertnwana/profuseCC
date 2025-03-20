@@ -3,13 +3,15 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { toast } from "react-hot-toast"; 
+import axios from "axios";
 
 const ConsultationFormModal = ({ isOpen, onClose }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState(null);
+  const [isSuccess, setIsSuccess] = useState(false);
 
-  // const openModal = () => setIsModalOpen(true);
-  // const closeModal = () => setIsModalOpen(false)
+
 
   useEffect(() => {
     if (isOpen) {
@@ -25,26 +27,28 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
     e.preventDefault();
     setIsSubmitting(true);
     setError(null);
-
+  
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
-
+  
     try {
-      const res = await fetch('/api/consultation', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
-
-      if (!res.ok) {
-        throw new Error('Failed to submit form. Please try again.');
+      const res = await axios.post("/api/consultation", data);
+  
+      if (res.status !== 200) {
+        throw new Error("Failed to submit form. Please try again.");
       }
-
-      alert('Form submitted successfully!');
-      onClose();
+  
+      setIsSuccess(true);
+      toast.success("Consultation request sent successfully!");
+  
+      setTimeout(() => {
+        onClose();
+        setIsSuccess(false);
+      }, 3000);
     } catch (error) {
-      console.error('Error submitting form:', error);
-      setError(error.message);
+      console.error("Error submitting form:", error);
+      setError(error.response?.data?.message || "Error submitting form.");
+      toast.error("Error sending consultation request!");
     } finally {
       setIsSubmitting(false);
     }
@@ -74,6 +78,11 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
             Client Consultation Form
           </h2>
         </div>
+        { isSuccess ? (
+          <div className="text-center text-green-500">
+            <p>Consultation request sent successfully!</p>
+          </div>
+        ) : (
         <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
@@ -197,31 +206,32 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
             ></textarea>
           </div>
           {error && (
-            <div className="text-red-500 text-sm text-center">
-              {error}
+              <div className="text-red-500 text-sm text-center">
+                {error}
+              </div>
+            )}
+            <div className="flex flex-col sm:flex-row justify-end space-y-4 sm:space-y-0 sm:space-x-4">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                type="button"
+                onClick={onClose}
+                className="px-4 py-2 bg-gray-300 text-gray-900 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
+              >
+                Close
+              </motion.button>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                type="submit"
+                disabled={isSubmitting}
+                className="px-4 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              >
+                {isSubmitting ? 'Submitting...' : 'Submit'}
+              </motion.button>
             </div>
-          )}
-          <div className="flex flex-col sm:flex-row justify-end space-y-4 sm:space-y-0 sm:space-x-4">
-          <motion.button
-  whileHover={{ scale: 1.05 }}
-  whileTap={{ scale: 0.95 }}
-  type="button"
-  onClick={onClose} // This should close the modal
-  className="px-4 py-2 bg-gray-300 text-gray-900 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
->
-  Close
-</motion.button>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              type="submit"
-              disabled={isSubmitting}
-              className="px-4 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
-            >
-              {isSubmitting ? 'Submitting...' : 'Submit'}
-            </motion.button>
-          </div>
-        </form>
+          </form>
+        )}
       </div>
     </motion.div>
   );
