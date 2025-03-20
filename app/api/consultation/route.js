@@ -26,17 +26,19 @@ export async function POST(req) {
 
     // 3️ Setup Nodemailer Transport
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      host: process.env.EMAIL_HOST,
+      port: process.env.EMAIL_PORT,
+      secure: process.env.EMAIL_SECURE === 'true', // 'false' for port 587
       auth: {
-        user: process.env.EMAIL_USER, // Company Email (e.g., info@profusecc.com)
-        pass: process.env.EMAIL_PASS, // App Password
+        user: process.env.EMAIL_AUTH_USER,
+        pass: process.env.EMAIL_AUTH_PASS,
       },
     });
 
     // 4️ Send email to company
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: "info@profusecc.com",
+      to: "tafonsoftwarespecialist@gmail.com",
       subject: "New Consultation Request",
       text: `
         Name: ${firstName} ${lastName}
