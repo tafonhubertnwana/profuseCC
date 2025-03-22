@@ -39,7 +39,7 @@ export default function ServiceSection() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl font-bold text-center text-orange-400"
+          className="text-4xl font-bold text-center text-red-500"
         >
           AI solutions for today’s needs <br /> and tomorrow’s vision
         </motion.h1>

@@ -18,7 +18,7 @@ const industries = [
 export default function BusinessDomains() {
   return (
 
-    <div className="bg-orange-700 text-white py-16 px-6 ">
+    <div className="bg-red-700 text-white py-16 px-6 ">
       <div className='container xl:max-w-6xl w-full mx-auto'>
         <div className='text-left'>
 
@@ -38,7 +38,7 @@ export default function BusinessDomains() {
             key={index}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-orange-600 p-4 rounded-lg flex items-center gap-4 shadow-md"
+            className="bg-red-600 p-4 rounded-lg flex items-center gap-4 shadow-md"
           >
             <span className="text-2xl ">
               <Image src={industry.icon} alt="logo"  width={40} height={40} />

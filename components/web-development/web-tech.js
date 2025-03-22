@@ -39,7 +39,7 @@ const TechnologyStack = () => {
           transition={{ duration: 0.5 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h1 className="text-4xl font-bold text-orange-400 mb-6">
+          <h1 className="text-4xl font-bold text-red-500 mb-6">
             TECHNOLOGY STACK
           </h1>
           <p className="text-lg text-gray-100 mb-8">
@@ -60,7 +60,7 @@ const TechnologyStack = () => {
                 <li
                   key={index}
                   className={`cursor-pointer text-lg font-semibold ${
-                    selectedSection.name === section.name ? 'text-orange-600' : 'text-gray-800'
+                    selectedSection.name === section.name ? 'text-red-500' : 'text-gray-800'
                   }`}
                   onClick={() => setSelectedSection(section)}
                 >

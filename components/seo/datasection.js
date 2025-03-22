@@ -23,7 +23,7 @@ const DataAndAnalyticsServices = () => {
           <p className="text-gray-600 text-lg mb-6">
             Imagine a constant flow of data-driven insights guiding you toward smarter decisions, greater business agility, and, ultimately, competitive advantage. With Kanda’s full-cycle data and analytics services, you can monetize your data, break data silos, and unlock the full potential of your data goldmine. Backed by deep domain understanding, a solid grasp of modern data technologies, and advanced analytics skills, we can help you take your data narrative to the next level.
           </p>
-          <button className="bg-orange-600 text-white px-6 py-3 rounded-lg hover:bg-orange-700 transition duration-300">
+          <button className="bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition duration-300">
             Talk to an Expert
           </button>
         </div>

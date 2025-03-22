@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
+import ConsultationFormModal from "../consultingForm";
 import { FaRocket, FaDatabase, FaLightbulb } from "react-icons/fa";
+import { useState } from "react";
 
 const AWSDevelopmentServices = () => {
+   const [isModalOpen, setIsModalOpen] = useState(false);
+      
+        const openModal = () => setIsModalOpen(true);
+        const closeModal = () => setIsModalOpen(false);
   return (
     <>
       <div
@@ -19,7 +25,7 @@ const AWSDevelopmentServices = () => {
           transition={{ duration: 0.8 }}
           className="mx-auto container xl:max-w-6xl p-6 md:p-10"
         >
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-center text-orange-400 mb-6 sm:mb-8">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-center text-red-500 mb-6 sm:mb-8">
             AWS Development Services
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
@@ -83,21 +89,21 @@ const AWSDevelopmentServices = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {/** Card 1 */}
           <motion.div whileHover={{ scale: 1.05 }} className="bg-white shadow-md rounded-xl p-6 border flex flex-col items-center">
-            <FaRocket className="text-orange-600 text-4xl mb-4" />
+            <FaRocket className="text-red-600 text-4xl mb-4" />
             <h3 className="text-lg font-semibold text-gray-800 text-center">Modernize your applications</h3>
             <p className="text-gray-600 mt-2 text-center">for improved performance, security, and user experience.</p>
           </motion.div>
 
           {/** Card 2 */}
           <motion.div whileHover={{ scale: 1.05 }} className="bg-white shadow-md rounded-xl p-6 border flex flex-col items-center">
-            <FaDatabase className="text-orange-600 text-4xl mb-4" />
+            <FaDatabase className="text-red-600 text-4xl mb-4" />
             <h3 className="text-lg font-semibold text-gray-800 text-center">Optimize your data storage</h3>
             <p className="text-gray-600 mt-2 text-center">for better accessibility, scalability, and cost efficiency.</p>
           </motion.div>
 
           {/** Card 3 */}
           <motion.div whileHover={{ scale: 1.05 }} className="bg-white shadow-md rounded-xl p-6 border flex flex-col items-center">
-            <FaLightbulb className="text-orange-600 text-4xl mb-4" />
+            <FaLightbulb className="text-red-600 text-4xl mb-4" />
             <h3 className="text-lg font-semibold text-gray-800 text-center">Gain actionable insights</h3>
             <p className="text-gray-600 mt-2 text-center">from your data with advanced analytics solutions.</p>
           </motion.div>
@@ -106,14 +112,17 @@ const AWSDevelopmentServices = () => {
         <p className="text-gray-700 mt-8 max-w-3xl mx-auto text-center">
           Unleash the full potential of your data and applications with our comprehensive modernization and cloud expertise.
         </p>
+        <div onClick={openModal}>
 
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="mt-6 bg-gradient-to-r from-orange-500 to-orange-300 text-white font-semibold py-3 px-6 rounded-full shadow-md"
+          className="mt-6 bg-gradient-to-r from-red-500 to-red-300 text-white font-semibold py-3 px-6 rounded-full shadow-md"
         >
           Let’s Discuss Your Project →
         </motion.button>
+        <ConsultationFormModal isOpen={isModalOpen} onClose={closeModal} />
+        </div>
       </section>
     </>
   );

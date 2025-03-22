@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaFacebook, FaXTwitter, FaRobot, FaLinkedin, FaArrowUp, FaInstagramSquare } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaArrowUp, FaInstagramSquare } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { IoIosChatbubbles } from "react-icons/io";
 
 const ChatAndScrollButton = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
-  const [messages, setMessages] = useState([{ sender: "bot", text: "Hello! How can I assist you today?" }]);
-  const [input, setInput] = useState("");
+  
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -17,33 +17,15 @@ const ChatAndScrollButton = () => {
   };
 
 
-  
 
-  const toggleChat = () => {
-    setIsChatOpen(!isChatOpen);
-  };
-
-
-  const handleSendMessage = () => {
-    if (!input.trim()) return;
-    const userMessage = { sender: "user", text: input };
-    setMessages([...messages, userMessage]);
-    setInput("");
-
-    // Simulate AI response
-    setTimeout(() => {
-      const botMessage = { sender: "bot", text: "Thank you for your message! Our team will get back to you soon." };
-      setMessages((prev) => [...prev, botMessage]);
-    }, 1000);
-  };
   return (
     <>
       {/* Chat Box Button (Left Bottom) */}
       <button
-        onClick={toggleChat}
-        className="fixed bottom-10 left-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-800 z-50"
+        onClick={() => setIsChatOpen(!isChatOpen)}
+        className="fixed bottom-10 left-4 bg-red-600 text-white p-3 rounded-full shadow-lg hover:bg-red-800 z-50"
       >
-        <FaRobot size={24} />
+        <IoIosChatbubbles  size={24} />
       </button>
 
       {/* Chat Box Content */}
@@ -64,25 +46,7 @@ const ChatAndScrollButton = () => {
                 <FaLinkedin size={24} />
               </Link>
             </div>
-            <div className="mt-4 border p-2 h-40 overflow-auto text-left bg-gray-100 rounded">
-              {messages.map((msg, index) => (
-                <p key={index} className={msg.sender === "bot" ? "text-blue-600" : "text-black"}>
-                  <strong>{msg.sender === "bot" ? "AI:" : "You:"}</strong> {msg.text}
-                </p>
-              ))}
-            </div>
-            <textarea
-              className="w-full p-2 border rounded-lg text-sm mt-2"
-              placeholder="Type your message..."
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-            />
-            <button
-              onClick={handleSendMessage}
-              className="mt-2 w-full bg-blue-600 text-white py-1 rounded-lg hover:bg-blue-800"
-            >
-              Send
-            </button>
+           
           </div>
         </div>
       )}
@@ -90,7 +54,7 @@ const ChatAndScrollButton = () => {
       {/* Scroll to Top Button (Right Bottom) */}
       <motion.button
         onClick={scrollToTop}
-        className="fixed bottom-4 right-4 bg-orange-500 text-white p-3 rounded-full shadow-lg hover:bg-orange-600 transition-colors duration-300 z-50"
+        className="fixed bottom-10 right-4 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition-colors duration-300 z-50"
         animate={{
           y: [0, -10, 0], // Moves up and down
         }}

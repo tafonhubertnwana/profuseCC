@@ -56,7 +56,7 @@ export default function Services() {
           <p className="text-sm sm:text-base mb-2">SERVICE WE PROVIDE</p>
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
             All Professional We’re Offering Best  IT Solutions &{" "}
-            <span className="text-orange-500">Services</span>
+            <span className="text-red-500">Services</span>
           </h2>
         </motion.div>
 
@@ -93,7 +93,7 @@ export default function Services() {
                 
                 {/* Call-to-Action Button */}
                 <button 
-                  className="mt-2 text-orange-500 font-semibold flex items-center gap-2 hover:text-orange-400 transition-colors duration-300"
+                  className="mt-2 text-red-500 font-semibold flex items-center gap-2 hover:text-red-400 transition-colors duration-300"
                   onClick={(e) => {
                     e.stopPropagation(); // Prevent the parent div's onClick from firing
                     window.location.href = service.link;

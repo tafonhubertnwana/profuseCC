@@ -30,7 +30,7 @@ export default function MissionSection() {
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
             <ul className="space-y-4 text-gray-700">
               <li className="flex items-start gap-3 py-4">
-                <span className="flex items-center justify-center w-8 h-8 bg-white rounded-full text-black text-xl">
+                <span className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full text-black text-xl">
                   ✔
                 </span>
                 <span className="flex-1 text-black">
@@ -38,7 +38,7 @@ export default function MissionSection() {
                 </span>
               </li>
               <li className="flex items-start gap-3 py-4">
-                <span className="flex items-center justify-center w-8 h-8 bg-white rounded-full text-black text-xl">
+                <span className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full text-black text-xl">
                   ✔
                 </span>
                 <span className="flex-1 text-black">
@@ -46,7 +46,7 @@ export default function MissionSection() {
                 </span>
               </li>
               <li className="flex items-start gap-3 py-4">
-                <span className="flex items-center justify-center w-8 h-8 bg-white rounded-full text-black text-xl">
+                <span className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full text-black text-xl">
                   ✔
                 </span>
                 <span className="flex-1 text-black">
@@ -80,7 +80,7 @@ export default function MissionSection() {
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Our Vision</h2>
             <ul className="space-y-4 text-gray-700">
               <li className="flex items-start gap-3 py-4">
-                <span className="flex items-center justify-center w-8 h-8 bg-white rounded-full text-black text-xl">
+                <span className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full text-black text-xl">
                   ✔
                 </span>
                 <span className="flex-1 text-black">
@@ -88,7 +88,7 @@ export default function MissionSection() {
                 </span>
               </li>
               <li className="flex items-start gap-3 py-4">
-                <span className="flex items-center justify-center w-8 h-8 bg-white rounded-full text-black text-xl">
+                <span className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full text-black text-xl">
                   ✔
                 </span>
                 <span className="flex-1 text-black">
@@ -96,7 +96,7 @@ export default function MissionSection() {
                 </span>
               </li>
               <li className="flex items-start gap-3 py-4">
-                <span className="flex items-center justify-center w-8 h-8 bg-white rounded-full text-black text-xl">
+                <span className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full text-black text-xl">
                   ✔
                 </span>
                 <span className="flex-1 text-black">
@@ -154,7 +154,7 @@ export default function MissionSection() {
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Our Goal</h2>
             <ul className="space-y-4 text-gray-700">
               <li className="flex items-start gap-3 py-4">
-                <span className="flex items-center justify-center w-8 h-8 bg-white rounded-full text-black text-xl">
+                <span className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full text-black text-xl">
                   ✔
                 </span>
                 <span className="flex-1 text-black">
@@ -162,7 +162,7 @@ export default function MissionSection() {
                 </span>
               </li>
               <li className="flex items-start gap-3 py-4">
-                <span className="flex items-center justify-center w-8 h-8 bg-white rounded-full text-black text-xl">
+                <span className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full text-black text-xl">
                   ✔
                 </span>
                 <span className="flex-1 text-black">
@@ -170,7 +170,7 @@ export default function MissionSection() {
                 </span>
               </li>
               <li className="flex items-start gap-3 py-4">
-                <span className="flex items-center justify-center w-8 h-8 bg-white rounded-full text-black text-xl">
+                <span className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full text-black text-xl">
                   ✔
                 </span>
                 <span className="flex-1 text-black">

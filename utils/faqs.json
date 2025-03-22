@@ -1,24 +1,24 @@
 {
   "faqs": [
     {
-      "question": "Project Horizon Redevelopment?",
-      "answer": "Distinctively plagiarize ubiquitous mindshare goal-oriented collaboration idea-sharing. Efficiently transition dynamic initiatives to business testing procedures enthusiastically negotiate high."
+      "question": "What services does your company provide?",
+      "answer": "We offer a range of technology services, including AWS cloud solutions, generative AI development, custom software development, and data analysis services."
     },
     {
-      "question": "What is your professional passion?",
-      "answer": "lorem"
+      "question": "What AWS cloud services do you offer?",
+      "answer": "We provide a full suite of AWS services, including cloud migration, infrastructure setup, serverless architecture, DevOps, and managed cloud services."
     },
     {
-      "question": "Service Horizon Business low?",
-      "answer": "Distinctively."
+      "question": "  What is generative AI, and how can it benefit my business?",
+      "answer": "Generative AI refers to AI models that can create content, such as text, images, or code. It can help automate tasks, enhance creativity, and improve decision-making."
     },
     {
-      "question": "Business Solution Redevelopment?",
-      "answer": "Distinctively plagiarize ubiquitous "
+      "question": "What technologies do you use for software development?",
+      "answer": "We use modern technologies like Python, Java, React, Node.js, and cloud-native frameworks to build scalable and secure applications."
     },
     {
-      "question": "Do you have any custom services?",
-      "answer": "Distinctively plagiarize ubiquitous mindshare goal-oriented "
+      "question": "Can you handle big data?",
+      "answer": "Yes, we specialize in big data solutions, including data lakes, Hadoop, and Spark, to process and analyze large datasets efficiently."
     }
   ]
 }

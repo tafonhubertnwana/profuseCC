@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation"; // Import usePathname
 import Image from "next/image";
-import logo from "@/public/assets/logo.png";
+import logo from "@/public/assets/acLogo.jpg";
 import { FaFacebook, FaLinkedin, FaArrowUp, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
@@ -41,11 +41,11 @@ const Navbar = () => {
 
   return (
     <>
-      <nav
-        className={`fixed w-full z-50 transition-shadow duration-300 ${
-          isScrolled ? "shadow-lg bg-white" : "bg-transparent"
-        }`}
-      >
+     <nav
+      className={`fixed w-full z-50 transition-shadow duration-300 ${
+        isScrolled ? "shadow-lg bg-black text-white" : "bg-transparent "
+      }`}
+    >
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center">
             <Link href="/">
@@ -55,18 +55,18 @@ const Navbar = () => {
               <Link
                 href="/"
                 className={`${
-                  isActive("/") ? "text-orange-500" : isScrolled ? "text-black" : "text-white"
-                } hover:text-orange-500 relative group`}
+                  isActive("/") ? "text-red-500" : isScrolled ? "" : "text-white"
+                } hover:text-red-500 relative group`}
               >
                 Home
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <div className="relative">
                 <button
                   onClick={() => setIsServiceDropdownOpen(!isServiceDropdownOpen)}
                   className={`${
-                    isActive("/services") ? "text-orange-500" : isScrolled ? "text-black" : "text-white"
-                  } hover:text-orange-500 flex items-center relative group`}
+                    isActive("/services") ? "text-red-500" : isScrolled ? "" : "text-white"
+                  } hover:text-red-500 flex items-center relative group`}
                 >
                   Service
                   <svg
@@ -78,7 +78,7 @@ const Navbar = () => {
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                   </svg>
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
                 </button>
                 {isServiceDropdownOpen && (
                   <div className="absolute mt-2 w-72 bg-white shadow-lg rounded-lg py-2">
@@ -92,8 +92,8 @@ const Navbar = () => {
                         key={index}
                         href={service.href}
                         className={`block px-4 py-2 ${
-                          isActive(service.href) ? "text-orange-500" : "text-gray-600"
-                        } hover:text-orange-500 transition-transform duration-300 hover:translate-x-2`}
+                          isActive(service.href) ? "text-red-500" : "text-gray-600"
+                        } hover:text-red-500 transition-transform duration-300 hover:translate-x-2`}
                       >
                         {service.name}
                       </Link>
@@ -104,27 +104,27 @@ const Navbar = () => {
               <Link
                 href="/aboutUs"
                 className={`${
-                  isActive("/aboutUs") ? "text-orange-500" : isScrolled ? "text-black" : "text-white"
-                } hover:text-orange-500 relative group`}
+                  isActive("/aboutUs") ? "text-red-500" : isScrolled ? "" : "text-white"
+                } hover:text-red-500 relative group`}
               >
                 About Us
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <Link
                 href="/project"
                 className={`${
-                  isActive("/project") ? "text-orange-500" : isScrolled ? "text-black" : "text-white"
-                } hover:text-orange-500 relative group`}
+                  isActive("/project") ? "text-red-500" : isScrolled ? "" : "text-white"
+                } hover:text-red-500 relative group`}
               >
                 Projects
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <div className="relative">
                 <button
                   onClick={() => setPageOpen(!pageOpen)}
                   className={`${
-                    isActive("/page") ? "text-orange-500" : isScrolled ? "text-black" : "text-white"
-                  } hover:text-orange-500 flex items-center relative group`}
+                    isActive("/page") ? "text-red-500" : isScrolled ? "" : "text-white"
+                  } hover:text-red-500 flex items-center relative group`}
                 >
                   Pages
                   <svg
@@ -136,7 +136,7 @@ const Navbar = () => {
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                   </svg>
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
                 </button>
                 {pageOpen && (
                   <div className="absolute mt-2 w-72 bg-white shadow-lg rounded-lg py-2 transform transition-transform duration-300 hover:translate-x-2">
@@ -152,8 +152,8 @@ const Navbar = () => {
                         key={index}
                         href={item.href}
                         className={`block px-4 py-2 ${
-                          isActive(item.href) ? "text-orange-500" : "text-gray-600"
-                        } hover:text-orange-500 transition-transform duration-300 hover:translate-x-2`}
+                          isActive(item.href) ? "text-red-500" : "text-gray-600"
+                        } hover:text-red-500 transition-transform duration-300 hover:translate-x-2`}
                       >
                         {item.name}
                       </Link>
@@ -164,35 +164,35 @@ const Navbar = () => {
               <Link
                 href="/contact"
                 className={`${
-                  isActive("/contact") ? "text-orange-500" : isScrolled ? "text-black" : "text-white"
-                } hover:text-orange-500 relative group`}
+                  isActive("/contact") ? "text-red-500" : isScrolled ? "" : "text-white"
+                } hover:text-red-500 relative group`}
               >
                 Contact
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </div>
           </div>
           <div className="hidden lg:flex items-center space-x-6">
             <div className="flex space-x-4">
-              <Link href="https://facebook.com" className={`${isScrolled ? "text-black" : "text-white"} hover:text-orange-500`}>
+              <Link href="https://facebook.com" className={`${isScrolled ? "" : "text-white"} hover:text-red-500`}>
                 <FaFacebook size={24} />
               </Link>
-              <Link href="https://instagram.com" className={`${isScrolled ? "text-black" : "text-white"} hover:text-orange-500`}>
+              <Link href="https://instagram.com" className={`${isScrolled ? "" : "text-white"} hover:text-red-500`}>
                 <FaInstagram size={24} />
               </Link>
-              <Link href="https://linkedin.com" className={`${isScrolled ? "text-black" : "text-white"} hover:text-orange-500`}>
+              <Link href="https://linkedin.com" className={`${isScrolled ? "" : "text-white"} hover:text-red-500`}>
                 <FaLinkedin size={24} />
               </Link>
             </div>
             <div>
               <button
                 className={`relative bg-transparent border-2 ${
-                  isScrolled ? "border-black text-black" : "border-white text-white"
+                  isScrolled ? " " : "border-white text-white"
                 } px-4 py-2 overflow-hidden group transition-colors duration-300`}
                 onClick={openModal}
               >
                 <span className="relative z-10">WORK WITH US</span>
-                <span className="absolute inset-y-0 left-0 w-0 bg-orange-500 transition-all duration-500 group-hover:w-full"></span>
+                <span className="absolute inset-y-0 left-0 w-0 bg-red-500 transition-all duration-500 group-hover:w-full"></span>
               </button>
 
               <ConsultationFormModal isOpen={isModalOpen} onClose={closeModal} />
@@ -200,7 +200,7 @@ const Navbar = () => {
           </div>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`${isScrolled ? "text-black" : "text-white"} lg:hidden focus:outline-none`}
+            className={`${isScrolled ? "" : "text-white"} lg:hidden focus:outline-none`}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -226,7 +226,7 @@ const Navbar = () => {
           <div className="p-4">
             <Link
               href="/"
-              className={`block py-2 ${isActive("/") ? "text-orange-500" : "text-gray-800"} hover:text-orange-500`}
+              className={`block py-2 ${isActive("/") ? "text-red-500" : "text-gray-800"} hover:text-red-500`}
             >
               Home
             </Link>
@@ -234,8 +234,8 @@ const Navbar = () => {
               <button
                 onClick={() => setIsServiceDropdownOpen(!isServiceDropdownOpen)}
                 className={`w-full text-left py-2 ${
-                  isActive("/tech-services") ? "text-orange-500" : "text-gray-800"
-                } hover:text-orange-500 flex items-center`}
+                  isActive("/tech-services") ? "text-red-500" : "text-gray-800"
+                } hover:text-red-500 flex items-center`}
               >
                 Service
                 <svg
@@ -260,8 +260,8 @@ const Navbar = () => {
                       key={index}
                       href={service.href}
                       className={`block py-2 ${
-                        isActive(service.href) ? "text-orange-500" : "text-gray-800"
-                      } hover:text-orange-500 transition-transform duration-300 hover:translate-x-2`}
+                        isActive(service.href) ? "text-red-500" : "text-gray-800"
+                      } hover:text-red-500 transition-transform duration-300 hover:translate-x-2`}
                     >
                       {service.name}
                     </Link>
@@ -272,16 +272,16 @@ const Navbar = () => {
             <Link
               href="/aboutUs"
               className={`block py-2 ${
-                isActive("/aboutUs") ? "text-orange-500" : "text-gray-800"
-              } hover:text-orange-500`}
+                isActive("/aboutUs") ? "text-red-500" : "text-gray-800"
+              } hover:text-red-500`}
             >
               About Us
             </Link>
             <Link
               href="/project"
               className={`block py-2 ${
-                isActive("/project") ? "text-orange-500" : "text-gray-800"
-              } hover:text-orange-500`}
+                isActive("/project") ? "text-red-500" : "text-gray-800"
+              } hover:text-red-500`}
             >
               Projects
             </Link>
@@ -289,8 +289,8 @@ const Navbar = () => {
               <button
                 onClick={() => setPageOpen(!pageOpen)}
                 className={`w-full text-left py-2 ${
-                  isActive("/page") ? "text-orange-500" : "text-gray-800"
-                } hover:text-orange-500 flex items-center`}
+                  isActive("/page") ? "text-red-500" : "text-gray-800"
+                } hover:text-red-500 flex items-center`}
               >
                 Pages
                 <svg
@@ -317,8 +317,8 @@ const Navbar = () => {
                       key={index}
                       href={item.href}
                       className={`block py-2 ${
-                        isActive(item.href) ? "text-orange-500" : "text-gray-800"
-                      } hover:text-orange-500 transition-transform duration-300 hover:translate-x-2`}
+                        isActive(item.href) ? "text-red-500" : "text-gray-800"
+                      } hover:text-red-500 transition-transform duration-300 hover:translate-x-2`}
                     >
                       {item.name}
                     </Link>
@@ -329,8 +329,8 @@ const Navbar = () => {
             <Link
               href="/contact"
               className={`block py-2 ${
-                isActive("/contact") ? "text-orange-500" : "text-gray-800"
-              } hover:text-orange-500`}
+                isActive("/contact") ? "text-red-500" : "text-gray-800"
+              } hover:text-red-500`}
             >
               Contact
             </Link>
@@ -338,25 +338,25 @@ const Navbar = () => {
             <div>
             <button
         className={`relative bg-transparent border-2 ${
-          isScrolled ? "border-black text-black" : "border-white text-white"
+          isScrolled ? "border-black " : "border-white text-white"
         } px-4 py-2 overflow-hidden group transition-colors duration-300`}
       
       >
         <span className="relative z-10">WORK WITH US</span>
-        <span className="absolute inset-y-0 left-0 w-0 bg-orange-500 transition-all duration-500 group-hover:w-full"></span>
+        <span className="absolute inset-y-0 left-0 w-0 bg-red-500 transition-all duration-500 group-hover:w-full"></span>
       </button>
 
      
     </div>
             {/* Add Social Links in Mobile Menu */}
             <div className="flex space-x-4 mt-4">
-              <Link href="https://facebook.com" className="text-gray-800 hover:text-orange-500">
+              <Link href="https://facebook.com" className="text-gray-800 hover:text-red-500">
                 <FaFacebook size={24} />
               </Link>
-              <Link href="https://instagram.com" className="text-gray-800 hover:text-orange-500">
+              <Link href="https://instagram.com" className="text-gray-800 hover:text-red-500">
                 <FaInstagram size={24} />
               </Link>
-              <Link href="https://linkedin.com" className="text-gray-800 hover:text-orange-500">
+              <Link href="https://linkedin.com" className="text-gray-800 hover:text-red-500">
                 <FaLinkedin size={24} />
               </Link>
             </div>

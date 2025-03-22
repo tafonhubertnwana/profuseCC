@@ -98,7 +98,7 @@ export default function DataAnalysis() {
           transition={{ duration: 0.5 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h1 className="text-4xl font-bold text-orange-400 mb-6">
+          <h1 className="text-4xl font-bold text-red-500 mb-6">
             Expert Data Analytics Services for Your Scenario
           </h1>
           <p className="text-lg text-gray-100 mb-8">
@@ -119,7 +119,7 @@ export default function DataAnalysis() {
                 <li
                   key={index}
                   className={`cursor-pointer text-lg font-semibold ${
-                    selectedIndustry.name === industry.name ? 'text-orange-600' : 'text-gray-800'
+                    selectedIndustry.name === industry.name ? 'text-red-500' : 'text-gray-800'
                   }`}
                   onClick={() => setSelectedIndustry(industry)}
                 >

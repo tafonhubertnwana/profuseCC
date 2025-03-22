@@ -5,25 +5,25 @@ import { FaDatabase, FaHeadset, FaUserFriends, FaBookOpen } from 'react-icons/fa
 const features = [
   {
     id: 1,
-    icon: <FaDatabase size={40} className="text-orange-400" />, 
+    icon: <FaDatabase size={40} className="text-red-500" />, 
     title: "Data Security",
     description: "Protect sensitive information with robust encryption, secure access controls, and proactive threat detection."
   },
   {
     id: 2,
-    icon: <FaBookOpen size={40} className="text-orange-400" />, 
+    icon: <FaBookOpen size={40} className="text-red-500" />, 
     title: "IT Services",
     description: "Empowering businesses with cutting-edge IT solutions, from cloud computing to network infrastructure management."
   },
   {
     id: 3,
-    icon: <FaHeadset size={40} className="text-orange-400" />, 
+    icon: <FaHeadset size={40} className="text-red-500" />, 
     title: "Support",
     description: "Round-the-clock technical assistance to ensure seamless operations and quick resolution of IT challenges."
   },
   {
     id: 4,
-    icon: <FaUserFriends size={40} className="text-orange-400" />, 
+    icon: <FaUserFriends size={40} className="text-red-500" />, 
     title: "People",
     description: "Building strong collaborations and fostering innovation through a team of skilled professionals."
   }

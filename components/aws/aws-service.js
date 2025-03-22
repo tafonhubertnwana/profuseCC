@@ -17,7 +17,7 @@ export default function AwsServices() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div>
               <motion.h1 
-                className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 text-orange-300"
+                className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 text-red-500"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
@@ -55,7 +55,7 @@ export default function AwsServices() {
 
 
                 <motion.button 
-                  className="mt-6 bg-orange-400 text-black px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-semibold flex items-center space-x-2 hover:bg-orange-500 transition"
+                  className="mt-6 bg-red-400 text-black px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-semibold flex items-center space-x-2 hover:bg-red-500 transition"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >

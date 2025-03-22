@@ -31,11 +31,11 @@ export default function TeamDetail({ member }) {
 
             <div className="mt-6 flex flex-col sm:flex-row items-center sm:space-x-4 space-y-3 sm:space-y-0">
               <div className="flex items-center space-x-2 bg-gray-100 px-4 py-2 rounded-lg">
-                <FaPhoneAlt className="text-orange-500" />
+                <FaPhoneAlt className="text-red-500" />
                 <span className="text-gray-700">{member.contacts.phone}</span>
               </div>
               <div className="flex items-center space-x-2 bg-gray-100 px-4 py-2 rounded-lg">
-                <FaEnvelope className="text-orange-500" />
+                <FaEnvelope className="text-red-500" />
                 <span className="text-gray-700">{member.contacts.email}</span>
               </div>
             </div>
@@ -56,8 +56,8 @@ export default function TeamDetail({ member }) {
             </div>
 
             <div className="mt-6 flex items-center space-x-2">
-              <div className="rounded-full border-orange-500 border-2 p-3">
-                <FaMapMarkerAlt className="text-orange-500" />
+              <div className="rounded-full border-red-500 border-2 p-3">
+                <FaMapMarkerAlt className="text-red-500" />
               </div>
               <span className="text-gray-700">{member.contacts.address}</span>
             </div>
@@ -76,7 +76,7 @@ export default function TeamDetail({ member }) {
                       initial={{ width: 0 }}
                       animate={{ width: `${skill.percentage}%` }}
                       transition={{ duration: 1 }}
-                      className="absolute top-0 left-0 h-full bg-orange-600 rounded-lg"
+                      className="absolute top-0 left-0 h-full bg-red-600 rounded-lg"
                     ></motion.div>
                   </div>
                 </div>

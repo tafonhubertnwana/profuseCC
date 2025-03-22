@@ -42,7 +42,7 @@ const TechSpotlight = () => {
             <ul className="list-none pl-5">
               {tech.items.map((item) => (
                 <li key={item} className="text-gray-700 flex items-center">
-                  <MdArrowRight className="text-orange-500 mr-2" /> {/* Use MdArrowRight icon with orange color */}
+                  <MdArrowRight className="text-red-500 mr-2" /> {/* Use MdArrowRight icon with red color */}
                   {item}
                 </li>
               ))}

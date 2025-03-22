@@ -94,7 +94,7 @@ export default function CustomSoftwareDevelopment() {
     </section>
         <section className='bg-[#0c1c40] py-10'>
 
-          <div className="container xl:max-w-6xl mx- px-4">
+          <div className="container xl:max-w-6xl mx-auto px-4">
             <Head>
               <title>Designed to Deliver Faster Time to Innovation</title>
             </Head>

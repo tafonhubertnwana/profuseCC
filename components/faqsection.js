@@ -16,7 +16,7 @@ export default function ITServices() {
     <div className="container xl:max-w-6xl my-10 mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div>
-          <h4 className="text-orange-600 text-sm font-semibold">IT Support For Business</h4>
+          <h4 className="text-red-600 text-sm font-semibold">IT Support For Business</h4>
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-2">
             Ensuring Your Success Trusted IT Services Source
           </h1>
@@ -31,7 +31,7 @@ export default function ITServices() {
           </div>
         <div className="mt-8 flex items-start space-x-4">
         {/* Icon */}
-        <div className="relative z-10 w-16 h-16 flex items-center justify-center rounded-full border-2 border-orange-500 text-orange-500 text-3xl">
+        <div className="relative z-10 w-16 h-16 flex items-center justify-center rounded-full border-2 border-red-500 text-red-500 text-3xl">
           <BsFillPatchQuestionFill />
         </div>
 
@@ -49,13 +49,13 @@ export default function ITServices() {
             <div key={index} className="my-4 cursor-pointer">
               <div
                 className={`border border-gray-100 p-2 flex justify-between items-center transition-colors duration-200 ${
-                  openIndex === index ? "bg-orange-500 text-white" : "hover:bg-orange-500 hover:text-white"
+                  openIndex === index ? "bg-red-500 text-white" : "hover:bg-red-500 hover:text-white"
                 }`}
                 onClick={() => toggleAccordion(index)}
               >
                 <span className="font-medium flex items-center">
-                  <div className="relative z-10 w-12 h-12 flex items-center justify-center rounded-full border-2 border-orange-500 text-orange-500 text-3xl">
-                    <BsFillPatchQuestionFill size={24} className={`${openIndex === index ? "text-white" : "text-orange-500"}`} />
+                  <div className="relative z-10 w-12 h-12 flex items-center justify-center rounded-full border-2 border-red-500 text-red-500 text-3xl">
+                    <BsFillPatchQuestionFill size={24} className={`${openIndex === index ? "text-white" : "text-red-500"}`} />
                   </div>
                   <span className="ml-3 text-sm sm:text-base">{faq.question}</span>
                 </span>

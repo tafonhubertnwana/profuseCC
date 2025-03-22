@@ -48,7 +48,7 @@ export default function CountryCards() {
               <div
                 className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${
                   index === 0 ? 'w-52 h-52' : 'w-52 h-52' // Adjust size for Cameroon
-                } rounded-full border-2 border-dashed border-orange-300 animate-spin-slow`}
+                } rounded-full border-2 border-dashed border-red-300 animate-spin-slow`}
               ></div>
             </div>
 
@@ -64,7 +64,7 @@ export default function CountryCards() {
                 <IoLocation size={30} />
               </span>
             </div>
-            <button className="mt-4 w-full py-2 bg-transparent border rounded-full hover:bg-orange-500 hover:text-white transition">
+            <button className="mt-4 w-full py-2 bg-transparent border rounded-full hover:bg-red-500 hover:text-white transition">
               Help Center
             </button>
           </motion.div>

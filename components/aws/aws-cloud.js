@@ -101,7 +101,7 @@ const CloudServices = () => {
             {features.map((feature, index) => (
               <motion.div
                 key={index}
-                className="p-4 bg-white border-b-2 border-orange-400 flex items-start gap-4"
+                className="p-4 bg-white border-b-2 border-red-500 flex items-start gap-4"
                 variants={itemVariants}
               >
                 <div className="flex-shrink-0 w-16 h-16">

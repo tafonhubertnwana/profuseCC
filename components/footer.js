@@ -8,14 +8,14 @@ const Footer = () => {
   return (
     <>
     
-    <footer className="bg-orange-900 text-white py-8">
+    <footer className="bg-gradient-to-b from-red-800 to-black text-white py-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Tagline Section */}
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src="/assets/logo.png" // Replace with your logo path
+                src="/assets/acLogo.jpg" // Replace with your logo path
                 alt="Company Logo" 
                 className="h-12 w-12 mr-2"
               />

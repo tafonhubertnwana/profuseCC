@@ -31,9 +31,9 @@ export default function TopTechSection() {
       transition={{ duration: 0.8 }}
       className="mt-8 md:mt-0"
     >
-      <p className="text-orange-600 font-semibold uppercase">Who We Are</p>
+      <p className="text-red-500 font-semibold uppercase">Who We Are</p>
       <h2 className="text-2xl md:text-4xl font-bold leading-tight mt-2">
-        Get Exclusive IT Solutions & Services With <span className="text-orange-600">ProfuseCC</span>
+        Get Exclusive IT Solutions & Services With <span className="text-red-500">ProfuseCC</span>
       </h2>
       <p className="text-gray-600 mt-4">
         At ProfuseCC we use our passion for technology and understanding of business, to create unique and customized solutions. We help our partners navigate the ever-evolving landscape of digital tech innovation and offer solutions that align with their business. 
@@ -44,7 +44,7 @@ export default function TopTechSection() {
 
       <div className="mt-6 space-y-4">
         <div className="flex items-start space-x-4">
-          <div className="bg-orange-100 p-3 rounded-md">
+          <div className="bg-red-100 p-3 rounded-md">
             <Image src="/assets/about3-icon1.png" width={30} height={30} alt="Certified" />
           </div>
           <div>
@@ -53,7 +53,7 @@ export default function TopTechSection() {
           </div>
         </div>
         <div className="flex items-start space-x-4">
-          <div className="bg-orange-100 p-3 rounded-md">
+          <div className="bg-red-100 p-3 rounded-md">
             <Image src="/assets/about3-icon2.png" width={30} height={30} alt="Networking" />
           </div>
           <div>
@@ -66,7 +66,7 @@ export default function TopTechSection() {
       <motion.button 
         whileHover={{ scale: 1.05 }} 
         whileTap={{ scale: 0.95 }}
-        className="mt-6 bg-orange-600 text-white px-6 py-2 rounded-md flex items-center space-x-2"
+        className="mt-6 bg-red-500 text-white px-6 py-2 rounded-md flex items-center space-x-2"
       >
         <Link href='/about'>
           <span>More About</span>

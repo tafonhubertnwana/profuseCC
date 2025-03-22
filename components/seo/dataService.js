@@ -14,35 +14,35 @@ const services = [
     title: 'Data Platform Architecture Design',
     description:
       'Start your data journey off on the right foot with a robust data architecture that allows you to take the most of your data. Our team of seasoned data architects and engineers work closely with you to design a future-proof data architecture that aligns with your growth strategy. Whether it\'s a cloud-based, on-premise, or hybrid solution, we define data models, underlying data structures, integration approaches, data governance strategies and more to ensure your data is consistent, secure, and readily accessible.',
-    icon: < SiDatabricks className="text-3xl text-orange-600" />,
+    icon: < SiDatabricks className="text-3xl text-red-500" />,
   },
   {
     id: 2,
     title: 'Data Engineering',
     description:
       'Streamline your data from multiple sources into a unified system. Our highly experienced data engineers build scalable yet flexible ETL and ELT pipelines that seamlessly integrate data in different formats, with different structures, and via different APIs and custom connectors. Data Platforms we help clients build are scalable, secure, and can handle the increasing data volumes.',
-    icon: <FaDatabase className="text-3xl text-orange-600" />,
+    icon: <FaDatabase className="text-3xl text-red-500" />,
   },
   {
     id: 2,
     title: 'Data Warehousing',
     description:
       'Take advantage of ProfuseCC’s excellence in building robust and reliable databases, warehouses, and data lakes that serve as a central component for any data initiatives. Designed with scalability in mind, our data warehousing solutions can store and process massive amounts of structured and unstructured data, providing a reliable foundation for diverse analytics workloads.',
-    icon: <FaWarehouse  className="text-3xl text-orange-600" />,
+    icon: <FaWarehouse  className="text-3xl text-red-500" />,
   },
   {
     id: 2,
     title: 'Data Governance and Compliance',
     description:
       'Protect your data and ensure compliance with our robust data governance solutions. We help you establish policies and procedures to manage data quality, security, and privacy, ensuring your data remains a valuable and trustworthy asset.',
-    icon: <RiGovernmentFill className="text-3xl text-orange-600" />,
+    icon: <RiGovernmentFill className="text-3xl text-red-500" />,
   },
   {
     id: 2,
     title: 'Data Analytics, Visualization, and Business Intelligence ',
     description:
       'Tap into our Business Intelligence and Data Visualization experience and skills to make your data come to life. We are proficient in Power BI, Tableau, and other tools to help you create interactive and easy-to-understand dashboards and reports that provide real-time insights, fuel decision-making and monetize your data.',
-    icon: <IoAnalyticsOutline className="text-3xl text-orange-600" />,
+    icon: <IoAnalyticsOutline className="text-3xl text-red-500" />,
   }
 ];
 

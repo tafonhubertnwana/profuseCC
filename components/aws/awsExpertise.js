@@ -75,14 +75,14 @@ const TechnicalExpertise = () => {
   return (
     <section className="bg-gray-800 py-10 px-5">
       <div className="container xl:max-w-6xl mx-auto text-center">
-        <motion.h2 className="text-3xl font-bold text-orange-500 inline-block px-5 py-2 rounded" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>Technical Expertise</motion.h2>
+        <motion.h2 className="text-3xl font-bold text-red-500 inline-block px-5 py-2 rounded" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>Technical Expertise</motion.h2>
         <motion.p className="mt-4 text-white text-lg" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3, duration: 0.5 }}>We offer expertise across AWS technologies.</motion.p>
       </div>
       <div className="container xl:max-w-6xl mx-auto pt-10">
         <div className="md:grid md:grid-cols-2 gap-8 flex flex-col">
           <div className="space-y-3 text-left hidden md:block">
             {ITEMS.map((item, index) => (
-              <motion.p key={index} className={`text-white font-medium cursor-pointer px-4 py-2 rounded-md transition-colors ${selectedItem === item ? 'text-orange-400' : 'hover:bg-gray-200 hover:text-black'}`} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: index * 0.1, duration: 0.5 }} onClick={() => setSelectedItem(item)}>{item}</motion.p>
+              <motion.p key={index} className={`text-white font-medium cursor-pointer px-4 py-2 rounded-md transition-colors ${selectedItem === item ? 'text-red-400' : 'hover:bg-gray-200 hover:text-black'}`} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: index * 0.1, duration: 0.5 }} onClick={() => setSelectedItem(item)}>{item}</motion.p>
             ))}
           </div>
           {/* Mobile Dropdown */}

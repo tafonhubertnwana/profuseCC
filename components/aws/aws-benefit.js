@@ -45,10 +45,10 @@ export default function CloudAgilitySection() {
   return (
     <section className="mx-auto container xl:max-w-6xl">
       <div className="py-12 px-6 text-center">
-        <h2 className="text-3xl font-bold text-orange-600">
+        <h2 className="text-3xl font-bold text-red-500">
           Unlock Cloud Agility and Security
         </h2>
-        <h3 className="text-2xl font-semibold text-orange-600 mt-2">
+        <h3 className="text-2xl font-semibold text-red-500 mt-2">
           with ProfuseCC's Expertise
         </h3>
 
@@ -95,7 +95,7 @@ export default function CloudAgilitySection() {
 
 
 <motion.button
-  className="mt-8 bg-orange-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-orange-700 transition flex items-center justify-center mx-auto"
+  className="mt-8 bg-red-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-700 transition flex items-center justify-center mx-auto"
   whileHover={{ scale: 1.05 }}
   
   onClick={() => {

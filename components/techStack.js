@@ -39,7 +39,7 @@ const techCategories = [
 
 const TechCard = ({ title, image, items }) => (
   <div className='bg-white border-2 rounded-md shadow-lg p-6'>
-    <div className='w-24 h-24 bg-orange-200 rounded-md flex items-center mb-4 justify-center'>
+    <div className='w-24 h-24 bg-red-200 rounded-md flex items-center mb-4 justify-center'>
       <Image src={image} width={50} height={50} alt={title} />
     </div>
     <h2 className='text-xl md:text-2xl font-semibold mb-4'>{title}</h2>
@@ -47,11 +47,11 @@ const TechCard = ({ title, image, items }) => (
       {items.map((item, index) => (
         <li key={index} className='flex items-center gap-2'>
           {/* Always show MdArrowRight at the beginning of each list item */}
-          <MdArrowRight className='text-orange-500' />
+          <MdArrowRight className='text-red-500' />
           {/* Split the item by "→" and render with MdArrowRight in between */}
           {item.split(' → ').map((part, i) => (
             <span key={i} className='flex items-center'>
-              {i > 0 && <MdArrowRight className='text-orange-500 mx-2' />}
+              {i > 0 && <MdArrowRight className='text-red-500 mx-2' />}
               {part}
             </span>
           ))}

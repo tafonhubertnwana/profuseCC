@@ -13,10 +13,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="min-h-screen bg-orange-50 flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-red-50 flex flex-col items-center justify-center p-4">
       {/* Header Section */}
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-orange-500 mb-4">How Can We Help You?</h1>
+        <h1 className="text-4xl font-bold text-red-500 mb-4">How Can We Help You?</h1>
         <p className="text-gray-600 text-lg">
           Get in touch with your nearest local business sales executive.
         </p>
@@ -35,8 +35,8 @@ const ContactForm = () => {
   className="w-full h-full lg:h-auto object-cover object-center"
 />
 
-    {/* Text Section with Orange Background */}
-    <div className="bg-orange-500 h-full flex  justify-center p-6">
+    {/* Text Section with red Background */}
+    <div className="bg-red-500 h-full flex  justify-center p-6">
   <motion.div
     initial={{ opacity: 0, x: -20 }}
     animate={{ opacity: 1, x: 0 }}
@@ -123,22 +123,22 @@ const ContactForm = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Name Field */}
         <div className="relative">
-          <FaUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-orange-400" />
+          <FaUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-red-400" />
           <input
             type="text"
             placeholder="Your Name*"
-            className="w-full pl-10 pr-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            className="w-full pl-10 pr-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-400"
             required
           />
         </div>
 
         {/* Phone Field */}
         <div className="relative">
-          <FaPhone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-orange-400" />
+          <FaPhone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-red-400" />
           <input
             type="tel"
             placeholder="Your Number*"
-            className="w-full pl-10 pr-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            className="w-full pl-10 pr-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-400"
             required
           />
         </div>
@@ -148,22 +148,22 @@ const ContactForm = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Email Field */}
         <div className="relative">
-          <FaEnvelope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-orange-400" />
+          <FaEnvelope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-red-400" />
           <input
             type="email"
             placeholder="Your E-Mail*"
-            className="w-full pl-10 pr-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            className="w-full pl-10 pr-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-400"
             required
           />
         </div>
 
         {/* Address Field */}
         <div className="relative">
-          <FaLocationDot className="absolute left-3 top-1/2 transform -translate-y-1/2 text-orange-400" />
+          <FaLocationDot className="absolute left-3 top-1/2 transform -translate-y-1/2 text-red-400" />
           <input
             type="text"
             placeholder="Your Address"
-            className="w-full pl-10 pr-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            className="w-full pl-10 pr-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-400"
           />
         </div>
       </div>
@@ -173,7 +173,7 @@ const ContactForm = () => {
         <textarea
           placeholder="Write A Message..."
           rows="4"
-          className="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400"
+          className="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-400"
         />
       </div>
 
@@ -182,7 +182,7 @@ const ContactForm = () => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         type="submit"
-        className="w-full bg-orange-500 text-white py-3 flex items-center justify-center space-x-2 hover:bg-orange-700 transition duration-300"
+        className="w-full bg-red-500 text-white py-3 flex items-center justify-center space-x-2 hover:bg-red-700 transition duration-300"
       >
         <FaPaperPlane />
         <span>Submit Message</span>

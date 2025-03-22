@@ -14,6 +14,7 @@ import StatsSection from "@/components/statSection";
 import AustinMap from "@/components/AustinMap";
 
 
+
 export default function Home() {
   return (
     <div>
@@ -29,6 +30,7 @@ export default function Home() {
       <Testimonials />
       <LogoCarousel />
       <AustinMap/>
+      
     </div>
   );
 }

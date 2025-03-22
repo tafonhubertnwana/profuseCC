@@ -51,13 +51,13 @@ const StatsSection = () => {
     <motion.div
       key={index}
       className={`flex flex-col items-center relative ${
-        index !== stats.length - 1 ? "border-r border-orange-300" : ""
+        index !== stats.length - 1 ? "border-r border-red-300" : ""
       }`}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.2, duration: 0.6 }}
     >
-      <span className="text-3xl md:text-4xl font-bold text-orange-600">
+      <span className="text-3xl md:text-4xl font-bold text-red-700">
         {stat.value}
       </span>
       <span className="text-gray-600 text-sm md:text-base">{stat.label}</span>
