@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation"; // Import usePathname
 import Image from "next/image";
-import logo from "@/public/assets/acLogo.jpg";
+import logo from "@/public/assets/aclogo.png";
 import { FaFacebook, FaLinkedin, FaArrowUp, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
@@ -338,7 +338,7 @@ const Navbar = () => {
             <div>
             <button
         className={`relative bg-transparent border-2 ${
-          isScrolled ? "border-black " : "border-white text-white"
+          isScrolled ? "border-black   text-black" : "border-black text-black"
         } px-4 py-2 overflow-hidden group transition-colors duration-300`}
       
       >

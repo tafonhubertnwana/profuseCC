@@ -3,7 +3,7 @@ import Navbar from "@/components/navbar";
 import TeamSection from "@/components/DedicatedTeam";
 import HeroSection from "@/components/herosection/hero";
 
-const AboutPage = () => {
+const TeamPage = () => {
   return (
     <div>
       <Navbar />
@@ -18,4 +18,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default TeamPage;

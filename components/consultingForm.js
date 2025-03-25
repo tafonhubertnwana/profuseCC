@@ -23,36 +23,36 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
 
   if (!isOpen) return null;
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setIsSubmitting(true);
-  //   setError(null);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setError(null);
   
-  //   const formData = new FormData(e.target);
-  //   const data = Object.fromEntries(formData.entries());
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
   
-  //   try {
-  //     const res = await axios.post("/api/consultation", data);
+    try {
+      const res = await axios.post("/api/consultation", data);
   
-  //     if (res.status !== 200) {
-  //       throw new Error("Failed to submit form. Please try again.");
-  //     }
+      if (res.status !== 200) {
+        throw new Error("Failed to submit form. Please try again.");
+      }
   
-  //     setIsSuccess(true);
-  //     toast.success("Consultation request sent successfully!");
+      setIsSuccess(true);
+      toast.success("Consultation request sent successfully!");
   
-  //     setTimeout(() => {
-  //       onClose();
-  //       setIsSuccess(false);
-  //     }, 3000);
-  //   } catch (error) {
-  //     console.error("Error submitting form:", error);
-  //     setError(error.response?.data?.message || "Error submitting form.");
-  //     toast.error("Error sending consultation request!");
-  //   } finally {
-  //     setIsSubmitting(false);
-  //   }
-  // };
+      setTimeout(() => {
+        onClose();
+        setIsSuccess(false);
+      }, 3000);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setError(error.response?.data?.message || "Error submitting form.");
+      toast.error("Error sending consultation request!");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <motion.div
@@ -67,7 +67,7 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
       <div className="bg-white p-4 sm:p-6 md:p-8 shadow-lg rounded-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl w-full relative mx-auto max-h-[90vh] overflow-y-auto">
         <div className="flex flex-col sm:flex-row justify-between items-center mb-4 sm:mb-6">
           <Image
-            src="/assets/logo.png"
+            src="/assets/aclogo.png"
             alt="Company Logo"
             width={50}
             height={50}
