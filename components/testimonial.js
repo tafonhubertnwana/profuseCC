@@ -86,7 +86,7 @@ export default function Testimonials() {
     <div className="hidden lg:flex">
       <button
         onClick={() => setShowModal(true)}
-        className="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 transition duration-300"
+        className="bg-red-500 text-white px-6 py-2  hover:bg-red-600 transition duration-300"
       >
         Add Testimonial
       </button>
@@ -221,7 +221,7 @@ export default function Testimonials() {
           </div>
           <button
             type="submit"
-            className="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 transition duration-300"
+            className="bg-red-500 text-white px-6 py-2  hover:bg-red-600 transition duration-300"
           >
             Submit
           </button>

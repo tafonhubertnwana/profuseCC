@@ -94,7 +94,7 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
                 id="firstName"
                 name="firstName"
                 placeholder="First Name"
-                className="mt-1 block w-full p-2 border border-red-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="mt-1 block w-full p-2 border border-red-300  shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
                 required
               />
             </div>
@@ -107,7 +107,7 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
                 id="lastName"
                 name="lastName"
                 placeholder="Last Name"
-                className="mt-1 block w-full p-2 border border-red-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="mt-1 block w-full p-2 border border-red-300  shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
                 required
               />
             </div>
@@ -122,7 +122,7 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
                 id="phoneNumber"
                 name="phoneNumber"
                 placeholder="Phone Number"
-                className="mt-1 block w-full p-2 border border-red-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="mt-1 block w-full p-2 border border-red-300  shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
                 required
               />
             </div>
@@ -135,7 +135,7 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
                 id="email"
                 name="email"
                 placeholder="Email"
-                className="mt-1 block w-full p-2 border border-red-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="mt-1 block w-full p-2 border border-red-300  shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
                 required
               />
             </div>
@@ -149,7 +149,7 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
               id="company"
               name="company"
               placeholder="Company or Organization Name"
-              className="mt-1 block w-full p-2 border border-red-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="mt-1 block w-full p-2 border border-red-300  shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
             />
           </div>
           <div>
@@ -159,7 +159,7 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
             <select
               id="interest"
               name="interest"
-              className="mt-1 block w-full p-2 border border-red-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="mt-1 block w-full p-2 border border-red-300  shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
             >
               <option>AWS cloud Service</option>
               <option>Software Development</option>
@@ -176,7 +176,7 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
                 type="date"
                 id="date"
                 name="date"
-                className="mt-1 block w-full p-2 border border-red-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="mt-1 block w-full p-2 border border-red-300  shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
                 required
               />
             </div>
@@ -188,7 +188,7 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
                 type="time"
                 id="time"
                 name="time"
-                className="mt-1 block w-full p-2 border border-red-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="mt-1 block w-full p-2 border border-red-300  shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
                 required
               />
             </div>
@@ -201,7 +201,7 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
               id="comments"
               name="comments"
               placeholder="Additional Information/Comments"
-              className="mt-1 block w-full p-2 border border-red-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="mt-1 block w-full p-2 border border-red-300  shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
               rows="4"
             ></textarea>
           </div>
@@ -216,7 +216,7 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
                 whileTap={{ scale: 0.95 }}
                 type="button"
                 onClick={onClose}
-                className="px-4 py-2 bg-gray-300 text-gray-900 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                className="px-4 py-2 bg-gray-300 text-gray-900  hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
               >
                 Close
               </motion.button>
@@ -225,7 +225,7 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
                 whileTap={{ scale: 0.95 }}
                 type="submit"
                 disabled={isSubmitting}
-                className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="px-4 py-2 bg-red-500 text-white  hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500"
               >
                 {isSubmitting ? 'Submitting...' : 'Submit'}
               </motion.button>
