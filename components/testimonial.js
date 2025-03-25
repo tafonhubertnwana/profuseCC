@@ -140,89 +140,98 @@ export default function Testimonials() {
 
         {/* Modal for Adding Testimonial */}
         <AnimatePresence>
-          {showModal && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center p-4"
-              onClick={() => setShowModal(false)}
-            >
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full relative"
-                onClick={(e) => e.stopPropagation()}
-              >
+  {showModal && (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center p-4"
+      onClick={() => setShowModal(false)}
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full relative"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Flex container for Logo and Title */}
+        <div className="flex items-center justify-between mb-4">
+          {/* Company Logo */}
+          <img
+            src="/assets/aclogo.png" // Replace with your actual logo path
+            alt="Company Logo"
+            className="w-12 h-12 object-contain"
+          />
+          {/* Title */}
+          <h2 className="text-2xl font-bold">Add Your Testimonial</h2>
+        </div>
+        <button
+          onClick={() => setShowModal(false)}
+          className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+        >
+          <FaTimes className="text-2xl" />
+        </button>
+        <form onSubmit={addTestimonial}>
+          <div className="mb-4">
+            <label className="block text-gray-700 mb-2">Name</label>
+            <input
+              type="text"
+              name="name"
+              required
+              className="w-full px-4 py-2 border border-red-200 rounded-lg"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 mb-2">Image</label>
+            <input
+              type="file"
+              name="image"
+              required
+              onChange={handleFileChange}
+              className="w-full px-4 py-2 border border-red-200 rounded-lg"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 mb-2">Review</label>
+            <textarea
+              name="review"
+              placeholder="Review"
+              required
+              className="w-full px-4 py-2 border border-red-200 rounded-lg"
+              rows="4"
+            ></textarea>
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 mb-2">Rating</label>
+            <div className="flex space-x-2">
+              {[...Array(5)].map((_, i) => (
                 <button
-                  onClick={() => setShowModal(false)}
-                  className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+                  type="button"
+                  key={i}
+                  onClick={() => setRating(i + 1)}
+                  className={`text-2xl ${
+                    i < rating ? "text-red-500" : "text-gray-300"
+                  }`}
                 >
-                  <FaTimes className="text-2xl" />
+                  ★
                 </button>
-                <div>
-                
-                <h2 className="text-2xl font-bold mb-4">Add Your Testimonial</h2>
-                </div>
-                <form onSubmit={addTestimonial}>
-                  <div className="mb-4">
-                    <label className="block text-gray-700 mb-2">Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      required
-                      className="w-full px-4 py-2 border border-red-200 rounded-lg"
-                    />
-                  </div>
-                  <div className="mb-4">
-                    <label className="block text-gray-700 mb-2">Image</label>
-                    <input
-                      type="file"
-                      name="image"
-                      required
-                      onChange={handleFileChange}
-                      className="w-full px-4 py-2 border border-red-200 rounded-lg"
-                    />
-                  </div>
-                  <div className="mb-4">
-                    <label className="block text-gray-700 mb-2">Review</label>
-                    <textarea
-                      name="review"
-                      placeholder="Review"
-                      required
-                      className="w-full px-4 py-2 border border-red-200 rounded-lg"
-                      rows="4"
-                    ></textarea>
-                  </div>
-                  <div className="mb-4">
-                    <label className="block text-gray-700 mb-2">Rating</label>
-                    <div className="flex space-x-2">
-                      {[...Array(5)].map((_, i) => (
-                        <button
-                          type="button"
-                          key={i}
-                          onClick={() => setRating(i + 1)}
-                          className={`text-2xl ${
-                            i < rating ? "text-red-500" : "text-gray-300"
-                          }`}
-                        >
-                          ★
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                  <button
-                    type="submit"
-                    className="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 transition duration-300"
-                  >
-                    Submit
-                  </button>
-                </form>
-              </motion.div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+              ))}
+            </div>
+          </div>
+          <button
+            type="submit"
+            className="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 transition duration-300"
+          >
+            Submit
+          </button>
+        </form>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
+
+
       </div>
     </div>
   );
