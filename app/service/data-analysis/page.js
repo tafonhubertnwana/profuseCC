@@ -5,6 +5,7 @@ import DataServices from '@/components/seo/dataService';
 import React from 'react'
 import DataAnalysis from '@/components/seo/dataAnalysis'
 import DataAndAnalyticsServices from '@/components/seo/datasection';
+import MachineLearningServices from '@/components/seo/mechineLearning';
 
 const SeoPage = () => {
   return (
@@ -17,6 +18,7 @@ const SeoPage = () => {
   breadcrumb="SEO & Security"
 />
 <DataAndAnalyticsServices/>
+<MachineLearningServices />
 <DataServices />
 <DataAnalysis />
 

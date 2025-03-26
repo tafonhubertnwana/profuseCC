@@ -5,6 +5,7 @@ import FeatureCards from '@/components/ai/aimSerivces';
 import AIServiceSection from '@/components/ai/aiServices';
 import Hero from '@/components/ai/aiServices';
 import GenerativeAI from '@/components/ai/generative-ai';
+import IndustryAIServices from '@/components/ai/industryAI';
 import ServiceSection from '@/components/ai/serviceSection';
 import HeroSection from '@/components/herosection/hero'
 import Navbar from '@/components/navbar'
@@ -25,7 +26,7 @@ const DataPage = () => {
 
       </div>
       <AIServiceSection />
-      
+      <IndustryAIServices />
       <AIExpertise />
       <GenerativeAI />
       <TechStack />

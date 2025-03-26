@@ -22,7 +22,7 @@ const Footer = () => {
               <h2 className="text-xl font-semibold">ProfuseCC</h2>
             </div>
             <p className="text-gray-400">
-  ProfuseCC is a leading provider of innovative solutions designed to streamline your business operations. With a focus on efficiency and customer satisfaction, we deliver cutting-edge tools and services to help your business thrive in a competitive market.
+            ProfuseCC is an artificial intelligence cloud startup focused on delivering innovative AI-driven solutions. Our goal is to empower businesses with cutting-edge cloud technologies and intelligent automation to enhance efficiency and drive growth in a competitive landscape
 </p>
             <div className="flex space-x-4 mt-4">
               <Link href="https://facebook.com" className="text-blue-500 hover:text-white">

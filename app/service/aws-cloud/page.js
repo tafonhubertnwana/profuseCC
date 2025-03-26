@@ -4,6 +4,7 @@ import CloudServices from '@/components/aws/aws-cloud';
 import AWSDevelopmentServices from '@/components/aws/aws-dev-services';
 import AwsServices from '@/components/aws/aws-service';
 import TechnicalExpertise from '@/components/aws/awsExpertise';
+import GoogleCloudServices from '@/components/aws/googleCloud';
 import HeroSection from '@/components/herosection/hero'
 import Navbar from '@/components/navbar'
 
@@ -21,6 +22,7 @@ AWS Cloud"
   breadcrumb="AWS Cloud"
 />
 <CloudServices />
+<GoogleCloudServices />
 <AwsServices />
 <CloudAgilitySection />
 <AWSDevelopmentServices />
