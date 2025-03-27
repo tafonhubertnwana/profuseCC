@@ -8,20 +8,20 @@ import { RiSettings3Line } from 'react-icons/ri';
 
 export default function AIExpertise() {
   return (
-    <section className="px-6 py-16 bg-gray-50">
-      <div className="container xl:max-w-4xl mx-auto text-center">
-        <h1 className="text-4xl font-bold text-gray-800 leading-tight">
+    <section className="px-6 py-16 bg-black">
+      <div className="container xl:max-w-6xl mx-auto text-center">
+        <h1 className="text-4xl font-bold text-white leading-tight">
           <span className="relative">
-            <span className="bg-red-500 text-white px-2 py-1 rounded-md">
+            <span className="bg-[#FF0000] text-white px-2 py-1 rounded-md">
               Generative AI
             </span>
           </span>{" "}
           Learning Expertise:
         </h1>
-        <h2 className="text-3xl text-red-500 font-semibold mt-2">
+        <h2 className="text-3xl text-[#FF0000] font-semibold mt-2">
           From Generative to Predictive and Everything in Between
         </h2>
-        <p className="text-gray-600 mt-4">
+        <p className="text-white mt-4">
           With a deep pool of resources around the globe, we are ready to
           provide the skills, scale, and speed to deliver your Generative AI
           Learning project on time and on budget.
@@ -38,12 +38,12 @@ export default function AIExpertise() {
             transition={{ duration: 0.5, delay: index * 0.2 }}
             viewport={{ once: true }}
           >
-            <feature.icon className="w-24 h-24 text-red-500" />
+            <feature.icon className="w-24 h-24 text-[#FF0000]" />
             <div>
               <h3 className="text-lg font-semibold text-gray-800">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 mt-2">{feature.description}</p>
+              <p className="text-black mt-2">{feature.description}</p>
             </div>
           </motion.div>
         ))}

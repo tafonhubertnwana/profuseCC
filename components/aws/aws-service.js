@@ -12,12 +12,12 @@ export default function AwsServices() {
   return (
     <>
       
-      <div className="bg-gradient-to-b from-[#0F1C2E] to-[#1B2C44] text-white p-4 sm:p-8">
+      <div className="bg-black text-white p-4 sm:p-8">
         <div className="container xl:max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div>
               <motion.h1 
-                className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 text-red-500"
+                className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 text-[#FF0000] "
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
@@ -51,13 +51,14 @@ export default function AwsServices() {
                 With over eight years as an AWS trusted services provider, ProfuseCC reduces time to market and
                 ensures that client cloud initiatives adhere to the best practices set by AWS.
               </motion.p>
-              <div onClick={openModal}>
+              <div >
 
 
                 <motion.button 
-                  className="mt-6 bg-red-400 text-black px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-semibold flex items-center space-x-2 hover:bg-red-500 transition"
+                  className="mt-6 bg-[#FF0000] text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-semibold flex items-center space-x-2 hover:bg-[#FF0000]  transition"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={openModal}
                 >
                   Talk to AWS Experts →
                 </motion.button>

@@ -3,22 +3,22 @@ import { FaServer, FaCloud, FaBrain, FaShieldAlt } from "react-icons/fa";
 
 const services = [
   {
-    icon: <FaServer className="text-red-600 text-5xl" />, 
+    icon: <FaServer className="text-[#FF0000] text-5xl" />, 
     title: "Managed IT Services",
     description: "Proin Pulvinar Eu Sem Endro thes Vehicula. Integer Urna Libero and, Semper emper business.",
   },
   {
-    icon: <FaCloud className="text-red-600 text-5xl" />, 
+    icon: <FaCloud className="text-[#FF0000] text-5xl" />, 
     title: "Cloud Services",
     description: "Proin Pulvinar Eu Sem Endro thes Vehicula. Integer Urna Libero and, Semper emper business.",
   },
   {
-    icon: <FaBrain className="text-red-600 text-5xl" />, 
+    icon: <FaBrain className="text-[#FF0000] text-5xl" />, 
     title: "Machine Learning",
     description: "Proin Pulvinar Eu Sem Endro thes Vehicula. Integer Urna Libero and, Semper emper business.",
   },
   {
-    icon: <FaShieldAlt className="text-red-600 text-5xl" />, 
+    icon: <FaShieldAlt className="text-[#FF0000] text-5xl" />, 
     title: "Data Security",
     description: "Proin Pulvinar Eu Sem Endro thes Vehicula. Integer Urna Libero and, Semper emper business.",
   },
@@ -41,7 +41,7 @@ export default function ServiceCard() {
             <p className="text-gray-600 text-sm">{service.description}</p>
             <a
               href="#"
-              className="text-red-600 font-semibold mt-4 inline-block hover:underline"
+              className="text-[#FF0000] font-semibold mt-4 inline-block hover:underline"
             >
               Read More &raquo;
             </a>

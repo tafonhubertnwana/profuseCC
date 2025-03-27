@@ -16,17 +16,17 @@ const IndustryAIServices = () => {
     {
       title: 'Google Cloud Healthcare AI',
       description: 'AI services for healthcare and life sciences.',
-      icon: <FaHospital className="text-blue-500" size={32} />
+      icon: <FaHospital className="text-[#FF0000]" size={32} />
     },
     {
       title: 'Google Cloud Financial Services AI',
       description: 'AI services for financial services and banking.',
-      icon: <FaMoneyBillWave className="text-green-500" size={32} />
+      icon: <FaMoneyBillWave className="text-[#FF0000]" size={32} />
     },
     {
       title: 'Google Cloud Retail AI',
       description: 'AI services for retail and e-commerce.',
-      icon: <FaShoppingCart className="text-red-500" size={32} />
+      icon: <FaShoppingCart className="text-[#FF0000]" size={32} />
     }
   ];
 
@@ -34,27 +34,27 @@ const IndustryAIServices = () => {
     {
       title: 'Scalability',
       description: 'Google AI services can handle large volumes of data and traffic.',
-      icon: <FaChartLine className="text-purple-500" size={32} />
+      icon: <FaChartLine className="text-[#FF0000]" size={32} />
     },
     {
       title: 'Ease of Use',
       description: 'Pre-built APIs and managed services simplify AI development.',
-      icon: <FaTools className="text-orange-500" size={32} />
+      icon: <FaTools className="text-[#FF0000]" size={32} />
     },
     {
       title: 'Seamless Integration',
       description: 'Works effortlessly with other Google Cloud services.',
-      icon: <FaSyncAlt className="text-teal-500" size={32} />
+      icon: <FaSyncAlt className="text-[#FF0000]" size={32} />
     },
     {
       title: 'Enterprise Security',
       description: 'Industry-leading security and compliance standards.',
-      icon: <FaShieldAlt className="text-red-500" size={32} />
+      icon: <FaShieldAlt className="text-[#FF0000]" size={32} />
     },
     {
       title: 'Cutting-Edge Innovation',
       description: 'Access to Google\'s latest AI research and technology.',
-      icon: <FaLightbulb className="text-yellow-500" size={32} />
+      icon: <FaLightbulb className="text-[#FF0000]" size={32} />
     }
   ];
 
@@ -84,18 +84,19 @@ const IndustryAIServices = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-500 py-12 px-4 sm:px-6 lg:px-8">
-      <Head>
-        <title>Google Cloud Industry AI Services</title>
-        <meta name="description" content="Google Cloud Industry-specific AI Services and Benefits" />
-      </Head>
-
-      <div className="max-w-7xl mx-auto">
+    <div  style={{
+      backgroundImage: "url('/assets/ai-bg.webp')", // Replace with your image path
+      backgroundAttachment: "fixed",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}>
+      
+      <div className="container xl:max-w-6xl mx-auto py-10">
         <motion.h1 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold text-center text-gray-800 mb-12"
+          className="text-3xl font-bold text-center text-white mb-12"
         >
           Google Cloud Industry AI Solutions
         </motion.h1>
@@ -109,7 +110,7 @@ const IndustryAIServices = () => {
           >
             <motion.h2 
               variants={itemVariants}
-              className="text-2xl font-semibold text-red-600 mb-6 "
+              className="text-2xl font-semibold text-white mb-6 "
             >
               Industry-Specific AI Services
             </motion.h2>
@@ -142,7 +143,7 @@ const IndustryAIServices = () => {
           >
             <motion.h2 
               variants={itemVariants}
-              className="text-2xl font-semibold text-red-600 mb-6 "
+              className="text-2xl font-semibold text-white mb-6 "
             >
               Key Benefits of Google AI Services
             </motion.h2>

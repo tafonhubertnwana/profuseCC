@@ -8,23 +8,23 @@ const services = [
     name: "Google Cloud AI Platform",
     description:
       "Managed platform for building, deploying, and managing ML models.",
-    icon: <FaGoogle className="text-red-500 text-4xl" />,
+    icon: <FaGoogle className="text-[#FF0000] text-4xl" />,
   },
   {
     name: "AutoML",
     description: "Automated machine learning for building custom ML models.",
-    icon: <FaRobot className="text-red-500 text-4xl" />,
+    icon: <FaRobot className="text-[#FF0000] text-4xl" />,
   },
   {
     name: "TensorFlow",
     description:
       "Open-source ML framework for building and deploying ML models.",
-    icon: <FaBrain className="text-red-500 text-4xl" />,
+    icon: <FaBrain className="text-[#FF0000] text-4xl" />,
   },
   {
     name: "Google Cloud ML Engine",
     description: "Managed service for training and deploying ML models.",
-    icon: <FaCloud className="text-red-500 text-4xl" />,
+    icon: <FaCloud className="text-[#FF0000] text-4xl" />,
   },
 ];
 
@@ -32,10 +32,10 @@ const MachineLearningServices = () => {
   return (
     <>
     
-      <section className=" bg-gray-500 py-10">
+      <section className=" bg-black py-10">
 
         <div className="mx-auto container xl:max-w-6xl p-6">
-          <h2 className="text-3xl font-bold text-center mb-8">
+          <h2 className="text-3xl text-white font-bold text-center mb-8">
             Machine Learning Services
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

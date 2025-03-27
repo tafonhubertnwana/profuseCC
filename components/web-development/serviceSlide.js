@@ -13,7 +13,7 @@ const solutions = [
   {
     title: "PWA",
     description:
-      "LeverX specializes in cutting-edge Progressive Web App (PWA) development, seamlessly blending web and mobile capabilities. Our experience empowers businesses to enhance user engagement, increase conversions, and provide offline capabilities through the power of PWAs.",
+      "ProfuseCC specializes in cutting-edge Progressive Web App (PWA) development, seamlessly blending web and mobile capabilities. Our experience empowers businesses to enhance user engagement, increase conversions, and provide offline capabilities through the power of PWAs.",
     image: "/assets/pwa.webp",
   },
   {
@@ -61,7 +61,7 @@ export default function Solutions() {
             height={100}
             className="object-cover"
           />
-          <div className="relative bg-black bg-opacity-60 p-6 text-white flex flex-col">
+          <div className="relative bg-black  p-6 text-white flex flex-col">
             <h3 className="text-lg font-bold">{solution.title}</h3>
             <p className="text-sm mt-2">{solution.description}</p>
           </div>

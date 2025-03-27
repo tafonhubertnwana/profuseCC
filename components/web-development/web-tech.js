@@ -31,7 +31,7 @@ const TechnologyStack = () => {
   ];
 
   return (
-    <section className="bg-[#0c1c40] py-16 px-4 sm:px-6 lg:px-8">
+    <section className="bg-black py-16 px-4 sm:px-6 lg:px-8">
       <div className="container xl:max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -39,7 +39,7 @@ const TechnologyStack = () => {
           transition={{ duration: 0.5 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h1 className="text-4xl font-bold text-red-500 mb-6">
+          <h1 className="text-4xl font-bold text-[#FF0000] mb-6">
             TECHNOLOGY STACK
           </h1>
           <p className="text-lg text-gray-100 mb-8">
@@ -59,8 +59,8 @@ const TechnologyStack = () => {
               {sections.map((section, index) => (
                 <li
                   key={index}
-                  className={`cursor-pointer text-lg font-semibold ${
-                    selectedSection.name === section.name ? 'text-red-500' : 'text-gray-800'
+                  className={`cursor-pointer text-lg font-semibold p-2 ${
+                    selectedSection.name === section.name ? 'bg-[#FF0000] text-white' : 'text-gray-800'
                   }`}
                   onClick={() => setSelectedSection(section)}
                 >

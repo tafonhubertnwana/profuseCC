@@ -15,16 +15,16 @@ const CloudPage = () => {
     <div>
       <Navbar />
       <HeroSection
-  title="SAP Migration to
+  title="
 AWS Cloud"
-  description="Optimize SAP system landscape for cloud operations with AWS cloud"
+  description="Optimize landscape for cloud operations with AWS cloud"
   backgroundImage="/assets/AWS-Cloud-bg.webp" 
   breadcrumb="AWS Cloud"
 />
 <CloudServices />
 <GoogleCloudServices />
-<AwsServices />
 <CloudAgilitySection />
+<AwsServices />
 <AWSDevelopmentServices />
 <TechnicalExpertise />
 

@@ -45,7 +45,7 @@ const CloudServices = () => {
   ];
   return (
     <>
-     <div className="bg-blue-50 py-12 px-4 sm:px-6 lg:px-8">
+     <div className="bg-black py-12 px-4 sm:px-6 lg:px-8">
       <div className="container xl:max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Image Section */}
@@ -73,7 +73,7 @@ const CloudServices = () => {
             transition={{ duration: 0.8 }}
             className="text-center md:text-left"
           >
-            <p className="text-gray-600 text-base sm:text-lg md:text-xl leading-relaxed">
+            <p className="text-white text-base sm:text-lg md:text-xl leading-relaxed">
               Agility is at the heart of today’s business success. That’s why organizations of all sizes are adopting cloud technology – so their teams can easily and securely collaborate and deliver quality work anywhere, on any internet-connected device. But without expert planning and execution, cloud migration can easily expose you to data breaches and create expensive, productivity-sapping problems.
             </p>
           </motion.div>
@@ -90,7 +90,7 @@ const CloudServices = () => {
             className="text-2xl sm:text-3xl md:text-4xl font-bold text-center lg:text-left mb-8"
             variants={itemVariants}
           >
-            With ProfuseCC’ Cloud Services, you’ll enjoy:
+            With ProfuseCC’s Cloud Services, you’ll enjoy:
           </motion.h1>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -101,7 +101,7 @@ const CloudServices = () => {
             {features.map((feature, index) => (
               <motion.div
                 key={index}
-                className="p-4 bg-white border-b-2 border-red-500 flex items-start gap-4"
+                className="p-4 bg-white border-b-2 border-[#FF0000]  flex items-start gap-4"
                 variants={itemVariants}
               >
                 <div className="flex-shrink-0 w-16 h-16">
@@ -110,7 +110,7 @@ const CloudServices = () => {
                     alt={feature.title}
                     width={64}
                     height={64}
-                    className="object-contain"
+                    className="object-contain trust-icon"
                   />
                 </div>
                 <div>

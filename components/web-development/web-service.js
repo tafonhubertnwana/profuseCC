@@ -76,7 +76,7 @@ const Services = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
-    arrows: true,
+    
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 2, arrows: false } },
       { breakpoint: 768, settings: { slidesToShow: 2, arrows: false } },
@@ -88,7 +88,7 @@ const Services = () => {
     <div className="py-12 bg-white">
       <div className="container xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="">
-          <h2 className="text-3xl text-red-500 font-semibold tracking-wide uppercase">
+          <h2 className="text-3xl text-[#FF0000] font-semibold tracking-wide uppercase">
             WEB DEVELOPMENT SERVICES ON OFFER
           </h2>
         </div>
@@ -108,7 +108,7 @@ const Services = () => {
                         alt="Service Icon"
                         width={80}
                         height={80}
-                        className="bg-red-500 p-4 object-contain "
+                        className="bg-[#FF0000] p-4 object-contain "
                       />
                     </div>
                     <h3 className="text-lg leading-6 font-medium text-gray-900 mt-12">{service.title}</h3>

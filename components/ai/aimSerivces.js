@@ -43,10 +43,10 @@ const FeatureCards = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
             >
-              <span className='py-5 text-red-500'>
+              <span className='py-5 text-[#FF0000]'>
                   {feature.icon}
               </span>
-              <h3 className="text-xl font-semibold text-red-500">{feature.title}</h3>
+              <h3 className="text-xl font-semibold text-[#FF0000]">{feature.title}</h3>
               <p className="mt-2 text-gray-500">{feature.description}</p>
             </motion.div>
           ))}

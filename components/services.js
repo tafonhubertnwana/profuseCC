@@ -53,10 +53,10 @@ export default function Services() {
           transition={{ duration: 0.8 }}
           className="justify-center w-full md:w-3/4 lg:w-1/2 mx-auto px-4 sm:px-6 lg:px-8 text-center"
         >
-          <p className="text-sm sm:text-base mb-2">SERVICE WE PROVIDE</p>
+          <p className="text-sm sm:text-base text-[#FF0000] mb-2">SERVICE WE PROVIDE</p>
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
-            All Professional We’re Offering Best  IT Solutions &{" "}
-            <span className="text-red-500">Services</span>
+            All Professional We’re Offering Best  AI Cloud Solutions &{" "}
+            <span className="text-[#FF0000]">Services</span>
           </h2>
         </motion.div>
 
@@ -78,7 +78,7 @@ export default function Services() {
                   alt={service.title} 
                   width={75} 
                   height={75}
-                  className={service.title === 'Generative AI' ? 'filter-gray' : ''}
+                  className='trust-icon'
                 />
               </div>
               
@@ -93,7 +93,7 @@ export default function Services() {
                 
                 {/* Call-to-Action Button */}
                 <button 
-                  className="mt-2 text-red-500 font-semibold flex items-center gap-2 hover:text-red-400 transition-colors duration-300"
+                  className="mt-2 text-[#FF0000] font-semibold flex items-center gap-2 hover:text-red-400 transition-colors duration-300"
                   onClick={(e) => {
                     e.stopPropagation(); // Prevent the parent div's onClick from firing
                     window.location.href = service.link;

@@ -89,7 +89,7 @@ export default function DataAnalysis() {
 
   return (
     <>
-    <section className='bg-[#0c1c40]'>
+    <section className='bg-black'>
 
       <div className="container xl:max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -98,7 +98,7 @@ export default function DataAnalysis() {
           transition={{ duration: 0.5 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h1 className="text-4xl font-bold text-red-500 mb-6">
+          <h1 className="text-4xl font-bold text-[#FF0000] mb-6">
             Expert Data Analytics Services for Your Scenario
           </h1>
           <p className="text-lg text-gray-100 mb-8">
@@ -118,8 +118,8 @@ export default function DataAnalysis() {
               {industries.map((industry, index) => (
                 <li
                   key={index}
-                  className={`cursor-pointer text-lg font-semibold ${
-                    selectedIndustry.name === industry.name ? 'text-red-500' : 'text-gray-800'
+                  className={`cursor-pointer p-2 text-lg font-semibold ${
+                    selectedIndustry.name === industry.name ? 'text-white bg-[#FF0000]' : 'text-gray-800'
                   }`}
                   onClick={() => setSelectedIndustry(industry)}
                 >

@@ -6,7 +6,7 @@ import ExperienceSection from '@/components/experienceSection';
 import TeamSection from "@/components/DedicatedTeam";
 import StatsSection from "@/components/statSection";
 import Testimonials from "@/components/testimonial";
-import AustinMap from "@/components/AustinMap";
+import AustinMap from "@/components/map";
 
 
 const AboutPage = () => {

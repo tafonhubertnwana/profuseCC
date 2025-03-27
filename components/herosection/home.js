@@ -64,7 +64,7 @@ const HeroSection = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={openModal}
-                  className="bg-red-500 text-white my-4 px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base"
+                  className="bg-[#FF0000] text-white my-4 px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base"
                 >
                   {slide.button}
                 </motion.button>

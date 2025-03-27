@@ -11,7 +11,7 @@ import Testimonials from "@/components/testimonial";
 import BusinessDomains from "@/components/businessDomain";
 import FeaturesSection from "@/components/featureChoose";
 import StatsSection from "@/components/statSection";
-import AustinMap from "@/components/AustinMap";
+import AustinMap from "@/components/map";
 
 
 

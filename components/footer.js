@@ -8,18 +8,18 @@ const Footer = () => {
   return (
     <>
     
-    <footer className="bg-gradient-to-b from-red-800 to-black text-white py-8">
+    <footer className="bg-black border-t-2 border-t-white text-white py-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Tagline Section */}
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src="/assets/aclogo.png" // Replace with your logo path
+                src="/assets/profuse.jpg" // Replace with your logo path
                 alt="Company Logo" 
-                className="h-12 w-12 mr-2"
+                className="h-24 w-24 mr-2"
               />
-              <h2 className="text-xl font-semibold">ProfuseCC</h2>
+              
             </div>
             <p className="text-gray-400">
             ProfuseCC is an artificial intelligence cloud startup focused on delivering innovative AI-driven solutions. Our goal is to empower businesses with cutting-edge cloud technologies and intelligent automation to enhance efficiency and drive growth in a competitive landscape
@@ -45,7 +45,7 @@ const Footer = () => {
       <Link href="/service-1" className="hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2">
 
         <span className="mr-2 ">
-          <FaRegArrowAltCircleRight className='text-orange-300' />
+          <FaRegArrowAltCircleRight className='text-[#FF0000]' />
         </span>
         AWS Cloud Service
       </Link>
@@ -53,7 +53,7 @@ const Footer = () => {
     <li className="mb-2 group">
       <Link href="/service-2" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
         <span className="mr-2">
-          <FaRegArrowAltCircleRight className='text-orange-300' />
+          <FaRegArrowAltCircleRight className='text-[#FF0000]' />
         </span>
         Software Development
       </Link>
@@ -61,7 +61,7 @@ const Footer = () => {
     <li className="mb-2 group">
       <Link href="/service-3" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
         <span className="mr-2">
-          <FaRegArrowAltCircleRight className='text-orange-300' />
+          <FaRegArrowAltCircleRight className='text-[#FF0000]' />
         </span>
         Generative AI
       </Link>
@@ -69,7 +69,7 @@ const Footer = () => {
     <li className="mb-2 group">
       <Link href="/service-4" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
         <span className="mr-2">
-          <FaRegArrowAltCircleRight className='text-orange-300' />
+          <FaRegArrowAltCircleRight className='text-[#FF0000]' />
         </span>
         Data Analysis
       </Link>
@@ -84,7 +84,7 @@ const Footer = () => {
     <li className="mb-2 group">
       <Link href="/about" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
         <span className="mr-2">
-          <FaRegArrowAltCircleRight className='text-orange-300' />
+          <FaRegArrowAltCircleRight className='text-[#FF0000]' />
         </span>
         About Us
       </Link>
@@ -92,7 +92,7 @@ const Footer = () => {
     <li className="mb-2 group">
       <Link href="/services" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
         <span className="mr-2">
-          <FaRegArrowAltCircleRight className='text-orange-300' />
+          <FaRegArrowAltCircleRight className='text-[#FF0000]' />
         </span>
         Services
       </Link>
@@ -100,7 +100,7 @@ const Footer = () => {
     <li className="mb-2 group">
       <Link href="/project" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
         <span className="mr-2">
-          <FaRegArrowAltCircleRight className='text-orange-300' />
+          <FaRegArrowAltCircleRight className='text-[#FF0000]' />
         </span>
         Project
       </Link>
@@ -108,7 +108,7 @@ const Footer = () => {
     <li className="mb-2 group">
       <Link href="/contact" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
         <span className="mr-2">
-          <FaRegArrowAltCircleRight className='text-orange-300' />
+          <FaRegArrowAltCircleRight className='text-[#FF0000]' />
         </span>
         Contact
       </Link>
@@ -116,7 +116,7 @@ const Footer = () => {
     <li className="mb-2 group">
       <Link href="/privacy-policy" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
         <span className="mr-2">
-          <FaRegArrowAltCircleRight className='text-orange-300' />
+          <FaRegArrowAltCircleRight className='text-[#FF0000]' />
         </span>
         Privacy Policy
       </Link>
@@ -131,21 +131,21 @@ const Footer = () => {
               <li className="mb-2 group  ">
                 <div className="hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2">
 
-                <FaLocationDot className="mr-2 text-orange-300" />
-                <span>123 Houston, Texas, State 12345, USA</span>
+                <FaLocationDot className="mr-2 text-[#FF0000]" />
+                <span>Austin, Texas, 78701, USA</span>
                 </div>
               </li>
               <li className="mb-2 group ">
               <div className="hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2">
                   
-                <FaPhone className="mr-2 text-orange-300" />
+                <FaPhone className="mr-2 text-[#FF0000]" />
                 <span>+281-942-0577</span>
                   </div>
               </li>
               <li className="mb-2 group ">
               <div className="hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2">
                   
-                <FaEnvelope className="mr-2 text-orange-300" />
+                <FaEnvelope className="mr-2 text-[#FF0000]" />
                 <span>info@profusecc.com</span>
                   </div>
               </li>

@@ -43,70 +43,78 @@ export default function CloudAgilitySection() {
     
 
   return (
-    <section className="mx-auto container xl:max-w-6xl">
-      <div className="py-12 px-6 text-center">
-        <h2 className="text-3xl font-bold text-red-500">
-          Unlock Cloud Agility and Security
-        </h2>
-        <h3 className="text-2xl font-semibold text-red-500 mt-2">
-          with ProfuseCC's Expertise
-        </h3>
+    <div style={{
+      backgroundImage: "url('/assets/aws-bg.webp')", // Replace with your image path
+      backgroundAttachment: "fixed",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}>
 
-        {/* First three features in a 3-column grid */}
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-4">
-          {firstThreeFeatures.map((feature, index) => (
-            <motion.div
-              key={index}
-              className="relative bg-white shadow-md rounded-lg p-6 border flex flex-col "
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-            >
-              <span className="absolute top-[-30px] sm:top-[-35px] left-1/2 transform -translate-x-1/2 bg-white   p-3 rounded-full">
-                <Image src={feature.icon} alt="icon" width={60} height={60} />
-              </span>
-              <h4 className="text-lg font-semibold mt-10">{feature.title}</h4>
-              <p className="text-gray-600 mt-2">{feature.description}</p>
-            </motion.div>
-          ))}
+      <section className="mx-auto container xl:max-w-6xl">
+        <div className="py-12 px-6 text-center">
+          <h2 className="text-3xl font-bold text-[#FF0000]">
+            Unlock Cloud Agility and Security
+          </h2>
+          <h3 className="text-2xl font-semibold text-[#FF0000] mt-2">
+            with ProfuseCC's Expertise
+          </h3>
+
+          {/* First three features in a 3-column grid */}
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-4">
+            {firstThreeFeatures.map((feature, index) => (
+              <motion.div
+                key={index}
+                className="relative bg-white my-6 sm:my-0 shadow-md rounded-lg p-6 border flex flex-col "
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+              >
+                <span className="absolute  top-[-30px] sm:top-[-35px] left-1/2 transform -translate-x-1/2 bg-white   p-3 rounded-full">
+                  <Image src={feature.icon} alt="icon" width={60} height={60} className='trust-icon '/>
+                </span>
+                <h4 className="text-lg font-semibold mt-10">{feature.title}</h4>
+                <p className="text-gray-600 mt-2">{feature.description}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Last two features in a 2-column grid */}
+          <div className="grid md:grid-cols-2 gap-6 mt-10">
+    {lastTwoFeatures.map((feature, index) => (
+      <motion.div
+        key={index + 3} // Ensure unique keys
+        className="relative my-6 sm:my-0 bg-white shadow-md rounded-lg p-6 border flex flex-col items-center pt-16"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: (index + 3) * 0.2 }}
+      >
+        {/* Image Wrapper with Background */}
+        <div className="absolute top-[-25px] sm:top-[-30px] left-1/2 transform -translate-x-1/2 bg-white p-3 rounded-full opacity-100">
+          <Image src={feature.icon} alt="icon" width={60} height={60} className='trust-icon ' />
         </div>
 
-        {/* Last two features in a 2-column grid */}
-        <div className="grid md:grid-cols-2 gap-6 mt-10">
-  {lastTwoFeatures.map((feature, index) => (
-    <motion.div
-      key={index + 3} // Ensure unique keys
-      className="relative bg-white shadow-md rounded-lg p-6 border flex flex-col items-center pt-16"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: (index + 3) * 0.2 }}
-    >
-      {/* Image Wrapper with Background */}
-      <div className="absolute top-[-25px] sm:top-[-30px] left-1/2 transform -translate-x-1/2 bg-white p-3 rounded-full opacity-100">
-        <Image src={feature.icon} alt="icon" width={60} height={60} />
-      </div>
-
-      <h4 className="text-lg font-semibold mt-4">{feature.title}</h4>
-      <p className="text-gray-600 mt-2">{feature.description}</p>
-    </motion.div>
-  ))} 
-</div>
+        <h4 className="text-lg font-semibold mt-4">{feature.title}</h4>
+        <p className="text-gray-600 mt-2">{feature.description}</p>
+      </motion.div>
+    ))} 
+  </div>
 
 
 
-<motion.button
-  className="mt-8 bg-red-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-700 transition flex items-center justify-center mx-auto"
-  whileHover={{ scale: 1.05 }}
-  
-  onClick={() => {
-    window.location.href = '/contact'; // Replace with your desired link
-  }}
->
-  Talk to an Expert →
-</motion.button>
+  <motion.button
+    className="mt-8 bg-[#FF0000] text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-700 transition flex items-center justify-center mx-auto"
+    whileHover={{ scale: 1.05 }}
+    
+    onClick={() => {
+      window.location.href = '/contact'; // Replace with your desired link
+    }}
+  >
+    Talk to an Expert →
+  </motion.button>
 
 
-      </div>
-    </section>
+        </div>
+      </section>
+    </div>
   );
 }

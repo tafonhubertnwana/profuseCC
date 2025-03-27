@@ -2,7 +2,7 @@
 import Navbar from "@/components/navbar";
 import ContactForm from "@/components/contactform";
 import LogoCarousel from "@/components/LogoCarousel";
-import AustinMap from "@/components/AustinMap";
+import AustinMap from "@/components/map";
 import ContactInfo from "@/components/contactinfo";
 import HeroSection from "@/components/herosection/hero";
 

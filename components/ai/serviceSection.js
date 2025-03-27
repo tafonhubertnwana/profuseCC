@@ -5,41 +5,41 @@ const pillars = [
   {
     title: "Built for Business Impact",
     description: "Aligning our efforts with your strategic objectives, we deliver AI solutions that drive tangible business outcomes.",
-    icon: <FaChartLine className="text-orange-500 text-3xl" />,
+    icon: <FaChartLine className="text-[#FF0000] text-3xl" />,
   },
   {
     title: "Ready to Deploy Expertise",
     description: "With a deep pool of AI expertise, our teams are ready to hit the ground running and meet your time-to-market demands.",
-    icon: <FaFileAlt className="text-orange-500 text-3xl" />,
+    icon: <FaFileAlt className="text-[#FF0000] text-3xl" />,
   },
   {
     title: "Secure from the Ground up",
     description: "We proactively design and implement robust security at all levels, from authentication & authorization to communication & data protection.",
-    icon: <FaShieldAlt className="text-orange-500 text-3xl" />,
+    icon: <FaShieldAlt className="text-[#FF0000] text-3xl" />,
   },
   {
     title: "Architected for Scale",
     description: "Our solutions are designed to handle increasing data and user loads, ensuring consistent performance as your business grows.",
-    icon: <FaCogs className="text-orange-500 text-3xl" />,
+    icon: <FaCogs className="text-[#FF0000] text-3xl" />,
   },
   {
     title: "Adaptable to Change",
     description: "Our solutions are implemented and documented with your future needs in mind, allowing for seamless knowledge transfer and easy extensibility.",
-    icon: <FaProjectDiagram className="text-orange-500 text-3xl" />,
+    icon: <FaProjectDiagram className="text-[#FF0000] text-3xl" />,
   },
 ];
 
 export default function ServiceSection() {
   return (
     <>
-    <section className="bg-[#0c1c40] py-10">
+    <section className="bg-black py-10">
 
       <div className="container xl:max-w-6xl mx-auto flex flex-col items-center justify-center px-6 py-12">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl font-bold text-center text-red-500"
+          className="text-4xl font-bold text-center text-[#FF0000]"
         >
           AI solutions for today’s needs <br /> and tomorrow’s vision
         </motion.h1>

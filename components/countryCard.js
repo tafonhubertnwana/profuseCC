@@ -27,7 +27,7 @@ export default function CountryCards() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
-            className="bg-white rounded-2xl shadow-lg p-6 text-center h-[400px] w-full max-w-sm mx-auto relative"
+            className="bg-white my-6 sm:my-0 rounded-2xl shadow-lg p-6 text-center h-[400px] w-full max-w-sm mx-auto relative"
           >
             {/* Image Container */}
             <div className="flex justify-center relative -mt-14">
@@ -48,7 +48,7 @@ export default function CountryCards() {
               <div
                 className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${
                   index === 0 ? 'w-52 h-52' : 'w-52 h-52' // Adjust size for Cameroon
-                } rounded-full border-2 border-dashed border-red-300 animate-spin-slow`}
+                } rounded-full border-2 border-dashed border-[#FF0000] animate-spin-slow`}
               ></div>
             </div>
 
@@ -60,11 +60,11 @@ export default function CountryCards() {
               {/* Right Line */}
               <div className="absolute right-0 left-1/2 h-1 bg-gray-300 transform -translate-y-1/2 top-1/2"></div>
               {/* Icon */}
-              <span className="text-blue-500 text-2xl relative z-10">
+              <span className="text-[#FF0000] text-2xl relative z-10">
                 <IoLocation size={30} />
               </span>
             </div>
-            <button className="mt-4 w-full py-2 bg-transparent border rounded-full hover:bg-red-500 hover:text-white transition">
+            <button className="mt-4 w-full py-2 bg-transparent border  hover:bg-[#FF0000] hover:text-white transition">
               Help Center
             </button>
           </motion.div>

@@ -67,7 +67,7 @@ export default function GenerativeAISlider() {
   ];
 
   return (
-    <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className=" py-12 px-4 sm:px-6 lg:px-8">
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -88,7 +88,7 @@ export default function GenerativeAISlider() {
           >
         <Slider {...settings} className=""> {/* Add gap between slides */}
           {services.map((service) => (
-            <div  key={service.id} className="relative container xl:max-w-6xl border-2 gap-10 h-[550px] bg-white">
+            <div  key={service.id} className="relative bg-black container xl:max-w-6xl border-2 gap-10 h-[550px] ">
 
               <Image
                 src={service.image}
@@ -99,10 +99,10 @@ export default function GenerativeAISlider() {
               />
               <div className='p-6 '>
 
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4 px-4">
+                <h2 className="text-2xl font-semibold text-white mb-4 px-4">
                   {service.title}
                 </h2>
-                <p className="text-gray-600 px-4 pb-4">{service.description}</p>
+                <p className="text-white  px-4 pb-4">{service.description}</p>
               </div>
             </div>
             ))}

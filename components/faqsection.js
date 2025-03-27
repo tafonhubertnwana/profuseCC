@@ -15,47 +15,52 @@ export default function ITServices() {
   return (
     <div className="container xl:max-w-6xl my-10 mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div>
-          <h4 className="text-red-600 text-sm font-semibold">IT Support For Business</h4>
-          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-2">
-            Ensuring Your Success Trusted IT Services Source
-          </h1>
-          <p className="text-gray-600 mt-3 text-sm sm:text-base">
-            Business tailored IT design, management & support services.
-          </p>
+      <div>
+  <h4 className="text-[#FF0000] text-sm font-semibold">AI-Powered Cloud Solutions</h4>
+  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-2">
+    Intelligent Cloud Services for Digital Transformation
+  </h1>
+  <p className="text-gray-600 mt-3 text-sm sm:text-base">
+    ProfuseCC delivers cutting-edge AI solutions on cloud infrastructure to accelerate your business growth.
+  </p>
 
-          {/* Image Section */}
-          <div className="flex flex-col sm:flex-row justify-between mt-6 space-y-4 sm:space-y-0 sm:space-x-4">
-            <Image src="/assets/faqs-1.jpg" alt="First Image" width={300} height={300} className="w-full sm:w-1/2 shadow-md" />
-            <Image src="/assets/faqs-2.jpg" alt="Second Image" width={300} height={300} className="w-full sm:w-1/2 shadow-md" />
-          </div>
-        <div className="mt-8 flex items-start space-x-4">
-        {/* Icon */}
-        <div className="relative z-10 w-16 h-16 flex items-center justify-center rounded-full border-2 border-red-500 text-red-500 text-3xl">
-          <BsFillPatchQuestionFill />
-        </div>
-
-        {/* Description */}
-        <div className="flex-1">
-          <p className="text-gray-800">
-            Business tailored in aws cloud, generative AI, data and analysis, software development, management & support services business agency proved business task state of the art infrastructures for you.
-          </p>
-        </div>
-        </div>
+  {/* Image Section */}
+  <div className="flex flex-col sm:flex-row justify-between mt-6 space-y-4 sm:space-y-0 sm:space-x-4">
+    <Image src="/assets/faqs-1.jpg" alt="AI Cloud Infrastructure" width={300} height={300} className="w-full sm:w-1/2 shadow-md" />
+    <Image src="/assets/faqs-2.jpg" alt="Machine Learning Models" width={300} height={300} className="w-full sm:w-1/2 shadow-md" />
   </div>
+
+  <div className="mt-8 flex items-start space-x-4">
+    {/* Icon */}
+    <div className="relative z-10 w-16 h-16 flex items-center justify-center rounded-full border-2 border-[#FF0000]  text-[#FF0000]  text-3xl">
+      <BsFillPatchQuestionFill />
+    </div>
+
+    {/* Description */}
+    <div className="flex-1">
+      <p className="text-gray-800">
+        ProfuseCC specializes in AI-driven cloud solutions including generative AI platforms, 
+        machine learning operations (MLOps), intelligent data analytics, and cloud-native 
+        application development. Our enterprise-grade AI services help businesses automate 
+        processes, gain predictive insights, and transform operations through cutting-edge 
+        artificial intelligence deployed on scalable cloud infrastructure.
+      </p>
+    </div>
+  </div>
+</div>
         {/* FAQ Section */}
         <div>
           {faqsData.faqs.map((faq, index) => (
             <div key={index} className="my-4 cursor-pointer">
               <div
                 className={`border border-gray-100 p-2 flex justify-between items-center transition-colors duration-200 ${
-                  openIndex === index ? "bg-red-500 text-white" : "hover:bg-red-500 hover:text-white"
+                  openIndex === index ? "bg-[#FF0000]  text-white" : "hover:bg-[#FF0000]  hover:text-white"
                 }`}
                 onClick={() => toggleAccordion(index)}
               >
                 <span className="font-medium flex items-center">
-                  <div className="relative z-10 w-12 h-12 flex items-center justify-center rounded-full border-2 border-red-500 text-red-500 text-3xl">
-                    <BsFillPatchQuestionFill size={24} className={`${openIndex === index ? "text-white" : "text-red-500"}`} />
+                  <div className="relative z-10 w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#FF0000]  text-[#FF0000]  text-3xl">
+                    <BsFillPatchQuestionFill size={24} className={`${openIndex === index ? "text-white" : "text-[#FF0000] "}`} />
                   </div>
                   <span className="ml-3 text-sm sm:text-base">{faq.question}</span>
                 </span>

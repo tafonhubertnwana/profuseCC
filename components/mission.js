@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function MissionSection() {
   return (
-    <section className="bg-orange-200/25 py-10">
+    <section className="py-10">
       {/* Mission Section */}
       <div className="container xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 items-center">
@@ -25,12 +25,12 @@ export default function MissionSection() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="bg-gray-100 h-auto md:h-[600px] w-full p-6 md:p-10 shadow-lg"
+            className=" h-auto md:h-[600px] w-full p-6 md:p-10 "
           >
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
             <ul className="space-y-4 text-gray-700">
               <li className="flex items-start gap-3 py-4">
-                <span className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full text-black text-xl">
+                <span className="flex items-center justify-center w-8 h-8 bg-[#FF0000] rounded-full text-white text-xl">
                   ✔
                 </span>
                 <span className="flex-1 text-black">
@@ -38,7 +38,7 @@ export default function MissionSection() {
                 </span>
               </li>
               <li className="flex items-start gap-3 py-4">
-                <span className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full text-black text-xl">
+                <span className="flex items-center justify-center w-8 h-8 bg-[#FF0000] rounded-full text-white text-xl">
                   ✔
                 </span>
                 <span className="flex-1 text-black">
@@ -46,7 +46,7 @@ export default function MissionSection() {
                 </span>
               </li>
               <li className="flex items-start gap-3 py-4">
-                <span className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full text-black text-xl">
+                <span className="flex items-center justify-center w-8 h-8 bg-[#FF0000] rounded-full text-white text-xl">
                   ✔
                 </span>
                 <span className="flex-1 text-black">
@@ -58,7 +58,7 @@ export default function MissionSection() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="mt-6 bg-orange-600 text-white py-2 px-4 md:py-3 md:px-6 shadow-md hover:bg-orange-500 transition"
+                className="mt-6 bg-[#FF0000] text-white py-2 px-4 md:py-3 md:px-6 shadow-md hover:bg-orange-500 transition"
               >
                 FIND OUT MORE
               </motion.button>
@@ -75,12 +75,12 @@ export default function MissionSection() {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="bg-gray-100 h-auto md:h-[600px] w-full p-6 md:p-10 shadow-lg order-2 md:order-1"
+            className=" h-auto md:h-[600px] w-full p-6 md:p-10  order-2 md:order-1"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Our Vision</h2>
             <ul className="space-y-4 text-gray-700">
               <li className="flex items-start gap-3 py-4">
-                <span className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full text-black text-xl">
+                <span className="flex items-center justify-center w-8 h-8 bg-[#FF0000] rounded-full text-white text-xl">
                   ✔
                 </span>
                 <span className="flex-1 text-black">
@@ -88,7 +88,7 @@ export default function MissionSection() {
                 </span>
               </li>
               <li className="flex items-start gap-3 py-4">
-                <span className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full text-black text-xl">
+                <span className="flex items-center justify-center w-8 h-8 bg-[#FF0000] rounded-full text-white text-xl">
                   ✔
                 </span>
                 <span className="flex-1 text-black">
@@ -96,7 +96,7 @@ export default function MissionSection() {
                 </span>
               </li>
               <li className="flex items-start gap-3 py-4">
-                <span className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full text-black text-xl">
+                <span className="flex items-center justify-center w-8 h-8 bg-[#FF0000] rounded-full text-white text-xl">
                   ✔
                 </span>
                 <span className="flex-1 text-black">
@@ -108,7 +108,7 @@ export default function MissionSection() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="mt-6 bg-orange-600 text-white py-2 px-4 md:py-3 md:px-6 shadow-md hover:bg-orange-500 transition"
+                className="mt-6 bg-[#FF0000] text-white py-2 px-4 md:py-3 md:px-6 shadow-md hover:bg-orange-500 transition"
               >
                 FIND OUT MORE
               </motion.button>
@@ -149,12 +149,12 @@ export default function MissionSection() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="bg-gray-100 h-auto md:h-[600px] w-full p-6 md:p-10 shadow-lg"
+            className=" h-auto md:h-[600px] w-full p-6 md:p-10 "
           >
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Our Goal</h2>
             <ul className="space-y-4 text-gray-700">
               <li className="flex items-start gap-3 py-4">
-                <span className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full text-black text-xl">
+                <span className="flex items-center justify-center w-8 h-8 bg-[#FF0000] rounded-full text-white text-xl">
                   ✔
                 </span>
                 <span className="flex-1 text-black">
@@ -162,7 +162,7 @@ export default function MissionSection() {
                 </span>
               </li>
               <li className="flex items-start gap-3 py-4">
-                <span className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full text-black text-xl">
+                <span className="flex items-center justify-center w-8 h-8 bg-[#FF0000] rounded-full text-white text-xl">
                   ✔
                 </span>
                 <span className="flex-1 text-black">
@@ -170,7 +170,7 @@ export default function MissionSection() {
                 </span>
               </li>
               <li className="flex items-start gap-3 py-4">
-                <span className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full text-black text-xl">
+                <span className="flex items-center justify-center w-8 h-8 bg-[#FF0000] rounded-full text-white text-xl">
                   ✔
                 </span>
                 <span className="flex-1 text-black">
@@ -182,7 +182,7 @@ export default function MissionSection() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="mt-6 bg-orange-600 text-white py-2 px-4 md:py-3 md:px-6 shadow-md hover:bg-orange-500 transition"
+                className="mt-6 bg-[#FF0000] text-white py-2 px-4 md:py-3 md:px-6 shadow-md hover:bg-orange-500 transition"
               >
                 FIND OUT MORE
               </motion.button>

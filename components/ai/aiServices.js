@@ -7,7 +7,7 @@ import FeatureCards from './aimSerivces';
 
 const AIServiceSection = () => {
   return (
-    <section className='bg-gradient-to-r from-gray-900 to-gray-800  py-10'>
+    <section className='bg-black  py-10'>
 
       <FeatureCards />
     </section>

@@ -83,3 +83,6 @@ body {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+.trust-icon {
+  filter: invert(18%) sepia(100%) saturate(7480%) hue-rotate(0deg);
+}

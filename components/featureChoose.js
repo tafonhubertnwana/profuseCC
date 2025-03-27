@@ -6,25 +6,25 @@ import { FaDatabase, FaHeadset, FaUserFriends, FaBookOpen } from 'react-icons/fa
 const features =[
   {
     id: 1,
-    icon: <FaDatabase size={40} className="text-black" />, 
+    icon: <FaDatabase size={40} className="text-[#FF0000] " />, 
     title: "Data Security",
     description: "Protect sensitive information with robust encryption, secure access controls, and proactive threat detection."
   },
   {
     id: 2,
-    icon: <FaBookOpen size={40} className="text-black" />, 
+    icon: <FaBookOpen size={40} className="text-[#FF0000] " />, 
     title: "IT Services",
     description: "Empowering businesses with cutting-edge IT solutions, from cloud computing to network infrastructure management."
   },
   {
     id: 3,
-    icon: <FaHeadset size={40} className="text-black" />, 
+    icon: <FaHeadset size={40} className="text-[#FF0000] " />, 
     title: "Support",
     description: "Round-the-clock technical assistance to ensure seamless operations and quick resolution of IT challenges."
   },
   {
     id: 4,
-    icon: <FaUserFriends size={40} className="text-black" />, 
+    icon: <FaUserFriends size={40} className="text-[#FF0000] " />, 
     title: "People",
     description: "Building strong collaborations and fostering innovation through a team of skilled professionals."
   }
@@ -39,7 +39,7 @@ export default function FeaturesSection() {
           initial={{ width: 0 }}
           animate={{ width: '100%' }}
           transition={{ duration: 1 }}
-          className="border-t-2 border-red-500 w-full mb-8"
+          className="border-t-2 border-[#FF0000] w-full mb-8"
         ></motion.div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {features.map((feature) => (

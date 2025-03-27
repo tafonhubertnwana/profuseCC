@@ -65,13 +65,13 @@ const HeroSection = ({ title, description, backgroundImage, breadcrumb }) => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-white text-xs sm:text-sm md:text-base pt-6 md:pt-10 flex items-center"
           >
-            <Link href="/" className="hover:text-red-500 flex items-center">
+            <Link href="/" className="hover:text-[#FF0000] flex items-center">
               <FaHome size={16} className="mr-1 sm:mr-2" /> Home
             </Link>
             <span className="mx-1 sm:mx-2">
               <FaLongArrowAltRight size={16} />
             </span>
-            <span className="text-red-500">{breadcrumb}</span>
+            <span className="text-[#FF0000]">{breadcrumb}</span>
           </motion.div>
         </div>
       </div>

@@ -64,11 +64,11 @@ const TeamDetailPage = () => {
           
           <div className="mt-6 flex flex-col sm:flex-row md:py-5 items-center sm:space-x-4 space-y-3 sm:space-y-0">
   <div className="flex items-center space-x-2 bg-gray-100 px-4 py-2 rounded-lg w-full sm:w-auto justify-center sm:justify-start">
-    <FaPhoneAlt className="text-orange-500" />
+    <FaPhoneAlt className="text-[#FF0000]" />
     <span className="text-gray-700">+123 (4547) 563</span>
   </div>
   <div className="flex items-center space-x-2 bg-gray-100 px-4 py-2 rounded-lg w-full sm:w-auto justify-center sm:justify-start">
-    <FaEnvelope className="text-orange-500" />
+    <FaEnvelope className="text-[#FF0000]" />
     <span className="text-gray-700">info@gmail.com</span>
   </div>
 </div>
@@ -91,9 +91,9 @@ const TeamDetailPage = () => {
 
 
           <div className="mt-6 flex items-center space-x-2">
-            <div className="rounded-full border-orange-500 border-2 p-3">
+            <div className="rounded-full border-[#FF0000] border-2 p-3">
 
-            <FaMapMarkerAlt className="text-orange-500" />
+            <FaMapMarkerAlt className="text-[#FF0000]" />
             </div>
             <span className="text-gray-700">21 King Street 5th Floor Hamilton, Ontario Canada</span>
           </div>

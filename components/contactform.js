@@ -16,7 +16,7 @@ const ContactForm = () => {
     <div className="min-h-screen bg-red-50 flex flex-col items-center justify-center p-4">
       {/* Header Section */}
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-red-500 mb-4">How Can We Help You?</h1>
+        <h1 className="text-4xl font-bold text-[#FF0000] mb-4">How Can We Help You?</h1>
         <p className="text-gray-600 text-lg">
           Get in touch with your nearest local business sales executive.
         </p>
@@ -36,7 +36,7 @@ const ContactForm = () => {
 />
 
     {/* Text Section with red Background */}
-    <div className="bg-red-500 h-full flex  justify-center p-6">
+    <div className="bg-[#FF0000] h-full flex  justify-center p-6">
   <motion.div
     initial={{ opacity: 0, x: -20 }}
     animate={{ opacity: 1, x: 0 }}
@@ -49,8 +49,8 @@ const ContactForm = () => {
       Feel Free to Contact & Hire Us for Your Solution
     </p>
     <Link
-      href="/services"
-      className="inline-flex  text-blue-300 hover:text-blue-400 transition duration-300 mb-6"
+      href="/aboutUs"
+      className="inline-flex  text-white hover:text-white transition duration-300 mb-6"
     >
       <span>Learn More</span>
       <FaArrowRight className="ml-2" />
@@ -65,27 +65,18 @@ const ContactForm = () => {
           href="https://facebook.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white hover:text-black hover:bg-white transition duration-300 rounded-full p-2"
+          className=" text-black bg-white transition duration-300 rounded-full p-2"
         >
           <FaFacebook className="w-6 h-6" />
         </Link>
 
-        {/* Twitter */}
-        <Link
-          href="https://twitter.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white hover:text-black hover:bg-white transition duration-300 rounded-full p-2"
-        >
-          <FaXTwitter className="w-6 h-6" />
-        </Link>
-
+        
         {/* Instagram */}
         <Link
           href="https://instagram.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white hover:text-black hover:bg-white transition duration-300 rounded-full p-2"
+          className=" text-black bg-white transition duration-300 rounded-full p-2"
         >
           <FaInstagram className="w-6 h-6" />
         </Link>
@@ -95,7 +86,7 @@ const ContactForm = () => {
           href="https://linkedin.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white hover:text-black hover:bg-white transition duration-300 rounded-full p-2"
+          className=" text-black bg-white transition duration-300 rounded-full p-2"
         >
           <FaLinkedin className="w-6 h-6" />
         </Link>
@@ -182,7 +173,7 @@ const ContactForm = () => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         type="submit"
-        className="w-full bg-red-500 text-white py-3 flex items-center justify-center space-x-2 hover:bg-red-700 transition duration-300"
+        className="w-full bg-[#FF0000] text-white py-3 flex items-center justify-center space-x-2 hover:bg-red-700 transition duration-300"
       >
         <FaPaperPlane />
         <span>Submit Message</span>

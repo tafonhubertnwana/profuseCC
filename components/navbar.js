@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation"; // Import usePathname
 import Image from "next/image";
-import logo from "@/public/assets/aclogo.png";
+import logo from "@/public/assets/profuse.jpg";
 import { FaFacebook, FaLinkedin, FaArrowUp, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
@@ -55,18 +55,18 @@ const Navbar = () => {
               <Link
                 href="/"
                 className={`${
-                  isActive("/") ? "text-red-500" : isScrolled ? "" : "text-white"
-                } hover:text-red-500 relative group`}
+                  isActive("/") ? "text-[#FF0000]" : isScrolled ? "" : "text-white"
+                } hover:text-[#FF0000] relative group`}
               >
                 Home
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FF0000] transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <div className="relative">
                 <button
                   onClick={() => setIsServiceDropdownOpen(!isServiceDropdownOpen)}
                   className={`${
-                    isActive("/services") ? "text-red-500" : isScrolled ? "" : "text-white"
-                  } hover:text-red-500 flex items-center relative group`}
+                    isActive("/services") ? "text-[#FF0000]" : isScrolled ? "" : "text-white"
+                  } hover:text-[#FF0000] flex items-center relative group`}
                 >
                   Service
                   <svg
@@ -78,7 +78,7 @@ const Navbar = () => {
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                   </svg>
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FF0000] transition-all duration-300 group-hover:w-full"></span>
                 </button>
                 {isServiceDropdownOpen && (
                   <div className="absolute mt-2 w-72 bg-white shadow-lg rounded-lg py-2">
@@ -92,8 +92,8 @@ const Navbar = () => {
                         key={index}
                         href={service.href}
                         className={`block px-4 py-2 ${
-                          isActive(service.href) ? "text-red-500" : "text-gray-600"
-                        } hover:text-red-500 transition-transform duration-300 hover:translate-x-2`}
+                          isActive(service.href) ? "text-[#FF0000]" : "text-gray-600"
+                        } hover:text-[#FF0000] transition-transform duration-300 hover:translate-x-2`}
                       >
                         {service.name}
                       </Link>
@@ -104,27 +104,27 @@ const Navbar = () => {
               <Link
                 href="/aboutUs"
                 className={`${
-                  isActive("/aboutUs") ? "text-red-500" : isScrolled ? "" : "text-white"
-                } hover:text-red-500 relative group`}
+                  isActive("/aboutUs") ? "text-[#FF0000]" : isScrolled ? "" : "text-white"
+                } hover:text-[#FF0000] relative group`}
               >
                 About Us
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FF0000] transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <Link
                 href="/project"
                 className={`${
-                  isActive("/project") ? "text-red-500" : isScrolled ? "" : "text-white"
-                } hover:text-red-500 relative group`}
+                  isActive("/project") ? "text-[#FF0000]" : isScrolled ? "" : "text-white"
+                } hover:text-[#FF0000] relative group`}
               >
                 Projects
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FF0000] transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <div className="relative">
                 <button
                   onClick={() => setPageOpen(!pageOpen)}
                   className={`${
-                    isActive("/page") ? "text-red-500" : isScrolled ? "" : "text-white"
-                  } hover:text-red-500 flex items-center relative group`}
+                    isActive("/page") ? "text-[#FF0000]" : isScrolled ? "" : "text-white"
+                  } hover:text-[#FF0000] flex items-center relative group`}
                 >
                   Pages
                   <svg
@@ -136,7 +136,7 @@ const Navbar = () => {
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                   </svg>
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FF0000] transition-all duration-300 group-hover:w-full"></span>
                 </button>
                 {pageOpen && (
                   <div className="absolute mt-2 w-72 bg-white shadow-lg rounded-lg py-2 transform transition-transform duration-300 hover:translate-x-2">
@@ -152,8 +152,8 @@ const Navbar = () => {
                         key={index}
                         href={item.href}
                         className={`block px-4 py-2 ${
-                          isActive(item.href) ? "text-red-500" : "text-gray-600"
-                        } hover:text-red-500 transition-transform duration-300 hover:translate-x-2`}
+                          isActive(item.href) ? "text-[#FF0000]" : "text-gray-600"
+                        } hover:text-[#FF0000] transition-transform duration-300 hover:translate-x-2`}
                       >
                         {item.name}
                       </Link>
@@ -164,23 +164,23 @@ const Navbar = () => {
               <Link
                 href="/contact"
                 className={`${
-                  isActive("/contact") ? "text-red-500" : isScrolled ? "" : "text-white"
-                } hover:text-red-500 relative group`}
+                  isActive("/contact") ? "text-[#FF0000]" : isScrolled ? "" : "text-white"
+                } hover:text-[#FF0000] relative group`}
               >
                 Contact
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FF0000] transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </div>
           </div>
           <div className="hidden lg:flex items-center space-x-6">
             <div className="flex space-x-4">
-              <Link href="https://facebook.com" className={`${isScrolled ? "" : "text-white"} hover:text-red-500`}>
+              <Link href="https://facebook.com" className={`${isScrolled ? "" : "text-white"} hover:text-[#FF0000]`}>
                 <FaFacebook size={24} />
               </Link>
-              <Link href="https://instagram.com" className={`${isScrolled ? "" : "text-white"} hover:text-red-500`}>
+              <Link href="https://instagram.com" className={`${isScrolled ? "" : "text-white"} hover:text-[#FF0000]`}>
                 <FaInstagram size={24} />
               </Link>
-              <Link href="https://linkedin.com" className={`${isScrolled ? "" : "text-white"} hover:text-red-500`}>
+              <Link href="https://linkedin.com" className={`${isScrolled ? "" : "text-white"} hover:text-[#FF0000]`}>
                 <FaLinkedin size={24} />
               </Link>
             </div>
@@ -192,7 +192,7 @@ const Navbar = () => {
                 onClick={openModal}
               >
                 <span className="relative z-10">WORK WITH US</span>
-                <span className="absolute inset-y-0 left-0 w-0 bg-red-500 transition-all duration-500 group-hover:w-full"></span>
+                <span className="absolute inset-y-0 left-0 w-0 bg-[#FF0000] transition-all duration-500 group-hover:w-full"></span>
               </button>
 
               <ConsultationFormModal isOpen={isModalOpen} onClose={closeModal} />
@@ -226,7 +226,7 @@ const Navbar = () => {
           <div className="p-4">
             <Link
               href="/"
-              className={`block py-2 ${isActive("/") ? "text-red-500" : "text-gray-800"} hover:text-red-500`}
+              className={`block py-2 ${isActive("/") ? "text-[#FF0000]" : "text-gray-800"} hover:text-[#FF0000]`}
             >
               Home
             </Link>
@@ -234,8 +234,8 @@ const Navbar = () => {
               <button
                 onClick={() => setIsServiceDropdownOpen(!isServiceDropdownOpen)}
                 className={`w-full text-left py-2 ${
-                  isActive("/tech-services") ? "text-red-500" : "text-gray-800"
-                } hover:text-red-500 flex items-center`}
+                  isActive("/tech-services") ? "text-[#FF0000]" : "text-gray-800"
+                } hover:text-[#FF0000] flex items-center`}
               >
                 Service
                 <svg
@@ -260,8 +260,8 @@ const Navbar = () => {
                       key={index}
                       href={service.href}
                       className={`block py-2 ${
-                        isActive(service.href) ? "text-red-500" : "text-gray-800"
-                      } hover:text-red-500 transition-transform duration-300 hover:translate-x-2`}
+                        isActive(service.href) ? "text-[#FF0000]" : "text-gray-800"
+                      } hover:text-[#FF0000] transition-transform duration-300 hover:translate-x-2`}
                     >
                       {service.name}
                     </Link>
@@ -272,16 +272,16 @@ const Navbar = () => {
             <Link
               href="/aboutUs"
               className={`block py-2 ${
-                isActive("/aboutUs") ? "text-red-500" : "text-gray-800"
-              } hover:text-red-500`}
+                isActive("/aboutUs") ? "text-[#FF0000]" : "text-gray-800"
+              } hover:text-[#FF0000]`}
             >
               About Us
             </Link>
             <Link
               href="/project"
               className={`block py-2 ${
-                isActive("/project") ? "text-red-500" : "text-gray-800"
-              } hover:text-red-500`}
+                isActive("/project") ? "text-[#FF0000]" : "text-gray-800"
+              } hover:text-[#FF0000]`}
             >
               Projects
             </Link>
@@ -289,8 +289,8 @@ const Navbar = () => {
               <button
                 onClick={() => setPageOpen(!pageOpen)}
                 className={`w-full text-left py-2 ${
-                  isActive("/page") ? "text-red-500" : "text-gray-800"
-                } hover:text-red-500 flex items-center`}
+                  isActive("/page") ? "text-[#FF0000]" : "text-gray-800"
+                } hover:text-[#FF0000] flex items-center`}
               >
                 Pages
                 <svg
@@ -317,8 +317,8 @@ const Navbar = () => {
                       key={index}
                       href={item.href}
                       className={`block py-2 ${
-                        isActive(item.href) ? "text-red-500" : "text-gray-800"
-                      } hover:text-red-500 transition-transform duration-300 hover:translate-x-2`}
+                        isActive(item.href) ? "text-[#FF0000]" : "text-gray-800"
+                      } hover:text-[#FF0000] transition-transform duration-300 hover:translate-x-2`}
                     >
                       {item.name}
                     </Link>
@@ -329,8 +329,8 @@ const Navbar = () => {
             <Link
               href="/contact"
               className={`block py-2 ${
-                isActive("/contact") ? "text-red-500" : "text-gray-800"
-              } hover:text-red-500`}
+                isActive("/contact") ? "text-[#FF0000]" : "text-gray-800"
+              } hover:text-[#FF0000]`}
             >
               Contact
             </Link>
@@ -343,20 +343,20 @@ const Navbar = () => {
       
       >
         <span className="relative z-10">WORK WITH US</span>
-        <span className="absolute inset-y-0 left-0 w-0 bg-red-500 transition-all duration-500 group-hover:w-full"></span>
+        <span className="absolute inset-y-0 left-0 w-0 bg-[#FF0000] transition-all duration-500 group-hover:w-full"></span>
       </button>
 
      
     </div>
             {/* Add Social Links in Mobile Menu */}
             <div className="flex space-x-4 mt-4">
-              <Link href="https://facebook.com" className="text-gray-800 hover:text-red-500">
+              <Link href="https://facebook.com" className="text-gray-800 hover:text-[#FF0000]">
                 <FaFacebook size={24} />
               </Link>
-              <Link href="https://instagram.com" className="text-gray-800 hover:text-red-500">
+              <Link href="https://instagram.com" className="text-gray-800 hover:text-[#FF0000]">
                 <FaInstagram size={24} />
               </Link>
-              <Link href="https://linkedin.com" className="text-gray-800 hover:text-red-500">
+              <Link href="https://linkedin.com" className="text-gray-800 hover:text-[#FF0000]">
                 <FaLinkedin size={24} />
               </Link>
             </div>

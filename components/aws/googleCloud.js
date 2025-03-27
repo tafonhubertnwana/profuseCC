@@ -50,7 +50,7 @@ const GoogleCloudServices = () => {
   };
 
   return (
-    <div className="p-20 bg-gradient-to-br from-red-200 to-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="p-20 bg-black  py-12 px-4 sm:px-6 lg:px-8">
     
 
       <div className="max-w-7xl mx-auto">
@@ -58,7 +58,7 @@ const GoogleCloudServices = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold text-center text-gray-800 mb-12"
+          className="text-3xl font-bold text-center text-white mb-12"
         >
           Google Cloud Services
         </motion.h1>
@@ -72,7 +72,7 @@ const GoogleCloudServices = () => {
           >
             <motion.h2 
               variants={itemVariants}
-              className="text-2xl font-semibold text-red-600 mb-6"
+              className="text-2xl font-semibold text-white mb-6"
             >
               Natural Language Processing (NLP)
             </motion.h2>
@@ -102,7 +102,7 @@ const GoogleCloudServices = () => {
           >
             <motion.h2 
               variants={itemVariants}
-              className="text-2xl font-semibold text-red-600 mb-6"
+              className="text-2xl font-semibold text-white mb-6"
             >
               Computer Vision Services
             </motion.h2>

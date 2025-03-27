@@ -10,7 +10,7 @@ const services = [
     image: '/assets/portfolio2-1.png',
   },
   {
-    title: 'Cyber Security & Protect',
+    title: 'CyberSecurity & Protect',
     category: 'Technology',
     image: '/assets/portfolio2-2.png',
   },
@@ -23,12 +23,12 @@ const services = [
 
 export default function ProjectSection() {
   return (
-    <section className="bg-[#0c1c40] text-white py-16 px-6">
+    <section className="bg-black text-white py-16 px-6">
       <div className="container xl:max-w-6xl mx-auto">
-        <div className="text-center">
-          <p className="text-red-400">IT Support For Business</p>
-          <h2 className="text-3xl font-bold mt-2">Ensuring Your Success Trusted IT Services Source</h2>
-        </div>
+      <div className="text-center">
+        <p className="text-[#FF0000] font-medium">Enterprise AI & Cloud Platform</p>
+        <h2 className="text-3xl font-bold mt-2">Powering Businesses with Intelligent Cloud Infrastructure</h2>
+      </div>
         <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-6">
   {services.map((service, index) => (
     <motion.div
@@ -39,7 +39,7 @@ export default function ProjectSection() {
     className="relative overflow-hidden shadow-lg pb-20" // Add padding-bottom
   >
     <Image src={service.image} alt={service.title} width={400} height={400} className="w-full object-cover" />
-    <div className="absolute inset-x-0  bottom-10 bg-red-500 bg-opacity-90 p-4 w-3/4 mx-auto ">
+    <div className="absolute inset-x-0  bottom-10 bg-[#FF0000] bg-opacity-90 p-4 w-3/4 mx-auto ">
       <p className="text-white text-sm font-semibold">{service.category}</p>
       <h3 className="text-xl font-bold mt-2 text-white">{service.title}</h3>
     </div>

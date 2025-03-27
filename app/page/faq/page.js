@@ -4,7 +4,7 @@ import ITServices from "@/components/faqsection";
 import LogoCarousel from "@/components/LogoCarousel";
 import HeroSection from "@/components/herosection/hero";
 import ConsultationForm from "@/components/consultingForm";
-import AustinMap from "@/components/AustinMap";
+import AustinMap from "@/components/map";
 
 const FAQPage = () => {
   return (

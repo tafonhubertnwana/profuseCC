@@ -23,7 +23,7 @@ const ChatAndScrollButton = () => {
       {/* Chat Box Button (Left Bottom) */}
       <button
         onClick={() => setIsChatOpen(!isChatOpen)}
-        className="fixed bottom-10 left-4 bg-red-600 text-white p-3 rounded-full shadow-lg hover:bg-red-800 z-50"
+        className="fixed bottom-10 left-4 bg-[#FF0000] text-white p-3 rounded-full shadow-lg hover:bg-red-800 z-50"
       >
         <IoIosChatbubbles  size={24} />
       </button>
@@ -54,7 +54,7 @@ const ChatAndScrollButton = () => {
       {/* Scroll to Top Button (Right Bottom) */}
       <motion.button
         onClick={scrollToTop}
-        className="fixed bottom-10 right-4 bg-red-500 text-white p-3  shadow-lg hover:bg-red-600 transition-colors duration-300 z-50"
+        className="fixed bottom-10 right-4 bg-[#FF0000] text-white p-3  shadow-lg hover:bg-[#FF0000] transition-colors duration-300 z-50"
         animate={{
           y: [0, -10, 0], // Moves up and down
         }}

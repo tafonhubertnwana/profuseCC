@@ -37,7 +37,7 @@ export default function TeamSection() {
         >
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <div className="text-center sm:text-left">
-              <h2 className="text-red-500 text-sm font-semibold uppercase tracking-wider">
+              <h2 className="text-[#FF0000]  text-sm font-semibold uppercase tracking-wider">
                 Dedicated Team
               </h2>
               <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">
@@ -49,7 +49,7 @@ export default function TeamSection() {
             </div>
             <button
               onClick={() => setShowAllMembers(!showAllMembers)}
-              className="mt-8 sm:mt-0 bg-red-500 text-white px-6 py-3 hover:bg-red-600 transition-colors duration-300"
+              className="mt-8 sm:mt-0 bg-[#FF0000]  text-white px-6 py-3 hover:bg-red-600 transition-colors duration-300"
             >
               {showAllMembers ? 'Hide Members' : 'All Members →'}
             </button>
@@ -70,7 +70,7 @@ export default function TeamSection() {
                       <Link href={`/page/team/${member.id}`}>
                         <Image src={member.image} alt={member.name} width={300} height={450} className="w-full h-full object-cover" />
                       </Link>
-                      <div className="absolute group transform hover:shadow-xl group-hover:scale-110 bottom-0 w-full bg-red-400/60 p-4 text-center transition-all duration-300 hover:bg-black/40">
+                      <div className="absolute group transform hover:shadow-xl group-hover:scale-110 bottom-0 w-full bg-[#FF0000]/60 p-4 text-center transition-all duration-300 hover:bg-black/40">
                         <h5 className="text-lg font-semibold text-white">{member.name}</h5>
                         <p className="text-gray-300">{member.role}</p>
                         <div className='mt-2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300'>
@@ -79,7 +79,7 @@ export default function TeamSection() {
                             <Link href="#" className="text-gray-300 hover:text-blue-500 transition-colors"><FaFacebookF size={20} /></Link>
                             <Link href="#" className="text-gray-300 hover:text-blue-400 transition-colors"><FaTwitter size={20} /></Link>
                             <Link href="#" className="text-gray-300 hover:text-blue-600 transition-colors"><FaLinkedinIn size={20} /></Link>
-                            <Link href="#" className="text-gray-300 hover:text-red-500 transition-colors"><FaRss size={20} /></Link>
+                            <Link href="#" className="text-gray-300 hover:text-[#FF0000]  transition-colors"><FaRss size={20} /></Link>
                           </div>
                             
                         </div> 
@@ -110,7 +110,7 @@ export default function TeamSection() {
                             <Link href="#" className="text-gray-300 hover:text-blue-500 transition-colors"><FaFacebookF size={20} /></Link>
                             <Link href="#" className="text-gray-300 hover:text-blue-400 transition-colors"><FaTwitter size={20} /></Link>
                             <Link href="#" className="text-gray-300 hover:text-blue-600 transition-colors"><FaLinkedinIn size={20} /></Link>
-                            <Link href="#" className="text-gray-300 hover:text-red-500 transition-colors"><FaRss size={20} /></Link>
+                            <Link href="#" className="text-gray-300 hover:text-[#FF0000]  transition-colors"><FaRss size={20} /></Link>
                           </div>
                             
                         </div> 

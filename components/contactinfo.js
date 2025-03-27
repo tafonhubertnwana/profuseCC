@@ -12,21 +12,21 @@ const ContactInfo = () => {
         {data.map((item, index) => (
           <motion.div
             key={index}
-            className="group relative flex items-center gap-4 border border-red-500 px-6 py-6 rounded-lg shadow-md overflow-hidden"
+            className="group relative flex items-center gap-4 border border-[#FF0000] px-6 py-6 rounded-lg shadow-md overflow-hidden"
             whileHover={{ scale: 1.05 }}
           >
             {/* Hover effect background */}
-            <span className="absolute inset-y-0 left-0 w-0 bg-red-500 transition-all duration-500 group-hover:w-full"></span>
+            <span className="absolute inset-y-0 left-0 w-0 bg-[#FF0000] transition-all duration-500 group-hover:w-full"></span>
 
             {/* Content */}
-            <div className="relative z-10 w-16 h-16 flex items-center justify-center rounded-full border-2 border-red-500 text-red-500 text-3xl group-hover:text-white group-hover:border-white transition-colors duration-500">
+            <div className="relative z-10 w-16 h-16 flex items-center justify-center rounded-full border-2 border-[#FF0000] text-[#FF0000] text-3xl group-hover:text-white group-hover:border-white transition-colors duration-500">
               {item.icon}
             </div>
             <div className="relative z-10">
               <p className="font-semibold text-gray-800 group-hover:text-white transition-colors duration-500">
                 {item.title}
               </p>
-              <p className="text-red-500 font-bold group-hover:text-white transition-colors duration-500">
+              <p className="text-[#FF0000] font-bold group-hover:text-white transition-colors duration-500">
                 {item.info}
               </p>
             </div>
@@ -51,7 +51,7 @@ const data = [
   {
     icon: <IoTimeOutline />,
     title: "Opening Hours",
-    info: "Fri - Mon (9.00 - 5.00)",
+    info: "Fri - Mon (9:00AM - 5:00PM)",
   },
 ];
 

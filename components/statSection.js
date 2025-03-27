@@ -10,7 +10,7 @@ const stats = [
 
 const StatsSection = () => {
   return (
-    <section className="bg-gray-100 py-12 px-6">
+    <section className="bg-black py-12 px-6">
       {/* Heading and Description */}
       <div className="container xl:max-w-6xl mx-auto text-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -18,7 +18,7 @@ const StatsSection = () => {
           <motion.div>
 
             <motion.h2
-              className="text-3xl md:text-4xl font-bold text-gray-900 text-left "
+              className="text-3xl md:text-4xl font-bold text-white text-left "
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -29,17 +29,12 @@ const StatsSection = () => {
           <motion.div>
             
             <motion.p
-              className=" text-gray-600 text-sm md:text-base text-justify"
+              className=" text-white text-sm md:text-base text-justify"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.6 }}
             >
-              ProfuseCC is a global system integrator and a top-tier TECH consultancy
-              dedicated to delivering professional, customer-centric solutions and
-              services. Founded in 2003 on the principles of technological
-              excellence and personalized service, ProfuseCC has established itself as
-              a trusted partner in the digital transformation journey of Fortune 500
-              clients worldwide.
+              ProfuseCC is an artificial intelligence cloud startup focused on delivering innovative AI-driven solutions. Our goal is to empower businesses with cutting-edge cloud technologies and intelligent automation to enhance efficiency and drive growth in a competitive landscape
             </motion.p>
           </motion.div>
         </div>
@@ -51,16 +46,16 @@ const StatsSection = () => {
     <motion.div
       key={index}
       className={`flex flex-col items-center relative ${
-        index !== stats.length - 1 ? "border-r border-red-300" : ""
+        index !== stats.length - 1 ? "border-r border-[#FF0000] " : ""
       }`}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.2, duration: 0.6 }}
     >
-      <span className="text-3xl md:text-4xl font-bold text-red-700">
+      <span className="text-3xl md:text-4xl font-bold text-[#FF0000] ">
         {stat.value}
       </span>
-      <span className="text-gray-600 text-sm md:text-base">{stat.label}</span>
+      <span className="text-white text-sm md:text-base">{stat.label}</span>
     </motion.div>
   ))}
 </div>
