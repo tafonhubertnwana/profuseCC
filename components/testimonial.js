@@ -27,6 +27,8 @@ export default function Testimonials() {
     const formData = new FormData();
     formData.append("image", file);
     formData.append("name", e.target.name.value);
+    formData.append("position", e.target.position.value);
+    formData.append("company", e.target.company.value);
     formData.append("review", e.target.review.value);
     formData.append("rating", rating);
     
@@ -49,7 +51,7 @@ export default function Testimonials() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2, // Show two testimonials at a time
+    slidesToShow: 1, // Show two testimonials at a time
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -94,49 +96,57 @@ export default function Testimonials() {
   </div>
 </div>
 
-        <Slider {...carouselSettings}>
-          {testimonials.map((testimonial) => (
-            <div key={testimonial._id} className="px-2 max-w-3xl mx-auto">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                className="h-56 p-8 rounded-xl shadow-xl relative overflow-hidden bg-white"
-              >
-                <FaQuoteLeft className="text-4xl opacity-30 absolute top-4 left-4" />
-                <div className="flex items-center mb-6">
-                  <div className="w-14 h-14 rounded-full border-4 shadow-md overflow-hidden relative" style={{ top: '-50%' }}>
-                    <Image
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      width={56}
-                      height={56}
-                      className="object-cover"
-                      onError={() => setImageError(true)}
-                    />
-                  </div>
-                  <div className="ml-4">
-                    <h2 className="text-xl font-semibold">{testimonial.name}</h2>
-                    <div className="flex mt-1 space-x-1">
-                      {[...Array(5)].map((_, i) => (
-                        <span
-                          key={i}
-                          className={`text-xl ${
-                            i < testimonial.rating ? "text-yellow-400" : "text-gray-400"
-                          }`}
-                        >
-                          ★
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <p className="text-lg italic">{testimonial.review}</p>
-                <FaQuoteRight className="text-4xl opacity-30 absolute bottom-4 right-4" />
-              </motion.div>
+<Slider {...carouselSettings}>
+  {testimonials.map((testimonial) => (
+    <div key={testimonial._id} className="px-2 mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        className=" p-8 rounded-xl shadow-xl relative overflow-hidden bg-white flex flex-col"
+      >
+        <FaQuoteLeft className="text-4xl text-[#FF0000]  absolute top-4 left-4" />
+        
+        {/* Testimonial text */}
+        <div className="flex-grow flex items-center">
+          <p className="text-lg italic text-center">{testimonial.review}</p>
+        </div>
+        
+        {/* Centered profile section */}
+        <div className="flex flex-col items-center mt-auto">
+          <div className="w-20 h-20 rounded-full border-4 shadow-md overflow-hidden relative ">
+            <Image
+              src={testimonial.image}
+              alt={testimonial.name}
+              width={80}
+              height={80}
+              className="object-cover"
+              onError={() => setImageError(true)}
+            />
+          </div>
+          <div className="text-center mt-4">
+            <h2 className="text-xl font-semibold">{testimonial.name}</h2>
+            <p className="text-sm text-gray-600">{testimonial.position} at {testimonial.company}</p>
+            <div className="flex justify-center mt-1 space-x-1">
+              {[...Array(5)].map((_, i) => (
+                <span
+                  key={i}
+                  className={`text-xl ${
+                    i < testimonial.rating ? "text-yellow-400" : "text-gray-400"
+                  }`}
+                >
+                  ★
+                </span>
+              ))}
             </div>
-          ))}
-        </Slider>
+          </div>
+        </div>
+        
+        <FaQuoteRight className="text-4xl text-[#FF0000]  absolute bottom-4 right-4" />
+      </motion.div>
+    </div>
+  ))}
+</Slider>
 
         {/* Modal for Adding Testimonial */}
         <AnimatePresence>
@@ -178,10 +188,32 @@ export default function Testimonials() {
             <input
               type="text"
               name="name"
+              placeholder="Full Name"
               required
-              className="w-full px-4 py-2 border border-black  focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-black  focus:ring-1 focus:ring-black"
             />
           </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 mb-2">Company</label>
+            <input
+              type="text"
+              name="company"
+              placeholder="Company"
+              required
+              className="w-full px-4 py-2 border border-black  focus:ring-1 focus:ring-black"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 mb-2">Position</label>
+            <input
+              type="text"
+              name="position"
+              placeholder="Position"
+              required
+              className="w-full px-4 py-2 border border-black  focus:ring-1 focus:ring-black"
+            />
+          </div>
+          
           <div className="mb-4">
             <label className="block text-gray-700 mb-2 ">Image</label>
             <input
@@ -189,7 +221,7 @@ export default function Testimonials() {
               name="image"
               required
               onChange={handleFileChange}
-              className="w-full px-4 py-2 border border-black focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-black focus:ring-1 focus:ring-black"
             />
           </div>
           <div className="mb-4">
@@ -198,7 +230,7 @@ export default function Testimonials() {
               name="review"
               placeholder="Review"
               required
-              className="w-full px-4 py-2 border border-black focus:ring-2 focus:ring-black "
+              className="w-full px-4 py-2 border border-black focus:ring-1 focus:ring-black "
               rows="4"
             ></textarea>
           </div>

@@ -12,26 +12,35 @@ const techCategories = [
     title: 'AI Tools',
     image: '/assets/lightbulb-setting.png',
     items: [
-      'SAP Business AI → SAP AI Core',
-      'LlamaIndex → LangChain',
-      'Hugging Face → PyTorch',
+      'ChatGPT',
+      'Google Bard',
+      'Generative AI',
+      'SAP Business ',
+      'LlamaIndex ',
+      'Hugging ',
       'TensorFlow Lite ',
+      'AI SAP AI Core',
+      'LangChain',
+      'Face PyTorch'
     ],
   },
   {
     title: 'Data Tools',
     image: '/assets/api.png',
     items: [
-      'Databricks → Snowflake',
-      'ClickHouse → Apache Airflow',
+      'Databricks  ',
+      'Snowflake',
+      'ClickHouse ',
       'Kafka',
+      'Apache Airflow'
     ],
   },
   {
     title: 'Cloud Providers',
     image: '/assets/system-cloud.png',
     items: [
-      'Microsoft Azure → AWS',
+      'Microsoft Azure ',
+      ' AWS',
       'Google Cloud Platform',
     ],
   },
@@ -51,7 +60,7 @@ const TechCard = ({ title, image, items }) => (
           {/* Split the item by "→" and render with MdArrowRight in between */}
           {item.split(' → ').map((part, i) => (
             <span key={i} className='flex items-center'>
-              {i > 0 && <MdArrowRight className='text-[#FF0000] mx-2' />}
+              { <MdArrowRight className='text-[#FF0000] mx-2' />}
               {part}
             </span>
           ))}

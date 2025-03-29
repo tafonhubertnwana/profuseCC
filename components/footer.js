@@ -42,7 +42,7 @@ const Footer = () => {
   <h3 className="text-lg font-semibold mb-4">Services</h3>
   <ul className="text-gray-400">
     <li className="mb-2 group">
-      <Link href="/service-1" className="hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2">
+      <Link href="/service/aws-cloud" className="hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2">
 
         <span className="mr-2 ">
           <FaRegArrowAltCircleRight className='text-[#FF0000]' />
@@ -51,7 +51,7 @@ const Footer = () => {
       </Link>
     </li>
     <li className="mb-2 group">
-      <Link href="/service-2" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
+      <Link href= "/service/software-development" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
         <span className="mr-2">
           <FaRegArrowAltCircleRight className='text-[#FF0000]' />
         </span>
@@ -59,7 +59,7 @@ const Footer = () => {
       </Link>
     </li>
     <li className="mb-2 group">
-      <Link href="/service-3" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
+      <Link href="/service/generative-ai" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
         <span className="mr-2">
           <FaRegArrowAltCircleRight className='text-[#FF0000]' />
         </span>
@@ -67,7 +67,7 @@ const Footer = () => {
       </Link>
     </li>
     <li className="mb-2 group">
-      <Link href="/service-4" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
+      <Link href="/service/data-analysis" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
         <span className="mr-2">
           <FaRegArrowAltCircleRight className='text-[#FF0000]' />
         </span>

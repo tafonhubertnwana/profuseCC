@@ -7,8 +7,8 @@ import { useState } from "react";
 const slide = {
   id: 1,
   image: "/assets/home-2025-bg.webp",
-  h2: 'Giving you confidence in complex TECH projects',
-  p: "Professionally optimize interdependent intellectual interoperable connect best practices. Progressively fabricate done",
+  h2: 'Giving you confidence in complex AI & cloud-native transformations',
+  p: "We build ProfuseCC’s scalable AI cloud platforms with secure, interoperable architectures—transforming complexity into seamless intelligence.",
   button: "EXPERT CONSULTATION",
 };
 
@@ -50,9 +50,9 @@ const HeroSection = () => {
               opacity: 1,
             }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="text-left max-w-2xl px-4"
+            className="text-left max-w-3xl px-4"
           >
-            <motion.h2 className="uppercase text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">
+            <motion.h2 className="uppercase text-white text-xl sm:text-2xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-4">
               {slide.h2}
             </motion.h2>
             <motion.p className="text-white text-sm sm:text-base md:text-lg lg:text-xl mb-6">

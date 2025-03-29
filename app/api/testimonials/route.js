@@ -22,9 +22,12 @@ export async function POST(req) {
   await connectToDatabase();
   const formData = await req.formData();
   const name = formData.get("name");
+  const position = formData.get("position");
+  const company = formData.get("company");
   const review = formData.get("review");
   const rating = formData.get("rating");
   const image = formData.get("image");
+  
   
   if (!image) {
     return NextResponse.json({ error: "Image is required" }, { status: 400 });
@@ -33,7 +36,7 @@ export async function POST(req) {
   const buffer = Buffer.from(await image.arrayBuffer());
   const contentType = image.type;
   
-  const newTestimonial = new Testimonial({ name, review, rating, image: buffer, contentType });
+  const newTestimonial = new Testimonial({ name, position, company, review, rating, image: buffer, contentType });
   await newTestimonial.save();
 
   return NextResponse.json(newTestimonial, { status: 201 });

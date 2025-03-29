@@ -1,55 +1,66 @@
-"use client"; // Required for Swiper to work in Next.js
+"use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import "swiper/css/free-mode";
 import Image from "next/image";
 
 const LogoCarousel = () => {
   const logos = [
-    "/assets/log1.png",
-    "/assets/log2.png",
-    "/assets/log3.png",
-    "/assets/log4.png",
-    "/assets/log5.png",
-    "/assets/log6.png",
+    "/assets/logo-1.png",
+    "/assets/logo-2.png",
+    "/assets/logo-3.png",
+    "/assets/logo-4.png",
+    "/assets/logo-5.png",
+    "/assets/logo-6.png",
+    "/assets/logo-7.png",
+    "/assets/logo-8.png",
+    "/assets/logo-9.png",
+    "/assets/logo-10.png",
   ];
 
   return (
-    <div className="bg-gray-100 py-12">
-      <div className="container mx-auto px-6">
+    <div className="py-12 ">
+      <div className="container mx-auto px-4 overflow-hidden">
         <Swiper
-          modules={[Autoplay]}
-          spaceBetween={50}
-          slidesPerView={5}
+          modules={[Autoplay, FreeMode]}
+          spaceBetween={40}
+          slidesPerView="auto"
           loop={true}
+          freeMode={true}
+          speed={8000} // Adjust scroll speed (higher = slower)
           autoplay={{
-            delay: 1000,
+            delay: 0,
             disableOnInteraction: false,
-            pauseOnMouseEnter: true, // Pause autoplay on hover
+            pauseOnMouseEnter: true,
+            reverseDirection: false, // Set to true to scroll left-to-right
           }}
           breakpoints={{
             320: {
-              slidesPerView: 2,
+              spaceBetween: 30,
             },
             640: {
-              slidesPerView: 3,
+              spaceBetween: 50,
             },
             1024: {
-              slidesPerView: 5,
+              spaceBetween: 100,
             },
           }}
+          className="!overflow-visible"
         >
           {logos.map((logo, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex items-center justify-center group">
+            <SwiperSlide key={index} className="!w-auto select-none">
+              <div className="flex items-center justify-center group px-4">
                 <Image
                   src={logo}
-                  alt={`Logo ${index + 1}`}
-                  width={50}
-                  height={50}
-                  className="w-20 h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 object-contain filter grayscale transition-all duration-300 group-hover:grayscale-0"
+                  alt={`Partner Logo ${index + 1}`}
+                  width={120}
+                  height={80}
+                  className="w-20 h-14 md:w-28 md:h-24 object-contain opacity-80 hover:opacity-100 transition-opacity  hover:scale-110 duration-300 grayscale hover:grayscale-0"
+                  loading="eager"
+                  draggable="false"
                 />
               </div>
             </SwiperSlide>

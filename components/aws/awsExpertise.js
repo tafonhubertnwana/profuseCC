@@ -59,14 +59,29 @@ const SERVICES = {
   ],
   'AI and Machine Learning': [
     { name: 'Amazon Rekognition', icon: '/assets/ai-1.png' },
-    { name: 'Amazon SageMaker', icon: '/assets/ai-2.png' },
-    { name: 'Amazon HealthOmics', icon: '/assets/ai-3.png' },
-    { name: 'Amazon Textract', icon: '/assets/ai-4.png' },
+  { name: 'Amazon SageMaker', icon: '/assets/ai-2.png' },
+  { name: 'Amazon HealthOmics', icon: '/assets/ai-3.png' },
+  { name: 'Amazon Textract', icon: '/assets/ai-4.png' },
+  { name: 'Amazon Comprehend', icon: '/assets/ai-5.png' },
+  { name: 'Amazon Lex', icon: '/assets/ai-6.png' },
+  { name: 'Amazon Polly', icon: '/assets/ai-7.jpeg' },
+  { name: 'Amazon Transcribe', icon: '/assets/ai-8.png' },
+  { name: 'Amazon Translate', icon: '/assets/ai-9.png' },
+  { name: 'Amazon Kendra', icon: '/assets/ai-10.png' },
+  { name: 'Amazon Titan', icon: '/assets/ai-15.png' },
+  
+    
+
   ],
   'Security, Identity & Compliance': [
     { name: 'AWS Identity and Access Management', icon: '/assets/security-1.png' },
     { name: 'AWS Key Management Service', icon: '/assets/security-2.png' },
     { name: 'AWS Web Application Firewall', icon: '/assets/security-3.png' },
+    { name: 'AWS Shield', icon: '/assets/security-4.png' },
+    { name: 'AWS WAF', icon: '/assets/security-5.png' },
+    { name: 'AWS Inspector', icon: '/assets/security-6.png' },
+    { name: 'AWS Certificate Manager', icon: '/assets/security-7.png' },
+    { name: 'PCI DSS', icon: '/assets/security-8.png' },
   ],
 };
 
