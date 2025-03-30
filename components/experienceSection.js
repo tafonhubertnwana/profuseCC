@@ -35,7 +35,7 @@ export default function ExperienceSection() {
       {/* Background Section */}
       <div className="bg-black py-16 flex justify-center items-center h-[250px] relative">
         {/* Feature Cards Container */}
-        <div className="absolute top-28 max-w-7xl w-full px-4 sm:px-6 lg:px-8">
+        <div className="absolute top-28 container xl:max-w-6xl w-full px-4 sm:px-6 lg:px-8">
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
    {features.map((feature) => (
                <motion.div

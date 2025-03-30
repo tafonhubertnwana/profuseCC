@@ -16,7 +16,7 @@ const AboutPage = () => {
       <HeroSection
   title="About Us"
   description="Learn more about our mission, vision, and the team behind our success."
-  backgroundImage="/assets/breadcrumb-bg.png"
+  backgroundImage="/assets/company-bg.webp"
   breadcrumb="About" />
       {/* Add the rest of your contact page content here */}
       <ExperienceSection />

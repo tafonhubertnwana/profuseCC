@@ -13,7 +13,7 @@ const FAQPage = () => {
       <HeroSection
   title="Frequently Asked Questions"
   description="Find answers to common questions about our services, policies, and more."
-  backgroundImage="/assets/breadcrumb-bg.png"
+  backgroundImage="/assets/faq-bg.webp"
   breadcrumb="FAQ" />
       {/* Add the rest of your contact page content here */}
       <ITServices />

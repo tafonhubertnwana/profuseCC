@@ -49,7 +49,7 @@ const Navbar = () => {
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center">
             <Link href="/">
-              <Image src={logo} alt="logo" width={40} height={40} className="cursor-pointer" />
+              <Image src={logo} alt="logo" width={60} height={60} className="cursor-pointer" />
             </Link>
             <div className="hidden lg:flex space-x-6 ml-6">
               <Link
@@ -215,7 +215,7 @@ const Navbar = () => {
         >
           <div className="flex justify-between items-center p-4 border-b">
             <Link href="/">
-              <Image src={logo} alt="logo" width={40} height={40} className="cursor-pointer" />
+              <Image src={logo} alt="logo" width={50} height={50} className="cursor-pointer" />
             </Link>
             <button onClick={() => setIsOpen(false)} className="text-gray-800 focus:outline-none">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

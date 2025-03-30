@@ -1,3 +1,4 @@
+
 import {
   Html,
   Head,
@@ -7,8 +8,10 @@ import {
   Section,
   Heading,
   Text,
-} from "@react-email/components";
-
+  Hr,
+  Link,
+  Tailwind,
+} from '@react-email/components';
 export default function ConsultationEmail({
   firstName,
   lastName,
@@ -21,73 +24,77 @@ export default function ConsultationEmail({
   comments,
 }) {
   return (
-    <Html>
-      <Head />
-      <Preview>New Consultation Request</Preview>
-      <Body style={main}>
-        <Container style={container}>
-          <Heading style={h1}>New Consultation Request</Heading>
-          <Section style={section}>
-            <Text style={text}>
-              <strong>Name:</strong> {firstName} {lastName}
-            </Text>
-            <Text style={text}>
-              <strong>Email:</strong> {email}
-            </Text>
-            <Text style={text}>
-              <strong>Phone:</strong> {phoneNumber}
-            </Text>
-            <Text style={text}>
-              <strong>Company:</strong> {company || "N/A"}
-            </Text>
-            <Text style={text}>
-              <strong>Area of Interest:</strong> {interest}
-            </Text>
-            <Text style={text}>
-              <strong>Date:</strong> {date}
-            </Text>
-            <Text style={text}>
-              <strong>Time:</strong> {time}
-            </Text>
-            {comments && (
-              <Text style={text}>
-                <strong>Comments:</strong> {comments}
+    <Tailwind>
+
+      <Html>
+        <Head />
+        <Preview>Thank you for cConsulting  us!</Preview>
+        <Body className="bg-white font-sans">
+          <Container className="mx-auto p-6 max-w-2xl">
+            <Section className="bg-red-50 rounded-t-lg p-6">
+                <Heading as="h1" className="text-2xl font-bold text-red-600 mb-2">
+                  Thank you for reaching out, {lastName}!
+                </Heading>
+                <Text className="text-gray-700">
+                  We've received your message and our team will get back to you shortly.
+                </Text>
+              </Section>
+              <Section  className="border border-t-0 border-gray-200 rounded-b-lg p-6">
+              <Heading as="h2" className="text-lg font-semibold mb-4">
+                  Your Consultation Details:
+                </Heading>
+                <Text className="mb-2">
+                <span className="font-medium">Name:</span> {firstName} {lastName}
               </Text>
-            )}
-          </Section>
-        </Container>
-      </Body>
-    </Html>
+              <Text className="mb-2">
+              <span className="font-medium">Email:</span> {email}
+              </Text>
+              <Text className="mb-2">
+              <span className="font-medium">Phone:</span> {phoneNumber}
+              </Text>
+              <Text className="mb-2">
+              <span className="font-medium">Company:</span>  {company || "N/A"}
+              </Text>
+              <Text className="mb-2">
+              <span className="font-medium">Area of Interest:</span> {interest}
+              </Text>
+              <Text className="mb-2">
+              <span className="font-medium">Date:</span> {date}
+              </Text>
+              <Text className="mb-2">
+              <span className="font-medium">Time:</span> {time}
+              </Text>
+              {comments && (
+                <Text className="mb-2">
+                  <span className="font-medium">Comments:</span> {comments}
+                </Text>
+              )}
+              <Hr className="my-6 border-gray-200" />
+
+  <Text className="text-gray-600 text-sm">
+    This is an automated message. Please do not reply directly to this email.
+  </Text>
+              </Section>
+            
+          
+            <Section className="mt-6 text-center text-gray-500 text-xs">
+                          <Text>
+                            © {new Date().getFullYear()} Your ProfuseCC. All rights reserved.
+                          </Text>
+                          <Text className="mt-1">
+                            <Link href="https://yourwebsite.com" className="text-red-600">
+                              Visit our website
+                            </Link>
+                            {' | '}
+                            <Link href="https://yourwebsite.com/privacy" className="text-red-600">
+                              Privacy Policy
+                            </Link>
+                          </Text>
+                        </Section>
+          </Container>
+        </Body>
+      </Html>
+    </Tailwind>
   );
 }
 
-const main = {
-  backgroundColor: "#ffffff",
-  fontFamily:
-    '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
-};
-
-const container = {
-  margin: "0 auto",
-  padding: "20px 0 48px",
-};
-
-const h1 = {
-  fontSize: "24px",
-  lineHeight: "1.3",
-  fontWeight: "700",
-  color: "#484848",
-};
-
-const section = {
-  padding: "24px",
-  border: "1px solid #eaeaea",
-  borderRadius: "5px",
-};
-
-const text = {
-  margin: "0 0 10px 0",
-  fontSize: "14px",
-  lineHeight: "1.4",
-  color: "#666666",
-};

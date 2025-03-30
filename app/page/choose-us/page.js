@@ -12,7 +12,7 @@ const ChooseUsPage = () => {
       <HeroSection
     title="Why Choose Us"
     description="Discover why we are the best choice for your needs."
-    backgroundImage="/assets/breadcrumb-bg.png"
+    backgroundImage="/assets/integration-bg.webp"
     breadcrumb="Choose Us"
   />
   <ITServicesSection />

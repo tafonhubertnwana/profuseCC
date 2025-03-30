@@ -13,7 +13,7 @@ const MissionPage = () => {
       <HeroSection
     title="Our Mission Vision & Goal"
     description="Driving innovation and delivering excellence."
-    backgroundImage="/assets/breadcrumb-bg.png"
+    backgroundImage="/assets/mission-bg.webp"
     breadcrumb="Mission"
   />
   <MissionSection />

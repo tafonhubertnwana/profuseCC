@@ -6,14 +6,14 @@ import Link from "next/link";
 
 export default function ItSupportSection() {
   return (
-    <section className="max-w-6xl mx-auto py-10 px-4">
+    <section className="container xl:max-w-6xl mx-auto py-10 px-4">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
     {/* Left Section */}
     <div className="w-full flex flex-col space-y-6">
       <div className="flex space-x-6">
         <div className="relative h-full">
           <Image
-            src="/assets/about.png"
+            src="/assets/about.webp"
             alt="Person 1"
             objectFit="cover"
             width={500} // Updated width
@@ -28,10 +28,10 @@ export default function ItSupportSection() {
     <div className="w-full mb-8 lg:mb-0">
   <div className="flex items-center mb-4">
     <div className="bg-[#FF0000] text-white py-2 px-4 text-sm">
-      AI Innovation Award 2024
+      AI Innovation 
     </div>
     <div className="ml-4 bg-gray-200 text-[#FF0000] py-2 px-4 text-sm">
-      Top Cloud AI Provider
+      Cloud AI Provider
     </div>
   </div>
   <h2 className="text-4xl font-bold text-gray-900 mb-6">

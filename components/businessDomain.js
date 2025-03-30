@@ -11,7 +11,7 @@ const industries = [
   { name: 'Transportation & Logistics', icon: '/assets/shipping-fast.png' },
   { name: 'Automotive', icon: '/assets/cart-shopping-fast.png' },
   { name: 'Metals & Mining', icon: '/assets/picaxe-minning.png' },
-  { name: 'Chemicals', icon: '/assets/flask.png' },
+  { name: 'Chemicals', icon: '/assets/test.png' },
   { name: 'Pharmaceuticals & Life Science', icon: '/assets/capsules.png' },
 ];
 

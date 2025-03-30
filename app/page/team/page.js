@@ -10,7 +10,7 @@ const TeamPage = () => {
       <HeroSection
   title=" Our Members"
   description=" Meet the talented individuals who make up our team."
-  backgroundImage="/assets/breadcrumb-bg.png"
+  backgroundImage="/assets/partner-bg.webp"
   breadcrumb="Team" />
       {/* Add the rest of your contact page content here */}
       <TeamSection />

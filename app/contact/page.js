@@ -14,7 +14,7 @@ const ContactPage = () => {
   title="Get in Touch"
   description="We'd love to hear from you. Whether you have a question, feedback,
               or just want to say hello, feel free to reach out."
-  backgroundImage="/assets/breadcrumb-bg.png"
+  backgroundImage="/assets/contact.webp"
   breadcrumb="Contact" />
       {/* Add the rest of your contact page content here */}
       <ContactInfo />

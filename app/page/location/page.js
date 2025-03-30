@@ -13,7 +13,7 @@ const LocationPage = () => {
       <HeroSection
   title="Our Location"
   description="Find us at the heart of innovation."
-  backgroundImage="/assets/breadcrumb-bg.png"
+  backgroundImage="/assets/location.webp"
   breadcrumb="Location"
 />
 <CountryCards />

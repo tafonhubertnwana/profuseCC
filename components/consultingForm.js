@@ -67,7 +67,7 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
       <div className="bg-white p-4 sm:p-6 md:p-8 shadow-lg rounded-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl w-full relative mx-auto max-h-[90vh] overflow-y-auto">
         <div className="flex flex-col sm:flex-row justify-between items-center mb-4 sm:mb-6">
           <Image
-            src="/assets/aclogo.png"
+            src="/assets/profuse.jpg"
             alt="Company Logo"
             width={50}
             height={50}
@@ -201,7 +201,7 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
               id="comments"
               name="comments"
               placeholder="Additional Information/Comments"
-              className="mt-1 block w-full p-2 border border-black  shadow-sm focus:outline-none focus:ring-2 focus:ring-black"
+              className="mt-1 text-gray-900 block w-full p-2 border border-black  shadow-sm focus:outline-none focus:ring-2 focus:ring-black"
               rows="4"
             ></textarea>
           </div>

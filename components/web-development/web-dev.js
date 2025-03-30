@@ -82,7 +82,7 @@ export default function CustomSoftwareDevelopment() {
         }}
       >
         <Image
-          src="/assets/web-development.webp"
+          src="/assets/web-development.png"
           alt="Software Development"
           width={500}
           height={500}

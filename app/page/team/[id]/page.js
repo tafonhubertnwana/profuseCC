@@ -39,7 +39,7 @@ const TeamDetailPage = () => {
       <HeroSection
   title=" Our Members Details"
   description=" Meet the talented individuals who make up our team."
-  backgroundImage="/assets/breadcrumb-bg.png"
+  backgroundImage="/assets/partner-bg.webp"
   breadcrumb="Team" />
       {/* Add the rest of your contact page content here */}
       <section className="py-10">
@@ -60,33 +60,17 @@ const TeamDetailPage = () => {
          <div className="md:p-6 py-6 md:py-1 w-full">
           <h2 className="text-  font-bold text-gray-800">Dillur Rahman</h2>
           <p className="text-gray-500">Dream Land Founder & CEO</p>
-          <p className="text-gray-600 mt-4 py-5 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <p className="text-gray-600 mt-4 py-5 text-sm"> Dillur Rahman is a certified AWS Solutions Architect with over 8 years of experience in designing and implementing cloud infrastructure. She specializes in migrating legacy systems to the cloud while ensuring security and cost-efficiency. Sarah holds a Master's degree in Computer Science from MIT and has helped over 50 enterprises transition to cloud-based solutions. </p>
           
-          <div className="mt-6 flex flex-col sm:flex-row md:py-5 items-center sm:space-x-4 space-y-3 sm:space-y-0">
-  <div className="flex items-center space-x-2 bg-gray-100 px-4 py-2 rounded-lg w-full sm:w-auto justify-center sm:justify-start">
-    <FaPhoneAlt className="text-[#FF0000]" />
-    <span className="text-gray-700">+123 (4547) 563</span>
-  </div>
-  <div className="flex items-center space-x-2 bg-gray-100 px-4 py-2 rounded-lg w-full sm:w-auto justify-center sm:justify-start">
-    <FaEnvelope className="text-[#FF0000]" />
-    <span className="text-gray-700">info@gmail.com</span>
-  </div>
-</div>
+       
 
 
           <div className="mt-6 flex md:py-5 space-x-4"> 
-            <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100">
-              <FaFacebookF className="text-gray-500 cursor-pointer hover:text-blue-600" />
-            </div>
-            <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100">
-              <FaTwitter className="text-gray-500 cursor-pointer hover:text-blue-400" />
-            </div>
+            
             <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100">
               <FaLinkedinIn className="text-gray-500 cursor-pointer hover:text-blue-700" />
             </div>
-            <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100">
-              <FaPinterestP className="text-gray-500 cursor-pointer hover:text-red-600" />
-            </div>
+            
           </div>
 
 
@@ -111,7 +95,7 @@ const TeamDetailPage = () => {
                   initial={{ width: 0 }}
                   animate={{ width: `${skill.percentage}%` }}
                   transition={{ duration: 1 }}
-                  className="absolute top-0 left-0 h-full bg-orange-600 rounded-lg"
+                  className="absolute top-0 left-0 h-full bg-[#FF0000] rounded-lg"
                 ></motion.div>
               </div>
             </div>
