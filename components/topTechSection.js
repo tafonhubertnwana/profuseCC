@@ -29,7 +29,7 @@ export default function TopTechSection() {
   initial={{ opacity: 0, x: 50 }} 
   animate={{ opacity: 1, x: 0 }} 
   transition={{ duration: 0.8 }}
-  className="mt-8 md:mt-0"
+  className="mt-8 md:mt-0 mx-2"
 >
   <p className="text-[#FF0000] font-semibold uppercase">Who We Are</p>
   <h2 className="text-2xl md:text-4xl font-bold leading-tight mt-2">
