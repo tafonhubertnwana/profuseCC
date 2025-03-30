@@ -335,7 +335,7 @@ const Navbar = () => {
               Contact
             </Link>
             {/* Add "WORK WITH US" Button in Mobile Menu */}
-            <div>
+            {/* <div>
             <button
         className={`relative bg-transparent border-2 ${
           isScrolled ? "border-black   text-black" : "border-black text-black"
@@ -347,7 +347,7 @@ const Navbar = () => {
       </button>
 
      
-    </div>
+    </div> */}
             {/* Add Social Links in Mobile Menu */}
             <div className="flex space-x-4 mt-4">
               <Link href="https://facebook.com" className="text-gray-800 hover:text-[#FF0000]">
