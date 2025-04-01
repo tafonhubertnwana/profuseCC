@@ -47,7 +47,7 @@ export default function CustomSoftwareDevelopment() {
     <>
     
        <section className='container xl:max-w-6xl mx-auto '>
-      <div className="flex flex-col lg:flex-row items-center justify-between px-10 py-16 bg-white">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-between px-10 py-16 bg-white">
 
         {/* Text Content */}
         <div className='max-w-xl'>

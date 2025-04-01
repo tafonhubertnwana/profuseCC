@@ -288,8 +288,8 @@ const ContactForm = () => {
         </p>
         <p className="text-gray-600">
           Or call us directly at{" "}
-          <a href="tel:+1234567890" className="text-[#FF0000] hover:text-[#FF0000]">
-            +1 (234) 567-890
+          <a href="tel:+281-942-0577 " className="text-[#FF0000] hover:text-[#FF0000]">
+          +281-942-0577
           </a>
           .
         </p>

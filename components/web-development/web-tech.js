@@ -90,7 +90,8 @@ const SERVICES ={
     {name: "Git", icon: "/assets/git.png"},
     {name: "VS Code", icon: "/assets/vscode.jpeg"},
     {name: "Webpack", icon: "/assets/webpack.png"},
-
+    {name: "Canvas", icon: "/assets/canvas.jpeg"},
+    {name: "JPT NoteBook", icon: "/assets/notebook.png"},
     {name: "ESLint", icon: "/assets/eslint.png"},
     {name: "Prettier", icon: "/assets/prettier.png"},
     {name: "Figma", icon: "/assets/figma.png"},

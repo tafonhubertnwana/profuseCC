@@ -96,7 +96,7 @@ const CGJHeroWithImages = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="grid gap-8 md:grid-cols-3"
+          className="grid gap-8 lg:grid-cols-3"
         >
           {sections.map((section, index) => (
             <motion.div

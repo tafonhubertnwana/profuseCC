@@ -41,7 +41,7 @@ export default function FeaturesSection() {
           transition={{ duration: 1 }}
           className="border-t-2 border-[#FF0000] w-full mb-8"
         ></motion.div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature) => (
             <motion.div
               key={feature.id}

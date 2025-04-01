@@ -60,7 +60,7 @@ export default function Testimonials() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2, // Show 2 slides on medium screens
+          slidesToShow: 1, // Show 2 slides on medium screens
         },
       },
       {

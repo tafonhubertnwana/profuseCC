@@ -8,7 +8,7 @@ import { IoTimeOutline } from "react-icons/io5";
 const ContactInfo = () => {
   return (
     <div className="container xl:max-w-6xl mx-auto p-10">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-10">
         {data.map((item, index) => (
           <motion.div
             key={index}

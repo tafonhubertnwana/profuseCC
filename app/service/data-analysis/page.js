@@ -7,7 +7,7 @@ import DataAnalysis from '@/components/seo/dataAnalysis'
 import DataAndAnalyticsServices from '@/components/seo/datasection';
 import MachineLearningServices from '@/components/seo/mechineLearning';
 
-const SeoPage = () => {
+const DataPage = () => {
   return (
     <div>
       <Navbar />
@@ -26,4 +26,4 @@ const SeoPage = () => {
   )
 }
 
-export default SeoPage
+export default DataPage

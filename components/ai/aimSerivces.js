@@ -34,7 +34,7 @@ const FeatureCards = () => {
         <p className="text-center text-gray-100">
           AI is rapidly transforming every industry, creating opportunities for businesses that stay at the forefront of technology to leap ahead of the competition.
         </p>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
             <motion.div
               key={index}

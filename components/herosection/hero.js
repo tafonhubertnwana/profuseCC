@@ -10,7 +10,7 @@ const HeroSection = ({ title, description, backgroundImage, breadcrumb }) => {
   };
 
   return (
-    <div className="relative h-[300px] sm:h-[300px] md:h-[300px] lg:h-[450px] xl:h-[550px] overflow-hidden">
+    <div className="relative h-[300px] sm:h-[300px] md:h-[400px] lg:h-[450px] xl:h-[550px] overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center sm:bg-contain md:bg-cover"
