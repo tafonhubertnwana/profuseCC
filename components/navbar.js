@@ -174,7 +174,7 @@ const Navbar = () => {
           </div>
           <div className="hidden lg:flex items-center space-x-6">
             <div className="flex space-x-4">
-              <Link href="https://facebook.com" className={`${isScrolled ? "" : "text-white"} hover:text-[#FF0000]`}>
+              <Link href="https://www.facebook.com/share/1KTQg7oDM7/?mibextid=wwXIfr" className={`${isScrolled ? "" : "text-white"} hover:text-[#FF0000]`}>
                 <FaFacebook size={24} />
               </Link>
               <Link href="https://instagram.com" className={`${isScrolled ? "" : "text-white"} hover:text-[#FF0000]`}>
@@ -350,7 +350,7 @@ const Navbar = () => {
     </div> */}
             {/* Add Social Links in Mobile Menu */}
             <div className="flex space-x-4 mt-4">
-              <Link href="https://facebook.com" className="text-gray-800 hover:text-[#FF0000]">
+              <Link href="https://www.facebook.com/share/1KTQg7oDM7/?mibextid=wwXIfr" className="text-gray-800 hover:text-[#FF0000]">
                 <FaFacebook size={24} />
               </Link>
               <Link href="https://instagram.com" className="text-gray-800 hover:text-[#FF0000]">
