@@ -180,7 +180,7 @@ const Navbar = () => {
               <Link href="https://instagram.com" className={`${isScrolled ? "" : "text-white"} hover:text-[#FF0000]`}>
                 <FaInstagram size={24} />
               </Link>
-              <Link href="https://linkedin.com" className={`${isScrolled ? "" : "text-white"} hover:text-[#FF0000]`}>
+              <Link href="https://www.linkedin.com/company/profuscc/" className={`${isScrolled ? "" : "text-white"} hover:text-[#FF0000]`}>
                 <FaLinkedin size={24} />
               </Link>
             </div>
@@ -356,7 +356,7 @@ const Navbar = () => {
               <Link href="https://instagram.com" className="text-gray-800 hover:text-[#FF0000]">
                 <FaInstagram size={24} />
               </Link>
-              <Link href="https://linkedin.com" className="text-gray-800 hover:text-[#FF0000]">
+              <Link href="https://www.linkedin.com/company/profuscc/" className="text-gray-800 hover:text-[#FF0000]">
                 <FaLinkedin size={24} />
               </Link>
             </div>

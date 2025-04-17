@@ -22,17 +22,17 @@ const Footer = () => {
               
             </div>
             <p className="text-gray-400">
-            ProfuseCC is an artificial intelligence cloud startup focused on delivering innovative AI-driven solutions. Our goal is to empower businesses with cutting-edge cloud technologies and intelligent automation to enhance efficiency and drive growth in a competitive landscape
+            ProfuseCC is an artificial intelligence cloud startup focused on delivering innovative AI-driven solutions. ProfuseCC is an artificial intelligence cloud startup focused on delivering innovative AI-driven solutions. Our goal is to empower businesses with cutting-edge cloud technologies and intelligent automation to enhance efficiency and drive growth in a competitive landscape
 </p>
             <div className="flex space-x-4 mt-4">
               <Link href="https://www.facebook.com/share/1KTQg7oDM7/?mibextid=wwXIfr" className="text-blue-500 hover:text-white">
                 <FaFacebook size={24} />
               </Link>
-              <Link href="https://instagram.com" className="text-red-400 hover:text-white">
+              <Link href="https://www.instagram.com/profuse_cc/" className="text-red-400 hover:text-white">
                 <FaInstagram size={24} />
               </Link>
               
-              <Link href="https://linkedin.com" className="text-blue-300 hover:text-white">
+              <Link href="https://www.linkedin.com/company/profuscc/" className="text-blue-300 hover:text-white">
                 <FaLinkedin size={24} />
               </Link>
             </div>
