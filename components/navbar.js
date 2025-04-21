@@ -174,13 +174,13 @@ const Navbar = () => {
           </div>
           <div className="hidden lg:flex items-center space-x-6">
             <div className="flex space-x-4">
-              <Link href="https://www.facebook.com/share/1KTQg7oDM7/?mibextid=wwXIfr" className={`${isScrolled ? "" : "text-white"} hover:text-[#FF0000]`}>
+              <Link target="_blank" href="https://www.facebook.com/share/1KTQg7oDM7/?mibextid=wwXIfr" className={`${isScrolled ? "" : "text-white"} hover:text-[#FF0000]`}>
                 <FaFacebook size={24} />
               </Link>
-              <Link href="https://instagram.com" className={`${isScrolled ? "" : "text-white"} hover:text-[#FF0000]`}>
+              <Link target="_blank" href="https://www.instagram.com/profuse_cc/" className={`${isScrolled ? "" : "text-white"} hover:text-[#FF0000]`}>
                 <FaInstagram size={24} />
               </Link>
-              <Link href="https://www.linkedin.com/company/profuscc/" className={`${isScrolled ? "" : "text-white"} hover:text-[#FF0000]`}>
+              <Link target="_blank" href="https://www.linkedin.com/company/profuscc/" className={`${isScrolled ? "" : "text-white"} hover:text-[#FF0000]`}>
                 <FaLinkedin size={24} />
               </Link>
             </div>
@@ -350,13 +350,13 @@ const Navbar = () => {
     </div> */}
             {/* Add Social Links in Mobile Menu */}
             <div className="flex space-x-4 mt-4">
-              <Link href="https://www.facebook.com/share/1KTQg7oDM7/?mibextid=wwXIfr" className="text-gray-800 hover:text-[#FF0000]">
+              <Link  target="_blank" href="https://www.facebook.com/share/1KTQg7oDM7/?mibextid=wwXIfr" className="text-gray-800 hover:text-[#FF0000]">
                 <FaFacebook size={24} />
               </Link>
-              <Link href="https://instagram.com" className="text-gray-800 hover:text-[#FF0000]">
+              <Link target="_blank" href="https://www.instagram.com/profuse_cc/" className="text-gray-800 hover:text-[#FF0000]">
                 <FaInstagram size={24} />
               </Link>
-              <Link href="https://www.linkedin.com/company/profuscc/" className="text-gray-800 hover:text-[#FF0000]">
+              <Link target="_blank"  href="https://www.linkedin.com/company/profuscc/" className="text-gray-800 hover:text-[#FF0000]">
                 <FaLinkedin size={24} />
               </Link>
             </div>
