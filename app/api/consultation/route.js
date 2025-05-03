@@ -18,6 +18,7 @@ export async function POST(req) {
       date,
       time,
       comments,
+      recaptchaToken, 
     } = await req.json();
 
     // Save to MongoDB
@@ -33,6 +34,7 @@ export async function POST(req) {
       date,
       time,
       comments,
+      recaptchaToken,
     });
     await newConsultation.save();
 

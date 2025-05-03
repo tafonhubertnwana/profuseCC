@@ -5,17 +5,17 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { toast } from "react-hot-toast"; 
 import axios from "axios";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const ConsultationFormModal = ({ isOpen, onClose }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState(null);
   const [isSuccess, setIsSuccess] = useState(false);
-
-
+  const [recaptchaValue, setRecaptchaValue] = useState(null);
 
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+      document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'unset';
     }
@@ -27,23 +27,29 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
     e.preventDefault();
     setIsSubmitting(true);
     setError(null);
-  
+
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
-  
+
+    if (!recaptchaValue) {
+      setError("Please verify that you're not a robot.");
+      setIsSubmitting(false);
+      return;
+    }
+
+    data.recaptchaToken = recaptchaValue;
+
     try {
       const res = await axios.post("/api/consultation", data);
-  
-      if (res.status !== 200) {
-        throw new Error("Failed to submit form. Please try again.");
-      }
-  
+      if (res.status !== 200) throw new Error("Failed to submit form.");
+
       setIsSuccess(true);
       toast.success("Consultation request sent successfully!");
-  
+
       setTimeout(() => {
         onClose();
         setIsSuccess(false);
+        setRecaptchaValue(null);
       }, 3000);
     } catch (error) {
       console.error("Error submitting form:", error);
@@ -53,6 +59,7 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
       setIsSubmitting(false);
     }
   };
+
 
   return (
     <motion.div
@@ -192,6 +199,7 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
                 required
               />
             </div>
+
           </div>
           <div>
             <label htmlFor="comments" className="block text-sm sm:text-base font-medium text-gray-900">
@@ -205,18 +213,21 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
               rows="4"
             ></textarea>
           </div>
-          {error && (
+          <ReCAPTCHA
+              sitekey="6LfWNi0rAAAAAJizhMyYJpVZQpWpupsQrG5sQpqs"
+              onChange={(value) => setRecaptchaValue(value)}
+            />          {error && (
               <div className="text-black text-sm text-center">
                 {error}
               </div>
             )}
-            <div className="flex flex-col sm:flex-row justify-end space-y-4 sm:space-y-0 sm:space-x-4">
+             <div className="flex justify-end space-x-4">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 type="button"
                 onClick={onClose}
-                className="px-4 py-2 bg-gray-300 text-gray-900  hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                className="px-4 py-2 bg-gray-300 text-gray-900 hover:bg-gray-400"
               >
                 Close
               </motion.button>
@@ -224,8 +235,8 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 type="submit"
-                disabled={isSubmitting}
-                className="px-4 py-2 bg-[#FF0000] text-white  hover:bg-[#FF0000] focus:outline-none focus:ring-2 focus:ring-[#FF0000]"
+                disabled={isSubmitting || !recaptchaValue}
+                className={`px-4 py-2 text-white ${!recaptchaValue ? 'bg-gray-400' : 'bg-[#FF0000] hover:bg-[#FF0000]'}`}
               >
                 {isSubmitting ? 'Submitting...' : 'Submit'}
               </motion.button>

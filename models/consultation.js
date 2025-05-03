@@ -10,7 +10,8 @@ const consultationSchema = new mongoose.Schema({
   date: { type: Date, required: true },
   time: { type: String, required: true },
   comments: { type: String },
-  createdAt: { type: Date, default: Date.now }
+  createdAt: { type: Date, default: Date.now },
+  recaptchaToken: { type: String, required: true }
 });
 
 const Consultation = mongoose.models.Consultation || mongoose.model('Consultation', consultationSchema);
