@@ -27,6 +27,19 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
+  <meta name="google-site-verification" content="YOUR_ACTUAL_VERIFICATION_CODE" />
+  
+  {/* Open Graph / Twitter */}
+  <meta property="og:title" content={metadata.title} />
+  <meta property="og:description" content={metadata.description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://profuse-cc.vercel.app" />
+  <meta property="og:image" content="https://profuse-cc.vercel.app/og-image.jpg" />
+  
+  {/* Preconnect */}
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
         {/* ✅ Google Search Console Verification */}
         <meta name="google-site-verification" content="YOUR_VERIFICATION_TOKEN_HERE" />
 
