@@ -62,7 +62,7 @@ export default function CustomSoftwareDevelopment() {
           </p>
           <div>
 
-            <button className="mt-6 bg-[#FF0000]  text-white font-semibold px-6 py-3 rounded-md shadow-lg hover:opacity-90" onClick={openModal} >
+            <button className="mt-6 bg-[#FF0000]  text-white font-semibold px-6 py-3  shadow-lg hover:opacity-90" onClick={openModal} >
               BOOK A FREE CONSULTATION
             </button>
             <ConsultationFormModal isOpen={isModalOpen} onClose={closeModal} />

@@ -14,8 +14,8 @@ const DataPage = () => {
       <HeroSection
   title="Data Analysis"
   description="Optimizing your online presence while ensuring top-notch security."
-  backgroundImage="/assets/SAP-Build-Code-bg.webp"
-  breadcrumb="Data Analysis"
+  backgroundImage="/assets/sac-bg.webp"
+  breadcrumb="Services > Data Analysis"
 />
 <DataAndAnalyticsServices/>
 <MachineLearningServices />

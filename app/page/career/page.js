@@ -15,7 +15,7 @@ const CareerPage = () => {
   title="Career"
   description="Leverage the power of AWS Cloud for your business."
   backgroundImage="/assets/breadcrumb-bg.png"
-  breadcrumb="Career"
+  breadcrumb="Pages > Career"
 />
 <CareerSection />
 <JobListings />

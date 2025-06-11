@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
-import EmailTemplate from './template';
+import TestimonialEmailTemplate from './template';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -18,7 +18,7 @@ export async function POST(request) {
     const body = await request.json();
     
     // Validate required fields
-    if (!body.name || !body.email || !body.phone) {
+    if (!body.name || !body.review || !body.rating) {
       return NextResponse.json(
         { error: 'Missing required fields' },
         { status: 400 }
@@ -27,11 +27,11 @@ export async function POST(request) {
 
     // Send email
     const { data, error } = await resend.emails.send({
-      from: 'Contact Form <onboarding@resend.dev>',
+      from: 'Testimonial Submission <onboarding@resend.dev>',
       to: ['tafonsoftwarespecialist@gmail.com'],
-      reply_to: body.email,
-      subject: `New Contact from ${body.name}`,
-      react: EmailTemplate(body),
+      reply_to: body.email || 'no-reply@example.com',
+      subject: `New Testimonial from ${body.name}`,
+      react: TestimonialEmailTemplate(body),
     });
 
     if (error) {

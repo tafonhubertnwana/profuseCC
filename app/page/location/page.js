@@ -14,7 +14,7 @@ const LocationPage = () => {
   title="Our Location"
   description="Find us at the heart of innovation."
   backgroundImage="/assets/location.webp"
-  breadcrumb="Location"
+  breadcrumb="Pages > Location"
 />
 <CountryCards />
 <AustinMap />

@@ -10,7 +10,7 @@ const Footer = () => {
     
     <footer className="bg-black border-t-2 border-t-white text-white py-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Tagline Section */}
           <div>
             <div className="flex items-center mb-4">
@@ -89,14 +89,7 @@ const Footer = () => {
         About Us
       </Link>
     </li>
-    <li className="mb-2 group">
-      <Link href="/services" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
-        <span className="mr-2">
-          <FaRegArrowAltCircleRight className='text-[#FF0000]' />
-        </span>
-        Services
-      </Link>
-    </li>
+    
     <li className="mb-2 group">
       <Link href="/project" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
         <span className="mr-2">
@@ -114,7 +107,7 @@ const Footer = () => {
       </Link>
     </li>
     <li className="mb-2 group">
-      <Link href="/privacy-policy" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
+      <Link href="/private-policy" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
         <span className="mr-2">
           <FaRegArrowAltCircleRight className='text-[#FF0000]' />
         </span>

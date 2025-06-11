@@ -4,35 +4,44 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const services = [
+  
   { 
-    title: 'AWS Cloud Service', 
+    title: 'Cloud Computing', 
     icon: '/assets/service-1.png', 
     delay: 0.2, 
-    detail: 'Empower your business with our cutting-edge Cloud and DevOps solutions, driving efficiency & innovation for sustainable growth.', 
-    link: '/service/aws-cloud' 
+    detail: 'Scale your infrastructure seamlessly with secure, flexible, and cost-effective cloud solutions.', 
+    link: '/service/cloud-computing' 
   },
   { 
     title: 'Software Development', 
     icon: '/assets/service-2.png', 
     delay: 0.4, 
-    detail: 'We help our clients solve overarching business problems & elevate their operations through spot-on Web & App solutions.', 
+    detail: 'We build scalable web and mobile apps tailored to your business goals and user needs.', 
     link: '/service/software-development' 
   },
   { 
     title: 'Generative AI', 
     icon: '/assets/service-4.png', 
     delay: 0.6, 
-    detail: 'Empower your business with our cutting-edge Cloud and DevOps solutions, driving efficiency & innovation for sustainable growth.', 
+    detail: 'Unlock creative automation with AI that generates content, designs, code, and more.', 
     link: '/service/generative-ai' 
   },
   { 
     title: 'Data & Analysis', 
     icon: '/assets/service-3.png', 
     delay: 0.8, 
-    detail: 'Empower your business with our cutting-edge Cloud and DevOps solutions, driving efficiency & innovation for sustainable growth.', 
+    detail: 'Transform raw data into actionable insights with advanced analytics and visualization.', 
     link: '/service/data-analysis' 
   },
+  { 
+    title: 'AI & Cybersecurity', 
+    icon: '/assets/service-3.png', 
+    delay: 1.0, 
+    detail: 'Protect your systems using intelligent, adaptive security powered by AI technology.', 
+    link: '/service/cybersecurity' 
+  }
 ];
+
 
 export default function Services() {
   return (

@@ -78,7 +78,7 @@ export default function TopTechSection() {
     whileTap={{ scale: 0.95 }}
     className="mt-6 bg-[#FF0000] text-white px-6 py-2 rounded-md flex items-center space-x-2"
   >
-    <Link href='/about'>
+    <Link href='/aboutUs'>
       <span>Our AI Vision</span>
       <span>&rarr;</span>
     </Link>
@@ -90,7 +90,7 @@ export default function TopTechSection() {
       <p className="font-bold">Isaac Tabeh</p>
       <p className="text-gray-500 text-sm">CEO & Founder</p>
       <p className="text-gray-500 text-xs mt-1">
-        "We're building the AI cloud platform we wished existed when starting our journey."
+        "We are building the AI cloud platform solutions for the next generation."
       </p>
     </div>
   </div>

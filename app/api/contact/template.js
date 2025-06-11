@@ -76,11 +76,11 @@ export default function EmailTemplate({ name, email, phone, message = '', addres
                 © {new Date().getFullYear()} Your ProfuseCC. All rights reserved.
               </Text>
               <Text className="mt-1">
-                <Link href="https://yourwebsite.com" className="text-red-600">
+                <Link href="https://profuse-cc.vercel.app" className="text-red-600">
                   Visit our website
                 </Link>
                 {' | '}
-                <Link href="https://yourwebsite.com/privacy" className="text-red-600">
+                <Link href="https://profuse-cc.vercel.app/privacy" className="text-red-600">
                   Privacy Policy
                 </Link>
               </Text>

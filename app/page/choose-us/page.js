@@ -13,7 +13,7 @@ const ChooseUsPage = () => {
     title="Why Choose Us"
     description="Discover why we are the best choice for your needs."
     backgroundImage="/assets/integration-bg.webp"
-    breadcrumb="Choose Us"
+    breadcrumb="Pages > Choose Us"
   />
   <ITServicesSection />
   <FeaturesSection />

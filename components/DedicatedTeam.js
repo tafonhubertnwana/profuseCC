@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -6,10 +6,30 @@ import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaRss } from 'react-icons/fa';
-import teamMembers from '@/utils/teamMembers.json';
+import { getTeamMembers } from '@/lib/appwrite';
 
 export default function TeamSection() {
   const [showAllMembers, setShowAllMembers] = useState(false);
+  const [teamMembers, setTeamMembers] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchTeamMembers = async () => {
+      try {
+        const members = await getTeamMembers();
+        setTeamMembers(members);
+        setError(null);
+      } catch (err) {
+        console.error('Failed to fetch members', err);
+        setError('Failed to load team members. Please try again later.');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchTeamMembers();
+  }, []);
 
   const sliderSettings = {
     dots: false,
@@ -25,6 +45,30 @@ export default function TeamSection() {
       { breakpoint: 640, settings: { slidesToShow: 1 } }
     ]
   };
+
+  if (loading) {
+    return (
+      <section className="py-16 bg-gray-50">
+        <div className="container xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center py-12">
+            <p>Loading team members...</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section className="py-16 bg-gray-50">
+        <div className="container xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center py-12 text-red-500">
+            <p>{error}</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="py-16 bg-gray-50">
@@ -67,11 +111,11 @@ export default function TeamSection() {
                 <div key={member.id} className="px-3">
                   <div className="bg-white shadow-lg overflow-hidden cursor-pointer">
                     <div className="relative h-[450px]">
-                      <Link href={`/page/team/${member.id}`}>
-                        <Image src={member.image} alt={member.name} width={300} height={450} className="w-full h-full object-cover" />
+                      <Link href={`/page/team/${member.$id}`} >
+                        <Image src={member.imageUrl} alt={member.fullName} width={300} height={450} className="w-full h-full object-cover" />
                       </Link>
                       <div className="absolute group transform hover:shadow-xl group-hover:scale-110 bottom-0 w-full bg-[#FF0000]/60 p-4 text-center transition-all duration-300 hover:bg-black/40">
-                        <h5 className="text-lg font-semibold text-white">{member.name}</h5>
+                        <h5 className="text-lg font-semibold text-white">{member.fullName}</h5>
                         <p className="text-gray-300">{member.role}</p>
                         <div className='mt-2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300'>
                         

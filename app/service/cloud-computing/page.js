@@ -16,10 +16,10 @@ const CloudPage = () => {
       <Navbar />
       <HeroSection
   title="
-AWS Cloud"
-  description="Optimize landscape for cloud operations with AWS cloud"
+Cloud Computing"
+  description="Scale your infrastructure seamlessly with secure, flexible, and cost-effective cloud solutions."
   backgroundImage="/assets/AWS-Cloud-bg.webp" 
-  breadcrumb="AWS Cloud"
+  breadcrumb="Services > Cloud computing"
 />
 <CloudServices />
 <GoogleCloudServices />

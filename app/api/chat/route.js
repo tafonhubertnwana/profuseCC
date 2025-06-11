@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
-import EmailTemplate from './template';
+import { ChatEmailTemplate } from './template';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -15,23 +15,25 @@ export async function POST(request) {
       );
     }
 
-    const body = await request.json();
+    // Parse the request body
+    const requestBody = await request.json();
+    const { email } = requestBody;
     
-    // Validate required fields
-    if (!body.name || !body.email || !body.phone) {
+    // Validate email
+    if (!email || !email.includes('@') || !email.includes('.')) {
       return NextResponse.json(
-        { error: 'Missing required fields' },
+        { error: 'Valid email is required' },
         { status: 400 }
       );
     }
 
     // Send email
     const { data, error } = await resend.emails.send({
-      from: 'Contact Form <onboarding@resend.dev>',
+      from: 'ProfuseCC Support <onboarding@resend.dev>',
       to: ['tafonsoftwarespecialist@gmail.com'],
-      reply_to: body.email,
-      subject: `New Contact from ${body.name}`,
-      react: EmailTemplate(body),
+      reply_to: email || 'no-reply@example.com', // Changed from body.email to email
+      subject: 'Thank you for contacting ProfuseCC',
+      react: ChatEmailTemplate({ email }),
     });
 
     if (error) {

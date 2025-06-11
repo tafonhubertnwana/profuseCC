@@ -9,53 +9,165 @@ const LiveChat = () => {
   const [inputValue, setInputValue] = useState('');
   const [emailProvided, setEmailProvided] = useState(false);
   const [conversationState, setConversationState] = useState('initial');
+  const [userEmail, setUserEmail] = useState('');
 
   // Initial bot message when chat opens
   useEffect(() => {
     if (isOpen && messages.length === 0) {
-      setMessages([{
-        text: 'Hello! Please provide your email address so we can assist you and get back to you later if needed.',
-        sender: 'bot'
-      }]);
+      setMessages([
+        {
+          text: 'Welcome to ProfuseCC! We are a customer communication innovator with years of experience delivering exceptional service. To assist you, please provide your email address so we can help you and follow up if needed.',
+          sender: 'bot'
+        }
+      ]);
       setConversationState('awaiting_email');
     }
   }, [isOpen]);
 
-  const handleSendMessage = () => {
-    if (!inputValue.trim()) return;
-
-    // Add user message
-    const newMessages = [...messages, { text: inputValue, sender: 'user' }];
-    setMessages(newMessages);
-    setInputValue('');
-
-    // Bot response logic
-    setTimeout(() => {
-      if (conversationState === 'awaiting_email') {
-        // Basic email validation
-        if (inputValue.includes('@') && inputValue.includes('.')) {
-          setEmailProvided(true);
-          setConversationState('email_received');
-          setMessages(prev => [...prev, {
-            text: 'Thank you for providing your email! Our customer service team will get back to you shortly.',
-            sender: 'bot'
-          }]);
-        } else {
-          setMessages(prev => [...prev, {
-            text: 'Please provide a valid email address so we can assist you properly.',
-            sender: 'bot'
-          }]);
-        }
-      } else {
-        // Normal conversation after email is provided
-        setMessages(prev => [...prev, {
-          text: 'Thanks for your message. Our team will review it and respond via email.',
-          sender: 'bot'
-        }]);
+  const storeEmailAndSendConfirmation = async (email) => {
+    try {
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+  
+      const result = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(result.message || 'Request failed');
       }
-    }, 500);
+  
+      return {
+        success: true,
+        existing: result.existing || false,
+        ...result
+      };
+  
+    } catch (error) {
+      console.error('Error:', error);
+      throw error;
+    }
   };
 
+  const sendConfirmationEmail = async (email) => {
+  const startTime = Date.now();
+  console.log(`Starting email send to ${email}`);
+
+  try {
+    const response = await fetch('/api/chat/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json' // Explicitly ask for JSON response
+      },
+      body: JSON.stringify({ email }),
+    });
+
+    const responseTime = Date.now() - startTime;
+    console.log(`API response received in ${responseTime}ms`, response);
+
+    if (!response.ok) {
+      // First try to parse as JSON, if that fails, get the text
+      let errorData;
+      try {
+        errorData = await response.json();
+      } catch (jsonError) {
+        const text = await response.text();
+        console.error('Failed to parse error response as JSON:', text);
+        throw new Error(text || `Request failed with status ${response.status}`);
+      }
+      
+      console.error('Email API error response:', {
+        status: response.status,
+        errorData
+      });
+      
+      throw new Error(
+        errorData.message || 
+        errorData.error ||
+        `Email failed with status ${response.status}`
+      );
+    }
+
+    return await response.json();
+
+  } catch (error) {
+    console.error('Complete email sending error:', {
+      error: error.toString(),
+      message: error.message,
+      stack: error.stack,
+      duration: Date.now() - startTime
+    });
+    
+    // Provide more user-friendly error messages
+    if (error.message.includes('Failed to fetch')) {
+      throw new Error('Network error - please check your internet connection');
+    } else if (error.message.includes('Unexpected token')) {
+      throw new Error('Server response format error - our team has been notified');
+    } else {
+      throw new Error(
+        `We couldn't send the confirmation email. ` +
+        `Our team will still contact you at ${email}`
+      );
+    }
+  }
+};
+  const handleSendMessage = async () => {
+    if (!inputValue.trim()) return;
+  
+    // Add user message
+    setMessages(prev => [...prev, { text: inputValue, sender: 'user' }]);
+    setInputValue('');
+  
+    try {
+      if (conversationState === 'awaiting_email') {
+        if (!inputValue.includes('@') || !inputValue.includes('.')) {
+          setMessages(prev => [
+            ...prev,
+            { text: 'Please enter a valid email address', sender: 'bot' }
+          ]);
+          return;
+        }
+  
+        setMessages(prev => [
+          ...prev,
+          { text: 'Processing your request...', sender: 'bot' }
+        ]);
+  
+        const result = await storeEmailAndSendConfirmation(inputValue);
+  
+        setMessages(prev => [
+          ...prev.filter(m => m.text !== 'Processing your request...'),
+          result.existing
+            ? { text: '✓ We already have your email', sender: 'bot' }
+            : { text: '✓ Thank you for your email!', sender: 'bot' },
+          { text: '✓ Confirmation sent to your inbox', sender: 'bot' },
+          { text: 'Our team will respond within 24 hours', sender: 'bot' }
+        ]);
+  
+        setEmailProvided(true);
+        setConversationState('email_received');
+      } else {
+        setMessages(prev => [
+          ...prev,
+          { text: 'Message received!', sender: 'bot' },
+          { text: 'We\'ll respond via email shortly', sender: 'bot' }
+        ]);
+      }
+    } catch (error) {
+      setMessages(prev => [
+        ...prev.filter(m => m.text !== 'Processing your request...'),
+        { text: '⚠ Something went wrong', sender: 'bot' },
+        { text: error.message.includes('already exists') 
+            ? 'We already have your email on file' 
+            : error.message,
+          sender: 'bot' 
+        },
+        { text: 'Our team will contact you soon', sender: 'bot' }
+      ]);
+    }
+  };
   return (
     <div className="fixed bottom-4 left-4 md:bottom-6 md:left-6 z-50">
       {/* Chat toggle button */}
@@ -81,7 +193,7 @@ const LiveChat = () => {
                 className="w-8 h-8 md:w-10 md:h-10 rounded-full mr-2"
               />
               <div>
-                <h3 className="font-semibold text-sm md:text-base">Customer Service</h3>
+                <h3 className="font-semibold text-sm md:text-base">ProfuseCC Support</h3>
                 <p className="text-xs opacity-80">Online</p>
               </div>
             </div>

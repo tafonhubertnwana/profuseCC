@@ -14,7 +14,7 @@ const MissionPage = () => {
     title="Our Mission Vision & Goal"
     description="Driving innovation and delivering excellence."
     backgroundImage="/assets/mission-bg.webp"
-    breadcrumb="Mission"
+    breadcrumb="Pages > Mission"
   />
   <MissionSection />
   <ExperienceSection />

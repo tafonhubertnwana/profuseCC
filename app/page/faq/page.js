@@ -14,7 +14,7 @@ const FAQPage = () => {
   title="Frequently Asked Questions"
   description="Find answers to common questions about our services, policies, and more."
   backgroundImage="/assets/faq-bg.webp"
-  breadcrumb="FAQ" />
+  breadcrumb="Pages > FAQ" />
       {/* Add the rest of your contact page content here */}
       <ITServices />
       <LogoCarousel />

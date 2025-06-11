@@ -17,10 +17,10 @@ const WebDevelopment = () => {
         <div className=' relative'>
 
         <HeroSection
-          title="Web Development"
-          description="Building modern, responsive, and scalable web applications."
+          title="Software development"
+          description="We build scalable web and mobile apps tailored to your business goals and user needs."
           backgroundImage="/assets/web-dev-bg.webp"
-          breadcrumb="Web Development"
+          breadcrumb="Services > Software development"
         />
         
         </div>

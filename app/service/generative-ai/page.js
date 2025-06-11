@@ -20,7 +20,7 @@ const DataPage = () => {
         title="GENERATIVE AI"
         description="We know how generative AI can help your business succeed."
         backgroundImage="/assets/Generative-AI-bg.webp"
-        breadcrumb="Generative AI"
+        breadcrumb="Services > Generative AI"
       />
       <div className=''  style={{ backgroundImage: "url('/assets/service-bg.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
 

@@ -83,9 +83,10 @@ const Navbar = () => {
                 {isServiceDropdownOpen && (
                   <div className="absolute mt-2 w-72 bg-white shadow-lg rounded-lg py-2">
                     {[
-                      { name: "AWS Cloud Service", href: "/service/aws-cloud" },
+                      { name: "Cloud Computing", href: "/service/cloud-computing" },
                       { name: "Software Development", href: "/service/software-development" },
                       { name: "Generative AI", href: "/service/generative-ai" },
+                       { name: "AI & Cybersecurity", href: "/service/cybersecurity" },
                       { name: "Data & Analysis", href: "/service/data-analysis" },
                     ].map((service, index) => (
                       <Link
@@ -251,9 +252,10 @@ const Navbar = () => {
               {isServiceDropdownOpen && (
                 <div className="pl-4">
                   {[
-                    { name: "AWS Cloud Service", href: "/service/aws-cloud" },
+                    { name: "Cloud Computing", href: "/service/cloud-computing" },
                     { name: "Software Development", href: "/service/software-development" },
                     { name: "Generative AI", href: "/service/generative-ai" },
+                    { name: "AI & Cybersecurity", href: "/service/cybersecurity" },
                     { name: "Data & Analysis", href: "/service/data-analysis" },
                   ].map((service, index) => (
                     <Link
