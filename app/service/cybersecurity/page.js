@@ -3,13 +3,16 @@ import HeroSection from '@/components/herosection/hero'
 import Navbar from '@/components/navbar'
 import React from 'react'
 import ServicesSection from '@/components/cybersecurity/serviceSection';
-import AboutCyber from '@/components/cybersecurity/aboutCyber';
+
 import SecurityServices from '@/components/cybersecurity/ServicesGrid';
+import InformationSecurityServices from '@/components/cybersecurity/infromationsecurityservices';
+import Portfolio from '@/components/cybersecurity/cyberPortfolio';
+import WeLeadInPage from '@/components/cybersecurity/weLeadInPage';
 
 
 const CybersecurityPage = () => {
   return (
-    <div>
+<div>
       <Navbar />
       <HeroSection
   title="AI & Cybersecurity"
@@ -17,10 +20,11 @@ const CybersecurityPage = () => {
   backgroundImage="/assets/SAP-Build-Code-bg.webp"
   breadcrumb="Services > AI & Cybersecurity"
 />
-
 <ServicesSection />
+<WeLeadInPage />
 <SecurityServices />
- <AboutCyber />
+ <InformationSecurityServices />
+ <Portfolio />
     </div>
   )
 }

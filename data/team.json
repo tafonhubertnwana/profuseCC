@@ -1,0 +1,104 @@
+
+[
+  {
+    "id": "1",
+    "fullName": "John Doe",
+    "role": "Chief Technology Officer",
+    "bio": "John is a seasoned technology executive with over 15 years of experience in cloud computing and software architecture. He leads our technical strategy and ensures our solutions are cutting-edge and scalable.",
+    "imageUrl": "/assets/person-1.jpg",
+    "location": "San Francisco, California, USA",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/johndoe",
+      "twitter": "https://twitter.com/johndoe",
+      "facebook": "https://facebook.com/johndoe",
+      "github": "https://github.com/johndoe"
+    },
+    "skills": [
+      { "name": "Cloud Architecture", "percentage": 95 },
+      { "name": "DevOps", "percentage": 90 },
+      { "name": "Kubernetes", "percentage": 85 },
+      { "name": "AWS", "percentage": 98 }
+    ],
+    "contact": {
+      "email": "john.doe@company.com",
+      "phone": "+1 (555) 123-4567"
+    },
+    "education": "MS in Computer Science, Stanford University",
+    "experience": "Former Director of Engineering at TechCorp"
+  },
+  {
+    "id": "2",
+    "fullName": "Jane Smith",
+    "role": "Chief Operating Officer",
+    "bio": "Jane oversees all company operations with a focus on scaling our business processes. With her MBA from Harvard and 12 years in tech operations, she ensures our teams work efficiently and effectively.",
+    "imageUrl": "/assets/person-1.jpg",
+    "location": "New York, NY, USA",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/janesmith",
+      "twitter": "https://twitter.com/janesmith",
+      "pinterest": "https://pinterest.com/janesmith"
+    },
+    "skills": [
+      { "name": "Business Strategy", "percentage": 98 },
+      { "name": "Operations Management", "percentage": 95 },
+      { "name": "Financial Planning", "percentage": 90 },
+      { "name": "Team Leadership", "percentage": 97 }
+    ],
+    "contact": {
+      "email": "jane.smith@company.com",
+      "phone": "+1 (555) 987-6543"
+    },
+    "education": "MBA, Harvard Business School",
+    "experience": "Former VP Operations at StartupInc"
+  },
+  {
+    "id": "3",
+    "fullName": "Alex Johnson",
+    "role": "Lead Software Engineer",
+    "bio": "Alex is our coding expert with deep expertise in full-stack development. He leads our engineering team and ensures our products are built with best practices and cutting-edge technologies.",
+    "imageUrl": "/assets/person-1.jpg",
+    "location": "Austin, Texas, USA",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/alexjohnson",
+      "twitter": "https://twitter.com/alexjohnson",
+      "github": "https://github.com/alexjohnson"
+    },
+    "skills": [
+      { "name": "JavaScript", "percentage": 98 },
+      { "name": "React", "percentage": 95 },
+      { "name": "Node.js", "percentage": 90 },
+      { "name": "Database Design", "percentage": 85 }
+    ],
+    "contact": {
+      "email": "alex.johnson@company.com",
+      "phone": "+1 (555) 456-7890"
+    },
+    "education": "BS in Computer Science, MIT",
+    "experience": "Former Senior Engineer at DevSolutions"
+  },
+  {
+    "id": "4",
+    "fullName": "Sarah Williams",
+    "role": "Marketing Director",
+    "bio": "Sarah leads our marketing efforts with a focus on digital strategies and brand development. Her creative approach has helped us establish a strong market presence and connect with our customers.",
+    "imageUrl": "/assets/person-2.jpg",
+    "location": "Chicago, Illinois, USA",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/sarahwilliams",
+      "twitter": "https://twitter.com/sarahwilliams",
+      "instagram": "https://instagram.com/sarahwilliams"
+    },
+    "skills": [
+      { "name": "Digital Marketing", "percentage": 95 },
+      { "name": "Brand Strategy", "percentage": 90 },
+      { "name": "Content Creation", "percentage": 85 },
+      { "name": "SEO", "percentage": 88 }
+    ],
+    "contact": {
+      "email": "sarah.williams@company.com",
+      "phone": "+1 (555) 789-0123"
+    },
+    "education": "BA in Marketing, Northwestern University",
+    "experience": "Former Marketing Manager at BrandWorks"
+  }
+]

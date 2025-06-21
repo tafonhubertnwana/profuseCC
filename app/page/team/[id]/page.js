@@ -5,55 +5,48 @@ import HeroSection from "@/components/herosection/hero";
 import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaPinterestP, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import teamData from '@/data/team.json';
+
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaPinterestP, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaGithub, FaInstagram } from "react-icons/fa";
 import Link from "next/link";
-import { getTeamMemberById } from '@/lib/appwrite';
-import { notFound } from 'next/navigation';
 
 export default function TeamDetailPage() {
   const params = useParams();
   const id = params?.id;
   const [member, setMember] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true); // Changed to true initially
 
   useEffect(() => {
-    const fetchMember = async () => {
-      try {
-        if (!id) {
-          console.error('No ID provided');
-          setLoading(false);
-          return;
-        }
-
-        console.log('Fetching member with ID:', id); // Debug log
-        const data = await getTeamMemberById(id);
-        
-        if (!data) {
-          console.error('No data returned for ID:', id);
-          return notFound();
-        }
-
-        setMember(data);
-      } catch (error) {
-        console.error('Error fetching member:', error);
-        return notFound();
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchMember();
+    if (id) {
+      const foundMember = teamData.find(member => member.id === id);
+      setMember(foundMember || null);
+      setLoading(false);
+    } else {
+      setLoading(false);
+    }
   }, [id]);
 
   if (loading) {
-    return <div>Loading team member details...</div>;
+    return (
+      <div>
+        <Navbar />
+        <div className="flex justify-center items-center py-32">
+          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-red-600"></div>
+        </div>
+      </div>
+    );
   }
 
   if (!member) {
-    return notFound();
+    return (
+      <div>
+        <Navbar />
+        <div className="flex justify-center items-center py-32">
+          <p>Member not found</p>
+        </div>
+      </div>
+    );
   }
-
-
 
   return (
     <div>
@@ -67,47 +60,97 @@ export default function TeamDetailPage() {
       <section className="py-10">
         <div className="max-w-6xl mx-auto px-4">
           <motion.div 
-            className="grid md:grid-cols-2"
+            className="grid md:grid-cols-2 gap-8"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Image
-              src={member.imageUrl}
-              alt={member.fullName}
-              width={400}
-              height={400}
-              className="object-cover rounded-md"
-            />
+            <div className="relative h-[500px]">
+              <Image
+                src={member.imageUrl}
+                alt={member.fullName}
+                fill
+                className="object-cover rounded-md"
+              />
+            </div>
             <div className="md:p-6 py-6 md:py-1 w-full">
-              <h2 className="text-2xl font-bold text-gray-800">{member.fullName}</h2>
-              <p className="text-gray-500">{member.role}</p>
-              <p className="text-gray-600 mt-4 py-5 text-sm">{member.bio}</p>
+              <h2 className="text-3xl font-bold text-gray-800">{member.fullName}</h2>
+              <p className="text-xl text-gray-500 mt-2">{member.role}</p>
+              <p className="text-gray-600 mt-6 text-base leading-relaxed">{member.bio}</p>
               
-              <div className="mt-6 flex md:py-5 space-x-4"> 
-                {member.socialLinks?.linkedin && (
-                  <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100">
-                    <a href={member.socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
-                      <FaLinkedinIn className="text-gray-500 cursor-pointer hover:text-blue-700" />
+              <div className="mt-8">
+                <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3">
+                    <FaEnvelope className="text-[#FF0000] text-lg" />
+                    <a href={`mailto:${member.contact.email}`} className="text-gray-700 hover:text-[#FF0000] transition-colors">
+                      {member.contact.email}
                     </a>
                   </div>
-                )}
-                {/* Add other social links similarly */}
+                  <div className="flex items-center space-x-3">
+                    <FaPhoneAlt className="text-[#FF0000] text-lg" />
+                    <a href={`tel:${member.contact.phone}`} className="text-gray-700 hover:text-[#FF0000] transition-colors">
+                      {member.contact.phone}
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <FaMapMarkerAlt className="text-[#FF0000] text-lg" />
+                    <span className="text-gray-700">{member.location}</span>
+                  </div>
+                </div>
               </div>
 
-              <div className="mt-6 flex items-center space-x-2">
-                <div className="rounded-full border-[#FF0000] border-2 p-3">
-                  <FaMapMarkerAlt className="text-[#FF0000]" />
+              <div className="mt-8">
+                <h3 className="text-xl font-semibold mb-4">Connect</h3>
+                <div className="flex space-x-4">
+                  {member.socialLinks?.linkedin && (
+                    <a href={member.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#FF0000] hover:text-white transition-colors">
+                      <FaLinkedinIn className="text-lg" />
+                    </a>
+                  )}
+                  {member.socialLinks?.twitter && (
+                    <a href={member.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#FF0000] hover:text-white transition-colors">
+                      <FaTwitter className="text-lg" />
+                    </a>
+                  )}
+                  {member.socialLinks?.facebook && (
+                    <a href={member.socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#FF0000] hover:text-white transition-colors">
+                      <FaFacebookF className="text-lg" />
+                    </a>
+                  )}
+                  {member.socialLinks?.github && (
+                    <a href={member.socialLinks.github} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#FF0000] hover:text-white transition-colors">
+                      <FaGithub className="text-lg" />
+                    </a>
+                  )}
+                  {member.socialLinks?.instagram && (
+                    <a href={member.socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#FF0000] hover:text-white transition-colors">
+                      <FaInstagram className="text-lg" />
+                    </a>
+                  )}
                 </div>
-                <span className="text-gray-700">{member.location}</span>
               </div>
             </div>
           </motion.div>
-          
-          {member.skills && member.skills.length > 0 && (
-            <div className="py-10">
-              <h2 className="text-2xl font-bold mb-6">My Skills</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <div className="grid md:grid-cols-2 gap-12 mt-16">
+            <div>
+              <h2 className="text-2xl font-bold mb-6">Professional Background</h2>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-800">Education</h3>
+                  <p className="text-gray-600 mt-1">{member.education}</p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-800">Previous Experience</h3>
+                  <p className="text-gray-600 mt-1">{member.experience}</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-bold mb-6">Skills & Expertise</h2>
+              <div className="space-y-6">
                 {member.skills.map((skill, index) => (
                   <div key={index} className="flex items-center">
                     <div className="w-full">
@@ -126,10 +169,9 @@ export default function TeamDetailPage() {
                 ))}
               </div>
             </div>
-          )}
+          </div>
         </div>
       </section>
     </div>
   );
 };
-

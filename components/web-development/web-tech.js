@@ -103,25 +103,11 @@ const SERVICES ={
 }
 
 const TechnologyStack = () => {
-  // const fadeInUp = {
-  //   hidden: { opacity: 0, y: 20 },
-  //   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-  // };
-
-  // const staggerContainer = {
-  //   visible: {
-  //     transition: {
-  //       staggerChildren: 0.2,
-  //     },
-  //   },
-  // };
-
  
   const [selectedItem, setSelectedItem] = useState(ITEMS[0]);
- 
   return (
     <section className="bg-black py-16 px-4 sm:px-6 lg:px-8">
-      <div className="container xl:max-w-6xl mx-auto">
+      <div className="container xl:max-w-6xl mx-auto p-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

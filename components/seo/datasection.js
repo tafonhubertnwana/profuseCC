@@ -1,4 +1,5 @@
-import Image from 'next/image';
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 const DataAndAnalyticsServices = () => {
   return (
@@ -23,9 +24,16 @@ const DataAndAnalyticsServices = () => {
           <p className="text-gray-600 text-lg mb-6">
             Imagine a constant flow of data-driven insights guiding you toward smarter decisions, greater business agility, and, ultimately, competitive advantage. With Kanda’s full-cycle data and analytics services, you can monetize your data, break data silos, and unlock the full potential of your data goldmine. Backed by deep domain understanding, a solid grasp of modern data technologies, and advanced analytics skills, we can help you take your data narrative to the next level.
           </p>
-          <button className="bg-[#FF0000] text-white px-6 py-3 rounded-lg hover:bg-red-700 transition duration-300">
-            Talk to an Expert
-          </button>
+          <motion.button
+              className="mt-8 bg-[#FF0000] text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-700 transition flex items-center justify-center mx-auto"
+              whileHover={{ scale: 1.05 }}
+              
+              onClick={() => {
+                window.location.href = '/contact'; // Replace with your desired link
+              }}
+            >
+              Talk to an Expert →
+            </motion.button>
         </div>
       </div>
     </div>

@@ -61,15 +61,15 @@ export default function Testimonials() {
           <div className="text-center py-10">No testimonials yet. Be the first to add one!</div>
         )}
 
-        {/* Mobile Add Testimonial Button */}
+        {/* Mobile Add Testimonial Button
         <div className="lg:hidden flex justify-center mt-6">
           <button
             onClick={() => setShowModal(true)}
             className="bg-[#FF0000] text-white px-6 py-2 rounded hover:bg-[#FF0000] transition duration-300"
           >
             Add Testimonial
-          </button>
-        </div>
+          </button> */}
+        {/* </div> */}
 
         {/* Testimonial Form Modal */}
         {showModal && (

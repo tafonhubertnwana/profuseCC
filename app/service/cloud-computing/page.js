@@ -1,14 +1,18 @@
 "use client";
-import CloudAgilitySection from '@/components/aws/aws-benefit';
-import CloudServices from '@/components/aws/aws-cloud';
-import AWSDevelopmentServices from '@/components/aws/aws-dev-services';
+
+import CloudServices from '@/components/aws/cloudservice';
 import AwsServices from '@/components/aws/aws-service';
 import TechnicalExpertise from '@/components/aws/awsExpertise';
+import CloudAdoptionStrategies from '@/components/aws/cloudAdoptionStrategies';
+
 import GoogleCloudServices from '@/components/aws/googleCloud';
 import HeroSection from '@/components/herosection/hero'
 import Navbar from '@/components/navbar'
+import CloudDeployment from '@/components/aws/cloudDeployment'
 
 import React from 'react'
+import CloudCharacteristics from '@/components/aws/cloudCharacteristics';
+import CloudComputing from '@/components/aws/cloudComputing';
 
 const CloudPage = () => {
   return (
@@ -16,16 +20,20 @@ const CloudPage = () => {
       <Navbar />
       <HeroSection
   title="
-Cloud Computing"
+Customized and Scalable Cloud Based Applications"
   description="Scale your infrastructure seamlessly with secure, flexible, and cost-effective cloud solutions."
   backgroundImage="/assets/AWS-Cloud-bg.webp" 
   breadcrumb="Services > Cloud computing"
 />
-<CloudServices />
+<CloudComputing />
+<CloudServices/>
+<CloudCharacteristics />
+
+
+<CloudDeployment />
 <GoogleCloudServices />
-<CloudAgilitySection />
+<CloudAdoptionStrategies />
 <AwsServices />
-<AWSDevelopmentServices />
 <TechnicalExpertise />
 
     </div>

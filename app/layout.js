@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "profuseCC",
   description: "Artificial Intelligent cloud startup Company",
-  keywords: 'Artificial Intelligent, web development, cloud, generative AI, AWS, google Cloud'
+  keywords: 'Artificial Intelligent, web development, cloud, generative AI, AWS, google Cloud, cybersecurity, analytics'
 };
 
 export default function RootLayout({ children }) {
@@ -35,8 +35,8 @@ export default function RootLayout({ children }) {
   <meta property="og:title" content={metadata.title} />
   <meta property="og:description" content={metadata.description} />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://profuse-cc.vercel.app" />
-  <meta property="og:image" content="https://profuse-cc.vercel.app/og-image.jpg" />
+  <meta property="og:url" content="https://profuse-cc-8gub.vercel.app" />
+  <meta property="og:image" content="https://profuse-cc-8gub.vercel.app/og-image.jpg" />
   
   {/* Preconnect */}
   <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -51,8 +51,8 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "ProfuseCC",
-              "url": "https://profuse-cc.vercel.app",
-              "logo": "https://profuse-cc.vercel.app/logo.png",
+              "url": "https://profuse-cc-8gub.vercel.app/",
+              "logo": "https://profuse-cc-8gub.vercel.app/logo.png",
               "sameAs": [
                 "https://www.facebook.com/profuseCC",
                 "https://www.linkedin.com/company/profuseCC"
@@ -69,11 +69,11 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "About Us", "item": "https://profuse-cc.vercel.app/about-us" },
-                { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://profuse-cc.vercel.app/contact" },
-                { "@type": "ListItem", "position": 3, "name": "Cloud Computing", "item": "https://profuse-cc.vercel.app/service/cloud-computing" },
-                { "@type": "ListItem", "position": 4, "name": "Software Development", "item": "https://profuse-cc.vercel.app/service/software-development" },
-                { "@type": "ListItem", "position": 5, "name": "Projects", "item": "https://profuse-cc.vercel.app/project" }
+                { "@type": "ListItem", "position": 1, "name": "About Us", "item": "https://profuse-cc-8gub.vercel.app/aboutUs" },
+                { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://profuse-cc-8gub.vercel.app/contact" },
+                { "@type": "ListItem", "position": 3, "name": "Cloud Computing", "item": "https://profuse-cc-8gub.vercel.app/service/cloud-computing" },
+                { "@type": "ListItem", "position": 4, "name": "Software Development", "item": "https://profuse-cc-8gub.vercel.app/service/software-development" },
+                { "@type": "ListItem", "position": 5, "name": "Projects", "item": "https://profuse-cc-8gub.vercel.app/project" }
               ]
             }),
           }}

@@ -33,7 +33,7 @@ export default function PrivacyPolicyPage() {
     <div>
         <Navbar />
             <HeroSection
-        title="Get in Touch"
+        title="Private Policy"
         description="We'd love to hear from you. Whether you have a question, feedback,
                     or just want to say hello, feel free to reach out."
         backgroundImage="/assets/bg-policy.webp"

@@ -78,7 +78,7 @@ const CGJHeroWithImages = () => {
 
   return (
     <div className="min-h-screen bg-white py-16 px-4 ">
-      <div className="max-w-7xl mx-auto">
+      <div className="container xl:max-w-6xl mx-auto p-4">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}

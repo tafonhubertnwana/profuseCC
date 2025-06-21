@@ -69,13 +69,13 @@ const SecurityServices = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-blue-900 py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen bg-black py-16 sm:px-6 lg:px-8">
+      <div className="container xl:max-w-6xl mx-auto p-4">
         <motion.h1 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl md:text-5xl font-bold text-center text-white mb-16"
+          className="text-4xl md:text-5xl font-bold text-left text-white mb-16"
         >
           Our Cyber Security Service That We Offer
         </motion.h1>
@@ -84,14 +84,14 @@ const SecurityServices = () => {
           variants={container}
           initial="hidden"
           animate="show"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
         >
           {services.map((service, index) => (
             <motion.div
               key={index}
               variants={item}
               whileHover={{ scale: 1.05 }}
-              className="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-blue-500"
+              className="bg-[#FF0000]  p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-white"
             >
               <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
               <p className="text-gray-300">{service.description}</p>

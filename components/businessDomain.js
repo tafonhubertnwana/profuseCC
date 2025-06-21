@@ -2,18 +2,91 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const industries = [
-  { name: 'Retail & Wholesale', icon: '/assets/cart-shopping-fast.png' },
-  { name: 'Industrial Manufacturing', icon: '/assets/air-pollution.png' },
-  { name: 'Banking & Finance', icon: '/assets/growth-chart-invest.png' },
-  { name: 'Healthcare', icon: '/assets/hands-brain.png' },
-  { name: 'Transportation & Logistics', icon: '/assets/shipping-fast.png' },
-  { name: 'Automotive', icon: '/assets/cart-shopping-fast.png' },
-  { name: 'Metals & Mining', icon: '/assets/picaxe-minning.png' },
-  { name: 'Chemicals', icon: '/assets/test.png' },
-  { name: 'Pharmaceuticals & Life Science', icon: '/assets/capsules.png' },
+  { 
+    name: 'Retail & Wholesale', 
+    icon: '/assets/cart-shopping-fast.png',
+    link: '/industry/wholesale-retail' 
+  },
+  { 
+    name: 'Industrial Manufacturing', 
+    icon: '/assets/air-pollution.png',
+    link: '/industry/industrial-manufacturing' 
+  },
+  { 
+    name: 'Banking & Finance', 
+    icon: '/assets/growth-chart-invest.png',
+    link: '/industry/banking-finance' 
+  },
+  { 
+    name: 'Healthcare', 
+    icon: '/assets/hands-brain.png',
+    link: '/industry/healthcare' 
+  },
+  { 
+    name: 'Transportation & Logistics', 
+    icon: '/assets/shipping-fast.png',
+    link: '/industry/transportation-logistics' 
+  },
+  { 
+    name: 'Automotive', 
+    icon: '/assets/cart-shopping-fast.png',
+    link: '/industry/automotive' 
+  },
+  { 
+    name: 'Real Estate', 
+    icon: '/assets/picaxe-minning.png',
+    link: '/industry/real-estate' 
+  },
+  { 
+    name: 'Education', 
+    icon: '/assets/test.png',
+    link: '/industry/education' 
+  },
+  { 
+    name: 'Telecommunication', 
+    icon: '/assets/capsules.png',
+    link: '/industry/telecommunication' 
+  },
 ];
+
+export function IndustriesList({ excludeCurrent = false, currentIndustry = '' }) {
+  const filteredIndustries = excludeCurrent 
+    ? industries.filter(industry => industry.link !== currentIndustry)
+    : industries;
+
+  return (
+    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      {filteredIndustries.map((industry, index) => (
+        <motion.li
+          key={index}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="bg-red-600 rounded-lg shadow-md"
+        >
+          <Link 
+            href={industry.link} 
+            className="p-4 flex items-center gap-4 w-full h-full"
+            aria-label={`Learn more about ${industry.name}`}
+          >
+            <span className="text-2xl">
+              <Image 
+                src={industry.icon} 
+                alt="" 
+                width={40} 
+                height={40} 
+                aria-hidden="true"
+              />
+            </span>
+            <span className="font-semibold">{industry.name}</span>
+          </Link>
+        </motion.li>
+      ))}
+    </ul>
+  );
+}
 
 export default function BusinessDomains() {
   return (
@@ -36,27 +109,7 @@ export default function BusinessDomains() {
           </p>
         </header>
 
-        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {industries.map((industry, index) => (
-            <motion.li
-              key={index}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-red-600 p-4 rounded-lg flex items-center gap-4 shadow-md"
-            >
-              <span className="text-2xl">
-                <Image 
-                  src={industry.icon} 
-                  alt="" 
-                  width={40} 
-                  height={40} 
-                  aria-hidden="true"
-                />
-              </span>
-              <span className="font-semibold">{industry.name}</span>
-            </motion.li>
-          ))}
-        </ul>
+        <IndustriesList />
       </div>
     </section>
   );

@@ -16,9 +16,6 @@ const HeroSection = ({ title, description, backgroundImage, breadcrumb }) => {
         className="absolute inset-0 w-full h-full bg-cover bg-center sm:bg-contain md:bg-cover"
         style={{ backgroundImage: `url('${backgroundImage}')` }}
       >
-        {/* Overlay for better text readability */}
-        {/* <div className="absolute inset-0 "></div> */}
-
         {/* Content Container */}
         <div className="absolute inset-0 flex flex-col justify-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 pt-10 md:pt-20">
           <motion.div
@@ -55,7 +52,6 @@ const HeroSection = ({ title, description, backgroundImage, breadcrumb }) => {
             <Image src="/assets/badge-2.png" alt="badge" width={60} height={60} className="sm:w-[80px] sm:h-[80px] md:w-[100px] md:h-[100px]" />
             <Image src="/assets/badge-3.png" alt="badge" width={60} height={60} className="sm:w-[80px] sm:h-[80px] md:w-[100px] md:h-[100px]" />
             <Image src="/assets/aws-solution.jpg" alt="badge" width={60} height={60} className="sm:w-[80px] sm:h-[80px] md:w-[100px] md:h-[100px]" />
-
           </motion.div>
 
           {/* Breadcrumb */}
@@ -63,7 +59,7 @@ const HeroSection = ({ title, description, backgroundImage, breadcrumb }) => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-white text-xs sm:text-sm md:text-base pt-6 md:pt-10 flex items-center"
+            className="text-white text-xs sm:text-sm md:text-base my-6 flex items-center"
           >
             <Link href="/" className="hover:text-[#FF0000] flex items-center">
               <FaHome size={16} className="mr-1 sm:mr-2" /> Home

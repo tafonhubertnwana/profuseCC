@@ -1,12 +1,11 @@
 "use client";
-import Expertise from '@/components/ai/ai-service';
 import AIExpertise from '@/components/ai/aiExpertise';
-import FeatureCards from '@/components/ai/aimSerivces';
+import AINeedSection from '@/components/ai/AINeedSection';
+import AIProcessSteps from '@/components/ai/AIPRocessSteps';
 import AIServiceSection from '@/components/ai/aiServices';
-import Hero from '@/components/ai/aiServices';
 import GenerativeAI from '@/components/ai/generative-ai';
 import IndustryAIServices from '@/components/ai/industryAI';
-import ServiceSection from '@/components/ai/serviceSection';
+import WhyWeLeadSection from '@/components/ai/WhyWeLeadSection';
 import HeroSection from '@/components/herosection/hero'
 import Navbar from '@/components/navbar'
 import TechStack from '@/components/techStack';
@@ -17,21 +16,19 @@ const DataPage = () => {
     <div>
       <Navbar />
       <HeroSection
-        title="GENERATIVE AI"
+        title="Leading Artificial Intelligence Development Company"
         description="We know how generative AI can help your business succeed."
         backgroundImage="/assets/Generative-AI-bg.webp"
         breadcrumb="Services > Generative AI"
-      />
-      <div className=''  style={{ backgroundImage: "url('/assets/service-bg.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
-
-      </div>
+      />     
       <AIServiceSection />
+      <AINeedSection />
       <IndustryAIServices />
-      <AIExpertise />
       <GenerativeAI />
+      <AIExpertise />
+      <WhyWeLeadSection />
+      <AIProcessSteps /> 
       <TechStack />
-      <ServiceSection />
-      
     </div>
   )
 }

@@ -66,6 +66,14 @@ const Footer = () => {
         Generative AI
       </Link>
     </li>
+     <li className="mb-2 group">
+      <Link href="/service/cybersecurity" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
+        <span className="mr-2">
+          <FaRegArrowAltCircleRight className='text-[#FF0000]' />
+        </span>
+        AI and Cybersecurity
+      </Link>
+    </li>
     <li className="mb-2 group">
       <Link href="/service/data-analysis" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
         <span className="mr-2">

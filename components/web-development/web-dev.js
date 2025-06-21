@@ -6,36 +6,7 @@ import Head from 'next/head';
 import { useState } from 'react';
 import ConsultationFormModal from '../consultingForm';
 
-const features = [
-  {
-    title: "US-based Project Leadership",
-    description:
-      "Our Delivery Manager is a senior technology leader that becomes an extension of your team, ensuring your software development milestones and goals are met from kickoff to delivery.",
-    imgSrc: "/assets/crown.png",
-    delay: 0.2,
-  },
-  {
-    title: "Optimized Global Talent and Skill Mix",
-    description:
-      "Our teams are strategically staffed to deliver industry-leading breadth and depth of technology skills and expertise while optimizing delivery costs.",
-    imgSrc: "/assets/earth-europa.png",
-    delay: 0.4,
-  },
-  {
-    title: "On-demand Hard-to-find Experts",
-    description:
-      "Specialized resources like business analysts, architects, DevSecOps, AI/ML engineers, and others can be added on-demand to serve specific software project requirements.",
-    imgSrc: "/assets/users-alt.png",
-    delay: 0.6,
-  },
-  {
-    title: "Cost-effective US-based UX Talent",
-    description:
-      "Our partnership with Bentley University’s User Experience Center enables us to deliver award-winning designs and user experiences at an affordable price point.",
-    imgSrc: "/assets/quality.png",
-    delay: 0.8,
-  },
-];
+
 
 export default function CustomSoftwareDevelopment() {
 
@@ -92,43 +63,7 @@ export default function CustomSoftwareDevelopment() {
     </div>
       </div>
     </section>
-        <section className='bg-black py-10'>
-
-          <div className="container xl:max-w-6xl mx-auto px-4">
-            <Head>
-              <title>Designed to Deliver Faster Time to Innovation</title>
-            </Head>
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5 }}
-                  className="text-left mb-10"
-                >
-                  <h1 className="text-4xl font-bold text-[#FF0000] mb-4">Designed to Deliver Faster Time to Innovation</h1>
-                  <p className="text-gray-100">Every project team is structured to optimize your custom software development objectives and business goals.</p>
-                </motion.div>
-                <div className="px-4 py-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {features.map((feature, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: feature.delay }}
-                  className="bg-white p-6 rounded-lg shadow-md flex flex-col items-left text-left min-h-[300px]"
-                >
-                  <div>
-                  <Image src={feature.imgSrc} alt="icon" width={50} height={50} className="mb-4 filter trust-icon hue-rotate-30 brightness-110" />
-
-                  </div>
-                  <h2 className="text-2xl font-semibold text-[#FF0000] mb-2">{feature.title}</h2>
-                  <p className="text-gray-600">{feature.description}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-          </div>
-        </section>
+        
     
     </>
    
