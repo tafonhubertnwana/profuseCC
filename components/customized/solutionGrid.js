@@ -54,15 +54,15 @@ const SolutionsGrid = ({ title, items, columns = 3 }) => {
                   src={item.image}
                   alt={item.title}
                   fill
-                  className="object-cover"
+                  className="object-cover filter grayscale brightness-75"
                   priority={index < 3} // Prioritize loading first 3 images
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#FF0000] mb-3">
+              <div className="p-2">
+                <h3 className="text-md font-semibold text-[#FF0000] mb-3">
                   {item.title}
                 </h3>
-                <p className="text-gray-700">{item.description}</p>
+                <p className="text-gray-700 text-justified">{item.description}</p>
               </div>
             </motion.div>
           ))}

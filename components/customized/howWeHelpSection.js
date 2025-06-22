@@ -70,7 +70,7 @@ const SuccessCard = ({ title, subtitle, description, category, imageUrl, ctaText
 const HowWeHelpSection = ({ heading, cards }) => {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-      <div className="container xl:max-w-7xl mx-auto p-4">
+      <div className="container xl:max-w-7xl mx-auto p-2">
         <motion.h2
           className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900"
           initial={{ opacity: 0, y: -20 }}

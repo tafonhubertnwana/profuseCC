@@ -38,7 +38,7 @@ const DataVisualizationPage = () => {
         </Head>
 
         {/* Why Data Visualization Section */}
-        <section className="py-10 container xl:max-w-6xl mx-auto p-4">
+        <section className="py-10 container xl:max-w-7xl mx-auto p-2">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -59,40 +59,40 @@ const DataVisualizationPage = () => {
           >
             {[
               {
-                icon: '/images/dataAnalyticsCompanyLogo1.png',
+                icon: '/industry/data-1.png',
                 title: 'Investment for Future',
                 description: 'Affording an agency that offers solid and reliable visualization tools for data is investing in an improved future. It helps you control an accurate visualization of your work and helps you to have a better understanding for the coming years.'
               },
               {
-                icon: '/images/dataAnalyticsCompanyLogo2.png',
+                icon: '/industry/data-2.png',
                 title: 'Simple Interpretation of Data',
                 description: 'This is not just a visualization tool that helps monitor the company\'s data, but it also helps in the easy processing of data, allowing users to make useful observations of large amounts of data using graphs, data visualization, tables, infographics, maps, and more.'
               },
               {
-                icon: '/images/dataAnalyticsCompanyLogo3.png',
+                icon: '/industry/data-3.png',
                 title: 'Self Service Reporting',
                 description: 'The various data visualization software enables individuals in an organization to have access to all necessary data and insights without the involvement of an IT department in the making process. This helps users become self-reliant and an information-driven company.'
               },
               {
-                icon: '/images/dataAnalyticsCompanyLogo4.png',
+                icon: '/industry/data-4.png',
                 title: 'Faster Action and Decision Making',
                 description: 'Data visualization can help to present information in their original form. This helps in identifying areas of your business that require focus, and also in laying down the patterns of consumer behavior. It also helps put in perspective the company\'s marketing strategy and sales.'
               },
               {
-                icon: '/images/dataAnalyticsCompanyLogo5.png',
+                icon: '/industry/data-5.png',
                 title: 'Reduced Dependence',
                 description: 'A majority of organizations depend heavily on spreadsheet applications to manage and report on information within the company. Not only are they wasting many hours of human time doing this, but it can be costly but also not as efficient or productive.'
               },
               {
-                icon: '/images/dataAnalyticsCompanyLogo6.png',
+                icon: '/industry/data-6.png',
                 title: 'Technical consultancy',
                 description: 'Use our knowledge and expertise on various development platforms and technology toolsets to decide better for your business. Get in touch with our technology experts for consulting your projects and creating a full-proof roadmap for your entire project and layout of plan.'
               }
             ].map((item, index) => (
               <motion.li key={index} variants={itemVariants}>
                 <div className="bg-[#FF0000] p-8  h-full hover:bg-white hover:text-black transition duration-300">
-                  <div className="w-16 h-16 mb-6 bg-black rounded-full flex items-center justify-center">
-                    <img src={item.icon} alt={item.title} className="w-10 h-10" />
+                  <div className="w-16 h-16 mb-6  rounded-full flex items-center justify-center">
+                    <img src={item.icon} alt={item.title} className="w-10 h-10 filter grayscale brightness-75" />
                   </div>
                   <h3 className="text-xl font-bold mb-4">{item.title}</h3>
                   <p className="">{item.description}</p>
@@ -103,7 +103,7 @@ const DataVisualizationPage = () => {
         </section>
 
         {/* Our Data Visualization Services Section */}
-        <section className="py-10 container xl:max-w-6xl mx-auto p-4">
+        <section className="py-10 container xl:max-w-7xl mx-auto p-2">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -127,37 +127,37 @@ const DataVisualizationPage = () => {
           >
             {[
               {
-                icon: '/images/dataAnalyticsLogo1.png',
+                icon: '/industry/data-7.png',
                 hoverIcon: '/images/dataAnalyticsLogo1_H.png',
                 title: 'Dashboard Optimization',
                 description: 'Providing quality services is a problem as the business is highly prone to losses. Damages are endless and compensations are made to the client for the same. Safe deliveries and undamaged good transportation is hard to achieve.'
               },
               {
-                icon: '/images/dataAnalyticsLogo2.png',
+                icon: '/industry/data-8.png',
                 hoverIcon: '/images/dataAnalyticsLogo2_H.png',
                 title: 'Power BI Migration',
                 description: 'Visually present complex data as well as identify patterns and relationships to quickly identify the factors that affect the current business.'
               },
               {
-                icon: '/images/dataAnalyticsLogo3.png',
+                icon: '/industry/data-9.png',
                 hoverIcon: '/images/dataAnalyticsLogo3_H.png',
                 title: 'Power BI Services',
                 description: 'Starting from Power BI implementation to visualization to realization of value, we provide flexible engagements that cater to requirements in business intelligence.'
               },
               {
-                icon: '/images/dataAnalyticsLogo4.png',
+                icon: '/industry/data-10.png',
                 hoverIcon: '/images/dataAnalyticsLogo4_H.png',
                 title: 'Data Platform Development',
                 description: 'The next generation of platforms allow BI development simultaneously through platform modernization efforts and provide direction to developers while executing quickly on Proof of Concept and MVP needs.'
               },
               {
-                icon: '/images/dataAnalyticsLogo5.png',
+                icon: '/industry/data-11.png',
                 hoverIcon: '/images/dataAnalyticsLogo5_H.png',
                 title: 'Industry Leading Report Development',
                 description: 'Full-featured reporting development for every level of the business from the analytic team to the executive team and onwards to the end user.'
               },
               {
-                icon: '/images/dataAnalyticsLogo6.png',
+                icon: '/industry/data-12.png',
                 hoverIcon: '/images/dataAnalyticsLogo6_H.png',
                 title: 'Centers Of Excellence In Reporting',
                 description: 'Pin the developer\'s talent to concentrate in leading the way for citizen-led development, by offering agile, reliable and trustworthy sources of truth for the entire company.'
@@ -169,13 +169,9 @@ const DataVisualizationPage = () => {
                     <img 
                       src={item.icon} 
                       alt={item.title} 
-                      className="w-full h-full absolute top-0 left-0 group-hover:opacity-0 transition duration-300"
+                      className="w-full h-full absolute top-0 left-0 group-hover:opacity-0 transition duration-300 filter grayscale brightness-75"
                     />
-                    <img 
-                      src={item.hoverIcon} 
-                      alt={item.title} 
-                      className="w-full h-full absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition duration-300"
-                    />
+                   
                   </div>
                   <h3 className="text-xl font-bold mb-4">{item.title}</h3>
                   <p className=" ">{item.description}</p>
@@ -186,7 +182,7 @@ const DataVisualizationPage = () => {
         </section>
 
         {/* Types of Data Analytics Section */}
-        <section className="py-10 container xl:max-w-6xl mx-auto p-4">
+        <section className="py-10 container xl:max-w-7xl mx-auto p-2">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -246,7 +242,7 @@ const DataVisualizationPage = () => {
 
       </div>
         {/* Data Analytics Solutions Section */}
-        <section className="py-10 container xl:max-w-6xl mx-auto p-4">
+        <section className="py-10 container xl:max-w-7xl mx-auto p-2">
           <motion.div
             initial="hidden"
             whileInView="visible"

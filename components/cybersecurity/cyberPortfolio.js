@@ -13,8 +13,8 @@ const Portfolio = () => {
     <div className="">
      
       {/* Industrial Core Competence */}
-      <section className="container xl:max-w-6xl w-full mx-auto my-10 p-4">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8">Our Industrial Core Competence</h2>
+      <section className="container xl:max-w-7xl w-full mx-auto my-10 p-4">
+        <h2 className="text-3xl  font-bold mb-8">Our Industrial Core Competence</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Healthcare */}
           <motion.div 
@@ -23,7 +23,7 @@ const Portfolio = () => {
           >
             <div className="relative h-48">
               <Image 
-                src="/images/iccSliderImg1.jpg" 
+                src="/industry/cyber-9.webp" 
                 alt="Healthcare" 
                 layout="fill"
                 objectFit="cover"
@@ -44,7 +44,7 @@ const Portfolio = () => {
           >
             <div className="relative h-48">
               <Image 
-                src="/images/iccSliderImg2.jpg" 
+                src="/industry/cyber-10.webp" 
                 alt="Service-Based Organizations" 
                 layout="fill"
                 objectFit="cover"
@@ -63,8 +63,8 @@ const Portfolio = () => {
      
 
       {/* Business Protection Section */}
-      <section className="container xl:max-w-6xl w-full mx-auto my-10 p-4">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section className="container xl:max-w-7xl w-full mx-auto my-10 p-4">
+        <h2 className="text-3xl  font-bold mb-4">
           We don't just Protect Customers and Users. We Also Protect your Business
         </h2>
         <p className="text-lg text-gray-600 mb-8">
@@ -78,10 +78,11 @@ const Portfolio = () => {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="w-16 h-16 mb-4">
               <Image 
-                src="/images/ai-1.png" 
+                src="/industry/cyber-15.png" 
                 alt="HIPAA Compliance Services" 
                 width={64}
                 height={64}
+                className='filter grayscale brightness-75'
               />
             </div>
             <h3 className="text-xl font-bold mb-4">HIPAA Compliance Services</h3>
@@ -94,10 +95,11 @@ const Portfolio = () => {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="w-16 h-16 mb-4">
               <Image 
-                src="/images/datingAppLogo5.png" 
+                src="/industry/cyber-16.png" 
                 alt="CMMC Compliance Services" 
                 width={64}
                 height={64}
+                className='filter grayscale brightness-75'
               />
             </div>
             <h3 className="text-xl font-bold mb-4">CMMC Compliance Services</h3>
@@ -110,10 +112,11 @@ const Portfolio = () => {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="w-16 h-16 mb-4">
               <Image 
-                src="/images/demandDevLogo3.png" 
+                src="/industry/cyber-17.png" 
                 alt="Compliance Services SOC 2" 
                 width={64}
                 height={64}
+                className='filter grayscale brightness-75'
               />
             </div>
             <h3 className="text-xl font-bold mb-4">Compliance Services SOC 2</h3>
@@ -126,10 +129,11 @@ const Portfolio = () => {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="w-16 h-16 mb-4">
               <Image 
-                src="/images/enterprisemobilityLogo3.png" 
+                src="/industry/cyber-18.png" 
                 alt="PCI Compliance Services" 
                 width={64}
                 height={64}
+                className='filter grayscale brightness-75'
               />
             </div>
             <h3 className="text-xl font-bold mb-4">PCI Compliance Services</h3>
@@ -141,17 +145,18 @@ const Portfolio = () => {
       </section>
 
       {/* Security Assessment */}
-      <section className="container xl:max-w-6xl w-full mx-auto my-10 p-4">
+      <section className="container xl:max-w-7xl w-full mx-auto my-10 p-4">
         <h3 className="text-2xl font-bold mb-4">Security Assessment</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Penetration Testing */}
           <div className="bg-[#FF0000] p-6 rounded-lg shadow-md">
             <div className="w-16 h-16 mb-4">
               <Image 
-                src="/images/enterprisemobilityLogo2.png" 
+                src="/industry/cyber-20.png" 
                 alt="Penetration Testing" 
                 width={64}
                 height={64}
+                className='filter grayscale brightness-75'
               />
             </div>
             <h3 className="text-xl font-bold text-white mb-4">Penetration Testing</h3>
@@ -164,10 +169,11 @@ const Portfolio = () => {
           <div className="bg-[#FF0000] p-6 rounded-lg shadow-md">
             <div className="w-16 h-16 mb-4">
               <Image 
-                src="/images/enterprisemobilityLogo5.png" 
+                src="/industry/cyber-21.png" 
                 alt="Application Security Assessment" 
                 width={64}
                 height={64}
+                className='filter grayscale brightness-75'
               />
             </div>
             <h3 className="text-xl font-bold text-white mb-4">Application Security Assessment</h3>
@@ -180,10 +186,11 @@ const Portfolio = () => {
           <div className="bg-[#FF0000] p-6 rounded-lg shadow-md">
             <div className="w-16 h-16 mb-4">
               <Image 
-                src="/images/fadbbLogo4.png" 
+                src="/industry/cyber-22.png" 
                 alt="Payment Systems Security Assessment" 
                 width={64}
                 height={64}
+                className='filter grayscale brightness-75'
               />
             </div>
             <h3 className="text-xl text-white font-bold mb-4">Payment Systems Security Assessment</h3>

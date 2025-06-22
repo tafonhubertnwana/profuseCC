@@ -16,17 +16,17 @@ const IndustryAIServices = () => {
     {
       title: 'Google Cloud Healthcare AI',
       description: 'AI services for healthcare and life sciences.',
-      icon: <FaHospital className="text-[#FF0000]" size={32} />
+      icon: <FaHospital className="text-[#FF0000]" size={50} />
     },
     {
       title: 'Google Cloud Financial Services AI',
       description: 'AI services for financial services and banking.',
-      icon: <FaMoneyBillWave className="text-[#FF0000]" size={32} />
+      icon: <FaMoneyBillWave className="text-[#FF0000]" size={50} />
     },
     {
       title: 'Google Cloud Retail AI',
       description: 'AI services for retail and e-commerce.',
-      icon: <FaShoppingCart className="text-[#FF0000]" size={32} />
+      icon: <FaShoppingCart className="text-[#FF0000]" size={50} />
     }
   ];
 
@@ -34,27 +34,27 @@ const IndustryAIServices = () => {
     {
       title: 'Scalability',
       description: 'Google AI services can handle large volumes of data and traffic.',
-      icon: <FaChartLine className="text-[#FF0000]" size={32} />
+      icon: <FaChartLine className="text-[#FF0000]" size={50} />
     },
     {
       title: 'Ease of Use',
       description: 'Pre-built APIs and managed services simplify AI development.',
-      icon: <FaTools className="text-[#FF0000]" size={32} />
+      icon: <FaTools className="text-[#FF0000]" size={50} />
     },
     {
       title: 'Seamless Integration',
       description: 'Works effortlessly with other Google Cloud services.',
-      icon: <FaSyncAlt className="text-[#FF0000]" size={32} />
+      icon: <FaSyncAlt className="text-[#FF0000]" size={50} />
     },
     {
       title: 'Enterprise Security',
       description: 'Industry-leading security and compliance standards.',
-      icon: <FaShieldAlt className="text-[#FF0000]" size={32} />
+      icon: <FaShieldAlt className="text-[#FF0000]" size={50} />
     },
     {
       title: 'Cutting-Edge Innovation',
       description: 'Access to Google\'s latest AI research and technology.',
-      icon: <FaLightbulb className="text-[#FF0000]" size={32} />
+      icon: <FaLightbulb className="text-[#FF0000]" size={50} />
     }
   ];
 
@@ -91,7 +91,7 @@ const IndustryAIServices = () => {
       backgroundPosition: "center",
     }}>
       
-      <div className="container  px-6 py-12 xl:max-w-6xl mx-auto  ">
+      <div className="container  px-6 py-12 xl:max-w-7xl mx-auto p-2 ">
         <motion.h1 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}

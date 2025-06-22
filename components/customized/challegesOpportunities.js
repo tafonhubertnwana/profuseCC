@@ -2,6 +2,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from 'next/image'
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -19,7 +20,7 @@ export default function ChallengesOpportunities({
 }) {
   return (
     <div className={`${backgroundColor} ${textColor} py-8 px-4 sm:px-6 lg:px-8`}>
-      <div className="container xl:max-w-7xl mx-auto p-4">
+      <div className="container xl:max-w-7xl mx-auto p-2">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -62,10 +63,12 @@ export default function ChallengesOpportunities({
               <div className="flex items-start ">
                 {section.imageUrl && (
                   <div className="flex-shrink-0 w-12 h-12">
-                    <img
+                    <Image
                       src={section.imageUrl}
                       alt={section.title}
-                      className="w-full h-full object-cover rounded-lg"
+                      width={150}
+                      height={150}
+                      className="w-full h-full object-cover rounded-lg filter grayscale brightness-75"
                     />
                   </div>
                 )}

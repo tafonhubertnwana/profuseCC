@@ -7,22 +7,22 @@ export default function CyberSecurity() {
     {
       title: "Smart Security Operations Center",
       description: "Complete Range of Sophisticated Security Capabilities",
-      image: "/assets/api.png" // Replace with your actual image path
+      image: "/industry/cyber-1.png" // Replace with your actual image path
     },
     {
       title: "Cyber Security Assessment",
       description: "Making You Ready for Real-Life Security Attacks",
-      image: "/assets/api.png" // Replace with your actual image path
+      image: "/industry/cyber-2.png" // Replace with your actual image path
     },
     {
       title: "Hacking Simulation",
       description: "Test How Secure You Really Are",
-      image: "/assets/api.png" // Replace with your actual image path
+      image: "/industry/cyber-3.png" // Replace with your actual image path
     },
     {
       title: "Employee Training",
       description: "Train Your Employees to be the First Line of Defense",
-      image: "/assets/api.png" // Replace with your actual image path
+      image: "/industry/cyber-4.png" // Replace with your actual image path
     }
   ];
 
@@ -33,9 +33,9 @@ export default function CyberSecurity() {
         <meta name="description" content="Complete IT Security Solutions from ProfuseCC, the leading name in Cyber Security" />
       </Head>
 
-      <main className="min-h-screen bg-[#FF0000]">
+      <main className=" py-10 bg-[#FF0000]">
         {/* Hero Section */}
-        <section className="container xl:max-w-6xl mx-auto p-4">
+        <section className="container xl:max-w-7xl mx-auto p-4">
           <div className="text-left">
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
@@ -85,7 +85,7 @@ export default function CyberSecurity() {
                     alt={service.title}
                     layout="fill"
                     objectFit="cover"
-                     className="w-full h-full object-cover rounded-lg"
+                     className="w-full h-full object-cover rounded-lg filter grayscale brightness-75"
                   />
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-white">{service.title}</h3>

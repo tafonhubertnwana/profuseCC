@@ -8,7 +8,7 @@ const DataAndAnalyticsServices = () => {
         {/* Image on the left */}
         <div className="w-full md:w-1/2">
           <Image
-            src="/assets/slide2.jpg" // Replace with your image path
+            src="/industry/data-17.webp" // Replace with your image path
             alt="Data and Analytics"
             width={600}
             height={400}

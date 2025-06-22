@@ -24,19 +24,19 @@ const cloudStrategies = [
   {
     title: 'MAINTENANCE',
     description:
-      'Cyber Infrastructure, CIS, protects your Cloud software environment even in production. We manage cloud assets, monitoring and hardware configuration, and performance optimization.',
+      'Cyber Infrastructure, ProfuseCC, protects your Cloud software environment even in production. We manage cloud assets, monitoring and hardware configuration, and performance optimization.',
     img: 'https://www.cisin.com/images/wcrpaLogo5.png',
   },
   {
     title: 'DEVOPS',
     description:
-      'CIS uses DevOps to maximize continuous innovation, integration, and development. We manage our internal processes and integrate your internal IT teams.',
+      'ProfuseCC uses DevOps to maximize continuous innovation, integration, and development. We manage our internal processes and integrate your internal IT teams.',
     img: 'https://www.cisin.com/images/sbddpLogo9.png',
   },
   {
     title: 'DISASTER RECOVERY',
     description:
-      'CISIN develops innovative disaster recovery plans that minimize data loss and provide the best availability for cloud-based applications.',
+      'ProfuseCC develops innovative disaster recovery plans that minimize data loss and provide the best availability for cloud-based applications.',
     img: 'https://www.cisin.com/images/RealStateAppLogo4.png',
   },
 ];

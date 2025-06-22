@@ -107,7 +107,7 @@ const TechnologyStack = () => {
   const [selectedItem, setSelectedItem] = useState(ITEMS[0]);
   return (
     <section className="bg-black py-16 px-4 sm:px-6 lg:px-8">
-      <div className="container xl:max-w-6xl mx-auto p-4">
+      <div className="container xl:max-w-7xl mx-auto p-2">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

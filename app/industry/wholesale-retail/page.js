@@ -5,8 +5,9 @@ import Navbar from '@/components/navbar'
 import Retail from '@/components/wholesale/retail';
 import RetailDevelopmentServices from '@/components/wholesale/retailService';
 import RetailSolutions from '@/components/wholesale/retailSolutions';
+import SuccessStoriesPage from '@/components/wholesale/retailStory';
 import React from 'react'
-
+import Testimonials from '@/components/testimonial';
 const Wholesale = () => {
   return (
     <div>
@@ -21,6 +22,7 @@ Retail IT Solution"
   <Retail />
   <RetailDevelopmentServices />
   <RetailSolutions />
+  <SuccessStoriesPage />
   <section className="bg-red-700 text-white py-16 px-6">
     <div className="container xl:max-w-6xl w-full mx-auto">
       <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
@@ -32,7 +34,7 @@ Retail IT Solution"
       />
     </div>
   </section>
-      
+       <Testimonials />
     </div>
   )
 }

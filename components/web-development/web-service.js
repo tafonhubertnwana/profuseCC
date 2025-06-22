@@ -85,8 +85,8 @@ const Services = () => {
   };
 
   return (
-    <div className="py-12 bg-white">
-      <div className="container xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="py-8 bg-white">
+      <div className="container xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 p-2">
         <div className="">
           <h2 className="text-3xl text-[#FF0000] font-semibold tracking-wide uppercase">
             WEB DEVELOPMENT SERVICES ON OFFER

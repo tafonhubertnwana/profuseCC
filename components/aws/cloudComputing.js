@@ -18,7 +18,7 @@ export default function CloudComputing() {
         <meta name="description" content="cloud computing Digital Technology Solutions for Banking & Financial Software" />
       </Head>
 
-      <main className="min-h-screen bg-black py-6 px-4 sm:px-6 lg:px-8">
+      <main className=" bg-black py-16 px-4 sm:px-6 lg:px-8">
         {/* Hero Section with Image on Left */}
         <section className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-stretch">
           {/* Image on Left - Now first on mobile */}

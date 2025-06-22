@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const features = [
@@ -42,13 +41,13 @@ const features = [
 ];
 
 const fadeInUp = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 20 },
   visible: (i) => ({
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.15,
-      duration: 0.6,
+      delay: i * 0.1,
+      duration: 0.5,
       ease: "easeOut",
     },
   }),
@@ -56,65 +55,49 @@ const fadeInUp = {
 
 export default function WhyWeLeadSection() {
   return (
-    <section className="bg-white py-24">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-start gap-12">
-        <motion.div
-          className="md:w-1/2"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+    <section className="bg-white py-10 px-4">
+      <div className="container xl:max-w-7xl mx-auto text-center p-2">
+        <motion.h2
+          className="text-4xl font-extrabold text-gray-900 mb-6 "
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          variants={fadeInUp}
+          custom={0}
         >
-          <Image
-            src="/assets/ai-1.png"
-            alt="software development services"
-            width={1000}
-            height={667}
-            className="rounded-lg w-full h-auto object-cover"
-          />
-        </motion.div>
+          Why We're Your Ideal AI Development Partner
+        </motion.h2>
 
-        <div className="md:w-1/2 space-y-6">
-          <motion.h3
-            className="text-3xl md:text-4xl font-bold text-gray-900"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-            custom={0}
-          >
-            Why We Are the Right Artificial Intelligence Development Partner
-          </motion.h3>
+        <motion.p
+          className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+          custom={1}
+        >
+          Our team combines years of expertise with cutting-edge tools to deliver scalable, secure, and high-performing AI solutions tailored to your needs.
+        </motion.p>
 
-          <motion.p
-            className="text-lg text-gray-700"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-            custom={1}
-          >
-            Smarter AI starts with the right team. With deep experience and
-            cutting-edge tech, we make AI work the way it should.
-          </motion.p>
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
 
-          <ul className="space-y-5 mt-6">
-            {features.map((feature, index) => (
-              <motion.li
-                key={index}
-                className="text-base text-gray-800"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={fadeInUp}
-                custom={index + 2}
-              >
-                <p className="text-lg">
-                  <strong>{feature.title}</strong> – {feature.description}
-                </p>
-              </motion.li>
-            ))}
-          </ul>
+          {features.map((feature, index) => (
+            <motion.div
+  key={index}
+  className="p-5 border border-gray-100 rounded-xl bg-white transition-all duration-300 hover:shadow-xl hover:scale-[1.02] hover:border-[#FF0000]"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  variants={fadeInUp}
+  custom={index + 2}
+>
+  <h4 className="font-semibold text-lg text-gray-900 mb-2">
+    {feature.title}
+  </h4>
+  <p className="text-gray-600 text-sm">{feature.description}</p>
+</motion.div>
+
+          ))}
         </div>
       </div>
     </section>

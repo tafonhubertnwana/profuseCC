@@ -8,7 +8,7 @@ export default function RealEstateBanner() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="container xl:max-w-7xl mx-auto p-4 py-12">
+      <section className="container xl:max-w-7xl mx-auto p-2 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -37,8 +37,8 @@ export default function RealEstateBanner() {
             className="w-full"
           >
             <Image
-              src="/assets/student.webp" // Replace with your image path
-              alt="Education industry"
+              src="/industry/real-22.jpg" // Replace with your image path
+              alt="real estate industry"
               width={600}
               height={400}
               className="rounded-sm object-cover w-full h-auto"

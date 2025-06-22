@@ -70,12 +70,12 @@ const SecurityServices = () => {
 
   return (
     <div className="min-h-screen bg-black py-16 sm:px-6 lg:px-8">
-      <div className="container xl:max-w-6xl mx-auto p-4">
+      <div className="container xl:max-w-7xl mx-auto p-4">
         <motion.h1 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl md:text-5xl font-bold text-left text-white mb-16"
+          className="text-4xl font-bold text-left text-white mb-16"
         >
           Our Cyber Security Service That We Offer
         </motion.h1>

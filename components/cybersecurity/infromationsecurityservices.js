@@ -1,29 +1,30 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from 'next/image'
 
 const services = [
   {
     title: "Management of Detection & Response",
-    img: "https://www.cisin.com/images/DatabaseCSLogo5.png",
+    img: "/industry/cyber-11.png",
     description:
       "The most reliable breach prevention tool is CrowdStrike. We pair it with 24/7/365 threat hunting and response services that are entirely American. We provide a customized MDR service that complies with DoD and compliance standards.",
   },
   {
     title: "Virtual CISO",
-    img: "https://www.cisin.com/images/DataCSLogo1.png",
+    img: "/industry/cyber-12.png",
     description:
       "Your cyber security advisor may be our fictitious Chief Information Security Officer (vCISO). We deliver a specialist understanding of cyber security services for small businesses, assisting you in developing a strong program and lowering risk. You'll have a committed",
   },
   {
     title: "Penetration Testing",
-    img: "https://www.cisin.com/images/dataAnalyticsCompanyLogo4.png",
+    img: "/industry/cyber-13.png",
     description:
       "Our penetration testing team can detect cybersecurity weaknesses before intruders infiltrate your computer network. We will find weaknesses in your network and within applications.",
   },
   {
     title: "Cyber Security Consulting",
-    img: "https://www.cisin.com/images/DataCSLogo3.png",
+    img: "/industry/cyber-14.png",
     description:
       "We can assist your business because we have years of experience in cyber security consultancy. Some of the biggest companies in the world have hired us to work on their projects. You can use this knowledge to help with your tasks.",
   },
@@ -41,7 +42,7 @@ const fadeInUp = {
 export default function InformationSecurityServices() {
   return (
     <>
-      <div className="container xl:max-w-6xl mx-auto my-8 p-4">
+      <div className="container xl:max-w-7xl mx-auto my-8 p-4">
         <motion.h3
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -73,15 +74,15 @@ export default function InformationSecurityServices() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeInUp}
-              className="bg-white border border-gray-200 rounded-2xl p-6 shadow-md"
+              className="bg-white border border-gray-200 rounded-sm p-6 shadow-md"
             >
               <div className="flex items-center gap-4 mb-4">
-                <img
+                <Image
                   src={service.img}
                   alt={service.title}
                   width={64}
                   height={64}
-                  className="object-contain"
+                  className="object-contain filter grayscale brightness-75"
                 />
                 <h4 className="text-xl font-semibold">{service.title}</h4>
               </div>

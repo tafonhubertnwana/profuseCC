@@ -6,8 +6,10 @@ import RealEstateChallengesPage from '@/components/real-estate/realEstateChallen
 import RealEstateSolutions from '@/components/real-estate/realEstateSolution';
 import SuccessStoriesPage from '@/components/real-estate/realEstateStoriesPage';
 import WhyChooseUsPage from '@/components/real-estate/realEstateWhyChooseUs';
+import RealEstateBanner from '@/components/real-estate/realEstateBanner';
 import Testimonials from '@/components/testimonial';
-import React from 'react'
+import React from 'react';
+
 
 const Mining = () => {
   return (
@@ -16,11 +18,12 @@ const Mining = () => {
       <HeroSection
   title="
 Real Estate"
-  description="Scale your infrastructure seamlessly with secure, flexible, and cost-effective cloud solutions."
+  description="Enhance property management, virtual tours, and customer engagement with innovative digital solutions tailored for the real estate industry."
+
   backgroundImage="/assets/real-estate-bg.webp" 
   breadcrumb="Industry > Real Estate"
 />
-
+<RealEstateBanner />
 <RealEstateChallengesPage />
 <RealEstateSolutions />
 <WhyChooseUsPage />

@@ -2,28 +2,28 @@ import HowWeHelpSection from "@/components/customized/howWeHelpSection";
 
 const SuccessStoriesPage = () => {
   const successCards = [
-    {
-      title: "Simplifying Various",
-      subtitle: "School Management Processes",
-      description: "Wealth of information about Middle Eastern financial markets",
-      category: "Finance & Market",
-      imageUrl: "/images/education-management.jpg",
-    },
-    {
-      title: "Preparing People For A",
-      subtitle: "Successful Career",
-      description: "Comprehensive career development programs that equip individuals with in-demand skills and certifications.",
-      category: "CAREER-DEVELOPMENT",
-      imageUrl: "/images/career-development.jpg",
-    },
-    {
-      title: "Making Remedial",
-      subtitle: "Driving Courses Easily Accessible Online",
-      description: "Digital platforms that provide accessible remedial courses for drivers needing license renewal or improvement.",
-      category: "EDUCATION",
-      imageUrl: "/images/driving-courses.jpg",
-    },
-  ];
+  {
+    title: "Streamlining Property",
+    subtitle: "Management Operations",
+    description: "Integrated solutions to simplify lease tracking, tenant communication, and maintenance management across properties.",
+    category: "REAL ESTATE MANAGEMENT",
+    imageUrl: "/industry/real-22.jpg",
+  },
+  {
+    title: "Empowering Agents With",
+    subtitle: "Smart Sales Tools",
+    description: "Advanced CRM and analytics platforms that help real estate professionals close deals faster and manage leads efficiently.",
+    category: "SALES & MARKETING",
+    imageUrl: "/industry/real-23.webp",
+  },
+  {
+    title: "Making Real Estate",
+    subtitle: "Education More Accessible",
+    description: "Online certification programs and training portals for agents and brokers to stay compliant and competitive.",
+    category: "EDUCATION",
+    imageUrl: "/industry/real-24.jpg",
+  },
+];
 
   return (
     <div>

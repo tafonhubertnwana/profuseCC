@@ -7,6 +7,7 @@ import WhyChooseUsPage from '@/components/healthcare/why-choose-us';
 import HeroSection from '@/components/herosection/hero'
 import Navbar from '@/components/navbar'
 import Testimonials from '@/components/testimonial';
+import SuccessStoriesPage from '@/components/healthcare/healthStories';
 import React from 'react'
 
 const Healthcare = () => {
@@ -24,6 +25,7 @@ const Healthcare = () => {
       <ChallengesOpportunities />
       <MedicalSolutions />
       <WhyChooseUsPage />
+    <SuccessStoriesPage />
        <section className="bg-red-700 text-white py-16 px-6">
         <div className="container xl:max-w-6xl w-full mx-auto">
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4">

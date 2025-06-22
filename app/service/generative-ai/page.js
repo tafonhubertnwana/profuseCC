@@ -1,5 +1,4 @@
-"use client";
-import AIExpertise from '@/components/ai/aiExpertise';
+"use client"
 import AINeedSection from '@/components/ai/AINeedSection';
 import AIProcessSteps from '@/components/ai/AIPRocessSteps';
 import AIServiceSection from '@/components/ai/aiServices';
@@ -25,7 +24,7 @@ const DataPage = () => {
       <AINeedSection />
       <IndustryAIServices />
       <GenerativeAI />
-      <AIExpertise />
+     
       <WhyWeLeadSection />
       <AIProcessSteps /> 
       <TechStack />

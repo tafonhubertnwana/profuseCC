@@ -57,7 +57,7 @@ const WhyChooseUs = ({ title, subtitle, features }) => {
                     alt={feature.title}
                     width={24}
                     height={24}
-                    className="h-6 w-6"
+                    className="h-10 w-10  filter grayscale brightness-75"
                   />
                 </div>
                 <h3 className="text-xl font-bold">{feature.title}</h3>

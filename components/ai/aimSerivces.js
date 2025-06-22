@@ -27,7 +27,7 @@ const features = [
 
 const FeatureCards = () => {
   return (
-    <section className='container xl:max-w-6xl mx-auto'>
+    <section className='container xl:max-w-7xl mx-auto p-2'>
        
       <div className="flex flex-col items-center justify-center p-6 space-y-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center  text-white">Don’t Get Left Behind</h2>

@@ -62,7 +62,7 @@ export default function CloudCharacteristics() {
       backgroundPosition: "center",
     }}>
 
-      <div className="container xl:max-w-7xl mx-auto p-4">
+      <div className="container xl:max-w-7xl mx-auto lg:py-10 p-4">
         <motion.div
           initial="hidden"
           whileInView="visible"

@@ -47,7 +47,7 @@ const fadeIn = {
 export default function AINeedSection() {
   return (
     <section className="py-20">
-      <div className="container xl:max-w-6xl mx-auto">
+      <div className="container xl:max-w-7xl mx-auto p-2">
         <motion.div
           initial="hidden"
           whileInView="visible"

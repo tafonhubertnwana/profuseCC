@@ -17,7 +17,7 @@ export default function CustomSoftwareDevelopment() {
   return (
     <>
     
-       <section className='container xl:max-w-6xl mx-auto '>
+       <section className='container xl:max-w-7xl mx-auto p-2 '>
       <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-between px-10 py-16 bg-white">
 
         {/* Text Content */}

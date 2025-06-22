@@ -1,95 +1,83 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaDatabase } from 'react-icons/fa';
-import { HiOutlineChartBar } from 'react-icons/hi';
-import { RiGovernmentFill } from 'react-icons/ri';
-import { IoAnalyticsOutline } from "react-icons/io5";
-import { FaWarehouse } from "react-icons/fa6";
-import { SiDatabricks } from "react-icons/si";
+import Image from 'next/image';
 
-const services = [
+const advantages = [
   {
-    id: 1,
-    title: 'Data Platform Architecture Design',
+    image: '/industry/data-13.png',
+    title: 'See The Big Picture',
     description:
-      'Start your data journey off on the right foot with a robust data architecture that allows you to take the most of your data. Our team of seasoned data architects and engineers work closely with you to design a future-proof data architecture that aligns with your growth strategy. Whether it\'s a cloud-based, on-premise, or hybrid solution, we define data models, underlying data structures, integration approaches, data governance strategies and more to ensure your data is consistent, secure, and readily accessible.',
-    icon: < SiDatabricks className="text-3xl text-[#FF0000]" size={50} />,
+      "Find accurate insights and identify patterns in complex data without having to rely on an expert in data science. AI helpants can also reveal patterns that aren't seen previously.",
   },
   {
-    id: 2,
-    title: 'Data Engineering',
+    image: '/industry/data-14.png',
+    title: 'Present Meaningful Data',
     description:
-      'Streamline your data from multiple sources into a unified system. Our highly experienced data engineers build scalable yet flexible ETL and ELT pipelines that seamlessly integrate data in different formats, with different structures, and via different APIs and custom connectors. Data Platforms we help clients build are scalable, secure, and can handle the increasing data volumes.',
-    icon: <FaDatabase className="text-3xl text-[#FF0000]" size={50}/>,
+      'You can share your knowledge with other users in a simple format. For example, AI can help in the creation of dashboards or provide an illustration recommendation to tell your story the best way.',
   },
   {
-    id: 3,
-    title: 'Data Warehousing',
+    image: '/industry/data-15.png',
+    title: 'Democratize Your Data',
     description:
-      'Take advantage of ProfuseCC’s excellence in building robust and reliable databases, warehouses, and data lakes that serve as a central component for any data initiatives. Designed with scalability in mind, our data warehousing solutions can store and process massive amounts of structured and unstructured data, providing a reliable foundation for diverse analytics workloads.',
-    icon: <FaWarehouse  className="text-3xl text-[#FF0000]" size={50} />,
+      'Create a single point of truth for the entire company while taking advantage of the security and governance features to minimize errors made by humans when making uploads and manual cleaning of your information.',
   },
   {
-    id: 4,
-    title: 'Data Governance and Compliance',
+    image: '/industry/data-16.png',
+    title: 'Make Better Decisions',
     description:
-      'Protect your data and ensure compliance with our robust data governance solutions. We help you establish policies and procedures to manage data quality, security, and privacy, ensuring your data remains a valuable and trustworthy asset.',
-    icon: <RiGovernmentFill className="text-3xl text-[#FF0000]" size={50} />,
+      'Through integrated AI capabilities, you will be able to understand your next steps, and spend less time analyzing data using augmented decision making.',
   },
-  {
-    id: 5,
-    title: 'Data Analytics, Visualization, and Business Intelligence ',
-    description:
-      'Tap into our Business Intelligence and Data Visualization experience and skills to make your data come to life. We are proficient in Power BI, Tableau, and other tools to help you create interactive and easy-to-understand dashboards and reports that provide real-time insights, fuel decision-making and monetize your data.',
-    icon: <IoAnalyticsOutline className="text-3xl text-[#FF0000]" size={50}/>,
-  }
 ];
 
 export default function DataServices() {
   return (
-    <div style={{
-      backgroundImage: "url('/assets/data-bg.webp')", // Replace with your image path
-      backgroundAttachment: "fixed",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-    }}>
+    <div
+      style={{
+        backgroundImage: "url('/assets/data-bg.webp')",
+        backgroundAttachment: "fixed",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <section>
+        <div className="py-10 container xl:max-w-7xl mx-auto p-2">
+          <motion.h2
+            className="text-3xl md:text-4xl font-bold text-center mb-10 text-white"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            Advantages Of Data Visualization For Business
+          </motion.h2>
 
-      <section className="py-16 px-6 container xl:max-w-6xl  mx-auto text-center">
-        <motion.h2
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-3xl text-white md:text-4xl font-bold "
-        >
-          Explore our Data and Analytics Services rooted in
-        </motion.h2>
-        <motion.h3
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-2xl md:text-3xl text-white font-semibold mt-2"
-        >
-           hands-on experience
-        </motion.h3>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
-    {services.map((service) => (
-      <motion.div
-        key={service.id}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: service.id * 0.2 }}
-        className="p-6 bg-white shadow-md rounded-xl  gap-4 items-start border border-gray-200 h-full w-full"
-      >
-        <div className='pb-6'>{service.icon}</div>
-        <div className="text-left">
-          <h4 className="text-xl font-semibold text-gray-800">{service.title}</h4>
-          <p className="text-gray-600 mt-2 text-sm">{service.description}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+            {advantages.map((item, index) => (
+              <motion.div
+                key={index}
+                className="bg-white  shadow-lg p-6 hover:shadow-2xl transform hover:scale-[1.02] transition duration-300 ease-in-out group"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.2 }}
+              >
+                <div className="mb-4">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={50}
+                    height={50}
+                    className="object-contain filter grayscale brightness-75   transition duration-300"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600">{item.description}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
-      </motion.div>
-    ))}
-  </div>
-
       </section>
     </div>
   );

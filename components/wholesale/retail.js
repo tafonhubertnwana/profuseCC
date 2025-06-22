@@ -1,37 +1,37 @@
-// pages/Medical-solutions.js
+// pages/ecommerce-solutions.js
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from 'react';
 import ConsultationFormModal from "../consultingForm";
 
-export default function Retail() {
+export default function EcommerceSolutions() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-    
+
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
-  
+
   return (
     <>
       <Head>
-        <title>Custom Retail Solutions & Services | ProfuseCC</title>
-        <meta name="description" content="Retail Digital Technology Solutions for Banking & Financial Software" />
+        <title>Custom E-Commerce Solutions & Services | ProfuseCC</title>
+        <meta name="description" content="Tailored e-commerce solutions including B2C & B2B platforms, online store development, and retail digital transformation." />
       </Head>
 
-      <main className="min-h-screen bg-black py-12 px-4 sm:px-6 lg:px-8">
-        {/* Hero Section with Image on Left */}
-        <section className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-stretch">
-          {/* Image on Left - Now first on mobile */}
+      <main className=" bg-black py-12 px-4 sm:px-6 lg:px-8">
+        {/* Hero Section */}
+        <section className="container xl:max-w-7xl mx-auto p-2 py-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-stretch">
+          {/* Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="order-1 md:order-1 h-64 md:h-full" // Added fixed height on mobile
+            className="order-1 md:order-1 h-64 md:h-full"
           >
             <div className="relative h-full w-full overflow-hidden shadow-xl rounded-lg">
               <Image
-                src="/assets/Retails.jpg"
-                alt="Retail Solutions"
+                src="/industry/retail.webp"
+                alt="E-Commerce Solutions"
                 fill
                 className="object-cover"
                 priority
@@ -40,7 +40,7 @@ export default function Retail() {
             </div>
           </motion.div>
 
-          {/* Text and Button on Right */}
+          {/* Text Content */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -55,27 +55,25 @@ export default function Retail() {
                 transition={{ duration: 0.5 }}
                 className="text-3xl font-bold text-[#FF0000] mb-6 text-center md:text-left"
               >
-                Healthcare IT Solutions
+                Scalable E-Commerce Solutions for B2C & B2B
               </motion.h2>
-              
-              <div className="space-y-6">
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5 }}
-                  className="py-4"
-                >
-                  <p className="text-white mb-4">
-                    Health Information Technology or Health IT is evolving at a high pace and Mobile Apps are revolutionizing the entire industry to provide high end patient experience and business enterprise management systems. Abridging the gap between you and technology, we help you translate your dreams into technology to fight your challenges and cut throat competition.
-                  </p>
-                  <p className="text-white">
-                    Our Retail Software Development Services allows you to amp your infrastructural abilities and provide you healthcare application development solutions such as recording, analyzing and sharing patient data. Providing high-end Healthcare software and mobile health solutions we provide you smart device technologies and enterprise management solutions that helps you achieve health equity with the help of healthcare app developers. Inclusion of high-end technology such as AI, ML, and IoT we thus make sure no patients stand up and attend even when help is not physically available to monitor. Quality and scalability are rendered at CIS with the help of our in-depth knowledge and experience of our expert healthcare app developers.
-                  </p>
-                </motion.div>
-              </div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="py-4 space-y-6"
+              >
+                <p className="text-white">
+                  At ProfuseCC, we build custom e-commerce platforms that cater to both B2C and B2B needs—empowering your brand with scalable solutions for online retail, payment integration, inventory, logistics, and customer engagement.
+                </p>
+                <p className="text-white">
+                  Whether you're launching an online store or expanding a retail enterprise, our solutions integrate AI, IoT, and cloud management to improve operations, enhance user experience, and boost conversions across all channels.
+                </p>
+              </motion.div>
             </div>
-            
+
             <div className="text-center md:text-left mt-6 md:mt-0">
               <motion.button
                 whileHover={{ scale: 1.05 }}
@@ -86,48 +84,52 @@ export default function Retail() {
                 Request Free Consultation
               </motion.button>
             </div>
+
             <ConsultationFormModal isOpen={isModalOpen} onClose={closeModal} />
           </motion.div>
         </section>
-        <div className="container xl:max-w-7xl mx-auto p-10">
 
+        {/* Cards Section */}
+        <div className="container xl:max-w-7xl mx-auto p-2">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-        {/* Card 1 */}
-        <motion.div
-          whileHover={{ scale: 1.03 }}
-          className="bg-white p-6 rounded-2xl shadow-md"
-        >
-          <img src="/assets/ehr.png" alt="EHR Systems" className="w-12 h-12 mb-4" />
-          <h4 className="text-xl font-semibold text-[#FF0000] mb-2">EHR Systems</h4>
-          <p className="text-gray-700">
-            Streamlined Electronic Health Records for accurate patient data management and quick access to medical history.
-          </p>
-        </motion.div>
+            
+            {/* Card 1 */}
+            <motion.div
+              whileHover={{ scale: 1.03 }}
+              className="bg-white p-6 rounded-sm shadow-md"
+            >
+              <img src="/assets/ehr.png" alt="Retail Management" className="w-12 h-12 mb-4" />
+              <h4 className="text-xl font-semibold text-[#FF0000] mb-2">Retail Management Systems</h4>
+              <p className="text-gray-700">
+                Streamline your store operations with POS, inventory tracking, and CRM tools all integrated into one centralized platform.
+              </p>
+            </motion.div>
 
-        {/* Card 2 */}
-        <motion.div
-          whileHover={{ scale: 1.03 }}
-          className="bg-white p-6 rounded-2xl shadow-md"
-        >
-          <img src="/assets/telemedicine.png" alt="Telemedicine" className="w-12 h-12 mb-4" />
-          <h4 className="text-xl font-semibold text-[#FF0000] mb-2">Telemedicine Apps</h4>
-          <p className="text-gray-700">
-            Real-time video consultation, remote diagnosis, and prescription management from anywhere.
-          </p>
-        </motion.div>
+            {/* Card 2 */}
+            <motion.div
+              whileHover={{ scale: 1.03 }}
+              className="bg-white p-6 rounded-sm shadow-md"
+            >
+              <img src="/assets/telemedicine.png" alt="B2C B2B E-commerce" className="w-12 h-12 mb-4" />
+              <h4 className="text-xl font-semibold text-[#FF0000] mb-2">B2C & B2B E-Commerce</h4>
+              <p className="text-gray-700">
+                From user-centric shopping experiences to secure backend operations, we tailor platforms for both consumers and business buyers.
+              </p>
+            </motion.div>
 
-        {/* Card 3 */}
-        <motion.div
-          whileHover={{ scale: 1.03 }}
-          className="bg-white p-6 rounded-2xl shadow-md"
-        >
-          <img src="/assets/iot.png" alt="IoT Monitoring" className="w-12 h-12 mb-4" />
-          <h4 className="text-xl font-semibold text-[#FF0000] mb-2">IoT Health Monitoring</h4>
-          <p className="text-gray-700">
-            Integrate IoT devices for real-time vitals tracking and automated alerts for critical conditions.
-          </p>
-        </motion.div>
-      </div>
+            {/* Card 3 */}
+            <motion.div
+              whileHover={{ scale: 1.03 }}
+              className="bg-white p-6 rounded-sm shadow-md"
+            >
+              <img src="/assets/iot.png" alt="Cloud E-Commerce" className="w-12 h-12 mb-4" />
+              <h4 className="text-xl font-semibold text-[#FF0000] mb-2">Cloud-Based Online Stores</h4>
+              <p className="text-gray-700">
+                Launch scalable online stores with smart dashboards, real-time analytics, and seamless inventory control through cloud integration.
+              </p>
+            </motion.div>
+
+          </div>
         </div>
       </main>
     </>

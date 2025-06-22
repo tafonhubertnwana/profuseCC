@@ -77,7 +77,7 @@ export default function GenerativeAISlider() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="container xl:max-w-6xl mx-auto"
+        className="container xl:max-w-7xl mx-auto p-2"
       >
         <h1 className="text-4xl font-bold text-left text-gray-900 mb-8">
           OUR GENERATIVE AI SERVICES

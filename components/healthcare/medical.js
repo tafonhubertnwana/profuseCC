@@ -18,9 +18,9 @@ export default function Medical() {
         <meta name="description" content="Medical Digital Technology Solutions for Banking & Financial Software" />
       </Head>
 
-      <main className="min-h-screen bg-black py-12 px-4 sm:px-6 lg:px-8">
+      <main className=" bg-black py-12 px-4 sm:px-6 lg:px-8">
         {/* Hero Section with Image on Left */}
-        <section className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-stretch">
+        <section className="container xl:max-w-7xl mx-auto p-2 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-stretch">
           {/* Image on Left - Now first on mobile */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -28,7 +28,7 @@ export default function Medical() {
             transition={{ duration: 0.6 }}
             className="order-1 md:order-1 h-64 md:h-full" // Added fixed height on mobile
           >
-            <div className="relative h-full w-full overflow-hidden shadow-xl rounded-lg">
+            <div className="relative h-full w-full overflow-hidden shadow-xl rounded-sm">
               <Image
                 src="/assets/Medicals.jpg"
                 alt="Medical Solutions"
