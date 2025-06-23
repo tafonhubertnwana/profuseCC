@@ -197,11 +197,19 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="lg:hidden fixed inset-y-0 left-0 w-80 bg-white z-40 p-6 overflow-y-auto">
-            <button onClick={() => setIsOpen(false)} className="mb-4 text-gray-800">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
+            <div className="flex items-center justify-between mb-4">
+  <Link href="/">
+              <Image src={logo} alt="logo" width={60} height={60} className="w-12 h-12 cursor-pointer" />
+            </Link>
+
+  <button onClick={() => setIsOpen(false)} className="text-gray-800">
+    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+        d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+</div>
 
             <Link href="/" className={`block py-2 ${isActive("/") ? "text-[#FF0000]" : "text-gray-800"} hover:text-[#FF0000]`} onClick={() => setIsOpen(false)}>
               Home

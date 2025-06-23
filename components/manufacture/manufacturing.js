@@ -23,9 +23,15 @@ export default function ManufactureBanner() {
           <p className="text-xl mb-6">
             Leading Manufacturing Solution for Industrial IOT & Industry 4.0 Manufacturing Solutions
           </p>
-          <button className="bg-[#FF0000] text-white px-6 py-3 rounded hover:bg-red-700 transition duration-300">
-            Request Free Consultation
-          </button>
+          <motion.button
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                          onClick={openModal}
+                          className=  "bg-[#FF0000] text-white font-bold py-3 px-8  text-lg shadow-lg transition-colors"
+                        >
+                          Request Free Consultation
+                        </motion.button>
+                        <ConsultationFormModal isOpen={isModalOpen} onClose={closeModal} />
         </motion.div>
 
         <motion.div

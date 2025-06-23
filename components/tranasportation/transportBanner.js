@@ -2,6 +2,8 @@
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import Image from 'next/image';
+import { useState } from 'react';
+import ConsultationFormModal from "../consultingForm";
 
 const LogisticsBanner = () => {
   const containerVariants = {
@@ -20,6 +22,11 @@ const LogisticsBanner = () => {
       transition: { duration: 0.6 },
     },
   };
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+      
+        const openModal = () => setIsModalOpen(true);
+        const closeModal = () => setIsModalOpen(false);
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -78,10 +85,10 @@ const LogisticsBanner = () => {
               <h2 className="text-3xl font-bold text-[#FF0000] mb-6">
                 Supply Chain Visibility: Real-Time Supply Chain
               </h2>
-              <p className="text-lg text-black mb-6 leading-relaxed">
+              <p className="text-lg text-white mb-6 leading-relaxed">
                 You may get practical web and mobile solutions for your transportation and automotive business at ProfuseCC, a top provider of technological solutions. Businesses must implement innovative strategies to manage and track both their internal and external operations given the expansion of the auto industry and the use of technology to high-perform in their industrial vertical.
               </p>
-              <p className="text-lg text-black mb-8 leading-relaxed">
+              <p className="text-lg text-white mb-8 leading-relaxed">
                 Your search is over thanks to our web, mobile, and software solutions for supply chain visibility in the transportation sector.
               </p>
               <motion.button

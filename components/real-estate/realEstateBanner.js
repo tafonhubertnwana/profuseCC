@@ -2,9 +2,14 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
+import { useState } from 'react';
+import ConsultationFormModal from "../consultingForm";
 
 export default function RealEstateBanner() {
+   const [isModalOpen, setIsModalOpen] = useState(false);
+      
+        const openModal = () => setIsModalOpen(true);
+        const closeModal = () => setIsModalOpen(false);
   return (
     <div className="bg-white">
       {/* Hero Section */}
@@ -23,11 +28,15 @@ export default function RealEstateBanner() {
 
 
             </p>
-            <Link href="/consultation">
-              <button className="bg-[#FF0000] text-white py-3 px-6 rounded hover:bg-[#FF0000] transition">
+           <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={openModal}
+                className=  "bg-[#FF0000] text-white font-bold py-3 px-8  text-lg shadow-lg transition-colors"
+              >
                 Request Free Consultation
-              </button>
-            </Link>
+              </motion.button>
+              <ConsultationFormModal isOpen={isModalOpen} onClose={closeModal} />
           </motion.div>
 
           <motion.div

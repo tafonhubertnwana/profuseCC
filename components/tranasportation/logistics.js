@@ -71,7 +71,7 @@ const LogisticsSolutions = () => {
               <motion.section
                 key={i}
                 variants={itemVariants}
-                className="bg-white p-8 rounded-sm shadow-lg grid md:grid-cols-3  items-center"
+                className="bg-white p-8 rounded-sm shadow-lg "
               >
                 <div className="">
                   <div className="flex justify-center">

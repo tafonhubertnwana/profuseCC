@@ -86,7 +86,7 @@ export function IndustriesList({ excludeCurrent = false, currentIndustry = '' })
 export default function BusinessDomains() {
   return (
     <section 
-      className="bg-red-700 text-white py-16 px-6"
+      className="bg-[#FF0000] text-white py-16 px-6"
       aria-labelledby="business-domains-heading"
     >
       <div className="container xl:max-w-7xl  mx-auto p-2">

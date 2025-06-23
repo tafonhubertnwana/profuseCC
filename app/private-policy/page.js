@@ -44,7 +44,7 @@ export default function PrivacyPolicyPage() {
         <meta name="description" content="Profusecc's privacy policy outlining how we collect, use, and protect your information." />
       </Head>
 
-      <main className="max-w-6xl mx-auto py-12 px-4 sm:px-2 lg:px-8">
+      <main className="container xl:max-w-7xl mx-auto py-12 px-4 ">
         <motion.div
           initial="hidden"
           animate="visible"
