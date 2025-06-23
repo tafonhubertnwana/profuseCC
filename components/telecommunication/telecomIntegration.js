@@ -1,29 +1,29 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaCloud, FaPhoneAlt, FaNetworkWired, FaMoneyCheckAlt } from "react-icons/fa";
+import Image from "next/image";
 
 const integrations = [
   {
-    icon: <FaNetworkWired className="text-4xl text-indigo-600" />,
+    image: '/industry/tel-16.png', // replace with your actual image path
     title: "Telecommunications API",
     description:
       "To maximize workflow efficiency, we incorporate reliable and adaptable telecom APIs from top global telecom industry players into your current business software solutions.",
   },
   {
-    icon: <FaCloud className="text-4xl text-indigo-600" />,
+    image: '/industry/tel-17.png', // replace with your actual image path
     title: "Cloud Communication Platforms",
     description:
       "We provide telecom organizations with a quick, easy, and scalable approach to upgrading their business communications through our integration with cloud communication systems.",
   },
   {
-    icon: <FaMoneyCheckAlt className="text-4xl text-indigo-600" />,
+    image: '/industry/tel-18.png', // replace with your actual image path
     title: "Telecommunications Expense Management Software",
     description:
       "We provide telecom expense management solutions to assist organizations in keeping track of and managing their assets and expenses.",
   },
   {
-    icon: <FaPhoneAlt className="text-4xl text-indigo-600" />,
+    image: '/industry/tel-19.webp', // replace with your actual image path
     title: "Contact & Call Center Software",
     description:
       "We can improve client engagement in contact centers worldwide thanks to our connection with call center software solutions.",
@@ -41,7 +41,7 @@ const fadeUp = {
 
 export default function TelecomIntegrations() {
   return (
-    <div className="bg-gray-100 py-12 px-4 xl:max-w-7xl mx-auto">
+    <div className="container py-12 px-4 xl:max-w-7xl mx-auto p-2">
       <div className="text-center mb-10">
         <h2 className="text-3xl font-bold text-gray-900">
           Telecom Software Integrations
@@ -65,7 +65,15 @@ export default function TelecomIntegrations() {
             viewport={{ once: true }}
             variants={fadeUp}
           >
-            <div className="mb-4">{item.icon}</div>
+            <div className="mb-4">
+              <Image 
+                src={item.image} 
+                alt={item.title}
+                width={48}
+                height={48}
+                className="h-12 w-auto filter grayscale brightness-75"
+              />
+            </div>
             <h3 className="text-xl font-semibold mb-2 text-gray-800">
               {item.title}
             </h3>

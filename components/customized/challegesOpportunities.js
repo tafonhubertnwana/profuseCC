@@ -32,8 +32,8 @@ export default function ChallengesOpportunities({
           }}
           className="text-left mb-2"
         >
-          <h1 className="text-4xl font-bold mb-4">{title}</h1>
-          {subtitle && <p className="text-xl opacity-80">{subtitle}</p>}
+          <h1 className="text-3xl font-bold mb-4">{title}</h1>
+          {subtitle && <p className="text-md opacity-80">{subtitle}</p>}
         </motion.div>
           <motion.div
           initial="hidden"
@@ -46,7 +46,7 @@ export default function ChallengesOpportunities({
           }}
           className="text-left my-4"
         >
-          <p className="text-xl opacity-80">{subtitle}</p>
+          <p className="text-md opacity-80">{subtitle}</p>
         </motion.div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -74,7 +74,7 @@ export default function ChallengesOpportunities({
                 )}
               </div>
                 <div>
-                  <h2 className="text-2xl font-semibold mb-3">{section.title}</h2>
+                  <h2 className="text-xl font-semibold mb-3">{section.title}</h2>
                   <p className="opacity-90 leading-relaxed">{section.content}</p>
                 </div>
             </motion.div>

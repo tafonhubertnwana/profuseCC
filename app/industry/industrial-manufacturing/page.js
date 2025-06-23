@@ -2,9 +2,10 @@
 import { IndustriesList } from '@/components/businessDomain';
 import HeroSection from '@/components/herosection/hero'
 import ManufactureChallengesPage from '@/components/manufacture/manufactureChallenges';
-import ManufactureSolutions from '@/components/manufacture/manufactureSolutions';
+import FactoryServices from '@/components/manufacture/manufactureFactory'
 import SuccessStoriesPage from '@/components/manufacture/manufactureStoriesPage';
 import ManufactureChooseUs from '@/components/manufacture/manufactureWhyChooseUs';
+import ManufactureBanner from '@/components/manufacture/manufacturing';
 
 import Navbar from '@/components/navbar'
 import Testimonials from '@/components/testimonial';
@@ -21,8 +22,9 @@ Manufacturing IT Solutions"
   backgroundImage="/assets/industrial-manufacturing-bg.webp" 
   breadcrumb="Industry > Industrial Manufacturing"
 />
+<ManufactureBanner />
+<FactoryServices />
 <ManufactureChallengesPage />
-<ManufactureSolutions />
 <ManufactureChooseUs />
 <SuccessStoriesPage />
 

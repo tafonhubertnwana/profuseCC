@@ -15,14 +15,13 @@ const Mining = () => {
   return (
     <div>
       <Navbar />
-      <HeroSection
-  title="
-Real Estate"
-  description="Enhance property management, virtual tours, and customer engagement with innovative digital solutions tailored for the real estate industry."
-
-  backgroundImage="/assets/real-estate-bg.webp" 
+   <HeroSection
+  title="Transforming Real Estate Through Innovation"
+  description="Leverage cutting-edge digital tools to streamline property management, enable immersive virtual tours, and boost client engagement in a competitive real estate market."
+  backgroundImage="/assets/real-estate-bg.webp"
   breadcrumb="Industry > Real Estate"
 />
+
 <RealEstateBanner />
 <RealEstateChallengesPage />
 <RealEstateSolutions />

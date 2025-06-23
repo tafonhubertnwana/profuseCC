@@ -2,33 +2,33 @@ import HowWeHelpSection from "@/components/customized/howWeHelpSection";
 
 const SuccessStoriesPage = () => {
   const successCards = [
-    {
-      title: "Simplifying Various",
-      subtitle: "School Management Processes",
-      description: "Our solutions streamline administrative tasks, attendance tracking, and communication for educational institutions.",
-      category: "EDUCATION",
-      imageUrl: "/images/education-management.jpg",
-    },
-    {
-      title: "Preparing People For A",
-      subtitle: "Successful Career",
-      description: "Comprehensive career development programs that equip individuals with in-demand skills and certifications.",
-      category: "CAREER-DEVELOPMENT",
-      imageUrl: "/images/career-development.jpg",
-    },
-    {
-      title: "Making Remedial",
-      subtitle: "Driving Courses Easily Accessible Online",
-      description: "Digital platforms that provide accessible remedial courses for drivers needing license renewal or improvement.",
-      category: "EDUCATION",
-      imageUrl: "/images/driving-courses.jpg",
-    },
-  ];
+  {
+    title: "Transforming Telecom",
+    subtitle: "Operations Through Automation",
+    description: "We optimize network management, customer support, and billing systems with AI-driven automation for enhanced efficiency and service delivery.",
+    category: "TELECOMMUNICATION",
+    imageUrl: "/industry/tel-24.webp",
+  },
+  {
+    title: "Expanding Internet",
+    subtitle: "Access in Underserved Areas",
+    description: "Our scalable infrastructure solutions enable telecom providers to deliver high-speed internet to rural and remote communities, bridging the digital divide.",
+    category: "INTERNET CONNECTIVITY",
+    imageUrl: "/industry/tel-25.webp",
+  },
+  {
+    title: "Enhancing Telecommunication",
+    subtitle: "Security and Reliability",
+    description: "Implementing robust cybersecurity and network monitoring tools to ensure reliable and secure communication services across all platforms.",
+    category: "TELECOMMUNICATION",
+    imageUrl: "/industry/tel-26.webp",
+  },
+];
 
   return (
     <div>
       <HowWeHelpSection 
-        heading="See how we help in Enterprises success" 
+        heading="See how ProfuseCC help in Enterprises success" 
         cards={successCards} 
       />
     </div>

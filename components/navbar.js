@@ -50,7 +50,6 @@ const Navbar = () => {
       { name: "Transportation & Logistics", href: "/industry/transportation-logistics" },
       { name: "Education", href: "/industry/education" },
       { name: "Banking & Finance", href: "/industry/banking-finance" },
-      { name: "Automotive", href: "/industry/automotive" },
       { name: "Telecommunication", href: "/industry/telecommunication" },
     ],
     page: [

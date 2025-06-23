@@ -14,7 +14,7 @@ const WeLeadInPage = () => {
     {
       id: 2,
       title: "Cyber Security Evaluation",
-      description: "We at CIS are sensitive to your organization's weaknesses and loopholes in cyber defenses. We can help you strengthen your security by analyzing potential threats and laying strong solutions to possible attacks.",
+      description: "We at ProfuseCC are sensitive to your organization's weaknesses and loopholes in cyber defenses. We can help you strengthen your security by analyzing potential threats and laying strong solutions to possible attacks.",
       image: "/industry/cyber-6.jpg",
       alt: "Software Development Services"
     },

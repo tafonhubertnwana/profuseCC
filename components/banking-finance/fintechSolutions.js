@@ -50,7 +50,7 @@ export default function FintechSolutions() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl font-bold text-[#FF0000] mb-6 text-center"
+            className="text-2xl font-bold text-[#FF0000] mb-4 text-center"
           >
             Finance Management Software Solutions
           </motion.h2>

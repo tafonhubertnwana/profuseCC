@@ -16,7 +16,7 @@ const Education = () => {
       <Navbar />
       <HeroSection
           title="
-        Cloud Computing"
+        Education"
           description="Scale your infrastructure seamlessly with secure, flexible, and cost-effective cloud solutions."
           backgroundImage="/assets/education.webp" 
           breadcrumb="Industry > Education"

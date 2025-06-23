@@ -3,6 +3,7 @@
 import { IndustriesList } from '@/components/businessDomain';
 import HeroSection from '@/components/herosection/hero'
 import Navbar from '@/components/navbar'
+import TelComBanner from '@/components/telecommunication/telBanner';
 import TelecomIntegrations from '@/components/telecommunication/telecomIntegration';
 import TelecommunicationChallengesPage from '@/components/telecommunication/telecommunicationChallenges';
 import TelecommunicationSolutions from '@/components/telecommunication/telecommunicationSolution';
@@ -15,13 +16,13 @@ const TeleCommunication = () => {
   return (
     <div>
       <Navbar />
-      <HeroSection
-  title="
-Cloud Computing"
-  description="Scale your infrastructure seamlessly with secure, flexible, and cost-effective cloud solutions."
-  backgroundImage="/assets/telecommunication-bg.webp" 
+     <HeroSection
+  title="Driving Connectivity in the Digital Era"
+  description="Empower your telecom operations with scalable cloud infrastructure, 5G integration, and real-time data solutions to deliver faster, smarter, and more reliable communication services."
+  backgroundImage="/industry/telecommunications-bg.webp"
   breadcrumb="Industry > Telecommunication"
 />
+<TelComBanner />
     <TelecommunicationChallengesPage />
     <TelecommunicationSolutions />
 

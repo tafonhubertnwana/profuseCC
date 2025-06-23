@@ -31,11 +31,6 @@ const industries = [
     link: '/industry/transportation-logistics' 
   },
   { 
-    name: 'Automotive', 
-    icon: '/assets/cart-shopping-fast.png',
-    link: '/industry/automotive' 
-  },
-  { 
     name: 'Real Estate', 
     icon: '/assets/picaxe-minning.png',
     link: '/industry/real-estate' 

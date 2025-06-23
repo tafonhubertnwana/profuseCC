@@ -90,7 +90,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-hidden`}>
 
         {/* ✅ GTM noscript */}
         <noscript

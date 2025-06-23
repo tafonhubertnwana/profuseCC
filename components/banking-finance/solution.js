@@ -1,65 +1,39 @@
-import Head from 'next/head';
-import FeatureCard from '../customized/featureCard';
+import HowWeHelpSection from "@/components/customized/howWeHelpSection";
 
+const SuccessStoriesPage = () => {
+ const successCards = [
+  {
+    title: "Streamlining Core",
+    subtitle: "Banking Operations with Automation",
+    description: "Our solutions optimize transaction processing, customer data management, and regulatory compliance for enhanced efficiency in financial institutions.",
+    category: "BANKING",
+    imageUrl: "/industry/fin-34.webp",
+  },
+  {
+    title: "Empowering Clients For A",
+    subtitle: "Secure Financial Future",
+    description: "Robust wealth management platforms that deliver personalized investment advice, portfolio tracking, and real-time financial analytics.",
+    category: "WEALTH-MANAGEMENT",
+    imageUrl: "/industry/fin-34.webp",
+  },
+  {
+    title: "Making Financial Literacy",
+    subtitle: "Accessible Through Digital Platforms",
+    description: "Interactive online tools and courses that help users understand budgeting, credit, and investments for long-term financial wellness.",
+    category: "FINANCIAL-EDUCATION",
+    imageUrl: "/industry/fin-34.webp",
+  },
+];
 
-const SolutionsPage = () => {
-  const features = [
-    {
-      title: "High-Customizable FinTech Solutions",
-      description: "Our fintech solutions are specifically designed to meet the needs of your business, sector, and customers.",
-      iconImage: '/assets/api.png',
-      
-    },
-    {
-      title: "Easy Integrations",
-      description: "We facilitate third-party integrations with our financial technology platform.",
-      iconImage:  '/assets/api.png',
-     
-    },
-    {
-      title: "Regulatory Compliance",
-      description: "Solutions developed in compliance with each country's applicable regulations.",
-      iconImage:  '/assets/api.png',
-      
-    },
-    {
-      title: "Automation Features",
-      description: "Automate repetitive processes to save time and reduce manual work.",
-      iconImage:  '/assets/api.png',
-    
-      iconSize: 56,
-      imageClassName: "p-1" // Example of additional image styling
-    }
-  ];
 
   return (
-    <div className=" bg-gray-50">
-      <Head>
-        <title>Our Solutions | ProfuseCC FinTech</title>
-      </Head>
-
-      <main className="container xl:max-w-7xl mx-auto p-4 ">
-        <h1 className="text-4xl font-bold text-center mb-6 text-gray-800">Our FinTech Solutions</h1>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2  my-6 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
-            <FeatureCard
-              key={index}
-              title={feature.title}
-              description={feature.description}
-              iconImage={feature.iconImage}
-              iconAlt={feature.iconAlt}
-              borderColor={feature.borderColor}
-              iconSize={feature.iconSize}
-              delay={index * 0.1}
-              className=""
-              imageClassName={feature.imageClassName}
-            />
-          ))}
-        </div>
-      </main>
+    <div>
+      <HowWeHelpSection 
+        heading="See how we help in Enterprises success" 
+        cards={successCards} 
+      />
     </div>
   );
 };
 
-export default SolutionsPage;
+export default SuccessStoriesPage;
