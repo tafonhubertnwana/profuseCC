@@ -27,7 +27,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative overflow-hidden h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px] xl:h-[900px]">
+    <section className="relative overflow-hidden h-[500px] sm:h-[600px] md:h-[700px] lg:h-screen">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
