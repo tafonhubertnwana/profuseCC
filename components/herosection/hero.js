@@ -38,7 +38,7 @@ const HeroSection = ({ title, description, backgroundImage, breadcrumb }) => {
 
           <motion.p
             variants={textVariants}
-            className="text-sm sm:text-base md:text-lg lg:text-xl mb-6"
+            className="hidden sm:block text-sm sm:text-base md:text-lg lg:text-xl mb-6"
           >
             {description}
           </motion.p>
