@@ -146,13 +146,13 @@ const ContactForm = () => {
               <h2 className="text-2xl font-bold mb-4">Our Contact Information</h2>
               <div className="space-y-4 mb-6">
                 <p className="flex items-center">
-                  <FaPhone className="mr-3" /> +1 (281) 942-0577
+                  <FaPhone className="mr-3" /> +1 512-944-0077
                 </p>
                 <p className="flex items-center">
-                  <FaEnvelope className="mr-3" /> info@yourcompany.com
+                  <FaEnvelope className="mr-3" /> info@profusecc.ai
                 </p>
                 <p className="flex items-center">
-                  <FaLocationDot className="mr-3" /> 123 Business Ave, Houston, TX 77000
+                  <FaLocationDot className="mr-3" /> Austin,Texas, 78701, USA
                 </p>
               </div>
 
@@ -355,14 +355,14 @@ const ContactForm = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-600">
           <div>
             <h4 className="font-medium mb-2 text-[#FF0000]">Support</h4>
-            <p>support@profusecc.com</p>
-            <p>+1 (281) 942-0577 ext. 2</p>
+            <p>info@profusecc.ai</p>
+            <p>+1 512-944-0077</p>
           </div>
           
           <div>
             <h4 className="font-medium mb-2 text-[#FF0000]">Visit Us</h4>
-            <p>123 Business Ave</p>
-            <p>Houston, TX 77000</p>
+            
+            <p>Austin,Texas, 78701, USA </p>
           </div>
         </div>
       </div>

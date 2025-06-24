@@ -17,12 +17,12 @@ const Footer = () => {
               <img 
                 src="/assets/profuse.jpg" // Replace with your logo path
                 alt="Company Logo" 
-                className="h-24 w-24 mr-2"
+                className="h-24 w-30 mr-2"
               />
               
             </div>
             <p className="text-gray-400">
-            ProfuseCC is an artificial intelligence cloud startup focused on delivering innovative AI-driven solutions. ProfuseCC is an artificial intelligence cloud startup focused on delivering innovative AI-driven solutions. Our goal is to empower businesses with cutting-edge cloud technologies and intelligent automation to enhance efficiency and drive growth in a competitive landscape
+            ProfuseCC is an artificial intelligence software startup focused on delivering innovative AI-driven solutions. Our goal is to empower businesses with cutting-edge cloud technologies and intelligent automation to enhance efficiency and drive growth in a competitive landscape
 </p>
             <div className="flex space-x-4 mt-4">
               <Link target="_blank" href="https://www.facebook.com/share/1KTQg7oDM7/?mibextid=wwXIfr" className="text-blue-500 hover:text-white">
@@ -47,7 +47,7 @@ const Footer = () => {
         <span className="mr-2 ">
           <FaRegArrowAltCircleRight className='text-[#FF0000]' />
         </span>
-        AWS Cloud Service
+        Cloud Computing
       </Link>
     </li>
     <li className="mb-2 group">
@@ -133,21 +133,25 @@ const Footer = () => {
                 <div className="hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2">
 
                 <FaLocationDot className="mr-2 text-[#FF0000]" />
-                <span>Austin, Texas, 78701, USA</span>
+                <span>Austin, Texas, 78701, USA
+
+                </span>
                 </div>
               </li>
               <li className="mb-2 group ">
               <div className="hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2">
                   
                 <FaPhone className="mr-2 text-[#FF0000]" />
-                <span>+281-942-0577</span>
+                <span>+1 512-944-0077
+
+                </span>
                   </div>
               </li>
               <li className="mb-2 group ">
               <div className="hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2">
                   
                 <FaEnvelope className="mr-2 text-[#FF0000]" />
-                <span>info@profusecc.com</span>
+                <span>info@profusecc.ai</span>
                   </div>
               </li>
             </ul>

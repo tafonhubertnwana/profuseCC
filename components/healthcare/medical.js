@@ -30,7 +30,7 @@ export default function Medical() {
           >
             <div className="relative h-full w-full overflow-hidden shadow-xl rounded-sm">
               <Image
-                src="/assets/Medicals.jpg"
+                src="/industry/medical.jpeg"
                 alt="Medical Solutions"
                 fill
                 className="object-cover"

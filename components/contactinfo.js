@@ -41,17 +41,17 @@ const data = [
   {
     icon: <FaPhoneAlt />,
     title: "Call Us Anytime",
-    info: "+281-942-0577",
+    info: "+1 512-944-0077"
   },
   {
     icon: <MdEmail />,
     title: "Send E-Mail",
-    info: "info@profusecc.com",
+    info: "info@profusecc.ai"
   },
   {
     icon: <IoTimeOutline />,
     title: "Opening Hours",
-    info: "Fri - Mon (9:00AM - 5:00PM)",
+    info: "MON-FRI (08:00AM -05:00PM)"
   },
 ];
 
