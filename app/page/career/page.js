@@ -1,4 +1,4 @@
-"use client";
+
 import WhatWeBelieve from '@/components/careerBelieve';
 import CareerSection from '@/components/careerSection';
 import HeroSection from '@/components/herosection/hero'
@@ -7,6 +7,10 @@ import LogoCarousel from '@/components/LogoCarousel';
 import Navbar from '@/components/navbar'
 import React from 'react'
 
+export const metadata = {
+  title: "Career | ProfuseCC",
+  description: "Join our team and grow your career at ProfuseCC.",
+};
 const CareerPage = () => {
   return (
     <div>

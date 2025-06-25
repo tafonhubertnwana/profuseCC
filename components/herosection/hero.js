@@ -1,5 +1,5 @@
 // components/HeroSection.jsx
-
+"use client";
 import Link from "next/link";
 import { FaHome, FaLongArrowAltRight } from "react-icons/fa";
 import { motion } from "framer-motion";

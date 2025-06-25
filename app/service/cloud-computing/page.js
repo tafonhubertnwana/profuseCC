@@ -1,4 +1,3 @@
-"use client";
 
 import CloudServices from '@/components/aws/cloudservice';
 import AwsServices from '@/components/aws/aws-service';

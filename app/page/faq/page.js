@@ -1,4 +1,4 @@
-"use client";
+
 import Navbar from "@/components/navbar";
 import ITServices from "@/components/faqsection";
 import LogoCarousel from "@/components/LogoCarousel";

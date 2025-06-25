@@ -1,3 +1,4 @@
+'use client';
 import { motion } from "framer-motion";
 import { FaServer, FaCloud, FaBrain, FaShieldAlt } from "react-icons/fa";
 

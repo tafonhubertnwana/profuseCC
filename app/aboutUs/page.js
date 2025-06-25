@@ -1,4 +1,4 @@
-"use client";
+
 import Navbar from "@/components/navbar";
 import HeroSection from "@/components/herosection/hero";
 import ItSupportSection from "@/components/support";
@@ -12,8 +12,8 @@ import { NextSeo } from 'next-seo';
 
 const AboutPage = () => {
   return (
-    <div>
-      <NextSeo
+  <>
+   <NextSeo
         title="About Us - ProfuseCC"
         description="Learn about ProfuseCC, an AI software consulting startup delivering innovative software and secure cloud services."
         canonical="https://profusecc.ai/about"
@@ -31,6 +31,8 @@ const AboutPage = () => {
           ],
         }}
       />
+    <div>
+     
       <Navbar />
       <HeroSection
           title="About Us"
@@ -46,6 +48,7 @@ const AboutPage = () => {
       <Testimonials />
       <AustinMap />
     </div>
+  </>
   );
 };
 

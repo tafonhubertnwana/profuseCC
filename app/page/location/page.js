@@ -1,4 +1,4 @@
-"use client";
+
 import AustinMap from '@/components/map';
 import ContactInfo from '@/components/contactinfo';
 import CountryCards from '@/components/countryCard';

@@ -1,4 +1,5 @@
 // components/Testimonials.js
+"use client";
 import { useState, useEffect } from 'react';
 import { databases } from '@/lib/appwrite';
 import { ID, Query } from 'appwrite';

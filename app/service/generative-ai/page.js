@@ -1,4 +1,4 @@
-"use client"
+
 import AINeedSection from '@/components/ai/AINeedSection';
 import AIProcessSteps from '@/components/ai/AIPRocessSteps';
 import AIServiceSection from '@/components/ai/aiServices';

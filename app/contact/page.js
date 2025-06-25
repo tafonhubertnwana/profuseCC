@@ -1,4 +1,3 @@
-"use client";
 import Navbar from "@/components/navbar";
 import ContactForm from "@/components/contactform";
 import LogoCarousel from "@/components/LogoCarousel";

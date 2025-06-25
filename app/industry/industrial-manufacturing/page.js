@@ -1,4 +1,4 @@
-"use client";
+
 import { IndustriesList } from '@/components/businessDomain';
 import HeroSection from '@/components/herosection/hero'
 import ManufactureChallengesPage from '@/components/manufacture/manufactureChallenges';

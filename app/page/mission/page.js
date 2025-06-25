@@ -1,4 +1,3 @@
-"use client";
 import ExperienceSection from '@/components/experienceSection';
 import HeroSection from '@/components/herosection/hero'
 import LogoCarousel from '@/components/LogoCarousel';

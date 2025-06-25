@@ -1,4 +1,4 @@
-"use client";
+
 import BankingSolutions from '@/components/banking-finance/banking-solutions';
 import FintechChallengesPage from '@/components/banking-finance/Fintech-challenges';
 import FintechSolutions from '@/components/banking-finance/fintechSolutions';
