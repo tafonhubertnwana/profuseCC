@@ -60,13 +60,7 @@ const providers = [
     title: "Google Cloud Platform",
     description:
       "GCP offers integrated storage and live data fetching capabilities using VMs, disks, and centralized infrastructure in Google data centers.",
-  },
-  {
-    icon: "https://www.cisin.com/images/mrcsLogo4.png",
-    title: "Oracle Cloud",
-    description:
-      "Available as SaaS, PaaS, and IaaS, Oracle Cloud helps reduce IT complexity, supports integration, and delivers secure, scalable enterprise solutions.",
-  },
+  }
 ];
 
 const fadeIn = {
@@ -140,7 +134,7 @@ export default function CloudServices() {
         <motion.p className="text-lg text-gray-700 mb-10" variants={fadeIn} custom={1}>
           We engineer cloud-powered solutions aligned with AWS, Azure, Google Cloud Platform &amp; Oracle Cloud paradigms that are highly impactful in terms of performance and quality standards.
         </motion.p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-10 my-12">
   {providers.map((provider, i) => (
     <motion.div
       key={i}

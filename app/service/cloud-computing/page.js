@@ -22,7 +22,7 @@ const CloudPage = () => {
   title="
 Customized and Scalable Cloud Based Applications"
   description="Scale your infrastructure seamlessly with secure, flexible, and cost-effective cloud solutions."
-  backgroundImage="/assets/AWS-Cloud-bg.webp" 
+  backgroundImage="/assets/aws-bg.webp" 
   breadcrumb="Services > Cloud computing"
 />
 <CloudComputing />

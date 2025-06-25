@@ -56,7 +56,7 @@ const fadeIn = {
 export default function CloudCharacteristics() {
   return (
     <div style={{
-      backgroundImage: "url('/assets/aws-bg.webp')", // Replace with your image path
+      backgroundImage: "url('/assets/AWS-Cloud-bg.webp')", // Replace with your image path
       backgroundAttachment: "fixed",
       backgroundSize: "cover",
       backgroundPosition: "center",
@@ -80,7 +80,7 @@ export default function CloudCharacteristics() {
             {characteristics.map((item, i) => (
               <motion.div
     key={item.title}
-    className="group bg-black text-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 ease-in-out hover:bg-white hover:text-black"
+    className="group bg-black text-white p-6 rounded-md border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 ease-in-out hover:bg-white hover:text-black"
     initial="hidden"
     whileInView="visible"
     viewport={{ once: true }}

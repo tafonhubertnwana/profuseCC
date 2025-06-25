@@ -53,13 +53,13 @@ export function IndustriesList({ excludeCurrent = false, currentIndustry = '' })
     : industries;
 
   return (
-    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6  container xl:max-w-7xl mx-auto p-2">
+    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6  ">
       {filteredIndustries.map((industry, index) => (
         <motion.li
           key={index}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-red-600 rounded-lg shadow-md"
+          className="bg-black rounded-lg shadow-md"
         >
           <Link 
             href={industry.link} 
@@ -73,6 +73,7 @@ export function IndustriesList({ excludeCurrent = false, currentIndustry = '' })
                 width={40} 
                 height={40} 
                 aria-hidden="true"
+                className='filter brightness-0 invert'
               />
             </span>
             <span className="font-semibold">{industry.name}</span>
@@ -86,10 +87,10 @@ export function IndustriesList({ excludeCurrent = false, currentIndustry = '' })
 export default function BusinessDomains() {
   return (
     <section 
-      className="bg-[#FF0000] text-white py-16 px-6"
+      className="bg-[#FF0000] text-white py-8 px-4"
       aria-labelledby="business-domains-heading"
     >
-      <div className="container xl:max-w-7xl  mx-auto p-2">
+      <div className="container xl:max-w-6xl  mx-auto p-2">
         <header className="text-left">
           <h2 
             id="business-domains-heading"
