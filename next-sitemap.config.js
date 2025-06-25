@@ -1,6 +1,6 @@
 // next-sitemap.config.js
 module.exports = {
-  siteUrl: 'https://profuse-cc.vercel.app',
+  siteUrl: 'https://profusecc.ai',
   generateRobotsTxt: true,
   sitemapSize: 5000,
   changefreq: 'weekly',
@@ -12,7 +12,7 @@ module.exports = {
       { userAgent: '*', disallow: ['/admin'] },
     ],
     additionalSitemaps: [
-      'https://profuse-cc.vercel.app/sitemap.xml',
+      'https://profusecc.ai/sitemap.xml',
     ],
   },
 };

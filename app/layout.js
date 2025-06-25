@@ -1,9 +1,10 @@
-// app/layout.js
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { Toaster } from "react-hot-toast";
+import { DefaultSeo } from 'next-seo';
+import SEO from '../next-seo.config';
 import Script from 'next/script';
 
 const geistSans = Geist({
@@ -17,30 +18,13 @@ const geistMono = Geist_Mono({
   display: 'swap',
 });
 
-export const metadata = {
-  title: "profuseCC",
-  description: "Artificial Intelligent software startup Company",
-  keywords: 'Artificial Intelligent, web development, cloud, generative AI, AWS, google Cloud, cybersecurity, analytics'
-};
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-         <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="index, follow" />
-  <meta name="google-site-verification" content="YOUR_ACTUAL_VERIFICATION_CODE" />
-  
-  {/* Open Graph / Twitter */}
-  <meta property="og:title" content={metadata.title} />
-  <meta property="og:description" content={metadata.description} />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://profuse-cc-8gub.vercel.app" />
-  <meta property="og:image" content="https://profuse-cc-8gub.vercel.app/og-image.jpg" />
-  
-  {/* Preconnect */}
-  <link rel="preconnect" href="https://www.googletagmanager.com" />
-        {/* ✅ Google Search Console Verification */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* ✅ Google Verification */}
         <meta name="google-site-verification" content="YOUR_VERIFICATION_TOKEN_HERE" />
 
         {/* ✅ JSON-LD: Organization */}
@@ -51,8 +35,8 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "ProfuseCC",
-              "url": "https://profuse-cc-8gub.vercel.app/",
-              "logo": "https://profuse-cc-8gub.vercel.app/logo.png",
+              "url": "https://profusecc.ai/",
+              "logo": "https://profusecc.ai/logo.png",
               "sameAs": [
                 "https://www.facebook.com/profuseCC",
                 "https://www.linkedin.com/company/profuseCC"
@@ -61,7 +45,7 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        {/* ✅ JSON-LD: Breadcrumbs */}
+        {/* ✅ JSON-LD: BreadcrumbList */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -69,11 +53,11 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "About Us", "item": "https://profuse-cc-8gub.vercel.app/aboutUs" },
-                { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://profuse-cc-8gub.vercel.app/contact" },
-                { "@type": "ListItem", "position": 3, "name": "Cloud Computing", "item": "https://profuse-cc-8gub.vercel.app/service/cloud-computing" },
-                { "@type": "ListItem", "position": 4, "name": "Software Development", "item": "https://profuse-cc-8gub.vercel.app/service/software-development" },
-                { "@type": "ListItem", "position": 5, "name": "Projects", "item": "https://profuse-cc-8gub.vercel.app/project" }
+                { "@type": "ListItem", "position": 1, "name": "About Us", "item": "https://profusecc.ai/aboutUs" },
+                { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://profusecc.ai/contact" },
+                { "@type": "ListItem", "position": 3, "name": "Cloud Computing", "item": "https://profusecc.ai/service/cloud-computing" },
+                { "@type": "ListItem", "position": 4, "name": "Software Development", "item": "https://profusecc.ai/service/software-development" },
+                { "@type": "ListItem", "position": 5, "name": "Projects", "item": "https://profusecc.ai/project" }
               ]
             }),
           }}
@@ -91,14 +75,17 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-hidden`}>
-
-        {/* ✅ GTM noscript */}
+        {/* ✅ GTM noscript fallback */}
         <noscript
           dangerouslySetInnerHTML={{
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QFGRS2P"
             height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           }}
         />
+
+        {/* ✅ Global SEO */}
+        <DefaultSeo {...SEO} />
+
         {/* <Navbar /> */}
         <Toaster position="bottom-right" />
         {children}

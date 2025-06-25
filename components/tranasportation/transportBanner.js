@@ -29,7 +29,7 @@ const LogisticsBanner = () => {
         const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black ">
       <Head>
         <title>Logistics Technology Solutions | ProfuseCC</title>
         <meta name="description" content="High-end transportation and logistics technology solutions for your business" />
@@ -44,13 +44,13 @@ const LogisticsBanner = () => {
           variants={containerVariants}
         >
           <motion.h2 
-            className="text-3xl md:text-4xl font-bold text-red-500 mb-6"
+            className="text-3xl md:text-4xl font-bold text-red-500 my-6"
             variants={itemVariants}
           >
             High-End Transportation And Logistics Technology Solutions
           </motion.h2>
           <motion.p 
-            className="text-lg text-black mb-8 leading-relaxed"
+            className="text-lg text-white mb-8 leading-relaxed"
             variants={itemVariants}
           >
             Solutions for the automotive industry on the web and on mobile devices let you cut operational costs while ten-folding management effectiveness. For your car and IT solution for transportation business, ProfuseCC is the greatest technological solution supplier on the market, offering you affordable web and mobile development services. With the help of our logistical and transportation strategies, see the significant shifts.
@@ -74,7 +74,7 @@ const LogisticsBanner = () => {
 
         {/* Supply Chain Visibility Section */}
         <motion.section 
-          className="bg-white rounded-sm p-8 md:p-12"
+          className="bg-white rounded-sm p-8 md:p- mb-4"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
@@ -85,10 +85,10 @@ const LogisticsBanner = () => {
               <h2 className="text-3xl font-bold text-[#FF0000] mb-6">
                 Supply Chain Visibility: Real-Time Supply Chain
               </h2>
-              <p className="text-lg text-white mb-6 leading-relaxed">
+              <p className="text-lg  mb-6 leading-relaxed">
                 You may get practical web and mobile solutions for your transportation and automotive business at ProfuseCC, a top provider of technological solutions. Businesses must implement innovative strategies to manage and track both their internal and external operations given the expansion of the auto industry and the use of technology to high-perform in their industrial vertical.
               </p>
-              <p className="text-lg text-white mb-8 leading-relaxed">
+              <p className="text-lg  mb-8 leading-relaxed">
                 Your search is over thanks to our web, mobile, and software solutions for supply chain visibility in the transportation sector.
               </p>
               <motion.button
@@ -105,7 +105,7 @@ const LogisticsBanner = () => {
                 whileInView={{ scale: 1 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="relative bg-black p-4 rounded-sm shadow-lg"
+                className="relative  rounded-sm shadow-lg"
               >
                 <Image
                   src="/industry/log-32.webp"

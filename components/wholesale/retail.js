@@ -98,7 +98,7 @@ export default function EcommerceSolutions() {
               whileHover={{ scale: 1.03 }}
               className="bg-white p-6 rounded-sm shadow-md"
             >
-              <img src="/assets/ehr.png" alt="Retail Management" className="w-12 h-12 mb-4" />
+              <img src="/industry/whole-14.webp" alt="Retail Management" className="w-12 h-12 mb-4 filter grayscale brightness-75" />
               <h4 className="text-xl font-semibold text-[#FF0000] mb-2">Retail Management Systems</h4>
               <p className="text-gray-700">
                 Streamline your store operations with POS, inventory tracking, and CRM tools all integrated into one centralized platform.
@@ -110,7 +110,7 @@ export default function EcommerceSolutions() {
               whileHover={{ scale: 1.03 }}
               className="bg-white p-6 rounded-sm shadow-md"
             >
-              <img src="/assets/telemedicine.png" alt="B2C B2B E-commerce" className="w-12 h-12 mb-4" />
+              <img src="/industry/whole-10.webp" alt="B2C B2B E-commerce" className="w-12 h-12 mb-4 filter grayscale brightness-75" />
               <h4 className="text-xl font-semibold text-[#FF0000] mb-2">B2C & B2B E-Commerce</h4>
               <p className="text-gray-700">
                 From user-centric shopping experiences to secure backend operations, we tailor platforms for both consumers and business buyers.
@@ -122,7 +122,7 @@ export default function EcommerceSolutions() {
               whileHover={{ scale: 1.03 }}
               className="bg-white p-6 rounded-sm shadow-md"
             >
-              <img src="/assets/iot.png" alt="Cloud E-Commerce" className="w-12 h-12 mb-4" />
+              <img src="/industry/whole-15.webp" alt="Cloud E-Commerce" className="w-12 h-12 mb-4 filter grayscale brightness-75" />
               <h4 className="text-xl font-semibold text-[#FF0000] mb-2">Cloud-Based Online Stores</h4>
               <p className="text-gray-700">
                 Launch scalable online stores with smart dashboards, real-time analytics, and seamless inventory control through cloud integration.

@@ -11,6 +11,7 @@ import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import { databases } from "@/lib/appwrite";
 import { Client, Databases, ID } from "appwrite";
+import { NextSeo } from 'next-seo';
 
 const ConsultationFormModal = ({ isOpen, onClose }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -127,6 +128,25 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
 };
 
   return (
+    <>
+     <NextSeo
+        title="Book a Consultation - ProfuseCC"
+        description="Schedule a free consultation with ProfuseCC to explore how our AI and cloud solutions can transform your business."
+        canonical="https://profusecc.ai/consultation"
+        openGraph={{
+          url: 'https://profusecc.ai/consultation',
+          title: 'Book a Consultation - ProfuseCC',
+          description: 'Discuss your software and cloud strategy with our experts. ProfuseCC offers tailored consulting for AI-powered solutions.',
+          images: [
+            {
+              url: 'https://profusecc.ai/assets/profuse.jpg',
+              width: 1200,
+              height: 630,
+              alt: 'ProfuseCC Consultation',
+            },
+          ],
+        }}
+      />
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -290,7 +310,11 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
                   <option value="AWS Cloud Service">Cloud Computing Services</option>
                   <option value="Software Development">Software Development</option>
                   <option value="Generative AI">Generative AI</option>
-                  <option value="Data and Analysis">Data and Analysis</option>
+                  <option value="Cyber Security">Cyber Security</option>
+                  <option value="Logo Design">Logo Design</option>
+                  <option value="Banners Design ">Banners Design</option>
+                  <option value="brochure design">brochure design</option>
+
                 </select>
                 {formErrors.interest && (
                   <p className="mt-1 text-sm text-red-600">{formErrors.interest}</p>
@@ -389,6 +413,7 @@ const ConsultationFormModal = ({ isOpen, onClose }) => {
         </div>
       </motion.div>
     </motion.div>
+    </>
   );
 };
 
