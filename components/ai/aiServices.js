@@ -1,6 +1,5 @@
 // components/AIServiceSection.js
-import { motion } from 'framer-motion';
-import { IoSettingsOutline } from "react-icons/io5";
+"use client";
 import FeatureCards from './aimSerivces';
 
 

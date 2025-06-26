@@ -4,13 +4,13 @@ import LogoCarousel from "@/components/LogoCarousel";
 import AustinMap from "@/components/map";
 import ContactInfo from "@/components/contactinfo";
 import HeroSection from "@/components/herosection/hero";
-import { NextSeo } from 'next-seo';
+// import { NextSeo } from 'next-seo';
 
 
 const ContactPage = () => {
   return (
     <>
-      <NextSeo
+      {/* <NextSeo
           title="Contact Us - ProfuseCC"
           description="Get in touch with ProfuseCC for AI consulting, software development, or cloud computing inquiries."
           canonical="https://profusecc.ai/contact"
@@ -27,7 +27,7 @@ const ContactPage = () => {
               },
             ],
           }}
-        />
+        /> */}
       <div>
         <Navbar />
         <HeroSection

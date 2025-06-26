@@ -1,3 +1,4 @@
+'use client'
 import WhyChooseUs from "@/components/WhyChooseUs";
 
 const WhyChooseUsPage = () => {

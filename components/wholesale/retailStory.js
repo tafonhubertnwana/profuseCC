@@ -1,3 +1,5 @@
+'use client'
+
 import HowWeHelpSection from "@/components/customized/howWeHelpSection";
 
 const SuccessStoriesPage = () => {

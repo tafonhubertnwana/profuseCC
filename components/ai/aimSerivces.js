@@ -1,5 +1,5 @@
 // components/FeatureCards.js
-
+'use client';
 import { motion } from 'framer-motion';
 import { VscGraphLine, VscPersonAdd } from "react-icons/vsc";
 import { TbAutomaticGearboxFilled } from "react-icons/tb";
