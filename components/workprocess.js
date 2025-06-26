@@ -1,3 +1,4 @@
+'use client';
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { FaProjectDiagram, FaChartPie, FaCogs, FaUsers } from "react-icons/fa";

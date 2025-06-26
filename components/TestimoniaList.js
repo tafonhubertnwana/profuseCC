@@ -1,4 +1,5 @@
 // components/TestimonialList.js
+'use client';
 import { motion, AnimatePresence } from 'framer-motion';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';

@@ -1,4 +1,5 @@
 // components/TestimonialForm.js
+'use client';
 import { useState, useRef } from 'react';
 import { FaTimes, FaUpload, FaTrash, FaStar, FaCheckCircle } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';

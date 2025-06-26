@@ -1,4 +1,5 @@
 // components/TechSpotlight.js
+'use client';
 import { motion } from 'framer-motion';
 import { MdArrowRight } from 'react-icons/md'; // Import the MdArrowRight icon
 

@@ -1,4 +1,5 @@
 // pages/logistics-technology-solutions.js
+'use client';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -17,8 +18,6 @@ const LogisticsBanner = () => {
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
-      y: 0,
-      opacity: 1,
       transition: { duration: 0.6 },
     },
   };

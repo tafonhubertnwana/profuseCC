@@ -1,3 +1,4 @@
+'use client';
 import { motion } from "framer-motion";
 import { FaDatabase, FaHeadset, FaUserFriends, FaBookOpen } from 'react-icons/fa';
 
