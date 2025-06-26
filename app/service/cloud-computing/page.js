@@ -8,7 +8,7 @@ import GoogleCloudServices from '@/components/aws/googleCloud';
 import HeroSection from '@/components/herosection/hero'
 import Navbar from '@/components/navbar'
 import CloudDeployment from '@/components/aws/cloudDeployment'
-import { NextSeo } from 'next-seo';
+// import { NextSeo } from 'next-seo';
 import React from 'react'
 import CloudCharacteristics from '@/components/aws/cloudCharacteristics';
 import CloudComputing from '@/components/aws/cloudComputing';
@@ -16,7 +16,7 @@ import CloudComputing from '@/components/aws/cloudComputing';
 const CloudPage = () => {
   return (
     <>
-      <NextSeo
+      {/* <NextSeo
           title="Cloud Computing Services - ProfuseCC"
           description="ProfuseCC offers secure, scalable cloud computing solutions powered by AWS and Google Cloud tailored for AI-driven businesses."
           canonical="https://profusecc.ai/service/cloud-computing"
@@ -33,7 +33,7 @@ const CloudPage = () => {
               },
             ],
           }}
-        />
+        /> */}
       <div>
         <Navbar />
         <HeroSection

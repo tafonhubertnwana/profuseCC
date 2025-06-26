@@ -6,13 +6,13 @@ import React from 'react'
 import Services from '@/components/web-development/web-service';
 import TechnologyStack from '@/components/web-development/web-tech';
 import CustomSoftware from '@/components/web-development/customSoftware';
-import { NextSeo } from 'next-seo';
+// import { NextSeo } from 'next-seo';
 
 
 const WebDevelopment = () => {
   return (
     <>
-      <NextSeo
+      {/* <NextSeo
         title="AI Software Development - ProfuseCC"
         description="We build intelligent, scalable, and secure software solutions for startups and enterprises using modern AI technologies."
         canonical="https://profusecc.ai/service/software-development"
@@ -29,7 +29,7 @@ const WebDevelopment = () => {
             },
           ],
         }}
-      />
+      /> */}
       <div>
         <Navbar />
         <div className=' relative'>

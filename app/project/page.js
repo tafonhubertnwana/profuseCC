@@ -4,12 +4,12 @@ import HeroSection from "@/components/herosection/hero";
 import ProjectSection from '@/components/project'
 import Testimonials from '@/components/testimonial'
 import LogoCarousel from "@/components/LogoCarousel";
-import { NextSeo } from 'next-seo';
+// import { NextSeo } from 'next-seo';
 
 const ProjectPage = () => {
   return (
     <>
-    <NextSeo
+    {/* <NextSeo
         title="Our Projects - ProfuseCC"
         description="Explore AI-powered projects and software solutions built by ProfuseCC across industries including health, finance, and cloud tech."
         canonical="https://profusecc.ai/project"
@@ -26,7 +26,7 @@ const ProjectPage = () => {
             },
           ],
         }}
-      />
+      /> */}
       <div>
         <Navbar />
         <HeroSection

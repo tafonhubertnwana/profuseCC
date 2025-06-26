@@ -7,13 +7,13 @@ import TeamSection from "@/components/DedicatedTeam";
 import StatsSection from "@/components/statSection";
 import Testimonials from "@/components/testimonial";
 import AustinMap from "@/components/map";
-import { NextSeo } from 'next-seo';
+// import { NextSeo } from 'next-seo';
 
 
 const AboutPage = () => {
   return (
   <>
-   <NextSeo
+   {/* <NextSeo
         title="About Us - ProfuseCC"
         description="Learn about ProfuseCC, an AI software consulting startup delivering innovative software and secure cloud services."
         canonical="https://profusecc.ai/about"
@@ -30,7 +30,7 @@ const AboutPage = () => {
             },
           ],
         }}
-      />
+      /> */}
     <div>
      
       <Navbar />
