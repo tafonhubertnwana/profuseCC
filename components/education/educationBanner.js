@@ -31,8 +31,7 @@ export default function EducationBanner() {
               with our awe-inspiring web designs, allowing you to stay top of
               the domain.
             </p>
-            </motion.div>
-              <div>
+            <div>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -44,6 +43,8 @@ export default function EducationBanner() {
               <ConsultationFormModal isOpen={isModalOpen} onClose={closeModal} />
               
             </div>
+            </motion.div>
+              
          
         
 
