@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
       <head>
          <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="index, follow" />
-  <meta name="google-site-verification" content="YOUR_ACTUAL_VERIFICATION_CODE" />
+  <meta name="google-site-verification" content="google-site-verification=PDW5lCcy4x7Rf49wJWU9uqetCet2W1WmdIeK62pvPRM" />
   
   {/* Open Graph / Twitter */}
   <meta property="og:title" content={metadata.title} />

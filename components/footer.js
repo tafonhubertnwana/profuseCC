@@ -143,7 +143,7 @@ const Footer = () => {
               <div className="hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2">
                   
                 <FaPhone className="mr-2 text-[#FF0000]" />
-                <span>+1 512-944-0077
+                <span>+1 646-509-9274
 
                 </span>
                   </div>
@@ -152,7 +152,7 @@ const Footer = () => {
               <div className="hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2">
                   
                 <FaEnvelope className="mr-2 text-[#FF0000]" />
-                <span>info@profusecc.ai</span>
+                <span>tabehisaac@gmail.com</span>
                   </div>
               </li>
             </ul>

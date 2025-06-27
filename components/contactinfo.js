@@ -41,12 +41,12 @@ const data = [
   {
     icon: <FaPhoneAlt />,
     title: "Call Us Anytime",
-    info: "+1 512-944-0077"
+    info: "+1 646-509-9274"
   },
   {
     icon: <MdEmail />,
     title: "Send E-Mail",
-    info: "info@profusecc.ai"
+    info: "tabehisaac@gmail.com"
   },
   {
     icon: <IoTimeOutline />,

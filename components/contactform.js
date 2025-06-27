@@ -147,10 +147,10 @@ const ContactForm = () => {
               <h2 className="text-2xl font-bold mb-4">Our Contact Information</h2>
               <div className="space-y-4 mb-6">
                 <p className="flex items-center">
-                  <FaPhone className="mr-3" /> +1 512-944-0077
+                  <FaPhone className="mr-3" /> +1 646-509-9274
                 </p>
                 <p className="flex items-center">
-                  <FaEnvelope className="mr-3" /> info@profusecc.ai
+                  <FaEnvelope className="mr-3" /> tabehisaac@gmail.com
                 </p>
                 <p className="flex items-center">
                   <FaLocationDot className="mr-3" /> Austin,Texas, 78701, USA

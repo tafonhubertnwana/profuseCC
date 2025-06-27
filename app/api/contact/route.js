@@ -20,7 +20,7 @@ export async function POST(request) {
     // Resend SDK throws on error, so await send and catch exceptions
     await resend.emails.send({
       from: 'Contact Form <onboarding@resend.dev>',
-      to: ['Info@profusecc.ai'],
+      to: ['tafonherbert1@gmail.com'],
       reply_to: body.email,
       subject: `New Contact from ${body.name}`,
       react: EmailTemplate(body),
