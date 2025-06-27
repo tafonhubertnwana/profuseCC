@@ -8,6 +8,9 @@ import Image from "next/image";
 import { databases, ID } from '@/lib/appwrite'; // Adjust the path as needed
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
+import GoogleReviewButton from "./googleReviewButton";
+import { useEffect } from "react";
+
 
 const formVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -110,6 +113,23 @@ const ContactForm = () => {
     setIsSubmitting(false);
   }
 };
+
+useEffect(() => {
+  if (submitMessage.includes('successfully')) {
+    const timeout = setTimeout(() => {
+      setSubmitMessage('');
+      setFormData({
+        fullName: '',
+        email: '',
+        phone: '',
+        address: '',
+        message: ''
+      });
+    }, 30000); // 30 seconds
+
+    return () => clearTimeout(timeout); // Cleanup if component unmounts
+  }
+}, [submitMessage]);
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-gray-50">
@@ -306,14 +326,21 @@ const ContactForm = () => {
 
             {/* Status Message */}
             {submitMessage && (
-              <div className={`p-4 rounded ${
-                submitMessage.includes('successfully') 
-                  ? 'bg-green-100 text-green-800 border border-green-200' 
-                  : 'bg-red-100 text-red-800 border border-red-200'
-              }`}>
-                {submitMessage}
-              </div>
-            )}
+  <div className="space-y-4">
+    <div className={`p-4 rounded ${
+      submitMessage.includes('successfully') 
+        ? 'bg-green-100 text-green-800 border border-green-200' 
+        : 'bg-red-100 text-[#FF0000] border border-red-200'
+    }`}>
+      {submitMessage}
+    </div>
+
+    {/* Conditionally render the Google Review button if message was successful */}
+    {submitMessage.includes('successfully') && (
+      <GoogleReviewButton />
+    )}
+  </div>
+)}
 
             {/* Submit Button */}
             <motion.button
