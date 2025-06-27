@@ -161,7 +161,7 @@ const ContactForm = () => {
                 <p className="text-lg font-semibold mb-4">Connect With Us</p>
                 <div className="flex space-x-4">
                   <Link
-                    href="https://facebook.com/yourcompany"
+                     href="https://www.facebook.com/share/1KTQg7oDM7/?mibextid=wwXIfr"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-black bg-white transition duration-300 rounded-full p-2 hover:bg-gray-100"
@@ -171,7 +171,7 @@ const ContactForm = () => {
                   </Link>
 
                   <Link
-                    href="https://instagram.com/yourcompany"
+                    href="https://www.instagram.com/profuse_cc/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-black bg-white transition duration-300 rounded-full p-2 hover:bg-gray-100"
@@ -181,7 +181,7 @@ const ContactForm = () => {
                   </Link>
 
                   <Link
-                    href="https://linkedin.com/company/yourcompany"
+                    href="https://www.linkedin.com/company/profuscc/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-black bg-white transition duration-300 rounded-full p-2 hover:bg-gray-100"
@@ -190,15 +190,7 @@ const ContactForm = () => {
                     <FaLinkedin className="w-5 h-5" />
                   </Link>
 
-                  <Link
-                    href="https://twitter.com/yourcompany"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black bg-white transition duration-300 rounded-full p-2 hover:bg-gray-100"
-                    aria-label="Twitter"
-                  >
-                    <FaXTwitter className="w-5 h-5" />
-                  </Link>
+                  
                 </div>
               </div>
             </motion.div>

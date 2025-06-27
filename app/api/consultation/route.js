@@ -14,7 +14,7 @@ export async function POST(request) {
 
     const { data, error } = await resend.emails.send({
       from: 'Consultation Form <onboarding@resend.dev>',
-      to: ['tafonsoftwarespecialist@gmail.com'],
+      to: ['Info@profusecc.ai'],
       reply_to: body.email, // Add reply-to address
       subject: `New Consultation Request from ${body.firstName} ${body.lastName}`,
       react: ConsultationEmail(body),

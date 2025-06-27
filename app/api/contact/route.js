@@ -6,46 +6,31 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request) {
   try {
-    // Verify the content type
     const contentType = request.headers.get('content-type');
     if (!contentType || !contentType.includes('application/json')) {
-      return NextResponse.json(
-        { error: 'Request must be JSON' },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: 'Request must be JSON' }, { status: 400 });
     }
 
     const body = await request.json();
-    
-    // Validate required fields
+
     if (!body.name || !body.email || !body.phone) {
-      return NextResponse.json(
-        { error: 'Missing required fields' },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
-    // Send email
-    const { data, error } = await resend.emails.send({
+    // Resend SDK throws on error, so await send and catch exceptions
+    await resend.emails.send({
       from: 'Contact Form <onboarding@resend.dev>',
-      to: ['tafonsoftwarespecialist@gmail.com'],
+      to: ['Info@profusecc.ai'],
       reply_to: body.email,
       subject: `New Contact from ${body.name}`,
       react: EmailTemplate(body),
     });
 
-    if (error) {
-      console.error('Resend error:', error);
-      return NextResponse.json({ error }, { status: 400 });
-    }
-
     return NextResponse.json({ success: true }, { status: 200 });
 
   } catch (error) {
     console.error('API error:', error);
-    return NextResponse.json(
-      { error: 'Internal server error' },
-      { status: 500 }
-    );
+    // Optionally serialize error message for client
+    return NextResponse.json({ error: error.message || 'Internal server error' }, { status: 500 });
   }
 }
