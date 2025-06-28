@@ -11,7 +11,7 @@ export default function GoogleReviewButton() {
       className="text-center my-6"
     >
       <a
-        href="https://g.page/r/YourBusinessID/review"
+        href="https://g.page/r/Cde6OzY64HTSEBM/review"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center px-6 py-2 bg-[#FF0000] text-white text-lg font-semibold "

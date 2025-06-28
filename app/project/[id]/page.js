@@ -133,7 +133,7 @@ export default function RelatedProjectDetail({ params }) {
                         href={project.projectLink} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="inline-block w-full md:w-auto text-center bg-red-600 hover:bg-red-700 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg transition-colors"
+                        className="inline-block w-full md:w-auto text-center bg-red-600 hover:bg-red-700 text-white px-4 py-2 md:px-6 md:py-3 rounded-sm transition-colors"
                       >
                         View Live Project
                       </Link>

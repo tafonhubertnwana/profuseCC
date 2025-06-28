@@ -333,7 +333,7 @@ export default function CustomSoftware() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               The Technologies We Use to Provide Custom Software Development Service
             </h2>
-            <p className="text-lg md:text-xl max-w-4xl">
+            <p className="text-lg md:text-xl ">
               Discover the tools we use for custom software development services that help you achieve your goals.
             </p>
           </motion.div>
@@ -349,12 +349,11 @@ export default function CustomSoftware() {
                 key={tech.id}
                 variants={fadeInUp}
                 whileHover={{ scale: 1.02 }}
-                className="bg-[#FF0000]  backdrop-filter backdrop-blur-lg rounded-sm p-6 border border-white border-opacity-20 hover:border-opacity-40 transition-all duration-300"
+                className="bg-black  backdrop-filter backdrop-blur-lg rounded-sm p-6 border border-white border-opacity-20 hover:border-opacity-40 transition-all duration-300"
               >
                 <div className="flex items-center mb-4">
                   <div className="relative group">
-                    <Image src={tech.icon} alt={tech.title} width={150} height={150}  className="w-12 h-12 group-hover:opacity-0 transition-opacity filter grayscale brightness-75" />
-                    <Image src={tech.hoverIcon} alt={tech.title} width={150} height={150}  className="w-12 h-12 absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <Image src={tech.icon} alt={tech.title} width={150} height={150}  className="w-12 h-12 filter brightness-0 invert hue-rotate-[330deg] group-hover:opacity-0 transition-opacity " />
                   </div>
                   <h3 className="text-xl font-bold ml-4 text-white">{tech.title}</h3>
                 </div>
@@ -376,7 +375,7 @@ export default function CustomSoftware() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#FF0000]">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-black">
         <div className="container xl:max-w-7xl mx-auto p-2">
           <motion.div
             initial="hidden"

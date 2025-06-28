@@ -9,7 +9,7 @@ const slide = {
   id: 1,
   image: "/assets/home-2025-bg.webp",
   h2: "Giving you confidence in complex AI & cloud-native transformations",
-  p: "We build ProfuseCC’s scalable AI cloud platforms with secure, interoperable architectures—transforming complexity into seamless intelligence.",
+  p: "Your partner in AI-powered innovation. We're a cutting-edge AI software startup dedicated to crafting intelligent solutions that propel your business forward",
   button: "EXPERT CONSULTATION",
 };
 

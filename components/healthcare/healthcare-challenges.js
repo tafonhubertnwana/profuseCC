@@ -74,7 +74,7 @@ const fadeIn = {
 
 export default function ChallengesOpportunities() {
   return (
-    <div className="bg-red-600">
+    <div className="bg-black">
 
       <div className=" container xl:max-w-7xl mx-auto p-10">
         <motion.div
@@ -83,7 +83,7 @@ export default function ChallengesOpportunities() {
           viewport={{ once: true }}
         >
           <motion.h3
-            className="text-3xl md:text-4xl font-bold mb-12 text-left"
+            className="text-3xl text-white md:text-4xl font-bold mb-12 text-left"
             variants={fadeIn}
             custom={0}
           >
@@ -94,7 +94,7 @@ export default function ChallengesOpportunities() {
             {items.map((item, i) => (
               <motion.div
                 key={item.title}
-                className=" p-6 border bg-red-700 border-gray-200 hover:shadow-lg transition-shadow"
+                className=" p-6 border bg-white border-gray-200 hover:shadow-lg transition-shadow"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -106,8 +106,8 @@ export default function ChallengesOpportunities() {
                   alt={item.title}
                   className="w-16 h-16 mb-4 filter grayscale brightness-75"
                 />
-                <h4 className=" text-white text-xl font-semibold mb-2">{item.title}</h4>
-                <p className="text-white text-sm">{item.description}</p>
+                <h4 className="  text-xl font-semibold mb-2">{item.title}</h4>
+                <p className=" text-sm">{item.description}</p>
               </motion.div>
             ))}
           </div>

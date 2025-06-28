@@ -23,7 +23,7 @@ const Footer = () => {
               
             </div>
             <p className="text-gray-400">
-            ProfuseCC is an artificial intelligence software startup focused on delivering innovative AI-driven solutions. Our goal is to empower businesses with cutting-edge cloud technologies and intelligent automation to enhance efficiency and drive growth in a competitive landscape
+            ProfuseCC Your partner in AI-powered innovation. We're a cutting-edge AI software startup dedicated to crafting intelligent solutions that propel your business forward. Designed specifically for startups, ambitious professionals, and scaling businesses, ProfuseCC provides the custom-built tools you need to thrive in today's competitive landscape. Unlock your potential with AI designed for growth.
 </p>
             <div className="flex space-x-4 mt-4">
               <Link target="_blank" href="https://www.facebook.com/share/1KTQg7oDM7/?mibextid=wwXIfr" className="text-blue-500 hover:text-white">
@@ -91,7 +91,7 @@ const Footer = () => {
   <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
   <ul className="text-gray-400">
     <li className="mb-2 group">
-      <Link href="/about" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
+      <Link href="/aboutUs" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
         <span className="mr-2">
           <FaRegArrowAltCircleRight className='text-[#FF0000]' />
         </span>
@@ -134,7 +134,7 @@ const Footer = () => {
                 <div className="hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2">
 
                 <FaLocationDot className="mr-2 text-[#FF0000]" />
-                <span>Austin, Texas, 78701, USA
+                <span>1944 Katy Fort Bend County Rd, Katy, TX 77493
 
                 </span>
                 </div>

@@ -85,7 +85,7 @@ export default function TopTechSection() {
   </motion.button>
 
   <div className="mt-6 flex items-center space-x-4">
-    <Image src="/assets/isaac.jpg" width={40} height={40} className="w-12 h-12 object-cover rounded-full" alt="Isaac Tabeh" />
+    <Image src="/assets/isaac.jpg" width={40} height={40} className="w-20 h-20 object-cover rounded-full" alt="Isaac Tabeh" />
     <div>
       <p className="font-bold">Isaac Tabeh</p>
       <p className="text-gray-500 text-sm">CEO & Founder</p>

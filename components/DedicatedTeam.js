@@ -79,7 +79,7 @@ export default function TeamSection() {
                       <div className="absolute group transform hover:shadow-xl group-hover:scale-110 bottom-0 w-full bg-[#FF0000]/60 p-4 text-center transition-all duration-300 hover:bg-black/40">
                         <h5 className="text-lg font-semibold text-white">{member.fullName}</h5>
                         <p className="text-gray-300">{member.role}</p>
-                        <div className='mt-2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300'>
+                        {/* <div className='mt-2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300'>
                           <div className="flex space-x-4 justify-center">
                             {member.socialLinks?.linkedin && (
                               <Link href={member.socialLinks.linkedin} className="text-gray-300 hover:text-blue-600 transition-colors">
@@ -102,7 +102,7 @@ export default function TeamSection() {
                               </Link>
                             )}
                           </div>
-                        </div> 
+                        </div>  */}
                       </div>
                     </div>
                   </div>
@@ -128,7 +128,7 @@ export default function TeamSection() {
                   <div className="absolute group transform hover:shadow-xl group-hover:scale-110 bottom-0 w-full bg-[#FF0000]/60 p-4 text-center transition-all duration-300 hover:bg-black/40">
                     <h5 className="text-lg font-semibold text-white">{member.fullName}</h5>
                     <p className="text-gray-300">{member.role}</p>
-                    <div className='mt-2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300'>
+                    {/* <div className='mt-2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300'>
                       <div className="flex space-x-4 justify-center">
                         {member.socialLinks?.linkedin && (
                           <Link href={member.socialLinks.linkedin} className="text-gray-300 hover:text-blue-600 transition-colors">
@@ -151,7 +151,7 @@ export default function TeamSection() {
                           </Link>
                         )}
                       </div>
-                    </div> 
+                    </div>  */}
                   </div>
                 </div>
               </div>

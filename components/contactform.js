@@ -157,7 +157,7 @@ useEffect(() => {
           </div>
 
           {/* Text Section with red Background */}
-          <div className="bg-[#FF0000] flex-1 flex justify-center p-8">
+          <div className="bg-[#FF0000] flex-1  p-8">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -173,7 +173,7 @@ useEffect(() => {
                   <FaEnvelope className="mr-3" /> tabehisaac@gmail.com
                 </p>
                 <p className="flex items-center">
-                  <FaLocationDot className="mr-3" /> Austin,Texas, 78701, USA
+                  <FaLocationDot className="mr-3" /> 1944 Katy Fort Bend County Rd, Katy, TX 77493
                 </p>
               </div>
 
@@ -369,23 +369,8 @@ useEffect(() => {
         </motion.div>
       </div>
 
-      {/* Additional Content */}
-      <div className="mt-12 text-center max-w-3xl">
-        <h3 className="text-xl font-semibold text-gray-800 mb-4">Other Ways to Reach Us</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-600">
-          <div>
-            <h4 className="font-medium mb-2 text-[#FF0000]">Support</h4>
-            <p>info@profusecc.ai</p>
-            <p>+1 512-944-0077</p>
-          </div>
-          
-          <div>
-            <h4 className="font-medium mb-2 text-[#FF0000]">Visit Us</h4>
-            
-            <p>Austin,Texas, 78701, USA </p>
-          </div>
-        </div>
-      </div>
+      
+      
     </div>
   );
 };

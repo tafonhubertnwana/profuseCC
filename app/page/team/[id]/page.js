@@ -78,7 +78,7 @@ export default function TeamDetailPage() {
               <p className="text-xl text-gray-500 mt-2">{member.role}</p>
               <p className="text-gray-600 mt-6 text-base leading-relaxed">{member.bio}</p>
               
-              <div className="mt-8">
+              {/* <div className="mt-8">
                 <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
@@ -98,9 +98,9 @@ export default function TeamDetailPage() {
                     <span className="text-gray-700">{member.location}</span>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="mt-8">
+              {/* <div className="mt-8">
                 <h3 className="text-xl font-semibold mb-4">Connect</h3>
                 <div className="flex space-x-4">
                   {member.socialLinks?.linkedin && (
@@ -129,7 +129,7 @@ export default function TeamDetailPage() {
                     </a>
                   )}
                 </div>
-              </div>
+              </div> */}
             </div>
           </motion.div>
 
@@ -141,10 +141,10 @@ export default function TeamDetailPage() {
                   <h3 className="text-lg font-semibold text-gray-800">Education</h3>
                   <p className="text-gray-600 mt-1">{member.education}</p>
                 </div>
-                <div>
+                {/* <div>
                   <h3 className="text-lg font-semibold text-gray-800">Previous Experience</h3>
                   <p className="text-gray-600 mt-1">{member.experience}</p>
-                </div>
+                </div> */}
               </div>
             </div>
 

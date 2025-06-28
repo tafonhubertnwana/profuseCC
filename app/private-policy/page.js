@@ -177,12 +177,12 @@ export default function PrivacyPolicyPage() {
                 If you have any questions or concerns regarding this Privacy Policy, or if you would like to exercise any of your privacy rights, please feel free to contact us at:
               </p>
               <address className="not-italic mt-4 text-gray-600">
-                Profusecc<br />
-                1234 Katy Freeway, Suite 200<br />
-                Katy, TX 77494<br />
+                ProfuseCC<br />
+                1944 Katy Fort Bend County Rd, 3<br />
+                Katy, TX 7749<br />
                 United States<br />
                 <a href="mailto:info@profusecc.com" className="text-blue-600 hover:underline">info@profusecc.com</a><br />
-                281-123-4567
+                +1 646-509-9274
               </address>
             </section>
           </motion.div>
