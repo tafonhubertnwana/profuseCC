@@ -181,7 +181,7 @@ export default function PrivacyPolicyPage() {
                 1944 Katy Fort Bend County Rd, 3<br />
                 Katy, TX 7749<br />
                 United States<br />
-                <a href="mailto:info@profusecc.com" className="text-blue-600 hover:underline">info@profusecc.com</a><br />
+                <a href="mailto:tabehisaac@gmail.com" className="text-blue-600 hover:underline">tabehisaac@gmail.com</a><br />
                 +1 646-509-9274
               </address>
             </section>
