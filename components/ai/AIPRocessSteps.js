@@ -55,7 +55,7 @@ export default function AIProcessSteps() {
           {steps.map((step, index) => (
             <motion.div
               key={index}
-              className="bg-[#FF0000] p-6 rounded-sm shadow-md"
+              className="bg-black p-6 rounded-sm shadow-md"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}

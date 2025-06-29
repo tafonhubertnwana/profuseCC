@@ -14,7 +14,7 @@ export default function GoogleReviewButton() {
         href="https://g.page/r/Cde6OzY64HTSEBM/review"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center px-6 py-2 bg-[#FF0000] text-white text-lg font-semibold "
+        className="inline-flex items-center px-6 py-2 bg-black text-white text-lg font-semibold "
       >
         <FaGoogle className="mr-2 text-md" />
         Leave us a Google Review
