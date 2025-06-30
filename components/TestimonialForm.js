@@ -104,15 +104,20 @@ export default function TestimonialForm({ showModal, setShowModal, onTestimonial
     const fileUrl = storage.getFileView(bucketId, uploadedFile.$id);
     
     // Create the testimonial document
-    await databases.createDocument(
-      databaseId,
-      collectionId,
-      ID.unique(),
-      {
-        ...form,
-        imageUrl: fileUrl.toString(),
-      }
-    );
+   await databases.createDocument(
+  databaseId,
+  collectionId,
+  ID.unique(),
+  {
+    ...form,
+    imageUrl: fileUrl.toString(),
+  },
+  [
+    Permission.read(Role.any()),
+    Permission.update(Role.any()), // Optional if they should edit later
+  ]
+);
+
     
     // Send email notification
     await fetch('/api/testimonial', {

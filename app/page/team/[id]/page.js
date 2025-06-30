@@ -130,12 +130,15 @@ export default function TeamDetailPage() {
                   )}
                 </div>
               </div> */}
-              {member.linkedin && (
-              <Link href={member.linkedin} target="_blank" rel="noopener noreferrer" className="inline-block mt-4 text-blue-600 hover:text-blue-800">
-                <FaLinkedinIn className="text-2xl" />
-              </Link>
-            )}
-                        </div>
+               {/* LinkedIn Icon */}
+      <div className="mt-8 xl:mt-12 ">
+        {member.socialLinks?.linkedin && (
+          <Link href={member.socialLinks.linkedin } target="_blank" rel="noopener noreferrer" className="text-blue-700  hover:text-blue-900">
+            <FaLinkedinIn  size={30}/>
+          </Link>
+        )}
+        </div>
+   </div>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-12 mt-16">

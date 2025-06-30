@@ -16,7 +16,7 @@ export default function TeamSection() {
     dots: false,
     infinite: true,
     speed: 600,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
@@ -62,10 +62,11 @@ export default function TeamSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            className='container xl:max-w-4xl mx-auto px-4'
           >
             <Slider {...sliderSettings}>
               {teamData.map((member) => (
-                <div key={member.id} className="px-3">
+                <div key={member.id} className="px-4">
                   <div className="bg-white shadow-lg overflow-hidden cursor-pointer">
                     <div className="relative h-[450px]">
                       <Link href={`/page/team/${member.id}`}>
