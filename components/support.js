@@ -54,7 +54,7 @@ export default function ItSupportSection() {
       <span className="text-gray-600">Cloud Uptime SLA</span>
     </div>
   </div>
-  <p className="bg-orange-100 text-[#FF0000] p-4 rounded-lg">
+  <p className="bg-black text-white p-4 rounded-lg">
     Looking to harness AI for your business? ProfuseCC's cloud-native AI platform delivers 3x faster insights and 40% cost savings compared to traditional solutions.
   </p>
   <Link href='/service/generative-ai'>

@@ -40,11 +40,11 @@ export default function TestimonialEmailTemplate({
         <Preview>New testimonial submission from {name}</Preview>
         <Body className="bg-white font-sans">
           <Container className="mx-auto p-6 max-w-2xl">
-            <Section className="bg-blue-50 rounded-t-lg p-6">
-              <Heading as="h1" className="text-2xl font-bold text-red-600 mb-2">
+            <Section className="bg-black rounded-t-lg p-6">
+              <Heading as="h1" className="text-2xl font-bold text-white mb-2">
                 New Testimonial Received!
               </Heading>
-              <Text className="text-gray-700">
+              <Text className="text-white">
                 You've received a new testimonial submission from {name}.
               </Text>
             </Section>
@@ -107,7 +107,7 @@ export default function TestimonialEmailTemplate({
                 © {new Date().getFullYear()} Your Company. All rights reserved.
               </Text>
               <Text className="mt-1">
-                <Link href="https://profuse-cc.vercel.app" className="text-red-600">
+                <Link target="_blank" href="https://profusecc.ai" className="text-red-600">
                   Visit our website
                 </Link>
               </Text>

@@ -20,8 +20,8 @@ export default function EmailTemplate({ name, email, phone, message = '', addres
         <Preview>Thank you for contacting us!</Preview>
         <Body className="bg-white font-sans">
           <Container className="mx-auto p-6 max-w-2xl">
-            <Section className="bg-red-50 rounded-t-lg p-6">
-              <Heading as="h1" className="text-2xl font-bold text-red-600 mb-2">
+            <Section className="bg-black rounded-t-lg p-6">
+              <Heading as="h1" className="text-2xl font-bold text-white mb-2">
                 Thank you for reaching out, {name}!
               </Heading>
               <Text className="text-gray-700">
@@ -76,11 +76,11 @@ export default function EmailTemplate({ name, email, phone, message = '', addres
                 © {new Date().getFullYear()} Your ProfuseCC. All rights reserved.
               </Text>
               <Text className="mt-1">
-                <Link href="https://profuse-cc.vercel.app" className="text-red-600">
+                <Link target="_blank" href="https://profusecc.ai" className="text-red-600">
                   Visit our website
                 </Link>
                 {' | '}
-                <Link href="https://profuse-cc.vercel.app/privacy" className="text-red-600">
+                <Link target="_blank" href="https://profusecc.ai/private-policy" className="text-red-600">
                   Privacy Policy
                 </Link>
               </Text>
