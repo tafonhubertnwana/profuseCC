@@ -89,6 +89,10 @@ export default function ConsultationEmail({
                             <Link target="_blank" href="https://profusecc.ai/private-policy" className="text-red-600">
                               Privacy Policy
                             </Link>
+                             {' | '}
+                            <Link target="_blank" href="https://g.page/r/Cde6OzY64HTSEBM/review" className="text-red-600">
+                              Google Review
+                            </Link>
                           </Text>
                         </Section>
           </Container>

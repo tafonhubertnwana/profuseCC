@@ -24,7 +24,7 @@ export default function EmailTemplate({ name, email, phone, message = '', addres
               <Heading as="h1" className="text-2xl font-bold text-white mb-2">
                 Thank you for reaching out, {name}!
               </Heading>
-              <Text className="text-gray-700">
+              <Text className="text-white">
                 We've received your message and our team will get back to you shortly.
               </Text>
             </Section>
@@ -83,6 +83,10 @@ export default function EmailTemplate({ name, email, phone, message = '', addres
                 <Link target="_blank" href="https://profusecc.ai/private-policy" className="text-red-600">
                   Privacy Policy
                 </Link>
+                {' | '}
+                                            <Link target="_blank" href="https://g.page/r/Cde6OzY64HTSEBM/review" className="text-red-600">
+                                              Google Review
+                                            </Link>
               </Text>
             </Section>
           </Container>

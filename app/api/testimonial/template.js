@@ -110,6 +110,10 @@ export default function TestimonialEmailTemplate({
                 <Link target="_blank" href="https://profusecc.ai" className="text-red-600">
                   Visit our website
                 </Link>
+                {' | '}
+                                            <Link target="_blank" href="https://g.page/r/Cde6OzY64HTSEBM/review" className="text-red-600">
+                                              Google Review
+                                            </Link>
               </Text>
             </Section>
           </Container>
