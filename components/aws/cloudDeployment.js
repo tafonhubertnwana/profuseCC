@@ -7,25 +7,25 @@ const deployments = [
     title: "Public Cloud",
     description:
       "Third-party cloud service provider. Multi-tenant architecture that is scalable for unstable traffic.",
-    image: "https://www.cisin.com/images/studies81.jpg",
+    image: "/industry/cloud-11.webp",
   },
   {
     title: "Private Cloud",
     description:
       "Only one company can use cloud resources. One tenant environment with dedicated servers and high security.",
-    image: "https://www.cisin.com/images/studies48.jpg",
+    image: "/industry/cloud-12.webp",
   },
   {
     title: "Hybrid Cloud",
     description:
       "Combination of private and public clouds and data centers for application and sharing. This combination offers flexibility and allows for more deployment options.",
-    image: "https://www.cisin.com/images/studies43.jpg",
+    image: "/industry/cloud-13.webp",
   },
   {
     title: "Multi-Cloud",
     description:
       "For seamless data and application sharing, combine multiple cloud providers. Multiple cloud providers can be used for multiple applications.",
-    image: "https://www.cisin.com/images/studies89.jpg",
+    image: "/industry/cloud-14.webp",
   },
 ];
 

@@ -39,7 +39,7 @@ const fadeInUp = {
 export default function AIProcessSteps() {
   return (
     <section className="py-24 ">
-      <div className="  container xl:max-w-6xl mx-auto px-4 text-center">
+      <div className="  container xl:max-w-7xl mx-auto px-4 text-center">
         <motion.h3
           className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
           initial="hidden"

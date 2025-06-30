@@ -7,37 +7,37 @@ const cloudStrategies = [
     title: 'MIGRATION',
     description:
       'Move existing or new applications to your chosen cloud platform to gain better connectivity and reduce performance issues.',
-    img: 'https://www.cisin.com/images/tpLogo8.png',
+    img: '/industry/cloud-15.png',
   },
   {
     title: 'CONSULTATION',
     description:
       'It is important to have industry knowledge to select the best cloud platform, architecture, and technology.',
-    img: 'https://www.cisin.com/images/wcuLogo3.png',
+    img: '/industry/cloud-16.png',
   },
   {
     title: 'DEPLOYMENT',
     description:
       'You can rely on multiple cloud providers, such as AWS and Microsoft, OpenStack, VMware, or OpenStack, for multiple applications.',
-    img: 'https://www.cisin.com/images/wcrcLogo8.png',
+    img: '/industry/cloud-17.png',
   },
   {
     title: 'MAINTENANCE',
     description:
       'Cyber Infrastructure, ProfuseCC, protects your Cloud software environment even in production. We manage cloud assets, monitoring and hardware configuration, and performance optimization.',
-    img: 'https://www.cisin.com/images/wcrpaLogo5.png',
+    img: '/industry/cloud-18.png',
   },
   {
     title: 'DEVOPS',
     description:
       'ProfuseCC uses DevOps to maximize continuous innovation, integration, and development. We manage our internal processes and integrate your internal IT teams.',
-    img: 'https://www.cisin.com/images/sbddpLogo9.png',
+    img: '/industry/cloud-19.png',
   },
   {
     title: 'DISASTER RECOVERY',
     description:
       'ProfuseCC develops innovative disaster recovery plans that minimize data loss and provide the best availability for cloud-based applications.',
-    img: 'https://www.cisin.com/images/RealStateAppLogo4.png',
+    img: '/industry/cloud-20.png',
   },
 ];
 

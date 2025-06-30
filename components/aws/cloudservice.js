@@ -5,37 +5,37 @@ import Image from "next/image";
 
 const benefits = [
   {
-    icon: "https://www.cisin.com/images/bcfeLogo1.png",
+    icon: "/industry/cloud-1.png",
     title: "Save More",
     description:
       "With the aid of Cloud application development, organizations can minimize the use of giant data storage machines and cut down IT investments and connected servers.",
   },
   {
-    icon: "https://www.cisin.com/images/bcfeLogo2.png",
+    icon: "/industry/cloud-2.png",
     title: "Enhanced Collaboration",
     description:
       "Cloud applications are attuned to high collaborative standards and allow connected users to share information easily.",
   },
   {
-    icon: "https://www.cisin.com/images/bcfeLogo3.png",
+    icon: "/industry/cloud-3.png",
     title: "Easy to Migrate",
     description:
       "The running projects and applications can be easily migrated to the cloud servers to handle the data better. This helps deliver a flexible ecosystem to process and store the data more conveniently.",
   },
   {
-    icon: "https://www.cisin.com/images/bcfeLogo4.png",
+    icon: "/industry/cloud-4.png",
     title: "Reduced Cost Structure",
     description:
       "The adoption of cloud technology vanishes the requirement for buying the equipment to process the data and also saves on the additional cost of building separate data centers.",
   },
   {
-    icon: "https://www.cisin.com/images/bcfeLogo5.png",
+    icon: "/industry/cloud-5.png",
     title: "Delivers Improvised Mobility",
     description:
       "The Cloud integration services allow users to fetch data and information from anywhere in the world via smartphones and tablets.",
   },
   {
-    icon: "https://www.cisin.com/images/bcfeLogo6.png",
+    icon: "/industry/cloud-6.png",
     title: "Environmentally Safe",
     description:
       "Since cloud computing services cut down the requirements of data centers and huge devices, it helps lessen the heat released on the environment.",
@@ -44,19 +44,19 @@ const benefits = [
 
 const providers = [
   {
-    icon: "https://www.cisin.com/images/mrcsLogo1.png",
+    icon: "/industry/cloud-7.png",
     title: "Amazon Web Services",
     description:
       "AWS is the most recognized cloud provider, offering a wide landscape of enterprise-grade solutions. We specialize in building AWS-based infrastructure that suits your business.",
   },
   {
-    icon: "https://www.cisin.com/images/mrcsLogo2.png",
+    icon: "/industry/cloud-8.png",
     title: "Azure",
     description:
       "Microsoft Azure enables efficient data processing at low cost. Our certified Azure developers help build solutions that align with your business goals.",
   },
   {
-    icon: "https://www.cisin.com/images/mrcsLogo3.png",
+    icon: "/industry/cloud-9.png",
     title: "Google Cloud Platform",
     description:
       "GCP offers integrated storage and live data fetching capabilities using VMs, disks, and centralized infrastructure in Google data centers.",

@@ -29,8 +29,8 @@ export async function POST(request) {
 
     // Send email
     const { data, error } = await resend.emails.send({
-      from: 'ProfuseCC Support <onboarding@resend.dev>',
-      to: ['tafonsoftwarespecialist@gmail.com'],
+      from: 'ProfuseCC Support <noreply@profusecc.ai>',
+       to: ['tabehisaac@gmail.com'],
       reply_to: email || 'no-reply@example.com', // Changed from body.email to email
       subject: 'Thank you for contacting ProfuseCC',
       react: ChatEmailTemplate({ email }),
