@@ -1,11 +1,9 @@
-
 [
-  
   {
     "id": "1",
     "fullName": "Tafon Hubert Nwana",
     "role": "Front End Developer",
-    "bio": "Jane oversees all company operations with a focus on scaling our business processes. With her MBA from Harvard and 12 years in tech operations, she ensures our teams work efficiently and effectively.",
+    "bio": "Tafon specializes in crafting responsive, user-friendly interfaces using modern JavaScript frameworks. As a dedicated Front End Developer, he brings designs to life with precision, ensuring seamless user experiences across all platforms.",
     "imageUrl": "/assets/tafon.jpg",
     "location": "Bepanda, Douala, Cameroon",
     "socialLinks": {
@@ -14,7 +12,7 @@
       "pinterest": "https://pinterest.com/janesmith"
     },
     "skills": [
-       { "name": "JavaScript", "percentage": 98 },
+      { "name": "JavaScript", "percentage": 98 },
       { "name": "React", "percentage": 95 },
       { "name": "Node.js", "percentage": 90 },
       { "name": "Database Design", "percentage": 85 }
@@ -30,7 +28,7 @@
     "id": "2",
     "fullName": "Lebga Lesley Basi",
     "role": "Full Stack Software Engineer",
-    "bio": "Alex is our coding expert with deep expertise in full-stack development. He leads our engineering team and ensures our products are built with best practices and cutting-edge technologies.",
+    "bio": "Lesley is a versatile Full Stack Software Engineer with a passion for building robust, scalable web applications. From developing dynamic frontends to managing complex backend systems, he ensures that every layer of the application is optimized for performance and security.",
     "imageUrl": "/assets/tita.jpg",
     "location": "Bepanda, Douala, Cameroon",
     "socialLinks": {
@@ -50,30 +48,5 @@
     },
     "education": "BS in Computer Science, MIT",
     "experience": "Former Senior Engineer at DevSolutions"
-  },
-  {
-    "id": "3",
-    "fullName": "Sarah Williams",
-    "role": "Marketing Director",
-    "bio": "Sarah leads our marketing efforts with a focus on digital strategies and brand development. Her creative approach has helped us establish a strong market presence and connect with our customers.",
-    "imageUrl": "/assets/person-2.jpg",
-    "location": "Chicago, Illinois, USA",
-    "socialLinks": {
-      "linkedin": "https://linkedin.com/in/sarahwilliams",
-      "twitter": "https://twitter.com/sarahwilliams",
-      "instagram": "https://instagram.com/sarahwilliams"
-    },
-    "skills": [
-      { "name": "Digital Marketing", "percentage": 95 },
-      { "name": "Brand Strategy", "percentage": 90 },
-      { "name": "Content Creation", "percentage": 85 },
-      { "name": "SEO", "percentage": 88 }
-    ],
-    "contact": {
-      "email": "sarah.williams@company.com",
-      "phone": "+1 (555) 789-0123"
-    },
-    "education": "BA in Marketing, Northwestern University",
-    "experience": "Former Marketing Manager at BrandWorks"
   }
 ]

@@ -40,7 +40,7 @@ export default function Testimonials() {
           <div className="flex flex-col lg:flex-row lg:justify-between items-center text-center lg:text-left">
             <div>
               <h6 className="text-center lg:text-left text-[#FF0000]">Testimonial</h6>
-              <h1 className="text-3xl font-bold mb-10">What say our Valuable Clients</h1>
+              <h1 className="text-2xl font-bold mb-10">Hear From Our Valued Clients</h1>
             </div>
 
             <div className="hidden lg:flex">

@@ -78,58 +78,7 @@ export default function TeamDetailPage() {
               <p className="text-xl text-gray-500 mt-2">{member.role}</p>
               <p className="text-gray-600 mt-6 text-base leading-relaxed">{member.bio}</p>
               
-              {/* <div className="mt-8">
-                <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3">
-                    <FaEnvelope className="text-[#FF0000] text-lg" />
-                    <a href={`mailto:${member.contact.email}`} className="text-gray-700 hover:text-[#FF0000] transition-colors">
-                      {member.contact.email}
-                    </a>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <FaPhoneAlt className="text-[#FF0000] text-lg" />
-                    <a href={`tel:${member.contact.phone}`} className="text-gray-700 hover:text-[#FF0000] transition-colors">
-                      {member.contact.phone}
-                    </a>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <FaMapMarkerAlt className="text-[#FF0000] text-lg" />
-                    <span className="text-gray-700">{member.location}</span>
-                  </div>
-                </div>
-              </div> */}
-
-              {/* <div className="mt-8">
-                <h3 className="text-xl font-semibold mb-4">Connect</h3>
-                <div className="flex space-x-4">
-                  {member.socialLinks?.linkedin && (
-                    <a href={member.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#FF0000] hover:text-white transition-colors">
-                      <FaLinkedinIn className="text-lg" />
-                    </a>
-                  )}
-                  {member.socialLinks?.twitter && (
-                    <a href={member.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#FF0000] hover:text-white transition-colors">
-                      <FaTwitter className="text-lg" />
-                    </a>
-                  )}
-                  {member.socialLinks?.facebook && (
-                    <a href={member.socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#FF0000] hover:text-white transition-colors">
-                      <FaFacebookF className="text-lg" />
-                    </a>
-                  )}
-                  {member.socialLinks?.github && (
-                    <a href={member.socialLinks.github} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#FF0000] hover:text-white transition-colors">
-                      <FaGithub className="text-lg" />
-                    </a>
-                  )}
-                  {member.socialLinks?.instagram && (
-                    <a href={member.socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#FF0000] hover:text-white transition-colors">
-                      <FaInstagram className="text-lg" />
-                    </a>
-                  )}
-                </div>
-              </div> */}
+             
             </div>
           </motion.div>
 
@@ -141,10 +90,7 @@ export default function TeamDetailPage() {
                   <h3 className="text-lg font-semibold text-gray-800">Education</h3>
                   <p className="text-gray-600 mt-1">{member.education}</p>
                 </div>
-                {/* <div>
-                  <h3 className="text-lg font-semibold text-gray-800">Previous Experience</h3>
-                  <p className="text-gray-600 mt-1">{member.experience}</p>
-                </div> */}
+              
               </div>
             </div>
 

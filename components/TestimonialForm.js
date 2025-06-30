@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { databases, storage } from '@/lib/appwrite';
 
 import { ID, Permission, Role } from 'appwrite';
+import GoogleReviewButton from './googleReviewButton';
 
 export default function TestimonialForm({ showModal, setShowModal, onTestimonialAdded }) {
   const [file, setFile] = useState(null);
@@ -192,10 +193,11 @@ export default function TestimonialForm({ showModal, setShowModal, onTestimonial
                       resetForm();
                       setShowModal(false);
                     }}
-                    className="bg-[#FF0000] text-white px-6 py-3 rounded-lg hover:bg-[#FF0000]/90 transition duration-300 font-medium shadow-md"
+                    className="bg-[#FF0000] text-white px-6 py-3 rounded-sm  transition duration-300 font-medium shadow-md"
                   >
                     Close
                   </button>
+                  <GoogleReviewButton />
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -28,7 +28,7 @@ export async function POST(request) {
     // Send email
     const { data, error } = await resend.emails.send({
       from: 'Testimonial Submission <onboarding@resend.dev>',
-      to: ['tabehisaac@gmail.com'],
+      to: ['tafonsoftwarespecialist@gmail.com'],
       reply_to: body.email || 'no-reply@example.com',
       subject: `New Testimonial from ${body.name}`,
       react: TestimonialEmailTemplate(body),
