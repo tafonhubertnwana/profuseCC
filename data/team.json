@@ -7,9 +7,8 @@
     "imageUrl": "/assets/tafon.jpg",
     "location": "Bepanda, Douala, Cameroon",
     "socialLinks": {
-      "linkedin": "https://linkedin.com/in/janesmith",
-      "twitter": "https://twitter.com/janesmith",
-      "pinterest": "https://pinterest.com/janesmith"
+      "linkedin": "https://linkedin.com/in/tafon-n-hubert"
+      
     },
     "skills": [
       { "name": "JavaScript", "percentage": 98 },
@@ -32,9 +31,8 @@
     "imageUrl": "/assets/tita.jpg",
     "location": "Bepanda, Douala, Cameroon",
     "socialLinks": {
-      "linkedin": "https://linkedin.com/in/alexjohnson",
-      "twitter": "https://twitter.com/alexjohnson",
-      "github": "https://github.com/alexjohnson"
+      "linkedin": "https://linkedin.com/in/lebga-basi"
+      
     },
     "skills": [
       { "name": "JavaScript", "percentage": 98 },
