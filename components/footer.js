@@ -43,7 +43,7 @@ const Footer = () => {
   <h3 className="text-lg font-semibold mb-4">Services</h3>
   <ul className="text-gray-400">
     <li className="mb-2 group">
-      <Link href="/service/aws-cloud" className="hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2">
+      <Link href="/service/cloud-computing" className="hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2">
 
         <span className="mr-2 ">
           <FaRegArrowAltCircleRight className='text-[#FF0000]' />
