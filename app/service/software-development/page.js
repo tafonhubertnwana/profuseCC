@@ -6,30 +6,17 @@ import React from 'react'
 import Services from '@/components/web-development/web-service';
 import TechnologyStack from '@/components/web-development/web-tech';
 import CustomSoftware from '@/components/web-development/customSoftware';
-// import { NextSeo } from 'next-seo';
 
+
+export const metadata = {
+  title: "Software Development | profuseCC",
+  description: "We build high-performance web and mobile apps aligned with your business goals and user needs.",
+};
 
 const WebDevelopment = () => {
   return (
     <>
-      {/* <NextSeo
-        title="AI Software Development - ProfuseCC"
-        description="We build intelligent, scalable, and secure software solutions for startups and enterprises using modern AI technologies."
-        canonical="https://profusecc.ai/service/software-development"
-        openGraph={{
-          url: 'https://profusecc.ai/service/software-development',
-          title: 'AI Software Development - ProfuseCC',
-          description: 'Custom software solutions powered by AI, built for scalability, security, and performance.',
-          images: [
-            {
-              url: 'https://profusecc.ai/assets/profuse.jpg',
-              width: 1200,
-              height: 630,
-              alt: 'AI Software Development by ProfuseCC',
-            },
-          ],
-        }}
-      /> */}
+ 
       <div>
         <Navbar />
         <div className=' relative'>

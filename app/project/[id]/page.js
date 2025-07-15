@@ -108,8 +108,8 @@ export default function RelatedProjectDetail({ params }) {
                 <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
                     <div>
-                      <span className="font-medium block text-black text-sm md:text-base">Client:</span> 
-                      <span className="text-[#FF0000] text-sm md:text-base">{project.client || 'Not specified'}</span>
+                      <span className="font-medium block text-black text-sm md:text-base">author</span> 
+                      <span className="text-[#FF0000] text-sm md:text-base">{project.author || 'Not specified'}</span>
                     </div>
                     <div>
                       <span className="font-medium block text-black text-sm md:text-base">Category:</span> 
@@ -141,7 +141,7 @@ export default function RelatedProjectDetail({ params }) {
                   )}
                 </div>
               </div>
-
+              
               {/* Project Content */}
               <div className="mb-16">
                 <span className="inline-block bg-[#FF0000] text-white text-sm px-3 py-1 rounded-full mb-4">

@@ -54,6 +54,7 @@ const Navbar = () => {
     ],
     page: [
       { name: "Why Choose Us", href: "/page/choose-us" },
+      { name: "Pricing", href: "/page/pricing" },
       { name: "Team Members", href: "/page/team" },
       { name: "Our Mission", href: "/page/mission" },
       { name: "Our Location", href: "/page/location" },
@@ -114,7 +115,7 @@ const Navbar = () => {
              <div className="hidden lg:flex space-x-6 ml-6">
             {[
               { label: "Home", href: "/" },
-              { label: "About Us", href: "/aboutUs" },
+              { label: "About Us", href: "/about-us" },
               { label: "Projects", href: "/project" },
               { label: "Contact", href: "/contact" },
             ].map((link, i) => (
@@ -239,7 +240,7 @@ const Navbar = () => {
             </button>
             {activeDropdown === "page" && renderDropdownLinks("page")}
 
-            <Link href="/aboutUs" className={`block py-2 ${isActive("/aboutUs") ? "text-[#FF0000]" : "text-gray-800"} hover:text-[#FF0000]`} onClick={() => setIsOpen(false)}>
+            <Link href="/about-us" className={`block py-2 ${isActive("/about-us") ? "text-[#FF0000]" : "text-gray-800"} hover:text-[#FF0000]`} onClick={() => setIsOpen(false)}>
               About Us
             </Link>
             <Link href="/project" className={`block py-2 ${isActive("/project") ? "text-[#FF0000]" : "text-gray-800"} hover:text-[#FF0000]`} onClick={() => setIsOpen(false)}>

@@ -8,32 +8,19 @@ import GoogleCloudServices from '@/components/aws/googleCloud';
 import HeroSection from '@/components/herosection/hero'
 import Navbar from '@/components/navbar'
 import CloudDeployment from '@/components/aws/cloudDeployment'
-// import { NextSeo } from 'next-seo';
+
 import React from 'react'
 import CloudCharacteristics from '@/components/aws/cloudCharacteristics';
 import CloudComputing from '@/components/aws/cloudComputing';
+export const metadata = {
+  title: "Cloud Computing Services | profuseCC",
+  description: "Leverage scalable, secure, and cost-effective cloud solutions tailored to your enterprise needs with profuseCC.",
+};
 
 const CloudPage = () => {
   return (
     <>
-      {/* <NextSeo
-          title="Cloud Computing Services - ProfuseCC"
-          description="ProfuseCC offers secure, scalable cloud computing solutions powered by AWS and Google Cloud tailored for AI-driven businesses."
-          canonical="https://profusecc.ai/service/cloud-computing"
-          openGraph={{
-            url: 'https://profusecc.ai/service/cloud-computing',
-            title: 'Cloud Computing Services - ProfuseCC',
-            description: 'Secure and scalable cloud computing powered by AWS and Google Cloud for AI-driven transformation.',
-            images: [
-              {
-                url: 'https://profusecc.ai/assets/profuse.jpg',
-                width: 1200,
-                height: 630,
-                alt: 'Cloud Computing at ProfuseCC',
-              },
-            ],
-          }}
-        /> */}
+      
       <div>
         <Navbar />
         <HeroSection

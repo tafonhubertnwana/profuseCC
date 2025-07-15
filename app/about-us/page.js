@@ -7,30 +7,16 @@ import TeamSection from "@/components/DedicatedTeam";
 import StatsSection from "@/components/statSection";
 import Testimonials from "@/components/testimonial";
 import AustinMap from "@/components/map";
-// import { NextSeo } from 'next-seo';
 
+export const metadata = {
+  title: "About Us | profuseCC",
+  description: "Discover profuseCC's mission, values, and the talented team behind our cutting-edge AI software solutions.",
+};
 
 const AboutPage = () => {
   return (
   <>
-   {/* <NextSeo
-        title="About Us - ProfuseCC"
-        description="Learn about ProfuseCC, an AI software consulting startup delivering innovative software and secure cloud services."
-        canonical="https://profusecc.ai/about"
-        openGraph={{
-          url: 'https://profusecc.ai/about',
-          title: 'About Us - ProfuseCC',
-          description: 'Learn about ProfuseCC, an AI software consulting startup delivering innovative software and secure cloud services.',
-          images: [
-            {
-              url: 'https://profusecc.ai/assets/profuse.jpg',
-              width: 1200,
-              height: 630,
-              alt: 'About ProfuseCC',
-            },
-          ],
-        }}
-      /> */}
+   
     <div>
      
       <Navbar />

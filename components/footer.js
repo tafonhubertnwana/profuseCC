@@ -91,7 +91,7 @@ const Footer = () => {
   <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
   <ul className="text-gray-400">
     <li className="mb-2 group">
-      <Link href="/aboutUs" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
+      <Link href="/about-us" className='hover:text-white flex items-center transition-transform duration-300 group-hover:translate-x-2'>
         <span className="mr-2">
           <FaRegArrowAltCircleRight className='text-[#FF0000]' />
         </span>
