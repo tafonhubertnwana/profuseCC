@@ -1,6 +1,7 @@
 // File: app/pricing/page.js
 'use client';
 import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const services = [
@@ -93,11 +94,13 @@ export default function PricingView() {
                   ))}
                 </ul>
                 <p className="text-3xl font-bold text-gray-800">{service.price}</p>
+                <Link href="/contact">
                 <button
                   className="w-full py-2 px-4 bg-[#FF0000] text-white font-semibold rounded-sm transition-colors duration-200"
                 >
                   Contact Us
                 </button>
+                </Link>
               </div>
             </div>
           </motion.div>
