@@ -12,6 +12,7 @@ import BusinessDomains from "@/components/businessDomain";
 import FeaturesSection from "@/components/featureChoose";
 import StatsSection from "@/components/statSection";
 import AustinMap from "@/components/map";
+import ReviewBanner from "@/components/reviewBanner";
 
 
 
@@ -21,12 +22,15 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <FeaturesSection />
-   <StatsSection />
+      <StatsSection />
       <TopTechSection />
       <Services />
       {/* <WorkProcess /> */}
+      
       <BusinessDomains />
+      
       <TeamSection />
+      <ReviewBanner />
       <Testimonials />
       <LogoCarousel />
       <AustinMap/>
