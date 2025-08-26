@@ -81,7 +81,7 @@ const router = useRouter();
               <p className="text-gray-600">Please provide your details to proceed with payment</p>
             </div>
             {selectedPlan && (
-              <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-8">
+              <div className="bg-gray-50 border border-gray-200 rounded-sm p-6 mb-8">
                 <h3 className="font-semibold text-gray-900 mb-4">Order Summary</h3>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
@@ -110,13 +110,14 @@ const router = useRouter();
               <h2 className="text-2xl font-bold text-gray-900 text-center">Payment Details</h2>
     
               {/* Name + Email */}
+                <p className='text-[#FF0000]'>Customer Information</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="form-control">
                   <label className="label"><span className="label-text font-medium">Full Name *</span></label>
                   <input
                    placeholder="Enter your full name"
                     type="text"
-                    className={`w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition  ${errors.name ? 'input-error' : ''}`}
+                    className={`w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition  ${errors.name ? 'input-error' : ''}`}
                     value={formData.name}
                     onChange={(e) => handleInputChange('name', e.target.value)}
                   />
@@ -128,7 +129,7 @@ const router = useRouter();
                   <input
                   placeholder="example@email.com"
                     type="email"
-                    className={`w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.email ? 'input-error' : ''}`}
+                    className={`w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.email ? 'input-error' : ''}`}
                     value={formData.email}
                     onChange={(e) => handleInputChange('email', e.target.value)}
                   />
@@ -141,22 +142,23 @@ const router = useRouter();
                 <label className="label"><span className="label-text font-medium">Phone *</span></label>
                 <PhoneInput
                  placeholder="Enter phone number"
-          value={formData.phone}
-          onChange={(value) => handleInputChange('phone', value)}
-          defaultCountry="US"
-                  
-                  className={`w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.phone ? 'border-red-500' : ''}`}
+                  value={formData.phone}
+                  onChange={(value) => handleInputChange('phone', value)}
+                  defaultCountry="US"
+                          
+                  className={`w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.phone ? 'border-red-500' : ''}`}
                 />
                 {errors.phone && <span className="text-error text-sm mt-1">{errors.phone}</span>}
               </div>
     
               {/* Address, Region, Country, Postal */}
+              <p className='text-[#FF0000] mt-4'>Billing Address</p>
               <div className="form-control">
                 <label className="label"><span className="label-text font-medium">Address *</span></label>
                 <input
                   type="text"
                   placeholder="Street address"
-                  className={`w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.address ? 'input-error' : ''}`}
+                  className={`w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.address ? 'input-error' : ''}`}
                   value={formData.address}
                   onChange={(e) => handleInputChange('address', e.target.value)}
                 />
@@ -169,7 +171,7 @@ const router = useRouter();
                   <input
                     type="text"
                     placeholder="Region/State"
-                    className={`w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.region ? 'input-error' : ''}`}
+                    className={`w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.region ? 'input-error' : ''}`}
                     value={formData.region}
                     onChange={(e) => handleInputChange('region', e.target.value)}
                   />
@@ -180,7 +182,7 @@ const router = useRouter();
                   <input
                     type="text"
                       placeholder="Country"
-                    className={`w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.country ? 'input-error' : ''}`}
+                    className={`w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.country ? 'input-error' : ''}`}
                     value={formData.country}
                     onChange={(e) => handleInputChange('country', e.target.value)}
                   />
@@ -191,7 +193,7 @@ const router = useRouter();
                   <input
                     type="text"
                     placeholder="Postal code"
-                    className={`w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.postal ? 'input-error' : ''}`}
+                    className={`w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.postal ? 'input-error' : ''}`}
                     value={formData.postal}
                     onChange={(e) => handleInputChange('postal', e.target.value)}
                   />
@@ -206,7 +208,7 @@ const router = useRouter();
                   <input
                     type="date"
                     placeholder="Select date"
-                    className={`w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.date ? 'input-error' : ''}`}
+                    className={`w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.date ? 'input-error' : ''}`}
                     value={formData.date}
                     onChange={(e) => handleInputChange('date', e.target.value)}
                   />
@@ -217,7 +219,7 @@ const router = useRouter();
                   <input
                     type="time"
                       placeholder="Select time"
-                    className={`w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.time ? 'input-error' : ''}`}
+                    className={`w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.time ? 'input-error' : ''}`}
                     value={formData.time}
                     onChange={(e) => handleInputChange('time', e.target.value)}
                   />
@@ -225,20 +227,10 @@ const router = useRouter();
                 </div>
               </div>
     
-              {/* Notes */}
-              <div className="form-control">
-                <label className="label"><span className="label-text font-medium">Additional Notes</span></label>
-                <textarea
-                placeholder="Any additional notes (optional)"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition h-40"
-                  rows={3}
-                  value={formData.additionalNotes}
-                  onChange={(e) => handleInputChange('additionalNotes', e.target.value)}
-                />
-              </div>
+              
     
               {/* Submit */}
-              <button type="submit" className="px-4 py-3 rounded-sm bg-[#FF0000] text-white w-full mt-4">
+              <button type="submit" className="px-4 py-3 rounded-sm bg-[#FF0000] font-bold text-white w-full mt-4">
                 Continue to Payment
               </button>
             </motion.form>

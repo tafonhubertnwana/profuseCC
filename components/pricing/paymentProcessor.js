@@ -114,7 +114,7 @@ export default function PaymentProcessor({ paymentData, onPaymentComplete, onCan
         </div>
 
         {/* Payment Summary */}
-        <div className="bg-[#FF0000] text-white rounded-lg p-6 mb-6">
+        <div className="bg-[#FF0000] text-white rounded-sm p-6 mb-6">
           <div className="flex justify-between items-center mb-2">
             <span className="text-lg font-semibold">Total Amount</span>
             <span className="text-3xl font-bold">${paymentData.price}</span>
@@ -211,10 +211,10 @@ export default function PaymentProcessor({ paymentData, onPaymentComplete, onCan
             </div>
 
             <div className="flex gap-3 pt-4">
-              <button type="button" onClick={onCancel} className="bg-white text-black border-2 border-[#FF0000] p-4  flex-1">
+              <button type="button" onClick={onCancel} className="bg-white font-bold text-black border-2 border-[#FF0000] p-4  flex-1">
                 Cancel
               </button>
-              <button type="submit" className="bg-[#FF0000] p-4 text-white flex-1">
+              <button type="submit" className="bg-[#FF0000] font-bold p-4 text-white flex-1">
                 Pay ${paymentData.price}
               </button>
             </div>
