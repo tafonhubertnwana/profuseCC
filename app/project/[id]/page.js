@@ -109,7 +109,7 @@ export default function RelatedProjectDetail({ params }) {
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
                     <div>
                       <span className="font-medium block text-black text-sm md:text-base">author</span> 
-                      <span className="text-[#FF0000] text-sm md:text-base">{project.author || 'Not specified'}</span>
+                      <span className="text-[#FF0000] text-sm md:text-base">{project.client || 'Not specified'}</span>
                     </div>
                     <div>
                       <span className="font-medium block text-black text-sm md:text-base">Category:</span> 
