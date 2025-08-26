@@ -140,7 +140,7 @@ export default function PaymentProcessor({ paymentData, onPaymentComplete, onCan
               <input
                 type="text"
                 placeholder="John Doe"
-                className={`w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.cardholderName ? 'input-error' : ''}`}
+                className={`w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.cardholderName ? 'input-error' : ''}`}
                 value={cardData.cardholderName}
                 onChange={(e) => handleInputChange('cardholderName', e.target.value)}
               />
@@ -154,7 +154,7 @@ export default function PaymentProcessor({ paymentData, onPaymentComplete, onCan
               <input
                 type="text"
                 placeholder="1234 5678 9012 3456"
-                className={`w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.cardNumber ? 'input-error' : ''}`}
+                className={`w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.cardNumber ? 'input-error' : ''}`}
                 value={cardData.cardNumber}
                 onChange={(e) => handleInputChange('cardNumber', e.target.value)}
                 maxLength={19}
@@ -170,7 +170,7 @@ export default function PaymentProcessor({ paymentData, onPaymentComplete, onCan
                 <input
                   type="text"
                   placeholder="MM/YY"
-                  className={`w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.expiryDate ? 'input-error' : ''}`}
+                  className={`w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.expiryDate ? 'input-error' : ''}`}
                   value={cardData.expiryDate}
                   onChange={(e) => handleInputChange('expiryDate', e.target.value)}
                   maxLength={5}
@@ -185,7 +185,7 @@ export default function PaymentProcessor({ paymentData, onPaymentComplete, onCan
                 <input
                   type="text"
                   placeholder="123"
-                  className={`w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.cvv ? 'input-error' : ''}`}
+                  className={`w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-2 focus:ring-blue-100 focus:border-blue-100 transition ${errors.cvv ? 'input-error' : ''}`}
                   value={cardData.cvv}
                   onChange={(e) => handleInputChange('cvv', e.target.value)}
                   maxLength={4}
@@ -194,7 +194,7 @@ export default function PaymentProcessor({ paymentData, onPaymentComplete, onCan
               </div>
             </div>
 
-            <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+            <div className="bg-green-50 border border-green-200 rounded-sm p-4">
               <div className="flex items-center">
                 <svg className="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
                   <path

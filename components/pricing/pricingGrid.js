@@ -4,7 +4,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { servicePricings } from '@/data/services';
 import Slider from "react-slick";
-
+// ✅ required CSS for react-slick
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const sliderSettings = {
   dots: true,
@@ -12,10 +14,9 @@ const sliderSettings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
-  centerMode: true,
-  centerPadding: "20px",
+  
+  
 };
-
 
 export default function PricingGrid({ selectedService, onSelectPlan }) {
   const serviceData = servicePricings.find(s => s.service.id === selectedService);
