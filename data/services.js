@@ -19,14 +19,14 @@ export const servicePricings = [
           'Blog/News Section',
           'Revision 1 round',
           'Basic SEO optimization',
-           'Hosting & Maintenance $50 - $100/Mo',
+           'Hosting & Maintenance $100/Mo',
            'One-Time Building Fee $1500'
         ]
       },
       {
         id: 'Standard',
         name: 'Standard (Business Website)',
-        price: '3,699.99',
+        price: '3,599.99',
         popular: true,
         features: [
           'Advanced web application',
@@ -40,7 +40,7 @@ export const servicePricings = [
           'Mobile responsive design',
           'social Media Integration',
           'Google Analytics',
-          'Hosting & Maintenance $150 - $250/Mo',
+          'Hosting & Maintenance $250/Mo',
            'One-Time Building Fee $3500'
         ]
       },
@@ -60,7 +60,7 @@ export const servicePricings = [
           'Progressive Web App',
           'Performance optimization',
           'Custom integrations',
-          'Hosting & Maintenance $300 - $500/Mo',
+          'Hosting & Maintenance $500/Mo',
            'One-Time Building Fee $10000'
         ]
       }
