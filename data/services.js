@@ -10,7 +10,7 @@ export const servicePricings = [
       {
         id: 'Basic',
         name: 'Basic (Starter Website)',
-        price: 1599,
+        price: '1,599.99',
         features: [
           'Basic web application',
           'Up to 5 pages',
@@ -26,7 +26,7 @@ export const servicePricings = [
       {
         id: 'Standard',
         name: 'Standard (Business Website)',
-        price: 36999,
+        price: '3,699.99',
         popular: true,
         features: [
           'Advanced web application',
@@ -47,7 +47,7 @@ export const servicePricings = [
       {
         id: 'Premium',
         name: 'Premium (Growth Website)',
-        price: 10599,
+        price: '10,599',
         features: [
           'Enterprise-grade application',
           'Unlimited pages',
@@ -77,7 +77,7 @@ export const servicePricings = [
       {
         id: 'standard',
         name: 'Standard',
-        price: 1499,
+        price: '1,499.99',
         features: [
           'Basic data cleaning',
           'Simple visualizations',
@@ -89,7 +89,7 @@ export const servicePricings = [
       {
         id: 'advanced',
         name: 'Advanced',
-        price: 2999,
+        price: '2,999.99',
         popular: true,
         features: [
           'Advanced data cleaning',
@@ -104,7 +104,7 @@ export const servicePricings = [
       {
         id: 'professional',
         name: 'Professional',
-        price: 4999,
+        price: '4,999.99',
         features: [
           'Enterprise data pipeline',
           'Real-time dashboards',
@@ -131,7 +131,7 @@ export const servicePricings = [
       {
         id: 'standard',
         name: 'Standard',
-        price: 999,
+        price: '999.99',
         features: [
           'Basic cloud setup',
           'Up to 5 virtual machines',
@@ -143,7 +143,7 @@ export const servicePricings = [
       {
         id: 'advanced',
         name: 'Advanced',
-        price: 2499,
+        price: '2,499.99',
         popular: true,
         features: [
           'Advanced cloud architecture',
@@ -158,7 +158,7 @@ export const servicePricings = [
       {
         id: 'professional',
         name: 'Professional',
-        price: 4999,
+        price: '4,999.99',
         features: [
           'Enterprise cloud solution',
           'Unlimited virtual machines',
@@ -185,7 +185,7 @@ export const servicePricings = [
       {
         id: 'standard',
         name: 'Standard',
-        price: 1999,
+        price: '1,999.99',
         features: [
           'Basic AI chatbot',
           'Content generation templates',
@@ -197,7 +197,7 @@ export const servicePricings = [
       {
         id: 'advanced',
         name: 'Advanced',
-        price: 3999,
+        price: '3,999.99',
         popular: true,
         features: [
           'Advanced AI chatbot',
@@ -212,7 +212,7 @@ export const servicePricings = [
       {
         id: 'professional',
         name: 'Professional',
-        price: 7999,
+        price: '7,999.99',
         features: [
           'Enterprise AI platform',
           'Custom AI models',
@@ -238,7 +238,7 @@ export const servicePricings = [
       {
         id: 'standard',
         name: 'Standard',
-        price: 1799,
+        price: '1,799.99',
         features: [
           'Basic threat detection',
           'Weekly security reports',
@@ -250,7 +250,7 @@ export const servicePricings = [
       {
         id: 'advanced',
         name: 'Advanced',
-        price: 3499,
+        price: '3,499.99',
         popular: true,
         features: [
           'Advanced threat detection',
@@ -265,7 +265,7 @@ export const servicePricings = [
       {
         id: 'professional',
         name: 'Professional',
-        price: 6999,
+        price: '6,999.99',
         features: [
           'Enterprise security suite',
           'AI-powered threat hunting',
@@ -291,7 +291,7 @@ export const servicePricings = [
       {
         id: 'standard',
         name: 'Standard',
-        price: 299,
+        price: '299.99',
         features: [
           '5 banner designs',
           '2 revisions per design',
@@ -303,7 +303,7 @@ export const servicePricings = [
       {
         id: 'advanced',
         name: 'Advanced',
-        price: 599,
+        price: '599.99',
         popular: true,
         features: [
           '15 banner designs',
@@ -318,7 +318,7 @@ export const servicePricings = [
       {
         id: 'professional',
         name: 'Professional',
-        price: 999,
+        price: '999.99',
         features: [
           'Unlimited banner designs',
           'Unlimited revisions',
@@ -344,7 +344,7 @@ export const servicePricings = [
       {
         id: 'standard',
         name: 'Standard',
-        price: 499,
+        price: '499.99',
         features: [
           '3 logo concepts',
           '2 revisions',
@@ -356,7 +356,7 @@ export const servicePricings = [
       {
         id: 'advanced',
         name: 'Advanced',
-        price: 999,
+        price: '999.99',
         popular: true,
         features: [
           '5 logo concepts',
@@ -372,7 +372,7 @@ export const servicePricings = [
       {
         id: 'professional',
         name: 'Professional',
-        price: 1999,
+        price: '1,999.99',
         features: [
           'Complete brand identity',
           'Unlimited concepts',
