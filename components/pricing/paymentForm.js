@@ -107,7 +107,7 @@ const router = useRouter();
               animate={{ opacity: 1, y: 0 }}
               className="space-y-6 bg-white p-8 rounded-2xl shadow-md"
             >
-              <h2 className="text-2xl font-bold text-gray-900 text-center">Payment Details</h2>
+              <h2 className="text-2xl font-bold text-gray-900 text-center">Payment Form Details</h2>
     
               {/* Name + Email */}
                 <p className='text-[#FF0000]'>Customer Information</p>
